@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Brian Ichter</title>
+    <title>Robust Trajectory Optimization</title>
 
-    <meta name="description" content="Parallel planner and uncertain, kinodynamic sampler">
+    <meta name="description" content="Robust Trajectory Optimization">
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -21,7 +21,7 @@
 	<!-- JabRef CSS -->
 	<link rel="stylesheet" href="http://localhost:4000/css/JabRef.css">
 	 
-    <link rel="canonical" href="http://localhost:4000/people/brian-ichter/"> 
+    <link rel="canonical" href="http://localhost:4000/projects/RobustTrajOpt/"> 
     <!-- Not required -->
     <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="http://localhost:4000 /feed.xml "> -->
     <!-- Custom Fonts -->
@@ -163,33 +163,85 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Brian Ichter</h2>
+            <h2>Robust Trajectory Optimization</h2>
           </div>
         </div>
         <div class="row">
-	      <div class="col-md-5">
-	          <img src="../../img/people/BrianIchter.jpg" alt="Brian Ichter" class="img-responsive">
-          <br>
-          <a href="//stanford.edu/~ichter/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Personal Webpage</a>
-		  </div>
-		  <div class="col-md-7">
-		    <p>Brian Ichter is a PhD candidate in Aeronautics and Astronautics at Stanford University (expected graduation early 2018). He received a BS in Aerospace Engineering and BA in Physics from the University of Virginia in 2012 and an MS in Aeronautics and Astronautics from Stanford University in 2015.</p>
+  	      <div class="col-md-4 col-xs-12 col-vertical-center">
+  	          <img src="../..//img/projects/MotionPlanning.png" alt="Robust Trajectory Optimization" class="img-responsive center-block">
+  		    </div><!--
+       --><div class="col-md-8 col-xs-12 col-vertical-center">
+    		    Motion planning algorithms for agile robotic systems operating in uncertain environments, with application to self-driving cars, drones, and autonomous spacecraft. Emphasis is placed on real-time implementability (e.g., via massive parallelization on GPUs), on robustness (via techniques from robust model predictive control, convex optimization, and contraction theory), and on formal performance guarantees (via advanced mathematical and statistical tools).
+            <br/>
+            <br/>
+            <b class="keyword-title">Keywords</b>: Motion Planning, Robust Control, Optimization
+    		  </div>
+    		</div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="bibliography">Related Work</h4>
+<div class="project_bib">
+<h3 class="bibliography">Conference Articles</h3>
+<ol class="bibliography"><li>
+ 
 
-<p>Brian’s research focuses on sampling-based algorithms for robotic motion planning. In particular, he works on developing massively parallel algorithms (that leverage GPUs) towards real-time kinodynamic, uncertainty-aware, and perception-aware motion planning. He further works on sampling strategies for planning algorithms by showing theoretical and practical benefits of low-dispersion, deterministic sampling as well as developing methods for learning optimal sample distributions.</p>
 
-<h3 id="awards">Awards:</h3>
-<ul>
-  <li>NDSEG Fellowship</li>
-  <li>NSF Graduate Research Fellowship</li>
-  <li>NASA Space Technology Research Fellowship</li>
-</ul>
+<span class="entry" id="SinghSindhwaniEtAl2018">S. Singh, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00113">“Learning Stabilizable Dynamical Systems via Control Contraction Metrics,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghSindhwaniEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghSindhwaniEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SinghSindhwaniEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key idea is to develop a new control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, which guarantees that the learnt system can be accompanied by a robust controller capable of stabilizing any trajectory that the system can generate. By leveraging tools from contraction theory, statistical learning, and convex optimization, we provide a general and tractable algorithm to learn stabilizable dynamics, which can be applied to complex underactuated systems. We validate the proposed algorithm on a simulated planar quadrotor system and observe that the control-theoretic regularized dynamics model is able to consistently generate and accurately track reference trajectories whereas the model learnt using standard regression techniques, e.g., ridge-regression (RR) does extremely poorly on both tasks. Furthermore, in aggressive flight regimes with high velocity and bank angle, the tracking controller fails to stabilize the trajectory generated by the ridge-regularized model whereas no instabilities were observed using the control-theoretic learned model, even with a small number of demonstration examples. The results presented illustrate the need to infuse standard model-based reinforcement learning algorithms with concepts drawn from nonlinear control theory for improved reliability.</p>
+</span>
+<span id="bib_SinghSindhwaniEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{SinghSindhwaniEtAl2018,
+  author = {Singh, S. and Sindhwani, V. and Slotine, J.-J. E. and Pavone, M.},
+  title = {Learning Stabilizable Dynamical Systems via Control Contraction Metrics},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In Press},
+  month = oct,
+  url = {https://arxiv.org/abs/1808.00113},
+  keywords = {press},
+  owner = {ssingh19},
+  timestamp = {2018-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghSindhwaniEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
 
-        <br>
-        
-          <i>Currently at Google Brain Robotics</i>
-        
-		  </div>
-		</div>
+
+<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, 2018. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinghChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChenEtAl2018','abstract')">Abstract</a>]</p>
+<span id="abs_SinghChenEtAl2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.</p>
+</span>
+<span id="bib_SinghChenEtAl2018" class="bibtex noshow">
+	<pre>@inproceedings{SinghChenEtAl2018,
+  author = {Singh, S. and Chen, M. and Herbert, S. L. and Tomlin, C. J. and Pavone, M.},
+  title = {Robust Tracking with Model Mismatch for Fast and Safe Planning: an {SOS} Optimization Approach},
+  booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
+  year = {2018},
+  note = {In Press},
+  month = oct,
+  url = {https://arxiv.org/abs/1808.00649},
+  keywords = {press},
+  owner = {ssingh19},
+  timestamp = {2018-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_SinghChenEtAl2018" >
+	<b>Keywords</b>:
+	press
+</span> --></li></ol>
+</div>
+
+          </div>
+        </div>
 	  </div>
     </header>
     <!--
@@ -210,6 +262,15 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="http://localhost:4000/js/JabRef_QuickSearch.js"></script>
 
+    <script>
+    $(".bibliography").remove("h3");
+    $("ol.bibliography > li").unwrap();
+
+    var $set = $('div.project_bib > li');    
+    for(var i=0, len = $set.length; i < len; i+=2){
+        $set.slice(i, i+2).wrapAll("<ol class='bibliography'></ol>");
+    }
+    </script> 
     <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
