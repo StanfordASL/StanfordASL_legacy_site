@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Introduction</title>
+    <title>AA 203: Optimal and Learning-based Control</title>
 
-    <meta name="description" content="End">
+    <meta name="description" content="Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Model-based reinforcement learning, and connections between modern reinforcement learning in continuous spaces and fundamental optimal control ideas.">
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -21,7 +21,7 @@
 	<!-- JabRef CSS -->
 	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
 	 
-    <link rel="canonical" href="http://asl.stanford.edu/projects/End/"> 
+    <link rel="canonical" href="http://asl.stanford.edu/aa203/assignments.html"> 
     <!-- Not required -->
     <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
     <!-- Custom Fonts -->
@@ -30,6 +30,9 @@
     
     <!-- My CSS -->
     <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 203 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa203.css"> 
 
     <!-- Analytics -->
     
@@ -55,12 +58,8 @@
 
 </head>
 
-
-
-
-
-  <body id="page-top" class="index">
-    <!-- Navigation -->
+<body id="page-top" class="index">
+  <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,7 +77,10 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div id="aa203-navbar-text" class="col-md-6 text-center center-block collapse navbar-collapse">
+                <a class="aa203_name" href="/aa203/"><h4>AA 203: Optimal and Learning-based Control</h4></a>
+            </div>
+            <div class="col-md-6 text-center center-block">
                 <div class="row">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -87,15 +89,6 @@
                                 <a href="#page-top"></a>
                             </li>
                             
-                            <li class="page-scroll">
-                                <a href="/">Home</a>
-                            </li>
-                            
-                            
-                            
-                                
-                            
-                                
                             
                                 
                             
@@ -120,17 +113,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/projects/">Projects</a>
-                                    </li>
-                                    
-                                
-                            
-                                
-                            
-                                
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/publications/">Publications</a>
+                                        <a href="/aa203/">Home</a>
                                     </li>
                                     
                                 
@@ -141,8 +124,8 @@
                             
                                 
                                     
-                                    <li class="page-scroll">
-                                        <a href="/people/">People</a>
+                                    <li class="page-scroll active">
+                                        <a href="/aa203/assignments.html">Homework</a>
                                     </li>
                                     
                                 
@@ -154,25 +137,27 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/press/">In the Press</a>
+                                        <a href="/aa203/project.html">Project</a>
                                     </li>
                                     
                                 
                             
                                 
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/gallery/">Gallery</a>
-                                    </li>
-                                    
+                            
                                 
                             
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/contact/">Contact</a>
+                                        <a href="/aa203/announcements.html">Announcements</a>
                                     </li>
                                     
+                                
+                            
+                                
+                            
+                                
+                            
                                 
                             
                         </ul>
@@ -185,38 +170,18 @@
     <!-- /.container-fluid -->
 </nav>
 
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Introduction</h2>
-          </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Homework</h1>
         </div>
-        <div class="row">
-  	      <div class="col-md-4 col-xs-12 col-vertical-center">
-  	          <img src="../..//img/projects/MoChen.png" alt="Introduction" class="img-responsive center-block">
-  		    </div><!--
-       --><div class="col-md-8 col-xs-12 col-vertical-center">
-    		    
-            <br/>
-            <br/>
-            <b class="keyword-title">Keywords</b>: 
-            <br/>
-            <br/>
-            <b class="keyword-title">Students</b>: 
-            <br/>
-    		  </div>
-    		</div>
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="bibliography">Related Works</h4>
-            <p>The lab currently comprises about 15 researchers, plus a number of graduate and undergraduate students with temporary appointments. The work of the lab has been recognized with several awards, including a Presidential Early Career Award for Scientists and Engineers (the highest honor bestowed by the United States Government on science and engineering professionals in the early stages of their independent research careers).</p>
-
-          </div>
-        </div>
-	  </div>
-    </header>
-    <!--
+      </div>
+      
+      
+    </div>
+  </header>
+  <!--
 The website should work without any of the JS below. -F
 -->
 
@@ -234,16 +199,7 @@ The website should work without any of the JS below. -F
 <!-- JabRef (Toggling info on Publications Page) -->
 <script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
 
-    <script>
-    $(".bibliography").remove("h3");
-    $("ol.bibliography > li").unwrap();
-
-    var $set = $('div.project_bib > li');    
-    for(var i=0, len = $set.length; i < len; i+=2){
-        $set.slice(i, i+2).wrapAll("<ol class='bibliography'></ol>");
-    }
-    </script> 
-    <!-- Footer -->
+  <!-- Footer -->
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
@@ -285,5 +241,5 @@ $( window ).resize(function() {
 <footer class="copyright-text footer">
 © 2018 - 2019 Autonomous Systems Lab
 </footer>
-  </body>
+</body>
 </html>
