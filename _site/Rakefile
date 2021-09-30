@@ -51,5 +51,5 @@ task :deploy do
 end
 
 desc "Commit and deploy _site/"
-task :publish => [:check, :build, :commit, :deploy] do
+task :publish => [:check, :build, :check, :commit, :deploy] do
 end
