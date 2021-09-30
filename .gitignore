@@ -1,3 +1,6 @@
+### Editors ###
+.vscode
+
 ### Jekyll ###
 .sass-cache
 .jekyll-metadata
