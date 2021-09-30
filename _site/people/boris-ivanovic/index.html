@@ -131,11 +131,21 @@
                                 
                             
                                 
+                            
+                                
                                     
                                     <li class="page-scroll">
                                         <a href="/projects/">Projects</a>
                                     </li>
                                     
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
                                 
                             
                                 
@@ -180,16 +190,6 @@
                                         <a href="/people/">People</a>
                                     </li>
                                     
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
                                 
                             
                                 
@@ -243,32 +243,6 @@
  
 
 
-<span class="entry" id="IvanovicLinEtAl2022">B. Ivanovic, Y. Lin, S. Shrivastava, P. Chakravarty, and M. Pavone, <a class="entry-title" href="">“Propagating State Uncertainty Through Trajectory Forecasting,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLinEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLinEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_IvanovicLinEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Uncertainty pervades through the modern robotic autonomy stack, with nearly every component (e.g., sensors, detection, classification, tracking, behavior prediction) producing continuous or discrete probabilistic distributions. Trajectory forecasting, in particular, is surrounded by uncertainty as its inputs are produced by (noisy) upstream perception and its outputs are predictions that are often probabilistic for use in downstream planning. However, most trajectory forecasting methods do not account for upstream uncertainty, instead taking only the most-likely values. As a result, perceptual uncertainties are not propagated through forecasting and predictions are frequently overconfident. To address this, we present a novel method for incorporating perceptual state uncertainty in trajectory forecasting, a key component of which is a new statistical distance-based loss function which encourages predicting uncertainties that better match upstream perception. We evaluate our approach both in illustrative simulations and on large-scale, real-world data, demonstrating its efficacy in propagating perceptual state uncertainty through prediction and producing more calibrated predictions.</p>
-</span>
-<span id="bib_IvanovicLinEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{IvanovicLinEtAl2022,
-  author = {Ivanovic, B. and Lin, Y. and Shrivastava, S. and Chakravarty, P. and Pavone, M.},
-  title = {Propagating State Uncertainty Through Trajectory Forecasting},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2022},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {borisi},
-  timestamp = {2021-09-19}
-}
-</pre>
-</span>
-<!-- <span id="key_IvanovicLinEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="LuoZhaoEtAl2022">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Luo.Zhao.ICRA22.pdf">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoZhaoEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoZhaoEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_LuoZhaoEtAl2022" class="abstract noshow">
@@ -280,6 +254,7 @@
   title = {Sample-Efficient Safety Assurances using Conformal Prediction},
   booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2022},
+  month = may,
   note = {Submitted},
   keywords = {sub},
   owner = {rsluo},
@@ -296,7 +271,7 @@
  
 
 
-<span class="entry" id="IvanovicLeeEtAl2021">B. Ivanovic, K.-H. Lee, P. Tokmakov, B. Wulfe, R. McAllister, A. Gaidon, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.12446">“Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty,”</a> 2021. (Submitted)</span> 
+<span class="entry" id="IvanovicLeeEtAl2021">B. Ivanovic, K.-H. Lee, P. Tokmakov, B. Wulfe, R. McAllister, A. Gaidon, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.12446">“Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty,”</a> 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLeeEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLeeEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_IvanovicLeeEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Reasoning about the future behavior of other agents is critical to safe robot navigation. The multiplicity of plausible futures is further amplified by the uncertainty inherent to agent state estimation from data, including positions, velocities, and semantic class. Forecasting methods, however, typically neglect class uncertainty, conditioning instead only on the agent’s most likely class, even though perception models often return full class distributions. To exploit this information, we present HAICU, a method for heterogeneous-agent trajectory forecasting that explicitly incorporates agents’ class probabilities. We additionally present PUP, a new challenging real-world autonomous driving dataset, to investigate the impact of Perceptual Uncertainty in Prediction. It contains challenging crowded scenes with unfiltered agent class probabilities that reflect the long-tail of current state-of-the-art perception systems. We demonstrate that incorporating class probabilities in trajectory forecasting significantly improves performance in the face of uncertainty, and enables new forecasting capabilities such as counterfactual predictions.</p>
@@ -305,17 +280,44 @@
 	<pre>@inproceedings{IvanovicLeeEtAl2021,
   author = {Ivanovic, B. and Lee, K-H. and Tokmakov, P. and Wulfe, B. and McAllister, R. and Gaidon, A. and Pavone, M.},
   title = {Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty},
-  month = oct,
-  year = {2021},
+  month = may,
+  year = {2022},
   note = {Submitted},
   keywords = {sub},
   owner = {borisi},
-  timestamp = {2021-04-27},
+  timestamp = {2021-09-29},
   url = {https://arxiv.org/abs/2104.12446}
 }
 </pre>
 </span>
 <!-- <span id="key_IvanovicLeeEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IvanovicLinEtAl2022">B. Ivanovic, Y. Lin, S. Shrivastava, P. Chakravarty, and M. Pavone, <a class="entry-title" href="">“Propagating State Uncertainty Through Trajectory Forecasting,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLinEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLinEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicLinEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Uncertainty pervades through the modern robotic autonomy stack, with nearly every component (e.g., sensors, detection, classification, tracking, behavior prediction) producing continuous or discrete probabilistic distributions. Trajectory forecasting, in particular, is surrounded by uncertainty as its inputs are produced by (noisy) upstream perception and its outputs are predictions that are often probabilistic for use in downstream planning. However, most trajectory forecasting methods do not account for upstream uncertainty, instead taking only the most-likely values. As a result, perceptual uncertainties are not propagated through forecasting and predictions are frequently overconfident. To address this, we present a novel method for incorporating perceptual state uncertainty in trajectory forecasting, a key component of which is a new statistical distance-based loss function which encourages predicting uncertainties that better match upstream perception. We evaluate our approach both in illustrative simulations and on large-scale, real-world data, demonstrating its efficacy in propagating perceptual state uncertainty through prediction and producing more calibrated predictions.</p>
+</span>
+<span id="bib_IvanovicLinEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicLinEtAl2022,
+  author = {Ivanovic, B. and Lin, Y. and Shrivastava, S. and Chakravarty, P. and Pavone, M.},
+  title = {Propagating State Uncertainty Through Trajectory Forecasting},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2022},
+  month = may,
+  note = {Submitted},
+  keywords = {sub},
+  owner = {borisi},
+  timestamp = {2021-09-19}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicLinEtAl2022" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
