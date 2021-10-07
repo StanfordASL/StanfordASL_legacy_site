@@ -4139,6 +4139,18 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   url      = {https://arxiv.org/abs/2109.14082},
 }
 
+@Inproceedings{ChengPavoneEtAl2021,
+  author    = {Cheng, J. and Pavone, M. and Katti, S. and Chinchali, S. and Tang, A.},
+  title     = {Data Sharing and Compression for Cooperative Networked Control},
+  booktitle = proc_NIPS,
+  year      = {2021},
+  month = dec,
+  abstract = {Sharing forecasts of network timeseries data, such as cellular or electricity load patterns, can improve independent control applications ranging from traffic scheduling to power generation. Typically, forecasts are designed without knowledge of a downstream controller's task objective, and thus simply optimize for mean prediction error. However, such task-agnostic representations are often too large to stream over a communication network and do not emphasize salient temporal features for cooperative control. This paper presents a solution to learn succinct, highly-compressed forecasts that are co-designed with a modular controller's task objective. Our simulations with real cellular, Internet-of-Things (IoT), and electricity load data show we can improve a model predictive controller's performance by at least 25% while transmitting 80% less data than the competing method. Further, we present theoretical compression results for a networked variant of the classical linear quadratic regulator (LQR) control problem.},
+  url   = {https://arxiv.org/abs/2109.14675},
+  owner     = {borisi},
+  timestamp = {2021-10-06},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}
