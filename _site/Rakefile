@@ -34,7 +34,11 @@ end
 desc "Deploy _site/ to master branch"
 task :deploy do
   puts "\n## Deleting master branch"
-  status = system("git branch -D master")
+  status = system(
+    "git show-ref --verify --quiet \"refs/heads/master\" &&
+    git branch -D master ||
+    echo \"'master' branch not found; is this a new clone?\""
+  )
   status ? puts("SUCCESS") : abort("FAILED")
   puts "\n## Creating new master branch and switching to it"
   status = system("git checkout -b master")
