@@ -3395,12 +3395,10 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Collision-Inclusive Trajectory Optimization for Free-Flying Spacecraft},
   journal      = jrn_AIAA_JGCD,
   year         = {2020},
-  note         = {In press},
   abstract = {In systems where collisions can be tolerated, permitting and optimizing collisions in vehicle trajectories can enable a richer set of possible behaviors, allowing both better performance and determination of safest courses of action in scenarios where collision is inevitable. This paper develops an approach for optimal trajectory planning on a three degree-of-freedom free-flying spacecraft having tolerance to collisions. First, we use experimental data to formulate a physically realistic collision model for the spacecraft. We show that this model is linear over the expected operational range, enabling a piecewise affine representation of the full hybrid-vehicle dynamics. Next, we incorporate this dynamics model along with vehicle constraints into a mixed integer program. Experimental comparisons of trajectories with and without collision-avoidance requirements demonstrate the capability of the collision-tolerant strategy to achieve significant performance improvements in realistic scenarios. A simulated case study illustrates the potential for this approach to find damage-mitigating paths in online implementations.},
   url      = {/wp-content/papercite-data/pdf/Mote.ea.JGCD.2020.preprint.pdf},
-  keywords     = {press},
   owner        = {bylard},
-  timestamp    = {2020-02-27},
+  timestamp    = {2021-10-14},
 }
 
 @Inproceedings{McClellanLorenzettiEtAl2020,
@@ -3923,27 +3921,39 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp = {2021-03-18}
 }
 
-@Inproceedings{LeungPavone2021,
+@Inproceedings{LeungPavone2022,
   author       = {Leung, K. and Pavone, M.},
-  title        = {Control Synthesis with Heterogeneous Structure: Imitation-based Trajectory-feedback Control with Signal Temporal Logic Specifications},
-  year         = {2021},
+  title        = {Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications},
+  year         = {2022},
   note         = {Submitted},
-  abstract = {There is underlying structural information that influences how a robot should operate in complex environments, e.g., road rules govern how (self-driving) vehicles on the road should behave. However, seamlessly incorporating a variety of structural information into a robot control policy remains challenging both computationally and theoretically. In this work, we develop a control policy synthesis technique that utilizes heterogeneous structural information, specifically temporal logic and human demonstrations, to (i) foster better policy exploration, and (ii) achieve more intuitive and higher-performing robot behaviors. Specifically, we design an imitation-based neural network controller that satisfies desired spatio-temporal properties expressed as Signal Temporal Logic specifications. Due to challenges in neural network verification, we supplement our neural network controller with a lightweight online adaptive scheme that refines the controller to account for disturbances to the system. We demonstrate the efficacy of our approach with an illustrative case study and show that our proposed method outperforms a state-of-the-art shooting method in both performance and computation time, and achieves near real-time performance.},
+  abstract = {There are spatio-temporal rules that dictate how robots should operate in complex environments, e.g., road rules govern how (self-driving) vehicles should behave on the road. However, seamlessly incorporating such rules into a robot control policy remains challenging especially for real-time applications. In this work, given a desired spatio-temporal specification expressed in the Signal Temporal Logic (STL) language, we propose a semi-supervised controller synthesis technique that is attuned to human-like behaviors while satisfying desired STL specifications. Offline, we synthesize a trajectory-feedback neural network controller via an adversarial training scheme that summarizes past spatio-temporal behaviors when computing controls, and then online, we perform gradient steps to improve specification satisfaction. Central to the offline phase is an imitation-based regularization component that fosters better policy exploration and helps induce naturalistic human behaviors. Our experiments demonstrate that having imitation-based regularization leads to higher qualitative and quantitative performance compared to optimizing an STL objective only as done in prior work. We demonstrate the efficacy of our approach with an illustrative case study and show that our proposed controller outperforms a state-of-the-art shooting method in both performance and computation time.},
   keywords     = {sub},
   owner        = {karenl7},
-  timestamp    = {2021-03-25},
+  timestamp    = {2021-10-14},
 }
 
-@Inproceedings{JalotaSoloveyEtAl2021,
+@Inproceedings{JalotaSoloveyEtAl2022,
   author       = {Jalota, D. and Solovey, K. and Zoepf, S. and Pavone, M.},
   title        = {Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment},
-  booktitle    = proc_IEEE_CDC,
-  year         = {2021},
+  booktitle    = proc_AAMAS,
+  year         = {2022},
   note         = {Submitted},
   abstract = {System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail for transportation authorities. However, SO routing may discriminate against users who incur much larger travel times than others to achieve high system efficiency, i.e., low total travel times. To address the inherent unfairness of SO routing, we study the $\beta$-fair SO problem whose goal is to minimize the total travel time while guaranteeing a $\beta\geq 1$ level of unfairness, which specifies the maximal ratio between the travel times of different users with shared origins and destinations. To obtain feasible solutions to the $\beta$-fair SO problem while achieving high system efficiency, we develop a new convex program, the Interpolated Traffic Assignment Problem (I-TAP), which interpolates between a fair and an efficient traffic-assignment objective. We then leverage the structure of I-TAP to develop two pricing mechanisms to collectively enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively, that independently choose routes to minimize their own travel costs. We mention that this is the first study of pricing in the context of fair routing. Finally, we use origin-destination demand data for a range of transportation networks to numerically evaluate the performance of I-TAP as compared to a state-of-the-art algorithm. The numerical results indicate that our approach is faster by several orders of magnitude, while achieving higher system efficiency for most levels of unfairness.},
   keywords     = {sub},
   owner        = {devanshjalota},
-  timestamp    = {2021-03-26},
+  timestamp    = {2021-10-17},
+}
+
+@Inproceedings{ChoudhurySoloveyEtAl2022,
+  author       = {Choudhury, S. and Solovey, K. and Kochenderfer, M. Pavone},
+  title        = {Coordinated Multi-Agent Pathfinding for Drones and Trucks over Road Networks},
+  booktitle    = proc_AAMAS,
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {We address the problem of routing a team of drones and trucks over large-scale urban road networks. To conserve their limited flight energy, drones can use trucks as temporary modes of transit en route to their own destinations. Such coordination can yield significant savings in total vehicle distance traveled, i.e., truck travel distance and drone flight distance, compared to operating drones and trucks independently. But it comes at the potentially prohibitive computational cost of deciding which trucks and drones should coordinate and when and where it is most beneficial to do so. We tackle this fundamental trade-off by decoupling our overall intractable problem into tractable sub-problems that we solve stage-wise. The first stage solves only for trucks, by computing paths that make them more likely to be useful transit options for drones. The second stage solves only for drones, by routing them over a composite of the road network and the transit network defined by truck paths from the first stage. We design a comprehensive algorithmic framework that frames each stage as a multi-agent path finding problem and implement two distinct methods for solving them. We evaluate our approach on extensive simulations with up to $100$ agents on the real-world Manhattan road network containing nearly $4500$ vertices and $10000$ edges. Our framework saves on more than $50\%$ of vehicle distance traveled compared to independently solving for trucks and drones, and computes solutions for all settings within $5$ minutes on commodity hardware.},
+  keywords     = {sub},
+  owner        = {kirilsol},
+  timestamp    = {2021-10-17},
 }
 
 @Inproceedings{DaiLandryEtAl2021,
@@ -4150,6 +4160,18 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   owner     = {borisi},
   timestamp = {2021-10-06},
 }
+
+@Inproceedings{SchneiderBylardEtAl2022,
+  author    = {Schneider, S. and Bylard, A. and Chen, T. G. and Wang, P. and Cutkosky, M. R. and Pavone, M.},
+  title     = {ReachBot: A Small Robot for Large Mobile Manipulation Tasks},
+  booktitle = proc_IEEE_AC,
+  year      = {2022},
+  abstract = {Robots are widely deployed in space environments because of their versatility and robustness. However, adverse gravity conditions and challenging terrain geometry expose the limitations of traditional robot designs, which are often forced to sacrifice one of mobility or manipulation capabilities to attain the other. Prospective climbing operations in these environments reveals a need for small, compact robots capable of versatile mobility and manipulation. We propose a novel robotic concept called ReachBot that fills this need by combining two existing technologies: extendable booms and mobile manipulation. ReachBot leverages the reach and tensile strength of extendable booms to achieve an outsized reachable workspace and wrench capability. Through their lightweight, compactable structure, these booms also reduce mass and complexity compared to traditional rigid-link articulated-arm designs. Using these advantages, ReachBot excels in mobile manipulation missions in low gravity or that require climbing, particularly when anchor points are sparse. After introducing the ReachBot concept, we discuss modeling approaches and strategies for increasing stability and robustness. We then develop a 2D analytical model for ReachBot’s dynamics inspired by grasp models for dexterous manipulators. Next, we introduce a waypoint-tracking controller for a planar ReachBot in microgravity. Our simulation results demonstrate the controller’s robustness to disturbances and modeling error. Finally, we briefly discuss next steps that build on these initially promising results to realize the full potential of ReachBot.},
+  url   = {https://arxiv.org/abs/2110.10829},
+  owner     = {schneids},
+  timestamp = {2021-10-21},
+}
+
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
