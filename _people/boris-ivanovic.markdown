@@ -16,4 +16,7 @@ His previous research work spans computer vision, machine learning, data science
 
 Boris’ research interests are rooted in trajectory forecasting for autonomous vehicles, combining deep learning with principled methods from robotics, optimization, and control theory to create performant, safe, and reliable learning-based algorithms that can be deployed in the real world.
 
-In his spare time, Boris enjoys playing tennis, skiing, hiking, traveling, watching movies, and thinking about cooking.
+In his spare time, Boris enjoys playing tennis, skiing, hiking, traveling, watching movies, and cooking.
+
+### Awards:
+- Natural Sciences and Engineering Research Council of Canada (NSERC) Doctoral Scholarship

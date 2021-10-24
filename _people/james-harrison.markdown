@@ -14,4 +14,4 @@ James is a graduate student in the department of Mechanical Engineering. He rece
 
 ### Awards:
 - Office of Technology Licensing Stanford Graduate Fellowship
-- National Sciences and Engineering Research Council (NSERC) Doctoral Scholarship
+- Natural Sciences and Engineering Research Council of Canada (NSERC) Doctoral Scholarship
