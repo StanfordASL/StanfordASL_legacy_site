@@ -17,6 +17,13 @@ task :build do
   status ? puts("SUCCESS") : abort("FAILED")
 end
 
+desc "Preview _site/ for production"
+task :preview do
+  puts "\n## Previewing Jekyll to _site/"
+  status = system("JEKYLL_ENV=production bundle exec jekyll serve")
+  status ? puts("SUCCESS") : abort("FAILED")
+end
+
 desc "Commit _site/"
 task :commit do
   puts "\n## Staging modified files"
