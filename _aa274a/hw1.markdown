@@ -2,7 +2,7 @@
 title:  "Homework #1"
 seq_number: 1
 posted_date:   2021-09-23 22:00:00
-due_date:   2020-10-05 23:59:59
+due_date:   2021-10-05 23:59:59
 pdf_link: "/aa274a/pdfs/homework/hw1.pdf"
 code_link: "https://github.com/PrinciplesofRobotAutonomy/AA274A_HW1"
 md_group: "assignments"
