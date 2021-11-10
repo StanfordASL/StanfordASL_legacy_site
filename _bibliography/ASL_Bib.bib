@@ -684,6 +684,7 @@
 @String { pub_PWSPC                 = {{PWS Publishing Company}} }
 @String { pub_RPC                   = {{Reidel Publishing Company}} }
 @String { pub_RSPA                  = {{Proc. of the Royal Society of London A: Mathematical, Physical and Engineering Sciences}} }
+@String { pub_PTRSA                  = {{Philosophical Transactions of the Royal Society A}} }
 @String { pub_SIAM                  = {{SIAM}} }
 @String { pub_Springer              = {{Springer}} }
 @String { pub_Springer_BH           = {{Springer Berlin Heidelberg}} }
@@ -956,6 +957,17 @@
   url      = {/wp-content/papercite-data/pdf/Hockman.Pavone.ea.JFR15.pdf},
   owner        = {bylard},
   timestamp    = {2017-08-11},
+}
+
+@Article{McClellanLorenzettiEtAl2021,
+  author       = {McClellan, A. and Lorenzetti, J. and Pavone, M. and Farhat, C.},
+  title        = {A Physics-Based Digital Twin for Model Predictive Control of Autonomous Unmanned Aerial Vehicle Landing},
+  journal      = pub_PTRSA,
+  year         = {2021},
+  abstract = {This paper proposes a two-level, data-driven, digital twin concept for the autonomous landing of aircraft, under some assumptions. It features a digital twin instance for model predictive control; and an innovative, real-time, digital twin prototype for fluid-structure interaction and flight dynamics to inform it. The latter digital twin is based on the linearization about a pre-designed glideslope trajectory of a high-fidelity, viscous, nonlinear computational model for flight dynamics; and its projection onto a low-dimensional approximation subspace to achieve real-time performance, while maintaining accuracy. Its main purpose is to predict in real-time, during flight, the state of an aircraft and the aerodynamic forces and moments acting on it. Unlike static lookup tables or regression-based surrogate models based on steady-state wind tunnel data, the aforementioned real-time digital twin prototype allows the digital twin instance for model predictive control to be informed by a truly dynamic flight model, rather than a less accurate set of steady-state aerodynamic force and moment data points. The paper describes in details the construction of the proposed two-level digital twin concept and its verification by numerical simulation. It also reports on its preliminary flight validation in autonomous mode for an off-the-shelf unmanned aerial vehicle instrumented at Stanford University.},
+  url      = {/wp-content/papercite-data/pdf/McClellan.Lorenzetti.ea.PTRSA21.pdf},
+  owner        = {jlorenze},
+  timestamp    = {2021-11-11},
 }
 
 @Article{ZardiniLanzettiEtAl2021,
@@ -2917,7 +2929,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Beyond The Force: Using Quadcopters to Appropriate Objects and the Environment for Haptics in Virtual Reality},
   booktitle    = proc_ACM_SIGCHI,
   year         = {2019},
-  note         = {In Press},
   abstract = {Quadcopters have been used as hovering encountered-type haptic devices in virtual reality. We suggest that quadcopters can facilitate rich haptic interactions beyond force feedback by appropriating physical objects and the environment. We present HoverHaptics, an autonomous safe-to-touch quadcopter and its integration with a virtual shopping experience. HoverHaptics highlights three affordances of quadcopters that enable these rich haptic interactions: (1) dynamic positioning of passive haptics, (2) texture mapping, and (3) animating passive props. We identify inherent challenges of hovering encountered-type haptic devices, such as their limited speed, inadequate control accuracy, and safety concerns. We then detail our approach for tackling these challenges, including the use of display techniques, visuo-haptic illusions, and collision avoidance. We conclude by describing a preliminary study (n = 9) to better understand the subjective user experience when interacting with a quadcopter in virtual reality using these techniques.},
   address  = {Glasgow, UK},
   month    = may,
@@ -3561,10 +3572,9 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {SEAGuL: Sample Efficient Adversarially Guided Learning of Value Functions},
   booktitle    = proc_L4DC,
   year         = {2021},
-  note         = {In Press},
   abstract = {Value functions are powerful abstractions broadly used across optimal control and robotics algorithms. Several lines of work have attempted to leverage trajectory optimization to learn value function approximations, usually by solving a large number of trajectory optimization problems as a means to generate training data. Even though these methods point to a promising direction, for sufficiently complex tasks, their sampling requirements can become computationally intractable. In this work, we leverage insights from adversarial learning in order to improve the sampling efficiency of a simple value function learning algorithm. We demonstrate how generating adversarial samples for this task presents a unique challenge due to the loss function that does not admit a closed form expression of the samples, but that instead requires the solution to a nonlinear optimization problem. Our key insight is that by leveraging duality theory from optimization, it is still possible to compute adversarial samples for this learning problem with virtually no computational overhead, including without having to keep track of shifting distributions of approximation errors or having to train generative models. We apply our method, named SEAGuL, to a canonical control task (balancing the acrobot) and a more challenging and highly dynamic nonlinear control task (the perching of a small glider). We demonstrate that compared to random sampling, with the same number of samples, training value function approximations using SEAGuL leads to improved generalization errors that also translate to control performance improvement.},
   month    = dec,
-  keywords     = {press},
+  url      = {http://proceedings.mlr.press/v144/landry21a/landry21a.pdf},
   owner        = {blandry},
   timestamp    = {2021-03-15},
 }
@@ -3961,12 +3971,12 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {Lyapunov-Stable Neural-Network Control},
   booktitle    = proc_RSS,
   year         = {2021},
-  note         = {In Press},
   abstract = {Deep learning has had a far reaching impact in robotics. Specifically, deep reinforcement learning algorithms have been highly effective in synthesizing neural-network controllers for a wide range of tasks. However, despite this empirical success, these controllers still lack theoretical guarantees on their performance, such as Lyapunov stability (i.e., all trajectories of the closed-loop system are guaranteed to converge to a goal state under the control policy). This is in stark contrast to traditional model based controller design, where principled approaches (like LQR) can synthesize stable controllers with provable guarantees. To address this gap, we propose a generic method to synthesize a Lyapunov-stable neural-network controller, together with a neural-network Lyapunov function to simultaneously certify its stability. Our approach formulates the Lyapunov condition verification as a mixed-integer linear program (MIP). Our MIP verifier either certifies the Lyapunov condition, or generates counter-examples that can help improve the candidate controller and the Lyapunov function. We also present an optimization program to compute an inner approximation of the region-of-attraction for the closed-loop system. We apply our approach to robots including an inverted pendulum, a 2D and a 3D quadrotor, and showcase that our neural-network controller outperforms a baseline LQR controller.},
   address  = {Virtual},
   month    = jul,
+  url      = {https://arxiv.org/pdf/2109.14152.pdf},
   owner        = {blandry},
-  timestamp    = {2021-05-11},
+  timestamp    = {2021-11-07},
 }
 
 @Inproceedings{MalyutaEtAl2021,
@@ -4052,10 +4062,9 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {Vision-based Autonomous Disinfection of High Touch Surfaces in Indoor Environments},
   booktitle    = proc_ICCAS,
   year         = {2021},
-  note         = {In Press},
   abstract = {Autonomous systems have played an important role in response to the Covid-19 pandemic. Notably, there have been multiple attempts to leverage Unmanned Aerial Vehicles (UAVs) to disinfect surfaces. Although recent research suggests that surface transmission has a minimal impact in the spread of Covid-19, surfaces do play a significant role in the transmission of many other viruses. Employing UAVs for mass spray disinfection offers several potential advantages including high throughput application of disinfectant, large scale deployment, and the minimization of health risks to sanitation workers. Despite these potential benefits and preliminary usage of UAVs for disinfection, there has been little research into their design and effectiveness. In this work we present an autonomous UAV capable of effectively disinfecting surfaces. We identify relevant parameters such as disinfectant concentration, amount, and application distance required of the UAV to sterilize high touch surfaces such as door handles. Finally, we develop a robotic system that enables the fully autonomous disinfection of door handles in an unstructured, previously unknown environment. To our knowledge, this is the smallest untethered UAV ever built with both full autonomy and spraying capabilities, allowing it to operate in confined indoor settings, and the first autonomous UAV to specifically target high touch surfaces on an individual basis with spray disinfectant, resulting in more efficient use of disinfectant.},
   month    = aug,
-  keywords     = {press},
+  url      = {https://arxiv.org/pdf/2108.11456.pdf},
   owner        = {blandry},
   timestamp    = {2021-08-21},
 }
@@ -4099,7 +4108,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 
 @Article{ChenMillerEtAl2021,
   author       = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
-  title        = {ReachBot: A Small Robot with Exceptional Reach for Rough Terrain},
+  title        = {{ReachBot:} {A} Small Robot with Exceptional Reach for Rough Terrain},
   journal      = jrn_IEEE_RAL,
   year         = {2022},
   note         = {Submitted},
@@ -4107,7 +4116,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   url      = {/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf},
   keywords     = {sub},
   owner        = {bylard},
-  timestamp    = {2021-09-19},
+  timestamp    = {2021-11-04},
 }
 
 @Article{Wollenstein-BetechSalazarEtAl2022,
@@ -4162,17 +4171,30 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 }
 
 @Inproceedings{SchneiderBylardEtAl2022,
-  author    = {Schneider, S. and Bylard, A. and Chen, T. G. and Wang, P. and Cutkosky, M. R. and Pavone, M.},
-  title     = {ReachBot: A Small Robot for Large Mobile Manipulation Tasks},
-  booktitle = proc_IEEE_AC,
-  year      = {2022},
+  author       = {Schneider, S. and Bylard, A. and Chen, T. G. and Wang, P. and Cutkosky, M. R. and Pavone, M.},
+  title        = {{ReachBot:} {A} Small Robot for Large Mobile Manipulation Tasks},
+  booktitle    = proc_IEEE_AC,
+  year         = {2022},
+  note         = {Submitted},
   abstract = {Robots are widely deployed in space environments because of their versatility and robustness. However, adverse gravity conditions and challenging terrain geometry expose the limitations of traditional robot designs, which are often forced to sacrifice one of mobility or manipulation capabilities to attain the other. Prospective climbing operations in these environments reveals a need for small, compact robots capable of versatile mobility and manipulation. We propose a novel robotic concept called ReachBot that fills this need by combining two existing technologies: extendable booms and mobile manipulation. ReachBot leverages the reach and tensile strength of extendable booms to achieve an outsized reachable workspace and wrench capability. Through their lightweight, compactable structure, these booms also reduce mass and complexity compared to traditional rigid-link articulated-arm designs. Using these advantages, ReachBot excels in mobile manipulation missions in low gravity or that require climbing, particularly when anchor points are sparse. After introducing the ReachBot concept, we discuss modeling approaches and strategies for increasing stability and robustness. We then develop a 2D analytical model for ReachBot’s dynamics inspired by grasp models for dexterous manipulators. Next, we introduce a waypoint-tracking controller for a planar ReachBot in microgravity. Our simulation results demonstrate the controller’s robustness to disturbances and modeling error. Finally, we briefly discuss next steps that build on these initially promising results to realize the full potential of ReachBot.},
-  url   = {https://arxiv.org/abs/2110.10829},
-  owner     = {schneids},
-  timestamp = {2021-10-21},
+  address  = {Big Sky, Montana},
+  month    = mar,
+  url      = {https://arxiv.org/abs/2110.10829},
+  keywords     = {sub},
+  owner        = {schneids},
+  timestamp    = {2021-11-04},
 }
 
+@Article{ChenCauligiEtAl2021,
+  author    = {Chen, T. G. and Cauligi, A. and Suresh, S. A. and Pavone, M. and Cutkosky, M. R.},
+  title     = {Testing Gecko-Inspired Adhesives with {Astrobee} Aboard the {ISS}},
+  journal   = jrn_IEEE_RAM,
+  year      = {2021},
+  keywords  = {sub},
+  owner     = {acauligi},
+  timestamp = {2021-11-02},
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished] opt[;note]}
