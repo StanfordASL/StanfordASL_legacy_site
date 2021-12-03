@@ -3,11 +3,12 @@ layout: person
 title:  "Navid Azizan"
 last:   "Azizan"
 date:   2021-05-20 00:00:00 -0700
-position: postdoc
+position: alumni
 excerpt: "Control meets learning"
 img: NavidAzizan.jpg
 email: azizan@stanford.edu
-website: www.caltech.edu/~nazizanr
+website: azizan.mit.edu
+current: "Massachusetts Institute of Technology"
 ---
 
 Dr. Navid Azizan is a Postdoctoral Scholar in ASL at Stanford, and an incoming Assistant Professor at MIT with dual appointments in the Department of Mechanical Engineering and the Institute for Data, Systems, and Society (IDSS). 

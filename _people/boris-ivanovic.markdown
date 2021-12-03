@@ -3,11 +3,12 @@ layout: person
 title:  "Boris Ivanovic"
 last:   "Ivanovic"
 date:   2018-05-19 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Deep learning and robotics"
 img: BorisIvanovic.jpg
 email: borisi@stanford.edu
 website: www.borisivanovic.com
+current: "NVIDIA Research"
 ---
 
 Boris Ivanovic is a Ph.D. student in the Aeronautics and Astronautics Department. He obtained a Master's in Computer Science from Stanford in 2018, specializing in Artificial Intelligence (AI). Prior to joining Stanford, he obtained a Bachelor’s of Applied Science with high honors in 2016 from the University of Toronto's rigorous Engineering Science program, majoring in Electrical and Computer Engineering with a Robotics/Mechatronics minor.

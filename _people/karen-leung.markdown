@@ -3,10 +3,11 @@ layout: person
 title:  "Karen Leung"
 last:   "Leung"
 date:   2017-03-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Formal methods for safe robot planning"
 img: KarenLeung.jpg
 email: karenl7@stanford.edu
+current: "University of Washington (via NVIDIA Research)"
 ---
 
 Karen Leung is a Ph.D. candidate in the Aeronautics & Astronautics department, where she also received her Master's degree in 2017. Prior to her studies at Stanford, Karen graduated from the University of Sydney with a Bachelor of Engineering and Bachelor of Science with First Class Honors in 2014, majoring in Aeronautical (Space) and Mathematics (Advanced). She also held a summer internship at Toyota Research Institute.
