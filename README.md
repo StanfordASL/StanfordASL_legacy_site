@@ -15,6 +15,17 @@ To develop, **you must do your work on the `source` branch**. `master` is autoge
 git checkout source
 ```
 
+Additional **high-level** commands include
+```shell
+rake preview # <- asks jekyll to build the site and host it locally 
+```
+Additional **low-level** commands include
+```shell
+rake check # <- checks whether the local repo is up to date
+rake build # <- asks jekyll to build the site from its source
+rake deploy # <- copies generated website from source to master
+```
+
 ## Publishing the Website
 When you've made the desired changes and are in the `source` branch, simply execute:
 ```shell
@@ -22,4 +33,4 @@ rake publish
 ```
 This will rebuild the site, commit your changes to the `source` branch, and deploy the generated site (located in `_site`) to the `master` branch. GitHub Pages will pick up on this change and update `stanfordasl.github.io` with the new changes.
 
-**NOTE**: This GitHub Pages link is the where the `asl.stanford.edu` and `asl-origin.stanford.edu` proxies point to, so this repository and the corresponding GitHub Page is the "actual" website.
+**NOTE**: This GitHub Pages link is where the `asl.stanford.edu` and `asl-origin.stanford.edu` proxies point to, so this repository and the corresponding GitHub Page is the "actual" website.
