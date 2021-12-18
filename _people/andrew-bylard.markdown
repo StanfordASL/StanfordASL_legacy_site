@@ -3,7 +3,7 @@ layout: person
 title:  "Andrew Bylard"
 last:   "Bylard"
 date:   2017-09-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Leveraging geometric structure for reactive control and robot motion planning"
 img: AndrewBylard.jpg
 email: bylard@stanford.edu

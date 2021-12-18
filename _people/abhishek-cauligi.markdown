@@ -3,7 +3,7 @@ layout: person
 title:  "Abhishek Cauligi"
 last:   "Cauligi"
 date:   2017-09-01 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Trajectory optimization and optimal control for robotic systems"
 img: AbhishekCauligi.png
 email: acauligi@stanford.edu
