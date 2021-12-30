@@ -248,7 +248,7 @@
  
 
 
-<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> <i>IEEE Robotics and Automation Letters</i>, Jan. 2019. (In Press)</span> 
+<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> <i>IEEE Robotics and Automation Letters</i>, Jan. 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IchterPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterPavone2019','abstract')">Abstract</a>]</p>
 <span id="abs_IchterPavone2019" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system’s states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.</p>
@@ -259,10 +259,8 @@
   title = {Robot Motion Planning in Learned Latent Spaces},
   journal = {{IEEE Robotics and Automation Letters}},
   year = {2019},
-  note = {In Press},
   month = jan,
   url = {https://arxiv.org/abs/1807.10366},
-  keywords = {press},
   owner = {ichter},
   timestamp = {2019-02-01}
 }
@@ -270,7 +268,34 @@
 </span>
 <!-- <span id="key_IchterPavone2019" >
 	<b>Keywords</b>:
-	press
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="Ichter2018">B. Ichter, <a class="entry-title" href="https://stacks.stanford.edu/file/druid:xm179nc3440/IchterSubmitPhD-augmented.pdf">“Massive Parallelism and Sampling Strategies for Robust and Real-Time Robotic Motion Planning,”</a> PhD thesis, Stanford University, Dept. of Aeronautics and Astronautics, Stanford, California, 2018.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('Ichter2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Ichter2018','abstract')">Abstract</a>]</p>
+<span id="abs_Ichter2018" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Motion planning is a fundamental problem in robotics, whereby one seeks to compute a low-cost trajectory from an initial state to a goal region that avoids any obstacles. Sampling-based motion planning algorithms have emerged as an effective paradigm for planning with complex, high-dimensional robotic systems. These algorithms maintain only an implicit representation of the state space, constructed by sampling the free state space and locally connecting samples (under the supervision of a collision checking module). This thesis presents approaches towards enabling real-time and robust sampling-based motion planning with improved sampling strategies and massive parallelism. In the first part of this thesis, we discuss algorithms to leverage massively parallel hardware (GPUs) to accelerate planning and to consider robustness during the planning process. We present an algorithm capable of planning at rates amenable to application within control loops,  10 ms. This algorithm uses approximate dynamic programming to explore the state space in a massively-parallel, near-optimal manner. We further present two algorithms capable of real-time, uncertainty-aware and perception-aware motion planning that exhaustively explore the state space via a multiobjective search. This search identifies a Pareto set of promising paths (in terms of cost and robustness) and certifies their robustness via Monte Carlo methods. We demonstrate the effectiveness of these algorithm in numerical simulations and a physical experiment on a quadrotor. In the second part of this thesis, we examine sampling-strategies for probing the state space; traditionally this has been uniform, independent, and identically distributed (i.i.d.) random points. We present a methodology for biasing the sample distribution towards regions of the state space in which the solution trajectory is likely to lie. This distribution is learned via a conditional variational autoencoder, allowing a general methodology, which can be used in combination with any samplingbased planner and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. We also analyze the use of deterministic, low-dispersion samples instead of i.i.d. random points. We show that this allows deterministic asymptotic optimality (as opposed to probabilistic), a convergence rate bound in terms of the sample dispersion, reduced computational complexity, and improved practical performance. The technical approaches in this work are applicable to general robotic systems and lay the foundations of robustness and algorithmic speed required for robotic systems operating in the world.</p>
+</span>
+<span id="bib_Ichter2018" class="bibtex noshow">
+	<pre>@phdthesis{Ichter2018,
+  author = {Ichter, B.},
+  title = {Massive Parallelism and Sampling Strategies for Robust and Real-Time Robotic Motion Planning},
+  school = {{Stanford University, Dept. of Aeronautics and Astronautics}},
+  year = {2018},
+  address = {Stanford, California},
+  month = sep,
+  url = {https://stacks.stanford.edu/file/druid:xm179nc3440/IchterSubmitPhD-augmented.pdf},
+  owner = {bylard},
+  timestamp = {2021-12-06}
+}
+</pre>
+</span>
+<!-- <span id="key_Ichter2018" >
+	<b>Keywords</b>:
+	
 </span> --></li>
 <li>
  

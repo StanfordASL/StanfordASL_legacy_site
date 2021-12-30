@@ -247,7 +247,7 @@
  
 
 
-<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, 2020. (In Press)</span> 
+<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghRichardsEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghRichardsEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_SinghRichardsEtAl2020" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key contribution is a control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, a constraint which guarantees the existence of robust tracking controllers for arbitrary open-loop trajectories generated with the learned system. Leveraging tools from contraction theory and statistical learning in reproducing kernel Hilbert spaces, we formulate stabilizable dynamics learning as a functional optimization with a convex objective and bi-convex functional constraints. Under a mild structural assumption and relaxation of the functional constraints to sampling-based constraints, we derive the optimal solution with a modified representer theorem. Finally, we utilize random matrix feature approximations to reduce the dimensionality of the search parameters and formulate an iterative convex optimization algorithm that jointly fits the dynamics functions and searches for a certificate of stabilizability. We validate the proposed algorithm in simulation for a planar quadrotor, and on a quadrotor hardware testbed emulating planar dynamics. We verify, both in simulation and on hardware, significantly improved trajectory generation and tracking performance with the control-theoretic regularized model over models learned using traditional regression techniques, especially when learning from small supervised datasets. The results support the conjecture that the use of stabilizability constraints as a form of regularization can help prune the hypothesis space in a manner that is tailored to the downstream task of trajectory generation and feedback control. This produces models that are not only dramatically better conditioned, but also data efficient.</p>
@@ -258,9 +258,7 @@
   title = {Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization},
   journal = {{Int. Journal of Robotics Research}},
   year = {2020},
-  note = {In Press},
   url = {/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf},
-  keywords = {press},
   owner = {ssingh19},
   timestamp = {2020-03-25}
 }
@@ -268,7 +266,34 @@
 </span>
 <!-- <span id="key_SinghRichardsEtAl2020" >
 	<b>Keywords</b>:
-	press
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="Singh2019">S. Singh, <a class="entry-title" href="https://stacks.stanford.edu/file/druid:pr731qc2534/Singh-PhD-augmented.pdf">“Robust Control, Planning, and Inference for Safe Robot Autonomy,”</a> PhD thesis, Stanford University, Dept. of Aeronautics and Astronautics, Stanford, California, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('Singh2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Singh2019','abstract')">Abstract</a>]</p>
+<span id="abs_Singh2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Integrating autonomous robots into safety-critical settings requires reasoning about uncertainty at all levels of the autonomy stack. This thesis presents novel algorithmic tools for imbuing robustness within two hierarchically complementary areas, namely: motion planning and decision-making. In Part I of the thesis, by harnessing the theories of contraction and semi-infinite convex optimization and the computational tool of sum-of-squares programming, we present a unified framework for robust real-time motion planning for complex underactuated nonlinear systems. Broadly, the approach entails pairing open-loop motion planning algorithms that neglect uncertainty and are optimized for generating trajectories for simple kinodynamic models in real-time, with robust nonlinear trajectory-tracking feedback controllers. We demonstrate how to systematically synthesize these controllers and integrate them within planning to generate and execute certifiably safe trajectories that are robust to the closed-loop effects of disturbances and planning with simplified models. In Part II of the thesis, we demonstrate how to embed the control-theoretic advancements developed in Part I as constraints within a novel semi-supervised algorithm for learning dynamical systems from user demonstrations. The constraints act as a form of context-driven hypothesis pruning to yield learned models that jointly balance regression performance and stabilizability, ultimately resulting in generated trajectories for the robot that are conditioned for feedback control. Experimental results on a quadrotor testbed illustrate the efficacy of the proposed algorithms in Parts I and II of the thesis, and clear connections between theory and hardware. Finally, in Part III of the thesis, we describe a framework for lifting notions of robustness from lowlevel motion planning to higher-level sequential decision-making using the theory of risk measures. Leveraging a class of risk measures with favorable axiomatic foundations, we demonstrate how to formulate decision-making algorithms with tunable robustness properties. In particular, we focus on a novel application of this framework to inverse reinforcement learning where we learn predictive motion models for humans in safety-critical scenarios, and illustrate their effectiveness within a commercial driving simulator featuring humans in-the-loop. The contributions within this thesis constitute an important step towards endowing modern robotic systems with the ability to systematically and hierarchically reason about safety and efficiency in the face of uncertainty, which is crucial for safety-critical applications</p>
+</span>
+<span id="bib_Singh2019" class="bibtex noshow">
+	<pre>@phdthesis{Singh2019,
+  author = {Singh, S.},
+  title = {Robust Control, Planning, and Inference for Safe Robot Autonomy},
+  school = {{Stanford University, Dept. of Aeronautics and Astronautics}},
+  year = {2019},
+  address = {Stanford, California},
+  month = aug,
+  url = {https://stacks.stanford.edu/file/druid:pr731qc2534/Singh-PhD-augmented.pdf},
+  owner = {bylard},
+  timestamp = {2021-12-06}
+}
+</pre>
+</span>
+<!-- <span id="key_Singh2019" >
+	<b>Keywords</b>:
+	
 </span> --></li>
 <li>
  
@@ -328,7 +353,7 @@
  
 
 
-<span class="entry" id="SinghSindhwaniEtAl2018">S. Singh, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00113">“Learning Stabilizable Dynamical Systems via Control Contraction Metrics,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<span class="entry" id="SinghSindhwaniEtAl2018">S. Singh, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00113">“Learning Stabilizable Dynamical Systems via Control Contraction Metrics,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghSindhwaniEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghSindhwaniEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_SinghSindhwaniEtAl2018" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key idea is to develop a new control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, which guarantees that the learnt system can be accompanied by a robust controller capable of stabilizing any trajectory that the system can generate. By leveraging tools from contraction theory, statistical learning, and convex optimization, we provide a general and tractable algorithm to learn stabilizable dynamics, which can be applied to complex underactuated systems. We validate the proposed algorithm on a simulated planar quadrotor system and observe that the control-theoretic regularized dynamics model is able to consistently generate and accurately track reference trajectories whereas the model learnt using standard regression techniques, e.g., ridge-regression (RR) does extremely poorly on both tasks. Furthermore, in aggressive flight regimes with high velocity and bank angle, the tracking controller fails to stabilize the trajectory generated by the ridge-regularized model whereas no instabilities were observed using the control-theoretic learned model, even with a small number of demonstration examples. The results presented illustrate the need to infuse standard model-based reinforcement learning algorithms with concepts drawn from nonlinear control theory for improved reliability.</p>
@@ -342,7 +367,6 @@
   address = {Merida, Mexico},
   month = oct,
   url = {https://arxiv.org/abs/1808.00113},
-  keywords = {press},
   owner = {ssingh19},
   timestamp = {2019-07-27}
 }
@@ -350,13 +374,13 @@
 </span>
 <!-- <span id="key_SinghSindhwaniEtAl2018" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<span class="entry" id="SinghChenEtAl2018">S. Singh, M. Chen, S. L. Herbert, C. J. Tomlin, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1808.00649">“Robust Tracking with Model Mismatch for Fast and Safe Planning: an SOS Optimization Approach,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghChenEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChenEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_SinghChenEtAl2018" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> In the pursuit of real-time motion planning, a commonly adopted practice is to compute a trajectory by running a planning algorithm on a simplified, low-dimensional dynamical model, and then employ a feedback tracking controller that tracks such a trajectory by accounting for the full, high-dimensional system dynamics. While this strategy of planning with model mismatch generally yields fast computation times, there are no guarantees of dynamic feasibility, which hampers application to safety-critical systems. Building upon recent work that addressed this problem through the lens of Hamilton-Jacobi (HJ) reachability, we devise an algorithmic framework whereby one computes, offline, for a pair of "planner" (i.e., low-dimensional) and "tracking" (i.e., high-dimensional) models, a feedback tracking controller and associated tracking bound. This bound is then used as a safety margin when generating motion plans via the low-dimensional model. Specifically, we harness the computational tool of sum-of-squares (SOS) programming to design a bilinear optimization algorithm for the computation of the feedback tracking controller and associated tracking bound. The algorithm is demonstrated via numerical experiments, with an emphasis on investigating the trade-off between the increased computational scalability afforded by SOS and its intrinsic conservativeness. Collectively, our results enable scaling the appealing strategy of planning with model mismatch to systems that are beyond the reach of HJ analysis, while maintaining safety guarantees.</p>
@@ -370,7 +394,6 @@
   address = {Merida, Mexico},
   month = oct,
   url = {https://arxiv.org/abs/1808.00649},
-  keywords = {press},
   owner = {ssingh19},
   timestamp = {2019-07-27}
 }
@@ -378,7 +401,7 @@
 </span>
 <!-- <span id="key_SinghChenEtAl2018" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
@@ -436,7 +459,7 @@
  
 
 
-<span class="entry" id="SinghLacotteEtAl2018">S. Singh, J. Lacotte, A. Majumdar, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1711.10055.pdf">“Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 13, pp. 1713–1740, 2018. (In Press)</span> 
+<span class="entry" id="SinghLacotteEtAl2018">S. Singh, J. Lacotte, A. Majumdar, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1711.10055.pdf">“Risk-sensitive Inverse Reinforcement Learning via Semi- and Non-Parametric Methods,”</a> <i>Int. Journal of Robotics Research</i>, vol. 37, no. 13, pp. 1713–1740, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghLacotteEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghLacotteEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_SinghLacotteEtAl2018" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for a human’s risk sensitivity. To this end, we propose a flexible class of models based on coherent risk measures, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient non-parametric algorithms based on linear programming and semi-parametric algorithms based on maximum likelihood for inferring a human’s underlying risk measure and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively, especially in scenarios where catastrophic outcomes such as collisions can occur.</p>
@@ -451,7 +474,6 @@
   pages = {1713--1740},
   year = {2018},
   url = {https://arxiv.org/pdf/1711.10055.pdf},
-  keywords = {press},
   owner = {ssingh19},
   timestamp = {2019-08-21}
 }
@@ -459,13 +481,13 @@
 </span>
 <!-- <span id="key_SinghLacotteEtAl2018" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="SinghChowEtAl2018b">S. Singh, Y.-L. Chow, A. Majumdar, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1703.01029.pdf">“A Framework for Time-Consistent, Risk-Sensitive Model Predictive Control: Theory and Algorithms,”</a> <i>IEEE Transactions on Automatic Control</i>, vol. 64, no. 7, pp. 2905–2912, 2018. (In Press)</span> 
+<span class="entry" id="SinghChowEtAl2018b">S. Singh, Y.-L. Chow, A. Majumdar, and M. Pavone, <a class="entry-title" href="http://arxiv.org/pdf/1703.01029.pdf">“A Framework for Time-Consistent, Risk-Sensitive Model Predictive Control: Theory and Algorithms,”</a> <i>IEEE Transactions on Automatic Control</i>, vol. 64, no. 7, pp. 2905–2912, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghChowEtAl2018b','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghChowEtAl2018b','abstract')">Abstract</a>]</p>
 <span id="abs_SinghChowEtAl2018b" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> In this paper we present a framework for risk-sensitive model predictive control (MPC) of linear systems affected by stochastic multiplicative uncertainty. Our key innovation is to consider a time-consistent, dynamic risk evaluation of the cumulative cost as the objective function to be minimized. This framework is axiomatically justified in terms of time-consistency of risk assessments, is amenable to dynamic optimization, and is unifying in the sense that it captures a full range of risk preferences from risk-neutral (i.e., expectation) to worst case. Within this framework, we propose and analyze an online risk-sensitive MPC algorithm that is provably stabilizing. Furthermore, by exploiting the dual representation of time-consistent, dynamic risk measures, we cast the computation of the MPC control law as a convex optimization problem amenable to real-time implementation. Simulation results are presented and discussed.</p>
@@ -481,7 +503,6 @@
   year = {2018},
   note = {{Extended version available at:} \url{http://arxiv.org/abs/1703.01029}},
   url = {http://arxiv.org/pdf/1703.01029.pdf},
-  keywords = {press},
   owner = {ssingh19},
   timestamp = {2019-07-29}
 }
@@ -489,7 +510,7 @@
 </span>
 <!-- <span id="key_SinghChowEtAl2018b" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
