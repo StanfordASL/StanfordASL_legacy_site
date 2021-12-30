@@ -239,7 +239,60 @@
  
 
 
-<span class="entry" id="SchilligerEtAl2021">J. Schilliger, T. Lew, S. M. Richards, S. Hanggi, M. Pavone, and C. Onder, <a class="entry-title" href="https://arxiv.org/abs/2104.14250">“Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC,”</a> <i>IEEE Robotics and Automation Letters</i>, Aug. 2021. (In Press)</span> 
+<span class="entry" id="ThorpeLewEtAl2021">A. J. Thorpe, T. Lew, M. M. K. Oishi, and M. Pavone, <a class="entry-title" href="">“Data-Driven Chance Constrained Control using Kernel Distribution Embeddings,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ThorpeLewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ThorpeLewEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_ThorpeLewEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a data-driven algorithm for efficiently computing stochastic control policies for general joint chance constrained optimal control problems. Our approach leverages the theory of kernel distribution embeddings, which allows representing expectation operators as inner products in a reproducing kernel Hilbert space. This framework enables approximately reformulating the original problem using a dataset of observed trajectories from the system without imposing prior assumptions on the parameterization of the system dynamics or the structure of the uncertainty. By optimizing over a finite subset of stochastic open-loop control trajectories, we relax the original problem to a linear program over the control parameters that can be efficiently solved using standard convex optimization techniques. We demonstrate our proposed approach in simulation on a system with nonlinear non-Markovian dynamics navigating in a cluttered environment.</p>
+</span>
+<span id="bib_ThorpeLewEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{ThorpeLewEtAl2021,
+  author = {Thorpe, A.~J. and Lew, T. and Oishi, M.~M.~K. and Pavone, M.},
+  title = {Data-Driven Chance Constrained Control using Kernel Distribution Embeddings},
+  year = {2021},
+  note = {Submitted},
+  month = dec,
+  keywords = {sub},
+  owner = {lew},
+  timestamp = {2021-12-13}
+}
+</pre>
+</span>
+<!-- <span id="key_ThorpeLewEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewJansonEtAl2021">T. Lew, L. Janson, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2112.05745">“A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewJansonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewJansonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LewJansonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their ε-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an ε-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.</p>
+</span>
+<span id="bib_LewJansonEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{LewJansonEtAl2021,
+  author = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
+  title = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
+  year = {2021},
+  note = {Submitted},
+  month = dec,
+  url = {https://arxiv.org/abs/2112.05745},
+  keywords = {sub},
+  owner = {lew},
+  timestamp = {2021-12-13}
+}
+</pre>
+</span>
+<!-- <span id="key_LewJansonEtAl2021" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SchilligerEtAl2021">J. Schilliger, T. Lew, S. M. Richards, S. Hanggi, M. Pavone, and C. Onder, <a class="entry-title" href="https://arxiv.org/abs/2104.14250">“Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC,”</a> <i>IEEE Robotics and Automation Letters</i>, Aug. 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SchilligerEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchilligerEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_SchilligerEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Tractable safety-ensuring algorithms for cyber-physical systems are important in critical applications. Approaches based on Control Barrier Functions assume continuous enforcement, which is not possible in an online fashion. This paper presents two tractable algorithms to ensure forward invariance of discrete-time controlled cyber-physical systems. Both approaches are based on Control Barrier Functions to provide strict mathematical safety guarantees. The first algorithm exploits Lipschitz continuity and formulates the safety condition as a robust program which is subsequently relaxed to a set of affine conditions. The second algorithm is inspired by tube-NMPC and uses an affine Control Barrier Function formulation in conjunction with an auxiliary controller to guarantee safety of the system. We combine an approximate NMPC controller with the second algorithm to guarantee strict safety despite approximated constraints and show its effectiveness experimentally on a mini-Segway.</p>
@@ -250,10 +303,8 @@
   title = {Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC},
   journal = {{IEEE Robotics and Automation Letters}},
   year = {2021},
-  note = {In Press},
   month = aug,
   url = {https://arxiv.org/abs/2104.14250},
-  keywords = {press},
   owner = {lew},
   timestamp = {2021-08-23}
 }
@@ -261,7 +312,7 @@
 </span>
 <!-- <span id="key_SchilligerEtAl2021" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
@@ -281,7 +332,7 @@
   month = jun,
   url = {https://arxiv.org/abs/2106.09125},
   keywords = {sub},
-  owner = {lewt},
+  owner = {lew},
   timestamp = {2021-06-18}
 }
 </pre>
@@ -308,7 +359,7 @@
   month = mar,
   url = {https://arxiv.org/pdf/2008.11700.pdf},
   keywords = {sub},
-  owner = {lewt},
+  owner = {lew},
   timestamp = {2021-03-05}
 }
 </pre>
@@ -388,7 +439,7 @@
   year = {2020},
   month = aug,
   url = {https://arxiv.org/abs/2008.10180},
-  owner = {lewt},
+  owner = {lew},
   timestamp = {2020-11-07}
 }
 </pre>

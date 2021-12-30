@@ -90,6 +90,9 @@
 @String { ios_univ_Rutgers          = {{Rutgers University}} }
 @String { ios_univ_Stanford         = {{Stanford University}} }
 @String{ios_univ_Stanford_AA         = {{Stanford University, Dept. of Aeronautics and Astronautics}}}
+@String{ios_univ_Stanford_CEE          = {{Stanford University, Inst. for Civil and Environmental Engineering}}}
+@String{ios_univ_Stanford_ICME         = {{Stanford University, Inst. for Computational \& Mathematical Engineering}}}
+@String{ios_univ_Stanford_ME           = {{Stanford University, Dept. of Mechanical Engineering}}}
 @String { ios_univ_Technion         = {{Technion -- Israel Inst. of Technology}} }
 @String { ios_univ_Technion_CIS     = {{Center for Intelligent Systems, Technion}} }
 @String { ios_univ_Tennessee        = {{The Univ. of Tennessee}} }
@@ -2384,11 +2387,9 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Analysis, Control, and Evaluation of Mobility-on-Demand Systems: a Queueing-Theoretical Approach},
   journal      = jrn_IEEE_TCNS,
   year         = {2018},
-  note         = {In Press},
   abstract = {This paper presents a queueing-theoretical approach to the analysis, control, and evaluation of mobility-on-demand (MoD) systems for urban personal transportation. A MoD system consists of a fleet of vehicles providing one-way car sharing service and a team of drivers to rebalance such vehicles. The drivers then rebalance themselves by driving select customers similar to a taxi service. We model the MoD system as two coupled closed Jackson networks with passenger loss. We show that the system can be approximately balanced by solving two decoupled linear programs and exactly balanced through nonlinear optimization. The rebalancing techniques are applied to a system sizing example using taxi data in three neighborhoods of Manhattan. Lastly, we formulate a real-time closed-loop rebalancing policy for drivers and perform case studies of two hypothetical MoD systems in Manhattan and Hangzhou, China. We show that the taxi demand in Manhattan can be met with the same number of vehicles in a MoD system, but only require 1/3 to 1/4 the number of drivers; in Hangzhou, where customer demand is highly unbalanced, higher driver-to-vehicle ratios are required to achieve good quality of service.},
   doi      = {10.1109/TCNS.2018.2800403},
   url      = {/wp-content/papercite-data/pdf/Zhang.Rossi.Pavone.TCNS18.pdf},
-  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2017-12-30},
 }
@@ -2421,7 +2422,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   year         = {2018},
   abstract = {The literature on Inverse Reinforcement Learning (IRL) typically assumes that humans take actions in order to minimize the expected value of a cost function, i.e., that humans are risk neutral. Yet, in practice, humans are often far from being risk neutral. To fill this gap, the objective of this paper is to devise a framework for risk-sensitive IRL in order to explicitly account for a human's risk sensitivity. To this end, we propose a flexible class of models based on coherent risk measures, which allow us to capture an entire spectrum of risk preferences from risk-neutral to worst-case. We propose efficient non-parametric algorithms based on linear programming and semi-parametric algorithms based on maximum likelihood for inferring a human's underlying risk measure and cost function for a rich class of static and dynamic decision-making settings. The resulting approach is demonstrated on a simulated driving game with ten human participants. Our method is able to infer and mimic a wide range of qualitatively different driving styles from highly risk-averse to risk-neutral in a data-efficient manner. Moreover, comparisons of the Risk-Sensitive (RS) IRL approach with a risk-neutral model show that the RS-IRL framework more accurately captures observed participant behavior both qualitatively and quantitatively, especially in scenarios where catastrophic outcomes such as collisions can occur.},
   url      = {https://arxiv.org/pdf/1711.10055.pdf},
-  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2019-08-21},
 }
@@ -2458,12 +2458,10 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Review of Multi-Agent Algorithms for Collective Behavior: a Structural Taxonomy},
   booktitle    = proc_IFAC_NAASS,
   year         = {2018},
-  note         = {In Press},
   abstract = {In this paper, we review multi-agent collective behavior algorithms in the literature and classify them according to their underlying mathematical structure. For each mathematical technique, we identify the multi-agent coordination tasks it can be applied to, and we analyze its scalability, bandwidth use, and demonstrated maturity. We highlight how versatile techniques such as artificial potential functions can be used for applications ranging from low-level position control to high-level coordination and task allocation, we discuss possible reasons for the slow adoption of complex distributed coordination algorithms in the field, and we highlight areas for further research and development.},
   address  = {Santa Fe, New Mexico},
   month    = jun,
   url      = {https://arxiv.org/abs/1803.05464},
-  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2018-02-01},
 }
@@ -2572,7 +2570,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   address  = {Maui, Hawaii},
   month    = nov,
   url      = {https://arxiv.org/pdf/1804.11278.pdf},
-  keywords     = {press},
   owner        = {frossi2},
   timestamp    = {2019-07-02},
 }
@@ -2588,7 +2585,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   note         = {{Extended version available at:} \url{http://arxiv.org/abs/1703.01029}},
   abstract = {In this paper we present a framework for risk-sensitive model predictive control (MPC) of linear systems affected by stochastic multiplicative uncertainty. Our key innovation is to consider a time-consistent, dynamic risk evaluation of the cumulative cost as the objective function to be minimized. This framework is axiomatically justified in terms of time-consistency of risk assessments, is amenable to dynamic optimization, and is unifying in the sense that it captures a full range of risk preferences from risk-neutral (i.e., expectation) to worst case. Within this framework, we propose and analyze an online risk-sensitive MPC algorithm that is provably stabilizing. Furthermore, by exploiting the dual representation of time-consistent, dynamic risk measures, we cast the computation of the MPC control law as a convex optimization problem amenable to real-time implementation. Simulation results are presented and discussed.},
   url      = {http://arxiv.org/pdf/1703.01029.pdf},
-  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2019-07-29},
 }
@@ -2616,7 +2612,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   address  = {Pittsburgh, Pennsylvania},
   month    = jun,
   url      = {https://arxiv.org/pdf/1804.05804.pdf},
-  keywords     = {press},
   owner        = {bylard},
   timestamp    = {20180412},
 }
@@ -2631,12 +2626,12 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2018-07-24},
 }
 
-@InProceedings{TsaoIglesiasEtAl2018,
+@Inproceedings{TsaoIglesiasEtAl2018,
   author       = {Tsao, M. and Iglesias, R. and Pavone, M.},
   title        = {Stochastic Model Predictive Control for Autonomous Mobility on Demand},
   booktitle    = proc_IEEE_ITSC,
   year         = {2018},
-  note         = {In Press. {Extended Version, Available} at \url{https://arxiv.org/pdf/1804.11074}},
+  note         = {{Extended Version, Available} at \url{https://arxiv.org/pdf/1804.11074}},
   abstract = {This paper presents a stochastic, model predictive control (MPC) algorithm that leverages short-term proba- bilistic forecasts for dispatching and rebalancing Autonomous Mobility-on-Demand systems (AMoD), i.e. fleets of self-driving vehicles. We first present the core stochastic optimization problem in terms of a time-expanded network flow model. Then, to ameliorate its tractability, we present two key relaxations. First, we replace the original stochastic problem with a Sample Average Approximation, and provide its performance guaran- tees. Second, we divide the controller into two submodules. The first submodule assigns vehicles to existing customers and the second redistributes vacant vehicles throughout the city. This enables the problem to be solved as two totally unimodular linear programs, allowing the controller to scale to large problem sizes. Finally, we test the proposed algorithm in two scenarios based on real data and show that it outperforms prior state-of-the-art algorithms. In particular, in a simulation using customer data from the ridesharing company DiDi Chuxing, the algorithm presented here exhibits a 62.3 percent reduction in customer waiting time compared to state of the art non- stochastic algorithms.},
   address  = {Maui, Hawaii},
   month    = nov,
@@ -2672,7 +2667,7 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2020-11-09},
 }
 
-@InProceedings{HarrisonSharmaEtAl2018,
+@Inproceedings{HarrisonSharmaEtAl2018,
   author       = {Harrison, J. and Sharma, A. and Pavone, M.},
   title        = {Meta-Learning Priors for Efficient Online Bayesian Regression},
   booktitle    = proc_WAFR,
@@ -2681,7 +2676,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/pdf/1807.08912.pdf},
-  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2018-10-07},
 }
@@ -2708,7 +2702,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/abs/1808.00113},
-  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2019-07-27},
 }
@@ -2722,7 +2715,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   address  = {Merida, Mexico},
   month    = oct,
   url      = {https://arxiv.org/abs/1808.00649},
-  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2019-07-27},
 }
@@ -2805,12 +2797,11 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   timestamp    = {2019-02-02},
 }
 
-@InProceedings{SharmaHarrisonEtAl2019,
+@Inproceedings{SharmaHarrisonEtAl2019,
   author       = {Sharma, A. and Harrison, J. and Tsao, M. and Pavone, M.},
   title        = {Robust and Adaptive Planning under Model Uncertainty},
   booktitle    = proc_ICAPS,
   year         = {2019},
-  note         = {In Press},
   abstract = {Planning under model uncertainty is a fundamental problem across many applications of decision making and learning. In this paper, we propose the Robust Adaptive Monte Carlo Planning (RAMCP) algorithm, which allows computation of risk-sensitive Bayes-adaptive policies that optimally trade off exploration, exploitation, and robustness. RAMCP formulates the risk-sensitive planning problem as a two-player zero-sum game, in which an adversary perturbs the agent's belief over the models. We introduce two versions of the RAMCP algorithm. The first, RAMCP-F, converges to an optimal risk-sensitive policy without having to rebuild the search tree as the underlying belief over models is perturbed. The second version, RAMCP-I, improves computational efficiency at the cost of losing theoretical guarantees, but is shown to yield empirical results comparable to RAMCP-F. RAMCP is demonstrated on an n-pull multi-armed bandit problem, as well as a patient treatment scenario.},
   address  = {Berkeley, California},
   month    = jul,
@@ -2876,11 +2867,9 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Robot Motion Planning in Learned Latent Spaces},
   journal      = jrn_IEEE_RAL,
   year         = {2019},
-  note         = {In Press},
   abstract = {This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system's states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.},
   month    = jan,
   url      = {https://arxiv.org/abs/1807.10366},
-  keywords     = {press},
   owner        = {ichter},
   timestamp    = {2019-02-01},
 }
@@ -2893,11 +2882,9 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   number       = {2},
   pages        = {295--302},
   year         = {2021},
-  note         = {In Press},
   abstract = {Human behavior prediction models enable robots to anticipate how humans may react to their actions, and hence are instrumental to devising safe and proactive robot planning algorithms. However, modeling complex interaction dynamics and capturing the possibility of many possible outcomes in such interactive settings is very challenging, which has recently prompted the study of several different approaches. In this work, we provide a self-contained tutorial on a conditional variational autoencoder (CVAE) approach to human behavior prediction which, at its core, can produce a multimodal probability distribution over future human trajectories conditioned on past interactions and candidate robot future actions. Specifically, the goals of this tutorial paper are to review and build a taxonomy of state-of-the-art methods in human behavior prediction, from physics-based to purely data-driven methods, provide a rigorous yet easily accessible description of a data-driven, CVAE-based approach, highlight important design characteristics that make this an attractive model to use in the context of model-based planning for human-robot interactions, and provide important design considerations when using this class of models.},
   month    = apr,
   url      = {https://arxiv.org/abs/2008.03880},
-  keywords     = {press},
   owner        = {borisi},
   timestamp    = {2020-12-23},
 }
@@ -2973,7 +2960,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   url      = {https://ieeexplore.ieee.org/document/8894439},
   date         = {2019-04-14},
   journaltitle = {Special Issue 21st IEEE Intelligent Transportation Systems Conference (ITSC 2018)},
-  keywords     = {press},
   owner        = {samauro},
   timestamp    = {2019-11-11},
 }
@@ -3025,7 +3011,6 @@ The rebalancing techniques are applied to a system sizing example using taxi dat
   title        = {Joint Design and Control of Electric Vehicle Propulsion Systems},
   booktitle    = proc_EUCA_ECC,
   year         = {2020},
-  note         = {In press},
   abstract     = {This paper presents models and optimization methods for the design of electric vehicle propulsion systems.
 Specifically, we first derive a bi-convex model of a battery electric powertrain including the transmission and explicitly accounting for the impact of its components' size on the energy consumption of the vehicle.
 Second, we formulate the energy-optimal sizing and control problem for a given driving cycle and solve it as a sequence of second-order conic programs.
@@ -3035,7 +3020,6 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   address  = {St. Petersburg, Russia},
   month    = may,
   url      = {/wp-content/papercite-data/pdf/Verbruggen.Salazar.ea.ECC2020.pdf},
-  keywords     = {press},
   owner        = {samauro},
   timestamp    = {2020-02-27},
 }
@@ -3084,10 +3068,8 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   title        = {Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization},
   journal      = jrn_SAGE_IJRR,
   year         = {2020},
-  note         = {In Press},
   abstract = {We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key contribution is a control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, a constraint which guarantees the existence of robust tracking controllers for arbitrary open-loop trajectories generated with the learned system. Leveraging tools from contraction theory and statistical learning in reproducing kernel Hilbert spaces, we formulate stabilizable dynamics learning as a functional optimization with a convex objective and bi-convex functional constraints. Under a mild structural assumption and relaxation of the functional constraints to sampling-based constraints, we derive the optimal solution with a modified representer theorem. Finally, we utilize random matrix feature approximations to reduce the dimensionality of the search parameters and formulate an iterative convex optimization algorithm that jointly fits the dynamics functions and searches for a certificate of stabilizability. We validate the proposed algorithm in simulation for a planar quadrotor, and on a quadrotor hardware testbed emulating planar dynamics. We verify, both in simulation and on hardware, significantly improved trajectory generation and tracking performance with the control-theoretic regularized model over models learned using traditional regression techniques, especially when learning from small supervised datasets. The results support the conjecture that the use of stabilizability constraints as a form of regularization can help prune the hypothesis space in a manner that is tailored to the downstream task of trajectory generation and feedback control. This produces models that are not only dramatically better conditioned, but also data efficient.},
   url      = {/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf},
-  keywords     = {press},
   owner        = {ssingh19},
   timestamp    = {2020-03-25},
 }
@@ -3273,12 +3255,10 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   title        = {A Vehicle Coordination and Charge Scheduling Algorithm for Electric Autonomous Mobility-on-Demand Systems},
   booktitle    = proc_IEEE_ACC,
   year         = {2020},
-  note         = {In press},
   abstract = {This paper presents an algorithmic framework to optimize the operation of an Autonomous Mobility-on-Demand system whereby a centrally controlled fleet of electric self-driving vehicles provides on-demand mobility. In particular, we first present a mixed-integer linear program that captures the joint vehicle coordination and charge scheduling problem, accounting for the battery level of the single vehicles and the energy availability in the power grid. Second, we devise a heuristic algorithm to compute near-optimal solutions in polynomial time. Finally, we apply our algorithm to realistic case studies for Newport Beach, CA. Our results validate the near optimality of our method with respect to the global optimum, whilst suggesting that through vehicle-to-grid operation we can enable a 100% penetration of renewable energy sources and still provide a high-quality mobility service.},
   address  = {Denver, CO, United States},
   month    = jun,
   url      = {/wp-content/papercite-data/pdf/Boewing.ea.ACC20.pdf},
-  keywords     = {press},
   owner        = {samauro},
   timestamp    = {2020-03-19},
 }
@@ -3353,10 +3333,8 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   number       = {2},
   pages        = {542-554},
   year         = {2021},
-  note         = {In Press},
   abstract = {A number of prototypical optimization problems in multi-agent systems (e.g., task allocation and network load-sharing) exhibit a highly local structure: that is, each agent's decision variables are only directly coupled to few other agent's variables through the objective function or the constraints. In this paper, we develop a rigorous notion of "locality" that quantifies the degree to which agents can compute their portion of the global solution of such a distributed optimization problem based solely on information in their local neighborhood. We build upon the results of Rebeschini and Tatikonda (2019) to develop a more general theory of locality that fully captures the importance of problem data to individual solution components, as opposed to a theory that only captures response to perturbations. This analysis provides a theoretical basis for a rather simple algorithm in which agents individually solve a truncated sub-problem of the global problem, where the size of the sub-problem used depends on the locality of the problem, and the desired accuracy. Numerical results show that the proposed theoretical bounds are remarkably tight for well-conditioned problems.},
   url      = {/wp-content/papercite-data/pdf/Brown.Rossi.ea.TCNS20.pdf},
-  keywords     = {press},
   owner        = {rabrown1},
   timestamp    = {2021-08-31},
 }
@@ -3379,14 +3357,12 @@ Our results show that, depending on the electric motor technology, CVTs can redu
   title        = {Congestion-aware Routing and Rebalancing of Autonomous Mobility-on-Demand Systems in Mixed Traffic},
   booktitle    = proc_IEEE_ITSC,
   year         = {2020},
-  note         = {In press},
   abstract     = {This paper studies congestion-aware route-planning policies for Autonomous Mobility-on-Demand (AMoD) systems, whereby a fleet of autonomous vehicles provides on-demand mobility under mixed traffic conditions. Specifically, we first devise a network flow model to optimize the AMoD routing and rebalancing strategies in a congestion-aware fashion by accounting for the endogenous impact of AMoD flows on travel time.
 Second, we capture reactive exogenous traffic consisting of private vehicles selfishly adapting to the AMoD flows in a user-centric fashion by leveraging an iterative approach. Finally, we showcase the effectiveness of our framework with two case-studies considering the transportation sub-networks in Eastern Massachusetts and New York City. Our results suggest that for high levels of demand, pure AMoD travel can be detrimental due to the additional traffic stemming from its rebalancing flows, while the combination of AMoD with walking or micromobility options can significantly improve the overall system performance.},
   abstract = {This paper studies congestion-aware route-planning policies for Autonomous Mobility-on-Demand (AMoD) systems, whereby a fleet of autonomous vehicles provides on-demand mobility under mixed traffic conditions. Specifically, we first devise a network flow model to optimize the AMoD routing and rebalancing strategies in a congestion-aware fashion by accounting for the endogenous impact of AMoD flows on travel time. Second, we capture reactive exogenous traffic consisting of private vehicles selfishly adapting to the AMoD flows in a user-centric fashion by leveraging an iterative approach. Finally, we showcase the effectiveness of our framework with two case-studies considering the transportation sub-networks in Eastern Massachusetts and New York City. Our results suggest that for high levels of demand, pure AMoD travel can be detrimental due to the additional traffic stemming from its rebalancing flows, while the combination of AMoD with walking or micromobility options can significantly improve the overall system performance.},
   address  = {Rhodes, Greece},
   month    = sep,
   url      = {/wp-content/papercite-data/pdf/Wollenstein-Betech.ea.ITSC20.pdf},
-  keywords     = {presss},
   owner        = {samauro},
   timestamp    = {2020-07-02},
 }
@@ -3533,12 +3509,10 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Learning Mixed-Integer Convex Optimization Strategies for Robot Planning and Control},
   booktitle    = proc_IEEE_CDC,
   year         = {2020},
-  note         = {In Press},
   abstract = {Mixed-integer convex programming (MICP) has seen significant algorithmic and hardware improvements with several orders of magnitude solve time speedups compared to 25 years ago. Despite these advances, MICP has been rarely applied to real-world robotic control because the solution times are still too slow for online applications. In this work, we extend the machine learning optimizer (MLOPT) framework to solve MICPs arising in robotics at very high speed. MLOPT encodes the combinatorial part of the optimal solution into a strategy. Using data collected from offline problem solutions, we train a multiclass classifier to predict the optimal strategy given problem-specific parameters such as states or obstacles. Compared to previous approaches, we use task-specific strategies and prune redundant ones to significantly reduce the number of classes the predictor has to select from, thereby greatly improving scalability. Given the predicted strategy, the control task becomes a small convex optimization problem that we can solve in milliseconds. Numerical experiments on a cart-pole system with walls, a free-flying space robot and task-oriented grasps show that our method provides not only 1 to 2 orders of magnitude speedups compared to state-of-the-art solvers but also performance close to the globally optimal MICP solution.},
   address  = {Jeju Island, Republic of Korea},
   month    = mar,
   url      = {https://arxiv.org/pdf/2004.03736.pdf},
-  keywords     = {press},
   owner        = {acauligi},
   timestamp    = {2020-04-05},
 }
@@ -3590,7 +3564,7 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 	month    = mar,
   	url      = {https://arxiv.org/pdf/2008.11700.pdf},
 	keywords     = {sub},
-	owner        = {lewt},
+	owner        = {lew},
 	timestamp    = {2021-03-05},
 }
 
@@ -3602,20 +3576,20 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 	abstract = {Reachability analysis is at the core of many applications, from neural network verification, to safe trajectory planning of uncertain systems. However, this problem is notoriously challenging, and current approaches tend to be either too restrictive, too slow, too conservative, or approximate and therefore lack guarantees. In this paper, we propose a simple yet effective sampling-based approach to perform reachability analysis for arbitrary dynamical systems. Our key novel idea consists of using random set theory to give a rigorous interpretation of our method, and prove that it returns sets which are guaranteed to converge to the convex hull of the true reachable sets. Additionally, we leverage recent work on robust deep learning and propose a new adversarial sampling approach to robustify our algorithm and accelerate its convergence. We demonstrate that our method is faster and less conservative than prior work, present results for approximate reachability analysis of neural networks and robust trajectory optimization of high-dimensional uncertain nonlinear systems, and discuss future applications.},
 	month    = aug,
   	url      = {https://arxiv.org/abs/2008.10180},
-	owner        = {lewt},
+	owner        = {lew},
 	timestamp    = {2020-11-07},
 }
 
 @InProceedings{TsaoEtAl2020,
-  author    = {Pavone, M. and Saberi, A. and Schiffer, M. and Tsao, M.},
-  booktitle = {The Conference on Web and Internet Economics (WINE)},
-  title     = {Online Hypergraph Matching with Delays},
-  year      = {2020},
-  address   = {Beijing, China},
-  month     = december,
-  abstract  = {We study an online hypergraph matching problem with delays, motivated by ridesharing applications. In this model, users enter a marketplace sequentially, and are willing to wait up to d timesteps to be matched, after which they will leave the system in favor of an outside option. A platform can match groups of up to k users together, indicating that they will share a ride. Each group of users yields a match value depending on how compatible they are with one another. As an example, in ridesharing, k is the capacity of the service vehicles, and d is the amount of time a user is willing to wait for a driver to be matched to them. We present results for both the utility maximization and cost minimization variants of the problem. In the utility maximization setting, the optimal competitive ratio is 1/d whenever k is at least 3, and is achievable in polynomial-time for any fixed k. In the cost minimization variation, when k = 2, the optimal competitive ratio for deterministic algorithms is 3/2 and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d) log k-competitive, and it is NP-hard to achieve a competitive ratio better than log k - O(log log k).},
-  owner     = {mwtsao},
-  url       = {http://arxiv.org/abs/2009.12022},
+  author       = {Pavone, M. and Saberi, A. and Schiffer, M. and Tsao, M.},
+  booktitle    = {The Conference on Web and Internet Economics (WINE)},
+  title        = {Online Hypergraph Matching with Delays},
+  year         = {2020},
+  abstract = {We study an online hypergraph matching problem with delays, motivated by ridesharing applications. In this model, users enter a marketplace sequentially, and are willing to wait up to d timesteps to be matched, after which they will leave the system in favor of an outside option. A platform can match groups of up to k users together, indicating that they will share a ride. Each group of users yields a match value depending on how compatible they are with one another. As an example, in ridesharing, k is the capacity of the service vehicles, and d is the amount of time a user is willing to wait for a driver to be matched to them. We present results for both the utility maximization and cost minimization variants of the problem. In the utility maximization setting, the optimal competitive ratio is 1/d whenever k is at least 3, and is achievable in polynomial-time for any fixed k. In the cost minimization variation, when k = 2, the optimal competitive ratio for deterministic algorithms is 3/2 and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d) log k-competitive, and it is NP-hard to achieve a competitive ratio better than log k - O(log log k).},
+  address  = {Beijing, China},
+  month    = {#december#},
+  owner        = {mwtsao},
+  url          = {http://arxiv.org/abs/2009.12022},
 }
 
 @Inproceedings{CauligiChenEtAl2020,
@@ -3675,11 +3649,9 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Sampling Training Data for Distributed Learning between Robots and the Cloud},
   booktitle    = proc_ISER,
   year         = {2020},
-  note         = {In press},
   abstract = {Today's robotic fleets are increasingly measuring high-volume video and LIDAR sensory streams, which can be mined for valuable training data, such as rare scenes of road construction sites, to steadily improve robotic perception models. However, re-training perception models on growing volumes of rich sensory data in central compute servers (or the "cloud") places an enormous time and cost burden on network transfer, cloud storage, human annotation, and cloud computing resources. Hence, we introduce HarvestNet, an intelligent sampling algorithm that resides on-board a robot and reduces system bottlenecks by only storing rare, useful events to steadily improve perception models re-trained in the cloud. HarvestNet significantly improves the accuracy of machine-learning models on our novel dataset of road construction sites, field testing of self-driving cars, and streaming face recognition, while reducing cloud storage, dataset annotation time, and cloud compute time by between 65.7-81.3%. Further, it is between 1.05-2.58x more accurate than baseline algorithms and scalably runs on embedded deep learning hardware.},
   address  = {Valetta, Malta},
   month    = {March},
-  keywords     = {press},
   owner        = {csandeep},
   timestamp    = {2020-11-09},
 }
@@ -3702,12 +3674,10 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Fast Near-Optimal Heterogeneous Task Allocation via Flow Decomposition},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
-  note         = {In Press},
   abstract = {Multi-robot systems are uniquely well-suited to performing complex tasks such as patrolling and tracking, information gathering, and pick-up and delivery problems, offering significantly higher performance than single-robot systems. A fundamental building block in most multi-robot systems is task allocation: assigning robots to tasks (e.g., patrolling an area, or servicing a transportation request) as they appear based on the robots' states to maximize reward. In many practical situations, the allocation must account for heterogeneous capabilities (e.g., availability of appropriate sensors or actuators) to ensure the feasibility of execution, and to promote a higher reward, over a long time horizon. To this end, we present the FlowDec algorithm for efficient heterogeneous task-allocation achieving an approximation factor of at least 1/2 of the optimal reward. Our approach decomposes the heterogeneous problem into several homogeneous subproblems that can be solved efficiently using min-cost flow. Through simulation experiments, we show that our algorithm is faster by several orders of magnitude than a MILP approach.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2011.03603},
-  keywords     = {press},
   owner        = {kirilsol},
   timestamp    = {2020-12-07},
 }
@@ -3717,12 +3687,10 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Near-Optimal Multi-Robot Motion Planning with Finite Sampling},
   booktitle    = proc_IEEE_ICRA,
   year         = {2021},
-  note         = {In Press},
   abstract = {An underlying structure in several sampling-based methods for continuous multi-robot motion planning (MRMP) is the tensor roadmap (TR), which emerges from combining multiple PRM graphs constructed for the individual robots via a tensor product. We study the conditions under which the TR encodes a near-optimal solution for MRMP---satisfying these conditions implies near optimality for a variety of popular planners, including dRRT*, and the discrete methods M* and CBS when applied to the continuous domain. We develop the first finite-sample analysis of this kind, which specifies the number of samples, their deterministic distribution, and magnitude of the connection radii that should be used by each individual PRM graph, to guarantee near-optimality using the TR. This significantly improves upon a previous asymptotic analysis, wherein the number of samples tends to infinity, and supports guaranteed high-quality solutions in practice, within bounded running time. To achieve our new result, we first develop a sampling scheme, which we call the staggered grid, for finite-sample motion planning for individual robots, which requires significantly less samples than previous work. We then extend it to the much more involved MRMP setting which requires to account for interactions among multiple robots. Finally, we report on a few experiments that serve as a verification of our theoretical findings and raise interesting questions for further investigation.},
   address  = {Xi'an, China},
   month    = may,
   url      = {https://arxiv.org/abs/2011.08944},
-  keywords     = {press},
   owner        = {kirilsol},
   timestamp    = {2020-12-07},
 }
@@ -3778,18 +3746,16 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
 }
 
 @Inproceedings{RichardsAzizanEtAl2021,
-    author       = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
-    title        = {Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems},
-    booktitle    = proc_RSS,
-    year         = {2021},
-    note         = {In press},
-    keywords     = {press},
-    abstract = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
-    address  = {Virtual},
-    month    = jul,
-    url      = {https://arxiv.org/pdf/2103.04490.pdf},
-    owner        = {spenrich},
-    timestamp    = {2021-05-11},
+  author       = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
+  title        = {Adaptive-Control-Oriented Meta-Learning for Nonlinear Systems},
+  booktitle    = proc_RSS,
+  year         = {2021},
+  abstract = {Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With a nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.},
+  address  = {Virtual},
+  month    = jul,
+  url      = {https://arxiv.org/pdf/2103.04490.pdf},
+  owner        = {spenrich},
+  timestamp    = {2021-05-11},
 }
 
 @Inproceedings{SharmaAzizanEtAl2021,
@@ -3797,11 +3763,9 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   title        = {Sketching Curvature for Efficient Out-of-Distribution Detection for Deep Neural Networks},
   booktitle    = proc_UAI,
   year         = {2021},
-  note         = {In press},
   abstract = {In order to safely deploy Deep Neural Networks (DNNs) within the perception pipelines of real-time decision making systems, there is a need for safeguards that can detect out-of-training-distribution (OoD) inputs both efficiently and accurately. Building on recent work leveraging the local curvature of DNNs to reason about epistemic uncertainty, we propose Sketching Curvature of OoD Detection (SCOD), an architecture-agnostic framework for equipping any trained DNN with a task-relevant epistemic uncertainty estimate. Offline, given a trained model and its training data, SCOD employs tools from matrix sketching to tractably compute a low-rank approximation of the Fisher information matrix, which characterizes which directions in the weight space are most influential on the predictions over the training data. Online, we estimate uncertainty by measuring how much perturbations orthogonal to these directions can alter predictions at a new test input. We apply SCOD to pre-trained networks of varying architectures on several tasks, ranging from regression to classification. We demonstrate that SCOD achieves comparable or better OoD detection performance with lower computational burden relative to existing baselines.},
   month    = jul,
   url      = {https://arxiv.org/abs/2102.12567},
-  keywords     = {press},
   owner        = {apoorva},
   timestamp    = {2021-05-24},
 }
@@ -3894,32 +3858,31 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 }
 
 @Inproceedings{YangTsaoEtAl2021,
-  author       = {Yang, K. and Tsao, M. and Xu, X. and Pavone, M.},
-  title        = {Real-Time Control of Mixed Fleets in Mobility-on-Demand Systems},
-  booktitle    = proc_IEEE_ITSC,
-  year         = {2021},
-  note         = {{Extended Version, Available} at \url{https://arxiv.org/abs/2008.08131}},
-  abstract     = {Automated vehicles (AVs) are expected to be beneficial for Mobility-on-Demand (MoD), thanks to their ability of being globally coordinated. To facilitate the steady transition towards full autonomy, we consider the transition period of AV deployment, whereby an MoD system operates a mixed fleet of automated vehicles (AVs) and human-driven vehicles (HVs). In such systems, AVs are centrally coordinated by the operator, and the HVs might strategically respond to the coordination of AVs. We devise computationally tractable strategies to coordinate mixed fleets in MoD systems. Specifically, we model an MoD system with a mixed fleet using a Stackelberg framework where the MoD operator serves as the leader and human-driven vehicles serve as the followers. We develop two models: 1) a steady-state model to analyze the properties of the problem and determine the planning variables (e.g., compensations, prices, and the fleet size of AVs), and 2) a time-varying model to design a real-time coordination algorithm for AVs. The proposed models are validated using a case study inspired by real operational data of a MoD service in Singapore. Results show that the proposed algorithms can significantly improve system performance.},
-  address  = {Indianapolis, IN, USA},
-  month    = sep,
-  url      = {https://arxiv.org/pdf/2008.08131},
-  keywords     = {in press},
-  owner        = {ykd07},
-  timestamp    = {2021-06-15},
+  author      = {Yang, K. and Tsao, M. and Xu, X. and Pavone, M.},
+  title       = {Real-Time Control of Mixed Fleets in Mobility-on-Demand Systems},
+  booktitle   = proc_IEEE_ITSC,
+  year        = {2021},
+  note        = {{Extended Version, Available} at \url{https://arxiv.org/abs/2008.08131}},
+  abstract    = {Automated vehicles (AVs) are expected to be beneficial for Mobility-on-Demand (MoD), thanks to their ability of being globally coordinated. To facilitate the steady transition towards full autonomy, we consider the transition period of AV deployment, whereby an MoD system operates a mixed fleet of automated vehicles (AVs) and human-driven vehicles (HVs). In such systems, AVs are centrally coordinated by the operator, and the HVs might strategically respond to the coordination of AVs. We devise computationally tractable strategies to coordinate mixed fleets in MoD systems. Specifically, we model an MoD system with a mixed fleet using a Stackelberg framework where the MoD operator serves as the leader and human-driven vehicles serve as the followers. We develop two models: 1) a steady-state model to analyze the properties of the problem and determine the planning variables (e.g., compensations, prices, and the fleet size of AVs), and 2) a time-varying model to design a real-time coordination algorithm for AVs. The proposed models are validated using a case study inspired by real operational data of a MoD service in Singapore. Results show that the proposed algorithms can significantly improve system performance.},
+  address = {Indianapolis, IN, USA},
+  month   = sep,
+  url     = {https://arxiv.org/pdf/2008.08131},
+  owner       = {ykd07},
+  timestamp   = {2021-06-15},
 }
 
 @Article{TsaoEtAl2021,
-  author    = {Pavone, M. and Saberi, A. and Schiffer, M. and Tsao, M.},
-  journal   = {Operations Research},
-  title     = {Online Hypergraph Matching with Delays},
-  year      = {2021},
-  month     = dec,
-  abstract  = {We study an online hypergraph matching problem inspired by ridesharing and delivery applications. The vertices of a hypergraph are revealed sequentially and must be matched within d timesteps of their reveal, otherwise they will leave the system in favor of an outside option. Hyperedges can contain at most k vertices and are revealed to the algorithm once all of its vertices have arrived, and can only be included into the matching before any of its vertices leave the system. We study utility maximization and cost minimization objectives in this model. In the utility maximization setting, we show that the optimal competitive ratio is 1/d whenever k >= 3, and is achievable in polynomial-time for any fixed k. For the cost minimization setting, we assume costs are monotone, which is a natural assumption in ridesharing and delivery problems. When k = 2, we show that the optimal competitive ratio for deterministic algorithms is \frac{3}{2} and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d)log k-competitive, and it is NP-hard to achieve a competitive ratio better than $\log k - O (\log \log k)$.},
-  comment   = {This manuscript was first submitted to Operations Research on 01-27-2021. The first round of revision was submitted on 08-10-2021. It was accepted by Operations Research on 12-21-2021 after 1 round of revisions.},
-  keywords  = {in press},
-  owner     = {mwtsao},
-  timestamp = {2021-08-10},
-  url       = {http://arxiv.org/abs/2009.12022},
+  author       = {Pavone, M. and Saberi, A. and Schiffer, M. and Tsao, M.},
+  title        = {Online Hypergraph Matching with Delays},
+  journal      = {Operations Research},
+  year         = {2021},
+  note         = {In press},
+  abstract = {We study an online hypergraph matching problem inspired by ridesharing and delivery applications. The vertices of a hypergraph are revealed sequentially and must be matched within d timesteps of their reveal, otherwise they will leave the system in favor of an outside option. Hyperedges can contain at most k vertices and are revealed to the algorithm once all of its vertices have arrived, and can only be included into the matching before any of its vertices leave the system. We study utility maximization and cost minimization objectives in this model. In the utility maximization setting, we show that the optimal competitive ratio is 1/d whenever k >= 3, and is achievable in polynomial-time for any fixed k. For the cost minimization setting, we assume costs are monotone, which is a natural assumption in ridesharing and delivery problems. When k = 2, we show that the optimal competitive ratio for deterministic algorithms is \frac{3}{2} and is achieved by a polynomial-time thresholding algorithm. When k>2, we show that a polynomial-time randomized batching algorithm is (2 - 1/d)log k-competitive, and it is NP-hard to achieve a competitive ratio better than $\log k - O (\log \log k)$.},
+  comment      = {This manuscript was first submitted to Operations Research on 01-27-2021. The first round of revision was submitted on 08-10-2021. The paper was accepted by Operations Research on 12-21-2021.},
+  keywords     = {press},
+  month        = dec,
+  owner        = {mwtsao},
+  timestamp    = {2021-08-10},
 }
 
 @inproceedings{SalzmannPavoneEtAl2021,
@@ -3991,7 +3954,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   month    = jun,
   url      = {https://arxiv.org/abs/2106.09125},
   keywords     = {sub},
-  owner        = {lewt},
+  owner        = {lew},
   timestamp    = {2021-06-18},
 }
 
@@ -4025,12 +3988,10 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {Joint Optimization of Autonomous Electric Vehicle Fleet Operations and Charging Station Siting},
   booktitle    = proc_IEEE_ITSC,
   year         = {2021},
-  note         = {In press},
   abstract = {Charging infrastructure is the coupling link between power and transportation networks, thus determining charging station siting is necessary for planning of power and transportation systems. While previous works have either optimized for charging station siting given historic travel behavior, or optimized fleet routing and charging given an assumed placement of the stations, this paper introduces a linear program that optimizes for station siting and macroscopic fleet operations in a joint fashion. Given an electricity retail rate and a set of travel demand requests, the optimization minimizes total cost for an autonomous EV fleet comprising of travel costs, station procurement costs, fleet procurement costs, and electricity costs, including demand charges. Specifically, the optimization returns the number of charging plugs for each charging rate (e.g., Level 2, DC fast charging) at each candidate location, as well as the optimal routing and charging of the fleet. From a case-study of an electric vehicle fleet operating in San Francisco, our results show that, albeit with range limitations, small EVs with low procurement costs and high energy efficiencies are the most cost-effective in terms of total ownership costs. Furthermore, the optimal siting of charging stations is more spatially distributed than the current siting of stations, consisting mainly of high-power Level 2 AC stations (16.8 kW) with a small share of DC fast charging stations and no standard 7.7kW Level 2 stations. Optimal siting reduces the total costs, empty vehicle travel, and peak charging load by up to 10%.},
   address  = {Indianapolis, IN},
   month    = sep,
   url      = {http://arxiv.org/abs/2107.00165},
-  keywords     = {press},
   owner        = {jthluke},
   timestamp    = {2021-06-29},
 }
@@ -4040,8 +4001,10 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {Backpropagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods},
   journal      = jrn_SAGE_IJRR,
   year         = {2021},
+  note         = {In Press},
   abstract = {This paper presents a technique, named STLCG, to compute the quantitative semantics of Signal Temporal Logic (STL) formulas using computation graphs. STLCG provides a platform which enables the incorporation of logical specifications into robotics problems that benefit from gradient-based solutions. Specifically, STL is a powerful and expressive formal language that can specify spatial and temporal properties of signals generated by both continuous and hybrid systems. The quantitative semantics of STL provide a robustness metric, i.e., how much a signal satisfies or violates an STL specification. In this work, we devise a systematic methodology for translating STL robustness formulas into computation graphs. With this representation, and by leveraging off-the-shelf automatic differentiation tools, we are able to efficiently backpropagate through STL robustness formulas and hence enable a natural and easy-to-use integration of STL specifications with many gradient-based approaches used in robotics. Through a number of examples stemming from various robotics applications, we demonstrate that STLCG is versatile, computationally efficient, and capable of incorporating human-domain knowledge into the problem formulation.},
-  owner        = {rdyro},
+  keywords     = {in press},
+  owner        = {karenl7},
   timestamp    = {2021-12-19},
 }
 
@@ -4050,10 +4013,8 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
   journal      = jrn_IEEE_RAL,
   year         = {2021},
-  note         = {Submitted},
   abstract = {Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.},
   url      = {http://arxiv.org/abs/2107.08143},
-  keywords     = {sub},
   owner        = {acauligi},
   timestamp    = {2021-07-20},
 }
@@ -4075,26 +4036,22 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC},
   journal      = jrn_IEEE_RAL,
   year         = {2021},
-  note         = {In Press},
   abstract = {Tractable safety-ensuring algorithms for cyber-physical systems are important in critical applications. Approaches based on Control Barrier Functions assume continuous enforcement, which is not possible in an online fashion. This paper presents two tractable algorithms to ensure forward invariance of discrete-time controlled cyber-physical systems. Both approaches are based on Control Barrier Functions to provide strict mathematical safety guarantees. The first algorithm exploits Lipschitz continuity and formulates the safety condition as a robust program which is subsequently relaxed to a set of affine conditions. The second algorithm is inspired by tube-NMPC and uses an affine Control Barrier Function formulation in conjunction with an auxiliary controller to guarantee safety of the system. We combine an approximate NMPC controller with the second algorithm to guarantee strict safety despite approximated constraints and show its effectiveness experimentally on a mini-Segway.},
   month    = aug,
   url      = {https://arxiv.org/abs/2104.14250},
-  keywords     = {press},
   owner        = {lew},
   timestamp    = {2021-08-23},
 }
 
 @Article{TsaoYangZoepfPavone2021,
-  author    = {Tsao, M. and Yang, K. and Zoepf, S. and Pavone, M.},
-  journal   = jrn_IEEE_TCNS,
-  title     = {Trust but Verify: Cryptographic Data Privacy for Mobility Management},
-  year      = {2021},
-  month     = dec,
-  abstract  = {The era of Big Data has brought with it a richer understanding of user behavior through massive data sets, which can help organizations optimize the quality of their services. In the context of transportation research, mobility data can provide Municipal Authorities (MA) with insights on how to operate, regulate, or improve the transportation network. Mobility data, however, may contain sensitive information about end users and trade secrets of Mobility Providers (MP). Due to this data privacy concern, MPs may be reluctant to contribute their datasets to MA. Using ideas from cryptography, we propose an interactive protocol between a MA and a MP in which MA obtains insights from mobility data without MP having to reveal its trade secrets or sensitive data of its users. This is accomplished in two steps: a commitment step, and a computation step. In the first step, Merkle commitments and aggregated traffic measurements are used to generate a cryptographic commitment. In the second step, MP extracts insights from the data and sends them to MA. Using the commitment and zero-knowledge proofs, MA can certify that the information received from MP is accurate, without needing to directly inspect the mobility data. We also present a differentially private version of the protocol that is suitable for the large query regime. The protocol is verifiable for both MA and MP in the sense that dishonesty from one party can be detected by the other. The protocol can be readily extended to the more general setting with multiple MPs via secure multi-party computation.},
-  keywords  = {in press},
-  owner     = {rdyro},
-  timestamp = {2021-12-19},
-  url       = {https://arxiv.org/abs/2104.07768},
+  author       = {Tsao, M. and Yang, K. and Zoepf, S. and Pavone, M.},
+  title        = {Trust but Verify: Cryptographic Data Privacy for Mobility Management},
+  journal      = jrn_IEEE_TCNS,
+  year         = {2021},
+  note         = {In press},
+  abstract = {The era of Big Data has brought with it a richer understanding of user behavior through massive data sets, which can help organizations optimize the quality of their services. In the context of transportation research, mobility data can provide Municipal Authorities (MA) with insights on how to operate, regulate, or improve the transportation network. Mobility data, however, may contain sensitive information about end users and trade secrets of Mobility Providers (MP). Due to this data privacy concern, MPs may be reluctant to contribute their datasets to MA. Using ideas from cryptography, we propose an interactive protocol between a MA and a MP in which MA obtains insights from mobility data without MP having to reveal its trade secrets or sensitive data of its users. This is accomplished in two steps: a commitment step, and a computation step. In the first step, Merkle commitments and aggregated traffic measurements are used to generate a cryptographic commitment. In the second step, MP extracts insights from the data and sends them to MA. Using the commitment and zero-knowledge proofs, MA can certify that the information received from MP is accurate, without needing to directly inspect the mobility data. We also present a differentially private version of the protocol that is suitable for the large query regime. The protocol is verifiable for both MA and MP in the sense that dishonesty from one party can be detected by the other. The protocol can be readily extended to the more general setting with multiple MPs via secure multi-party computation.},
+  keywords     = {press},
+  url          = {https://arxiv.org/abs/2104.07768},
 }
 
 @Article{ZhaoLakshmananEtAl2022,
@@ -4110,17 +4067,17 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-09-19},
 }
 
-@Article{ChenMillerEtAl2021,
+@Inproceedings{ChenMillerEtAl2022,
   author       = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
   title        = {{ReachBot:} {A} Small Robot with Exceptional Reach for Rough Terrain},
-  journal      = jrn_IEEE_RAL,
+  booktitle    = proc_IEEE_ICRA,
   year         = {2022},
   note         = {Submitted},
   abstract = {ReachBot is a new concept for planetary exploration, consisting of a small body and long, lightweight extending arms loaded primarily in tension. The arms are equipped with spined grippers for anchoring on rock surfaces. The design and testing of a planar prototype is presented here. Experiments with rock grasping and coordinated locomotion illustrate the advantages of low inertia passive grippers, triggered by impact and using stored mechanical energy for the internal force. Gripper design involves a trade-off among the range of possible grasp angles, maximum grasp force, required triggering force, and required reset force. The current prototype can pull with up to 8 N when gripping volcanic rock, limited only by the strength of the 3D printed components. Calculations predict a maximum pull of 26 N for the same spines and stronger materials.},
   url      = {/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf},
   keywords     = {sub},
   owner        = {bylard},
-  timestamp    = {2021-11-04},
+  timestamp    = {2021-12-09},
 }
 
 @Article{Wollenstein-BetechSalazarEtAl2022,
@@ -4179,12 +4136,12 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   title        = {{ReachBot:} {A} Small Robot for Large Mobile Manipulation Tasks},
   booktitle    = proc_IEEE_AC,
   year         = {2022},
-  note         = {Submitted},
+  note         = {In press},
   abstract = {Robots are widely deployed in space environments because of their versatility and robustness. However, adverse gravity conditions and challenging terrain geometry expose the limitations of traditional robot designs, which are often forced to sacrifice one of mobility or manipulation capabilities to attain the other. Prospective climbing operations in these environments reveals a need for small, compact robots capable of versatile mobility and manipulation. We propose a novel robotic concept called ReachBot that fills this need by combining two existing technologies: extendable booms and mobile manipulation. ReachBot leverages the reach and tensile strength of extendable booms to achieve an outsized reachable workspace and wrench capability. Through their lightweight, compactable structure, these booms also reduce mass and complexity compared to traditional rigid-link articulated-arm designs. Using these advantages, ReachBot excels in mobile manipulation missions in low gravity or that require climbing, particularly when anchor points are sparse. After introducing the ReachBot concept, we discuss modeling approaches and strategies for increasing stability and robustness. We then develop a 2D analytical model for ReachBot’s dynamics inspired by grasp models for dexterous manipulators. Next, we introduce a waypoint-tracking controller for a planar ReachBot in microgravity. Our simulation results demonstrate the controller’s robustness to disturbances and modeling error. Finally, we briefly discuss next steps that build on these initially promising results to realize the full potential of ReachBot.},
   address  = {Big Sky, Montana},
   month    = mar,
   url      = {https://arxiv.org/abs/2110.10829},
-  keywords     = {sub},
+  keywords     = {press},
   owner        = {schneids},
   timestamp    = {2021-11-04},
 }
@@ -4225,4 +4182,187 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   url       = {https://arxiv.org/abs/1808.04468},
 }
 
+@Inproceedings{ThorpeLewEtAl2021,
+  author       = {Thorpe, A.~J. and Lew, T. and Oishi, M.~M.~K. and Pavone, M.},
+  title        = {Data-Driven Chance Constrained Control using Kernel Distribution Embeddings},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {We present a data-driven algorithm for efficiently computing stochastic control policies for general joint chance constrained optimal control problems. Our approach leverages the theory of kernel distribution embeddings, which allows representing expectation operators as inner products in a reproducing kernel Hilbert space. This framework enables approximately reformulating the original problem using a dataset of observed trajectories from the system without imposing prior assumptions on the parameterization of the system dynamics or the structure of the uncertainty. By optimizing over a finite subset of stochastic open-loop control trajectories, we relax the original problem to a linear program over the control parameters that can be efficiently solved using standard convex optimization techniques. We demonstrate our proposed approach in simulation on a system with nonlinear non-Markovian dynamics navigating in a cluttered environment.},
+  month    = dec,
+  keywords     = {sub},
+  owner        = {lew},
+  timestamp    = {2021-12-13},
+}
+
+@Inproceedings{LewJansonEtAl2021,
+  author       = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
+  title        = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
+  year         = {2021},
+  note         = {Submitted},
+  abstract = {In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their $\epsilon$-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an $\epsilon$-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.},
+  month    = dec,
+  url      = {https://arxiv.org/abs/2112.05745},
+  keywords     = {sub},
+  owner        = {lew},
+  timestamp    = {2021-12-13},
+}
+
+@Phdthesis{Schmerling2019,
+  author       = {Schmerling, E.},
+  title        = {Multimodal Modeling and Uncertainty Quantification for Robot Planning and Decision Making},
+  school       = ios_univ_Stanford_ICME,
+  year         = {2019},
+  abstract = {Advances in mobile robot autonomy are poised to transform society: there is enormous demand for robots that can handle our commutes, manage our homes, provide assistance to our loved ones, and explore places too dangerous or too distant for us humans to set foot. Before this potential may be realized, however, robots must be able to contend with uncertainties arising from the unstructured, unpredictable, and often unforgiving world they aim to enter. This dissertation develops concepts, algorithms, and modeling frameworks for quantifying uncertainty in how a robot plans its course of action, how it carries out that plan, and how it interacts with its environment (in particular, with the humans around it). In each of these cases, these tools are motivated by the purpose of yielding actionable insights that improve the quality and computational efficiency of robot planning and decision making.},
+  address  = {Stanford, California},
+  month    = mar,
+  url      = {https://stacks.stanford.edu/file/druid:xx848nq8857/SchmerlingPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Ichter2018,
+  author       = {Ichter, B.},
+  title        = {Massive Parallelism and Sampling Strategies for Robust and Real-Time Robotic Motion Planning},
+  school       = ios_univ_Stanford_AA,
+  year         = {2018},
+  abstract = {Motion planning is a fundamental problem in robotics, whereby one seeks to compute a low-cost trajectory from an initial state to a goal region that avoids any obstacles. Sampling-based motion planning algorithms have emerged as an effective paradigm for planning with complex, high-dimensional robotic systems. These algorithms maintain only an implicit representation of the state space, constructed by sampling the free state space and locally connecting samples (under the supervision of a collision checking module). This thesis presents approaches towards enabling real-time and robust sampling-based motion planning with improved sampling strategies and massive parallelism. In the first part of this thesis, we discuss algorithms to leverage massively parallel hardware (GPUs) to accelerate planning and to consider robustness during the planning process. We present an algorithm capable of planning at rates amenable to application within control loops, ~10 ms. This algorithm uses approximate dynamic programming to explore the state space in a massively-parallel, near-optimal manner. We further present two algorithms capable of real-time, uncertainty-aware and perception-aware motion planning that exhaustively explore the state space via a multiobjective search. This search identifies a Pareto set of promising paths (in terms of cost and robustness) and certifies their robustness via Monte Carlo methods. We demonstrate the effectiveness of these algorithm in numerical simulations and a physical experiment on a quadrotor. In the second part of this thesis, we examine sampling-strategies for probing the state space; traditionally this has been uniform, independent, and identically distributed (i.i.d.) random points. We present a methodology for biasing the sample distribution towards regions of the state space in which the solution trajectory is likely to lie. This distribution is learned via a conditional variational autoencoder, allowing a general methodology, which can be used in combination with any samplingbased planner and can effectively exploit the underlying structure of a planning problem while maintaining the theoretical guarantees of sampling-based approaches. We also analyze the use of deterministic, low-dispersion samples instead of i.i.d. random points. We show that this allows deterministic asymptotic optimality (as opposed to probabilistic), a convergence rate bound in terms of the sample dispersion, reduced computational complexity, and improved practical performance. The technical approaches in this work are applicable to general robotic systems and lay the foundations of robustness and algorithmic speed required for robotic systems operating in the world.},
+  address  = {Stanford, California},
+  month    = sep,
+  url      = {https://stacks.stanford.edu/file/druid:xm179nc3440/IchterSubmitPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Singh2019,
+  author       = {Singh, S.},
+  title        = {Robust Control, Planning, and Inference for Safe Robot Autonomy},
+  school       = ios_univ_Stanford_AA,
+  year         = {2019},
+  abstract = {Integrating autonomous robots into safety-critical settings requires reasoning about uncertainty at all levels of the autonomy stack. This thesis presents novel algorithmic tools for imbuing robustness within two hierarchically complementary areas, namely: motion planning and decision-making. In Part I of the thesis, by harnessing the theories of contraction and semi-infinite convex optimization and the computational tool of sum-of-squares programming, we present a unified framework for robust real-time motion planning for complex underactuated nonlinear systems. Broadly, the approach entails pairing open-loop motion planning algorithms that neglect uncertainty and are optimized for generating trajectories for simple kinodynamic models in real-time, with robust nonlinear trajectory-tracking feedback controllers. We demonstrate how to systematically synthesize these controllers and integrate them within planning to generate and execute certifiably safe trajectories that are robust to the closed-loop effects of disturbances and planning with simplified models. In Part II of the thesis, we demonstrate how to embed the control-theoretic advancements developed in Part I as constraints within a novel semi-supervised algorithm for learning dynamical systems from user demonstrations. The constraints act as a form of context-driven hypothesis pruning to yield learned models that jointly balance regression performance and stabilizability, ultimately resulting in generated trajectories for the robot that are conditioned for feedback control. Experimental results on a quadrotor testbed illustrate the efficacy of the proposed algorithms in Parts I and II of the thesis, and clear connections between theory and hardware. Finally, in Part III of the thesis, we describe a framework for lifting notions of robustness from lowlevel motion planning to higher-level sequential decision-making using the theory of risk measures. Leveraging a class of risk measures with favorable axiomatic foundations, we demonstrate how to formulate decision-making algorithms with tunable robustness properties. In particular, we focus on a novel application of this framework to inverse reinforcement learning where we learn predictive motion models for humans in safety-critical scenarios, and illustrate their effectiveness within a commercial driving simulator featuring humans in-the-loop. The contributions within this thesis constitute an important step towards endowing modern robotic systems with the ability to systematically and hierarchically reason about safety and efficiency in the face of uncertainty, which is crucial for safety-critical applications},
+  address  = {Stanford, California},
+  month    = aug,
+  url      = {https://stacks.stanford.edu/file/druid:pr731qc2534/Singh-PhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Hockman2018b,
+  author       = {Hockman, B. J.},
+  title        = {Robotic Mobility on Small Solar System Bodies: {Design,} Control, and Autonomy},
+  school       = ios_univ_Stanford_ME,
+  year         = {2018},
+  abstract = {In this thesis, we investigate the mobility challenges associated with robotic exploration of small solar system bodies, such as comets and asteroids. We open with a discussion on the surface environment of small bodies, and in particular, how their extremely weak gravity motivates hopping as a promising form of locomotion for long-distance traverses. We then propose an adaptable rover architecture called ``Hedgehog''---a minimalistic, internally-actuated, hopping rover designed for targeted mobility in such low-gravity environments. By applying internal torques to three mutually-orthogonal flywheels, the rover's chassis rotates, giving rise to ground reaction forces and various motion primitives, including long-range hopping, short precise tumbling, and small pose adjustments. We propose various models for analyzing the dynamics of these motion primitives and derive control laws for achieving desired motions. We then discuss various methods for conducting experiments in a reduced-gravity environment, including a custom six-degree-of-freedom laboratory test bed and parabolic flights. We validate our control laws in these test beds and demonstrate unprecedented motion accuracy for internally-actuated hoppers. Finally, we broaden our focus to general hopping platforms and consider various algorithmic tools for autonomous exploration. Specifically, we develop a suite of tools for motion planning, localization, and traversability analysis, with a careful attention on the various sources of model uncertainty and the complex dynamics of hopping trajectories. Despite the stochastic nature of bouncing dynamics, we demonstrate through high-fidelity simulations that a hopping rover can efficiently traverse highly irregular bodies that would otherwise be inaccessible to traditional rovers.},
+  address  = {Stanford, California},
+  month    = jun,
+  url      = {https://stacks.stanford.edu/file/druid:zg590cd2343/Hockman_PhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Bylard2021,
+  author       = {Bylard, A.},
+  title        = {Leveraging the Geometric Structure of Robotic Tasks for Motion Design},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {Robots operating in the unstructured environments of the real world must contend with at least two sources of geometric complexity: (1) the differential geometric complexity of robot configuration spaces and task spaces, which can in practice be general non-Euclidean manifolds, and (2) the complexity of the geometric shape of robot links and obstacles in the environment, which have infinite variability and are often highly nonconvex. Mature robot autonomy requires algorithms that can tackle these sources of geometric complexity with precision and at real-time control and planning speeds. This thesis focuses on bridging existing gaps in previous methods to meet these needs. In particular, to address differential geometric complexity in motion design, we first present a framework called Multi-Task Pullback Bundle Dynamical Systems (PBDS), which is a geometric control methodology for forming fast composable geometric motion policies, respecting simultaneous robotic tasks on non-Euclidean robot and task manifolds. Second, we present an embedded sequential convex programming approach which exploits differential geometric structure to eliminate explicit manifold-type constraints in trajectory optimization while still guaranteeing final satisfaction of these constraints. Together, these approaches correctly enforce the differential geometric structure of robot planning and control problems while maintaining similar or greater computational efficiency compared to past approaches. Finally, we address the shape complexity of robot links and obstacles by repurposing hardware-accelerated ray-tracing (i.e., ray-tracing cores) for rapidly forming collision avoidance constraints in trajectory optimization, particularly targeting complex robot and obstacle triangle mesh representations. This enables robot motion designers to leverage the full complexity of robot and obstacle geometries at speeds orders of magnitude faster than currently available collision-checking libraries, while leveraging recently-developed ray-tracing cores which have previously had little utility in the robot autonomy stack.},
+  address  = {Stanford, California},
+  month    = dec,
+  url      = {https://stacks.stanford.edu/file/druid:jw453mh1486/BylardPhDThesis-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Iglesias2019,
+  author       = {Iglesias, R. D.},
+  title        = {Stochastic Modeling and Control of Autonomous Mobility-on-Demand Systems},
+  school       = ios_univ_Stanford_CEE,
+  year         = {2019},
+  abstract = {The last decade saw the rapid development of two major mobility paradigms: Mobility-on-Demand (MoD) systems (e.g. ridesharing, carsharing) and self-driving vehicles. While individually impactful, together they present a major paradigm shift in modern mobility. Autonomous Mobility-on-Demand (AMoD) systems, wherein a fleet of self-driving vehicles serve on-demand travel requests, present a unique opportunity to alleviate many of our transportation woes. Specifically, by combining fully-compliant vehicles with central coordination, AMoD systems can achieve system-level optimal strategies via, e.g., coordinated routing and preemptive dispatch. This thesis presents methods to model, analyze and control AMoD systems. In particular, special emphasis is given to develop stochastic algorithms that can cope with the uncertainty inherent to travel demand. In the first part, we present a steady-state modeling framework built on queueing networks and network flow theory. By casting the system as a multi-class BCMP network, the framework provides analysis tools that allow the characterization of performance metrics for a given routing policy, in terms, e.g., of vehicle availabilities, and first and second order moments of vehicle throughput. Moreover, we present a scalable method for the synthesis of routing policies, with performance guarantees in the limit of large fleet sizes. The framework provides a large set of modeling options, and specifically address cases where the operational concerns of congestion and battery charge level are considered. We validate our theoretical results on a case study of New York City. In the second part, we leverage the insights provided by the steady-state models to present real-time control algorithms. Specifically, we cast the real-time control problem within a stochastic model predictive control framework. The control loop consists of a forecasting generative model and a stochastic optimization subproblem. At each time step, the generative model first forecasts a finite number of travel demand for a finite horizon and then we solve the stochastic subproblem via Sample Average Approximation. We show via simulation that this approach is more robust to uncertain demand and vastly outperforms state-of-the-art fleet-level control algorithms. Finally, we validate the presented frameworks by deploying a fleet control application in a carsharing system in Japan. The application uses the aforementioned algorithms to provide, in real-time, tasks to the carsharing employees regarding actions to be taken to better meet customer demand. Results show significant improvement over human based decision making.},
+  address  = {Stanford, California},
+  month    = aug,
+  url      = {https://stacks.stanford.edu/file/druid:mm997fz9077/IglesiasPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Landry2021,
+  author       = {Landry, B.},
+  title        = {Differentiable and Bilevel Optimization for Control in Robotics},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {In this dissertation, we investigate an up-and-coming class of mathematical programs, bilevel optimization, and how it can be leveraged to tackle the most pressing algorithmic challenges of control in robotics. In this dissertation, we give an overview of our work on bilevel optimization, where two mathematical programs are nested into one another, and our progress on leveraging this class of problems to move us closer to computationally tractable control of nonlinear systems. Specifically, we demonstrate how it is possible to design novel solution methods that utilize advances in automatic differentiation while retaining the benefits of state of the art constrained nonlinear optimization solvers. We also demonstrate how particularly challenging problems of nonlinear control such as planning through contact, adversarial learning of value functions, and Lyapunov synthesis can all surprisingly be tackled by explicitly addressing them as bilevel optimization problems.},
+  address  = {Stanford, California},
+  month    = jun,
+  url      = {https://stacks.stanford.edu/file/druid:bw199zy3697/LandryPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Leung2021,
+  author       = {Leung, K.},
+  title        = {On Using Formal Methods for Safe and Robust Robot Autonomy},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {Advances in the fields of artificial intelligence and machine learning have unlocked a new generation of robotic systems---"learning-enabled" robots that are designed to operate in unstructured, uncertain, and unforgiving environments, especially settings where robots are required to interact in close proximity with humans. However, as learning-enabled methods, especially "deep" learning, continue to become more pervasive throughout the autonomy stack, it also becomes increasingly difficult to ascertain the performance and safety of these robotic systems and explain their behavior, necessary prerequisites for their deployment in safety-critical settings. This dissertation develops methods drawing upon techniques from the field of formal methods, namely Hamilton-Jacobi (HJ) reachability and Signal Temporal Logic (STL), to complement a learning-enabled robot autonomy stack, thereby leading to safer and more robust robot behavior. The first part of this dissertation investigates the problem of providing safety assurance for human-robot interactions, safety-critical settings wherein robots must reason about the uncertainty in human behavior to achieve seamless interactions with humans. Specifically, we develop a two-step approach where we first develop a learning-based human behavior prediction model tailored towards proactive robot planning and decision-making, which we then couple with a reachability-based safety controller that minimally intervenes whenever the robot is near safety violation. The approach is validated through human-in-the-loop simulation as well as on an experimental vehicle platform, demonstrating clear connections between theory and practice. The second part of this dissertation examines the use of STL as a formal language to incorporate logical reasoning into robot learning. In particular, we develop a technique, named STLCG, that casts STL into the same computational language as deep neural networks. Consequently, by using STLCG to express designers' domain expertise into a form compatible with neural networks, we can embed domain knowledge into learned components within the autonomy stack to provide additional levels of robustness and interpretability.},
+  address  = {Stanford, California},
+  month    = aug,
+  url      = {https://stacks.stanford.edu/file/druid:kk533yj7758/Leung_PhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Harrison2021,
+  author       = {Harrison, J.},
+  title        = {Uncertainty and Efficiency in Adaptive Robot Learning and Control},
+  school       = ios_univ_Stanford_ME,
+  year         = {2021},
+  abstract = {Autonomous robots have the potential to free humans from dangerous or dull work. To achieve truly autonomous operation, robots must be able to understand unstructured environments and make safe decisions in the face of uncertainty and non-stationarity. As such, robots must be able to learn about, and react to, changing operating conditions or environments continuously, efficiently, and safely. While the last decade has seen rapid advances in the capabilities of machine learning systems driven by deep learning, these systems are limited in their ability to adapt online, learn with small amounts of data, and characterize uncertainty. The desiderata of learning robots therefore directly conflict with the weaknesses of modern deep learning systems. This thesis aims to remedy this conflict and develop robot learning systems that are capable of learning safely and efficiently. In the first part of the thesis we develop tools for efficient learning in changing environments. In particular, we develop tools for the meta-learning problem setting---in which data from a collection of environments may be used to accelerate learning in a new environment---in both the regression and classification setting. These algorithms are based on exact Bayesian inference on meta-learned features. This approach enables characterization of uncertainty in the face of small amounts of within-environment data, and efficient learning via exact conditioning. We extend these approaches to time-varying settings beyond episodic variation, including continuous gradual environmental variation and sharp, changepoint-like variation. In the second part of the thesis we adapt these tools to the problem of robot modeling and control. In particular, we investigate the problem of combining our neural network-based meta-learning models with prior knowledge in the form of a nominal dynamics model, and discuss design decisions to yield better performance and parameter identification. We then develop a strategy for safe learning control. This strategy combines methods from modern constrained control---in particular, robust model predictive control---with ideas from classical adaptive control to yield a computationally efficient, simple to implement, and guaranteed safe control strategy capable of learning online. We conclude the thesis with a discussion of short, intermediate, and long-term next steps in extending the ideas developed herein toward the goal of true robot autonomy.},
+  address  = {Stanford, California},
+  month    = aug,
+  url      = {https://stacks.stanford.edu/file/druid:hh754jn1534/James_Harrison_Thesis-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Cauligi2021,
+  author       = {Cauligi, A.},
+  title        = {Data-Driven Approaches for Mixed Integer Convex Programming in Robot Control},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {Advances in sensing and actuation capabilities have allowed for the proliferation of robots across many fields, including aerial, industrial, and automotive applications. A driving factor in being able to deploy such robots in everyday applications is algorithms that imbue real-time decision making capabilities. Such decision-making capabilities can be formulated using the modeling framework of optimization programs. However, such optimization-based approaches are still limited by computational resources available on robot platforms. For example, in many aerospace applications, spacecraft robotic systems are equipped with embedded computers much less capable than the hardware typically used to solve such optimization algorithms. Thus, there is a pressing need to be able to scale and extend optimization-based planning and control algorithms to robotics applications with severely constrained computational resources. In this work, we turn towards recent advances in nonlinear optimization, supervised learning, and control theory to accelerate solving optimization-based controllers for online deployment. We then show how data-driven approaches can exploit powerful computational resources offline to learn the underlying structure of optimization problems such that the online decision making problem can be reduced to an approximate problem that is much easier to solve on embedded computers. In the first part of this dissertation, we present a local trajectory optimization framework known as Guaranteed Sequential Trajectory Optimization (GuSTO) that provides a theoretically-motivated algorithm that iteratively solves a series of convex optimization problems until convergence. We demonstrate how this framework can accommodate a broad class of trajectory optimization problems, including free-final time, free final-state, and problems on a manifold. We further discuss how GuSTO enables new applications, specifically in the domain of spacecraft robotic manipulation, and discuss the development of a novel gecko-inspired adhesive robot gripper design for the Astrobee assistive free-flying robot. In the second part of this dissertation, we turn towards global trajectory optimization problems, specifically those that can be formulated as mixed-integer convex programs (MICPs). MICPs are a popular modeling framework that can be used to model planning and control problems that are inherently combinatorial or discrete. However, existing algorithms fall short in being able to provide reliable solution approaches that can be deployed for real-time applications (i.e., 10-100Hz computation rates) on embedded systems. In this work, we turn towards data-driven approaches that can be used to find high quality feasible solutions to such MICPs and present Combinatorial Offline, Convex Online (CoCo). We demonstrate how such approaches can leverage the underlying structure of optimal control problems and compare our proposed approach against state-of-the-art commercial solvers. Numerical simulations are provided through this work to demonstrate the efficacy of our proposed approach and present hardware results on a free-flying spacecraft robotic test bed.},
+  address  = {Stanford, California},
+  month    = dec,
+  url      = {https://stacks.stanford.edu/file/druid:mx142wx7479/Cauligi-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Lorenzetti2021,
+  author       = {Lorenzetti, J.},
+  title        = {Reduced Order Model Predictive Control of High-Dimensional Systems},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {Many physical systems are modeled by finite-dimensional sets of ordinary differential equations (ODEs). Others have dynamics that evolve over a continuum (i.e. are infinite-dimensional) and are best modeled by partial differential equations (PDEs), including systems with fluid flows, deformable/flexible structures, or fluid-structure interaction. In practice, PDE models are generally semi-discretized to produce high-fidelity finite-dimensional ODE models. Since the dimension of these models can range from thousands to millions, computational challenges severely limit the use of standard approaches to model-based controller design. In this thesis, we propose an approach for efficiently designing high-performing controllers based on high-dimensional models. Specifically, we develop a model predictive control (MPC) algorithm for solving constrained optimal control problems that leverages high-fidelity, but low-dimensional, reduced order approximations of the original model to satisfy practical computational requirements. In the linear setting, we combine existing ideas from tube MPC with novel approaches for controller synthesis and analysis to develop a reduced order MPC (ROMPC) scheme for solving robust, output feedback control problems, and we provide theoretical closed-loop performance guarantees that explicitly account for model reduction error. We also extend the ROMPC scheme to the nonlinear setting by exploiting piecewise-affine reduced order models. We motivate and validate the proposed approach through two case studies. First, we use a linear, coupled rigid-body/fluid dynamics model for aircraft control, where the high-dimensional computational fluid dynamics (CFD) model has over one million dimensions. Second, we use a nonlinear finite element model (FEM) with over ten thousand dimensions to control a soft robot. Simulation and hardware experiments are used in both studies to demonstrate the practicality and performance of ROMPC.},
+  address  = {Stanford, California},
+  month    = aug,
+  url      = {https://stacks.stanford.edu/file/druid:xb656xk9170/LorenzettiPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
+@Phdthesis{Ivanovic2021,
+  author       = {Ivanovic, B.},
+  title        = {Trajectory Forecasting in the Modern Robotic Autonomy Stack},
+  school       = ios_univ_Stanford_AA,
+  year         = {2021},
+  abstract = {Autonomous systems are increasingly nearing widespread adoption, with new robotic platforms constantly being tested and deployed alongside humans in domains such as autonomous driving, service robotics, and surveillance. Accordingly, human-robot interaction will soon be present in many everyday scenarios. However, there are still many challenges preventing autonomous systems from safely and smoothly navigating interactions with humans. For example, while merging into traffic is one of the most common day-to-day maneuvers we perform as drivers, it poses a major problem for state-of-the-art self-driving vehicles. The reason humans can naturally navigate through many social interaction scenarios, such as merging in traffic, is that humans have an intrinsic capacity to reason about other people's intents, beliefs, and desires, applying this reasoning to predict what might happen in the future and make corresponding decisions. As a result, imbuing autonomous systems with the ability to reason about other agents' potential future actions is critical to enabling informed decision making and proactive actions to be taken in human-robot interaction scenarios. Indeed, the ability to predict other agents' behaviors (also known as "trajectory forecasting") has already become a core component of modern robotic systems, especially so in safety-critical applications such as autonomous vehicles. Towards this end, this dissertation tackles the development of trajectory forecasting methods, their effective integration within the robotic autonomy stack, and the injection of task-awareness in their performance evaluation.},
+  address  = {Stanford, California},
+  month    = dec,
+  url      = {https://stacks.stanford.edu/file/druid:nw436bv8593/IvanovicPhD-augmented.pdf},
+  owner        = {bylard},
+  timestamp    = {2021-12-06},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}

@@ -246,7 +246,34 @@
  
 
 
-<span class="entry" id="CauligiCulbertsonEtAl2021">A. Cauligi, P. Culbertson, E. Schmerling, M. Schwager, B. Stellato, and M. Pavone, <a class="entry-title" href="http://arxiv.org/abs/2107.08143">“CoCo: Online Mixed-Integer Control via Supervised Learning,”</a> <i>IEEE Robotics and Automation Letters</i>, 2021. (Submitted)</span> 
+<span class="entry" id="Cauligi2021">A. Cauligi, <a class="entry-title" href="https://stacks.stanford.edu/file/druid:mx142wx7479/Cauligi-augmented.pdf">“Data-Driven Approaches for Mixed Integer Convex Programming in Robot Control,”</a> PhD thesis, Stanford University, Dept. of Aeronautics and Astronautics, Stanford, California, 2021.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('Cauligi2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Cauligi2021','abstract')">Abstract</a>]</p>
+<span id="abs_Cauligi2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Advances in sensing and actuation capabilities have allowed for the proliferation of robots across many fields, including aerial, industrial, and automotive applications. A driving factor in being able to deploy such robots in everyday applications is algorithms that imbue real-time decision making capabilities. Such decision-making capabilities can be formulated using the modeling framework of optimization programs. However, such optimization-based approaches are still limited by computational resources available on robot platforms. For example, in many aerospace applications, spacecraft robotic systems are equipped with embedded computers much less capable than the hardware typically used to solve such optimization algorithms. Thus, there is a pressing need to be able to scale and extend optimization-based planning and control algorithms to robotics applications with severely constrained computational resources. In this work, we turn towards recent advances in nonlinear optimization, supervised learning, and control theory to accelerate solving optimization-based controllers for online deployment. We then show how data-driven approaches can exploit powerful computational resources offline to learn the underlying structure of optimization problems such that the online decision making problem can be reduced to an approximate problem that is much easier to solve on embedded computers. In the first part of this dissertation, we present a local trajectory optimization framework known as Guaranteed Sequential Trajectory Optimization (GuSTO) that provides a theoretically-motivated algorithm that iteratively solves a series of convex optimization problems until convergence. We demonstrate how this framework can accommodate a broad class of trajectory optimization problems, including free-final time, free final-state, and problems on a manifold. We further discuss how GuSTO enables new applications, specifically in the domain of spacecraft robotic manipulation, and discuss the development of a novel gecko-inspired adhesive robot gripper design for the Astrobee assistive free-flying robot. In the second part of this dissertation, we turn towards global trajectory optimization problems, specifically those that can be formulated as mixed-integer convex programs (MICPs). MICPs are a popular modeling framework that can be used to model planning and control problems that are inherently combinatorial or discrete. However, existing algorithms fall short in being able to provide reliable solution approaches that can be deployed for real-time applications (i.e., 10-100Hz computation rates) on embedded systems. In this work, we turn towards data-driven approaches that can be used to find high quality feasible solutions to such MICPs and present Combinatorial Offline, Convex Online (CoCo). We demonstrate how such approaches can leverage the underlying structure of optimal control problems and compare our proposed approach against state-of-the-art commercial solvers. Numerical simulations are provided through this work to demonstrate the efficacy of our proposed approach and present hardware results on a free-flying spacecraft robotic test bed.</p>
+</span>
+<span id="bib_Cauligi2021" class="bibtex noshow">
+	<pre>@phdthesis{Cauligi2021,
+  author = {Cauligi, A.},
+  title = {Data-Driven Approaches for Mixed Integer Convex Programming in Robot Control},
+  school = {{Stanford University, Dept. of Aeronautics and Astronautics}},
+  year = {2021},
+  address = {Stanford, California},
+  month = dec,
+  url = {https://stacks.stanford.edu/file/druid:mx142wx7479/Cauligi-augmented.pdf},
+  owner = {bylard},
+  timestamp = {2021-12-06}
+}
+</pre>
+</span>
+<!-- <span id="key_Cauligi2021" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="CauligiCulbertsonEtAl2021">A. Cauligi, P. Culbertson, E. Schmerling, M. Schwager, B. Stellato, and M. Pavone, <a class="entry-title" href="http://arxiv.org/abs/2107.08143">“CoCo: Online Mixed-Integer Control via Supervised Learning,”</a> <i>IEEE Robotics and Automation Letters</i>, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_CauligiCulbertsonEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.</p>
@@ -257,9 +284,7 @@
   title = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
   journal = {{IEEE Robotics and Automation Letters}},
   year = {2021},
-  note = {Submitted},
   url = {http://arxiv.org/abs/2107.08143},
-  keywords = {sub},
   owner = {acauligi},
   timestamp = {2021-07-20}
 }
@@ -267,7 +292,7 @@
 </span>
 <!-- <span id="key_CauligiCulbertsonEtAl2021" >
 	<b>Keywords</b>:
-	sub
+	
 </span> --></li>
 <li>
  
@@ -325,7 +350,7 @@
  
 
 
-<span class="entry" id="CauligiCulbertsonEtAl2020">A. Cauligi, P. Culbertson, B. Stellato, D. Bertsimas, M. Schwager, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2004.03736.pdf">“Learning Mixed-Integer Convex Optimization Strategies for Robot Planning and Control,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020. (In Press)</span> 
+<span class="entry" id="CauligiCulbertsonEtAl2020">A. Cauligi, P. Culbertson, B. Stellato, D. Bertsimas, M. Schwager, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2004.03736.pdf">“Learning Mixed-Integer Convex Optimization Strategies for Robot Planning and Control,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, Jeju Island, Republic of Korea, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_CauligiCulbertsonEtAl2020" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Mixed-integer convex programming (MICP) has seen significant algorithmic and hardware improvements with several orders of magnitude solve time speedups compared to 25 years ago. Despite these advances, MICP has been rarely applied to real-world robotic control because the solution times are still too slow for online applications. In this work, we extend the machine learning optimizer (MLOPT) framework to solve MICPs arising in robotics at very high speed. MLOPT encodes the combinatorial part of the optimal solution into a strategy. Using data collected from offline problem solutions, we train a multiclass classifier to predict the optimal strategy given problem-specific parameters such as states or obstacles. Compared to previous approaches, we use task-specific strategies and prune redundant ones to significantly reduce the number of classes the predictor has to select from, thereby greatly improving scalability. Given the predicted strategy, the control task becomes a small convex optimization problem that we can solve in milliseconds. Numerical experiments on a cart-pole system with walls, a free-flying space robot and task-oriented grasps show that our method provides not only 1 to 2 orders of magnitude speedups compared to state-of-the-art solvers but also performance close to the globally optimal MICP solution.</p>
@@ -336,11 +361,9 @@
   title = {Learning Mixed-Integer Convex Optimization Strategies for Robot Planning and Control},
   booktitle = {{Proc. IEEE Conf. on Decision and Control}},
   year = {2020},
-  note = {In Press},
   address = {Jeju Island, Republic of Korea},
   month = mar,
   url = {https://arxiv.org/pdf/2004.03736.pdf},
-  keywords = {press},
   owner = {acauligi},
   timestamp = {2020-04-05}
 }
@@ -348,7 +371,7 @@
 </span>
 <!-- <span id="key_CauligiCulbertsonEtAl2020" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  

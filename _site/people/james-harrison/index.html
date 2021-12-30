@@ -245,6 +245,33 @@
  
 
 
+<span class="entry" id="Harrison2021">J. Harrison, <a class="entry-title" href="https://stacks.stanford.edu/file/druid:hh754jn1534/James_Harrison_Thesis-augmented.pdf">“Uncertainty and Efficiency in Adaptive Robot Learning and Control,”</a> PhD thesis, Stanford University, Dept. of Mechanical Engineering, Stanford, California, 2021.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('Harrison2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Harrison2021','abstract')">Abstract</a>]</p>
+<span id="abs_Harrison2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Autonomous robots have the potential to free humans from dangerous or dull work. To achieve truly autonomous operation, robots must be able to understand unstructured environments and make safe decisions in the face of uncertainty and non-stationarity. As such, robots must be able to learn about, and react to, changing operating conditions or environments continuously, efficiently, and safely. While the last decade has seen rapid advances in the capabilities of machine learning systems driven by deep learning, these systems are limited in their ability to adapt online, learn with small amounts of data, and characterize uncertainty. The desiderata of learning robots therefore directly conflict with the weaknesses of modern deep learning systems. This thesis aims to remedy this conflict and develop robot learning systems that are capable of learning safely and efficiently. In the first part of the thesis we develop tools for efficient learning in changing environments. In particular, we develop tools for the meta-learning problem setting—in which data from a collection of environments may be used to accelerate learning in a new environment—in both the regression and classification setting. These algorithms are based on exact Bayesian inference on meta-learned features. This approach enables characterization of uncertainty in the face of small amounts of within-environment data, and efficient learning via exact conditioning. We extend these approaches to time-varying settings beyond episodic variation, including continuous gradual environmental variation and sharp, changepoint-like variation. In the second part of the thesis we adapt these tools to the problem of robot modeling and control. In particular, we investigate the problem of combining our neural network-based meta-learning models with prior knowledge in the form of a nominal dynamics model, and discuss design decisions to yield better performance and parameter identification. We then develop a strategy for safe learning control. This strategy combines methods from modern constrained control—in particular, robust model predictive control—with ideas from classical adaptive control to yield a computationally efficient, simple to implement, and guaranteed safe control strategy capable of learning online. We conclude the thesis with a discussion of short, intermediate, and long-term next steps in extending the ideas developed herein toward the goal of true robot autonomy.</p>
+</span>
+<span id="bib_Harrison2021" class="bibtex noshow">
+	<pre>@phdthesis{Harrison2021,
+  author = {Harrison, J.},
+  title = {Uncertainty and Efficiency in Adaptive Robot Learning and Control},
+  school = {{Stanford University, Dept. of Mechanical Engineering}},
+  year = {2021},
+  address = {Stanford, California},
+  month = aug,
+  url = {https://stacks.stanford.edu/file/druid:hh754jn1534/James_Harrison_Thesis-augmented.pdf},
+  owner = {bylard},
+  timestamp = {2021-12-06}
+}
+</pre>
+</span>
+<!-- <span id="key_Harrison2021" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_LewEtAl2021" class="abstract noshow">
@@ -259,7 +286,7 @@
   month = mar,
   url = {https://arxiv.org/pdf/2008.11700.pdf},
   keywords = {sub},
-  owner = {lewt},
+  owner = {lew},
   timestamp = {2021-03-05}
 }
 </pre>
@@ -439,7 +466,6 @@
   title = {Robust and Adaptive Planning under Model Uncertainty},
   booktitle = {{Int. Conf. on Automated Planning and Scheduling}},
   year = {2019},
-  note = {In Press},
   address = {Berkeley, California},
   month = jul,
   url = {https://arxiv.org/pdf/1901.02577.pdf},
@@ -510,7 +536,7 @@
  
 
 
-<span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018. (In Press)</span> 
+<span class="entry" id="HarrisonSharmaEtAl2018">J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1807.08912.pdf">“Meta-Learning Priors for Efficient Online Bayesian Regression,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Merida, Mexico, 2018.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('HarrisonSharmaEtAl2018','abstract')">Abstract</a>]</p>
 <span id="abs_HarrisonSharmaEtAl2018" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. In particular, the predominant implementation of GP regression is kernel-based, as it enables fitting of arbitrary nonlinear functions by leveraging kernel functions as infinite-dimensional features. While incorporating prior information has the potential to drastically improve data efficiency of kernel-based GP regression, expressing complex priors through the choice of kernel function and associated hyperparameters is often challenging and unintuitive. Furthermore, the computational complexity of kernel-based GP regression scales poorly with the number of samples, limiting its application in regimes where a large amount of data is available. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior density. These features are neural networks, which are trained via a meta-learning approach. ALPaCA extracts all prior information from the dataset, rather than relying on the choice of arbitrary, restrictive kernel hyperparameters. Furthermore, it substantially reduces sample complexity, and allows scaling to large systems. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.</p>
@@ -524,7 +550,6 @@
   address = {Merida, Mexico},
   month = oct,
   url = {https://arxiv.org/pdf/1807.08912.pdf},
-  keywords = {press},
   owner = {apoorva},
   timestamp = {2018-10-07}
 }
@@ -532,7 +557,7 @@
 </span>
 <!-- <span id="key_HarrisonSharmaEtAl2018" >
 	<b>Keywords</b>:
-	press
+	
 </span> --></li>
 <li>
  
