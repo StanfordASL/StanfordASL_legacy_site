@@ -4106,6 +4106,18 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-09-19},
 }
 
+@Article{LuoEtAl2022,
+  author       = {Luo, R. and Bhatnagar, A. and Wang, H. and Xiong, C. and Savarese, S. and Bai, Y. and Zhao, S. and Ermon, S. and Schmerling, E. and Pavone, M.},
+  title        = {Local Calibration: Metrics and Recalibration},
+  year         = {2022},
+  note         = {Submitted},
+  abstract = {Probabilistic classifiers output confidence scores along with their predictions, and these confidence scores should be calibrated, i.e., they should reflect the reliability of the prediction. Confidence scores that minimize standard metrics such as the expected calibration error (ECE) accurately measure the reliability on average across the entire population. However, it is in general impossible to measure the reliability of an individual prediction. In this work, we propose the local calibration error (LCE) to span the gap between average and individual reliability. For each individual prediction, the LCE measures the average reliability of a set of similar predictions, where similarity is quantified by a kernel function on a pretrained feature space and by a binning scheme over predicted model confidences. We show theoretically that the LCE can be estimated sample-efficiently from data, and empirically find that it reveals miscalibration modes that are more fine-grained than the ECE can detect. Our key result is a novel local recalibration method LoRe, to improve confidence scores for individual predictions and decrease the LCE. Experimentally, we show that our recalibration method produces more accurate confidence scores, which improves downstream fairness and decision making on classification tasks with both image and tabular data.},
+  keywords     = {sub},
+  owner        = {rdyro},
+  timestamp    = {2022-01-26},
+  url      = {https://arxiv.org/abs/2102.10809},
+}
+
 @Inproceedings{LuoZhaoEtAl2022,
   author       = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
   title        = {Sample-Efficient Safety Assurances using Conformal Prediction},
