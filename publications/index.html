@@ -252,33 +252,6 @@
  
 
 
-<span class="entry" id="IvanovicLinEtAl2022">B. Ivanovic, Y. Lin, S. Shrivastava, P. Chakravarty, and M. Pavone, <a class="entry-title" href="">“Propagating State Uncertainty Through Trajectory Forecasting,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLinEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLinEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_IvanovicLinEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Uncertainty pervades through the modern robotic autonomy stack, with nearly every component (e.g., sensors, detection, classification, tracking, behavior prediction) producing continuous or discrete probabilistic distributions. Trajectory forecasting, in particular, is surrounded by uncertainty as its inputs are produced by (noisy) upstream perception and its outputs are predictions that are often probabilistic for use in downstream planning. However, most trajectory forecasting methods do not account for upstream uncertainty, instead taking only the most-likely values. As a result, perceptual uncertainties are not propagated through forecasting and predictions are frequently overconfident. To address this, we present a novel method for incorporating perceptual state uncertainty in trajectory forecasting, a key component of which is a new statistical distance-based loss function which encourages predicting uncertainties that better match upstream perception. We evaluate our approach both in illustrative simulations and on large-scale, real-world data, demonstrating its efficacy in propagating perceptual state uncertainty through prediction and producing more calibrated predictions.</p>
-</span>
-<span id="bib_IvanovicLinEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{IvanovicLinEtAl2022,
-  author = {Ivanovic, B. and Lin, Y. and Shrivastava, S. and Chakravarty, P. and Pavone, M.},
-  title = {Propagating State Uncertainty Through Trajectory Forecasting},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
-  year = {2022},
-  month = may,
-  note = {Submitted},
-  keywords = {sub},
-  owner = {borisi},
-  timestamp = {2021-09-19}
-}
-</pre>
-</span>
-<!-- <span id="key_IvanovicLinEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="LuoZhaoEtAl2022">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.14082">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoZhaoEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoZhaoEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_LuoZhaoEtAl2022" class="abstract noshow">
@@ -307,51 +280,27 @@
  
 
 
-<span class="entry" id="LeungPavone2022">K. Leung and M. Pavone, <a class="entry-title" href="">“Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications,”</a> 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LeungPavone2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungPavone2022','abstract')">Abstract</a>]</p>
-<span id="abs_LeungPavone2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> There are spatio-temporal rules that dictate how robots should operate in complex environments, e.g., road rules govern how (self-driving) vehicles should behave on the road. However, seamlessly incorporating such rules into a robot control policy remains challenging especially for real-time applications. In this work, given a desired spatio-temporal specification expressed in the Signal Temporal Logic (STL) language, we propose a semi-supervised controller synthesis technique that is attuned to human-like behaviors while satisfying desired STL specifications. Offline, we synthesize a trajectory-feedback neural network controller via an adversarial training scheme that summarizes past spatio-temporal behaviors when computing controls, and then online, we perform gradient steps to improve specification satisfaction. Central to the offline phase is an imitation-based regularization component that fosters better policy exploration and helps induce naturalistic human behaviors. Our experiments demonstrate that having imitation-based regularization leads to higher qualitative and quantitative performance compared to optimizing an STL objective only as done in prior work. We demonstrate the efficacy of our approach with an illustrative case study and show that our proposed controller outperforms a state-of-the-art shooting method in both performance and computation time.</p>
+<span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> <i>IEEE Transactions on Robotics</i>, Jan. 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LewEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.</p>
 </span>
-<span id="bib_LeungPavone2022" class="bibtex noshow">
-	<pre>@inproceedings{LeungPavone2022,
-  author = {Leung, K. and Pavone, M.},
-  title = {Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications},
+<span id="bib_LewEtAl2021" class="bibtex noshow">
+	<pre>@article{LewEtAl2021,
+  author = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
+  title = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
+  journal = {{IEEE Transactions on Robotics}},
   year = {2022},
-  note = {Submitted},
+  note = {In Press},
+  month = jan,
+  url = {https://arxiv.org/pdf/2008.11700.pdf},
   keywords = {sub},
-  owner = {karenl7},
-  timestamp = {2021-10-14}
+  owner = {lew},
+  timestamp = {2022-01-27}
 }
 </pre>
 </span>
-<!-- <span id="key_LeungPavone2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ZhaoLakshmananEtAl2022">P. Zhao, A. Lakshmanan, K. Ackerman, A. Gahlawat, M. Pavone, and N. Hovakimyan, <a class="entry-title" href="https://arxiv.org/abs/2109.04453">“Tube-Certified Trajectory Tracking for Nonlinear Systems With Robust Control Contraction Metrics,”</a> <i>IEEE Robotics and Automation Letters</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ZhaoLakshmananEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZhaoLakshmananEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_ZhaoLakshmananEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> This paper presents an approach to guaranteed trajectory tracking for nonlinear control-affine systems subject to external disturbances based on robust control contraction metrics (CCM) that aim to minimize the L-infinity gain from the disturbances to the deviation of actual variables of interests from their nominal counterparts. The guarantee is in the form of invariant tubes, computed offline, around any nominal trajectories in which the actual states and inputs of the system are guaranteed to stay despite disturbances. Under mild assumptions, we prove that the proposed robust CCM (RCCM) approach yields tighter tubes than an existing approach based on CCM and input-to-state stability analysis. We show how the RCCM-based tracking controller together with tubes can be incorporated into a feedback motion planning framework to plan safe-guaranteed trajectories for robotic systems. Simulation results for a planar quadrotor illustrate the effectiveness of the proposed method and also empirically demonstrate significantly reduced conservatism compared to the CCM-based approach.</p>
-</span>
-<span id="bib_ZhaoLakshmananEtAl2022" class="bibtex noshow">
-	<pre>@article{ZhaoLakshmananEtAl2022,
-  author = {Zhao, P. and Lakshmanan, A. and Ackerman, K. and Gahlawat, A. and Pavone, M. and Hovakimyan, N.},
-  title = {Tube-Certified Trajectory Tracking for Nonlinear Systems With Robust Control Contraction Metrics},
-  journal = {{IEEE Robotics and Automation Letters}},
-  year = {2022},
-  note = {Submitted},
-  url = {https://arxiv.org/abs/2109.04453},
-  keywords = {sub},
-  owner = {borisi},
-  timestamp = {2021-09-19}
-}
-</pre>
-</span>
-<!-- <span id="key_ZhaoLakshmananEtAl2022" >
+<!-- <span id="key_LewEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -538,60 +487,6 @@
 </pre>
 </span>
 <!-- <span id="key_SalzmannPavoneEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="MalyutaEtAl2021">D. Malyuta, T. P. Reynolds, M. Szmuk, T. Lew, R. Bonalli, M. Pavone, and B. Acikmese, <a class="entry-title" href="https://arxiv.org/abs/2106.09125">“Convex Optimization for Trajectory Generation,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('MalyutaEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MalyutaEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_MalyutaEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Reliable and efficient trajectory generation methods are a fundamental need for autonomous dynamical systems of tomorrow. The goal of this article is to provide a comprehensive tutorial of three major convex optimization-based trajectory generation methods:  lossless convexification (LCvx), and two sequential convex programming algorithms known as SCvx and GuSTO. In this article, trajectory generation is the computation of a dynamically feasible state and control signal that satisfies a set of constraints while optimizing key mission objectives.  The trajectory generation problem is almost always nonconvex, which typically means that it is not readily amenable to efficient and reliable solution onboard an autonomous vehicle.  The three algorithms that we discuss use problem reformulation and a systematic algorithmic strategy to nonetheless solve nonconvex trajectory generation tasks through the use of a convex optimizer. The theoretical guarantees and computational speed offered by convex optimization have made the algorithms popular in both research and industry circles.  To date, the list of applications include rocket landing, spacecraft hypersonic reentry, spacecraft rendezvous and docking, aerial motion planning for fixed-wing and quadrotor vehicles, robot motion planning, and more.  Among these applications are high-profile rocket flights conducted by organizations like NASA, Masten Space Systems, SpaceX, and Blue Origin. This article aims to give the reader the tools and understanding necessary to work with each algorithm, and to know what each method can and cannot do. A publicly available source code repository supports the numerical examples provided at the end of this article. By the end of the article, the reader should be ready to use each method, to extend them, and to contribute to their many exciting modern applications.</p>
-</span>
-<span id="bib_MalyutaEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{MalyutaEtAl2021,
-  author = {Malyuta, D. and Reynolds, T.~P. and Szmuk, M. and Lew, T. and Bonalli, R. and Pavone, M. and Acikmese, B.},
-  title = {Convex Optimization for Trajectory Generation},
-  year = {2021},
-  note = {Submitted},
-  month = jun,
-  url = {https://arxiv.org/abs/2106.09125},
-  keywords = {sub},
-  owner = {lew},
-  timestamp = {2021-06-18}
-}
-</pre>
-</span>
-<!-- <span id="key_MalyutaEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_LewEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.</p>
-</span>
-<span id="bib_LewEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{LewEtAl2021,
-  author = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
-  title = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
-  year = {2021},
-  note = {Submitted},
-  month = mar,
-  url = {https://arxiv.org/pdf/2008.11700.pdf},
-  keywords = {sub},
-  owner = {lew},
-  timestamp = {2021-03-05}
-}
-</pre>
-</span>
-<!-- <span id="key_LewEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -845,31 +740,6 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="DyroHarrisonEtAl2021">R. Dyro, J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="">“Particle MPC for Uncertain and Learning-Based Control,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_DyroHarrisonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Autonomous decision-making in novel or changing environments requires quantification and consideration of uncertainties in the system or environment dynamics that impact downstream control performance. Thus, as robotic systems move from highly structured environments to open worlds, incorporating uncertainty in learning or estimation into the control pipeline is essential for robust and efficient performance. In this paper we present a nonlinear particle model predictive control (PMPC) approach to control under uncertainty. This approach, due to the particle representation of uncertainty, is capable of handling arbitrary uncertainty specifications. We implement our nonlinear PMPC scheme with a sequential convex programming non-convex optimization scheme, and we discuss practical implementation of such a framework. We investigate our approach for two robotic systems across three problem settings: time-varying, partially observed dynamics; sensing uncertainty; and model-based reinforcement learning, and show that our approach improves performance over baselines in all settings.</p>
-</span>
-<span id="bib_DyroHarrisonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{DyroHarrisonEtAl2021,
-  author = {Dyro, R. and Harrison, J. and Sharma, A. and Pavone, M.},
-  title = {Particle MPC for Uncertain and Learning-Based Control},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {jh2},
-  timestamp = {2021-03-23}
-}
-</pre>
-</span>
-<!-- <span id="key_DyroHarrisonEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="SinhaHarrisonEtAl2021">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2104.08261.pdf">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_SinhaHarrisonEtAl2021" class="abstract noshow">
@@ -1095,6 +965,33 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
+<span class="entry" id="IvanovicLinEtAl2022">B. Ivanovic, Y. Lin, S. Shrivastava, P. Chakravarty, and M. Pavone, <a class="entry-title" href="">“Propagating State Uncertainty Through Trajectory Forecasting,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLinEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLinEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_IvanovicLinEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Uncertainty pervades through the modern robotic autonomy stack, with nearly every component (e.g., sensors, detection, classification, tracking, behavior prediction) producing continuous or discrete probabilistic distributions. Trajectory forecasting, in particular, is surrounded by uncertainty as its inputs are produced by (noisy) upstream perception and its outputs are predictions that are often probabilistic for use in downstream planning. However, most trajectory forecasting methods do not account for upstream uncertainty, instead taking only the most-likely values. As a result, perceptual uncertainties are not propagated through forecasting and predictions are frequently overconfident. To address this, we present a novel method for incorporating perceptual state uncertainty in trajectory forecasting, a key component of which is a new statistical distance-based loss function which encourages predicting uncertainties that better match upstream perception. We evaluate our approach both in illustrative simulations and on large-scale, real-world data, demonstrating its efficacy in propagating perceptual state uncertainty through prediction and producing more calibrated predictions.</p>
+</span>
+<span id="bib_IvanovicLinEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{IvanovicLinEtAl2022,
+  author = {Ivanovic, B. and Lin, Y. and Shrivastava, S. and Chakravarty, P. and Pavone, M.},
+  title = {Propagating State Uncertainty Through Trajectory Forecasting},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2022},
+  month = may,
+  note = {In Press},
+  keywords = {press},
+  owner = {borisi},
+  timestamp = {2022-02-01}
+}
+</pre>
+</span>
+<!-- <span id="key_IvanovicLinEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="SchneiderBylardEtAl2022">S. Schneider, A. Bylard, T. G. Chen, P. Wang, M. R. Cutkosky, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2110.10829">“ReachBot: A Small Robot for Large Mobile Manipulation Tasks,”</a> in <i>IEEE Aerospace Conference</i>, Big Sky, Montana, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SchneiderBylardEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchneiderBylardEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_SchneiderBylardEtAl2022" class="abstract noshow">
@@ -1117,6 +1014,85 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_SchneiderBylardEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="MalyutaEtAl2022">D. Malyuta, T. P. Reynolds, M. Szmuk, T. Lew, R. Bonalli, M. Pavone, and B. Acikmese, <a class="entry-title" href="https://arxiv.org/abs/2106.09125">“Convex Optimization for Trajectory Generation,”</a> <i>IEEE Control Systems Magazine</i>, Jan. 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('MalyutaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MalyutaEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_MalyutaEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Reliable and efficient trajectory generation methods are a fundamental need for autonomous dynamical systems of tomorrow. The goal of this article is to provide a comprehensive tutorial of three major convex optimization-based trajectory generation methods:  lossless convexification (LCvx), and two sequential convex programming algorithms known as SCvx and GuSTO. In this article, trajectory generation is the computation of a dynamically feasible state and control signal that satisfies a set of constraints while optimizing key mission objectives.  The trajectory generation problem is almost always nonconvex, which typically means that it is not readily amenable to efficient and reliable solution onboard an autonomous vehicle.  The three algorithms that we discuss use problem reformulation and a systematic algorithmic strategy to nonetheless solve nonconvex trajectory generation tasks through the use of a convex optimizer. The theoretical guarantees and computational speed offered by convex optimization have made the algorithms popular in both research and industry circles.  To date, the list of applications include rocket landing, spacecraft hypersonic reentry, spacecraft rendezvous and docking, aerial motion planning for fixed-wing and quadrotor vehicles, robot motion planning, and more.  Among these applications are high-profile rocket flights conducted by organizations like NASA, Masten Space Systems, SpaceX, and Blue Origin. This article aims to give the reader the tools and understanding necessary to work with each algorithm, and to know what each method can and cannot do. A publicly available source code repository supports the numerical examples provided at the end of this article. By the end of the article, the reader should be ready to use each method, to extend them, and to contribute to their many exciting modern applications.</p>
+</span>
+<span id="bib_MalyutaEtAl2022" class="bibtex noshow">
+	<pre>@article{MalyutaEtAl2022,
+  author = {Malyuta, D. and Reynolds, T.~P. and Szmuk, M. and Lew, T. and Bonalli, R. and Pavone, M. and Acikmese, B.},
+  title = {Convex Optimization for Trajectory Generation},
+  year = {2022},
+  journal = {{IEEE Control Systems Magazine}},
+  note = {In Press},
+  month = jan,
+  url = {https://arxiv.org/abs/2106.09125},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2022-01-30}
+}
+</pre>
+</span>
+<!-- <span id="key_MalyutaEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="DyroSchmerlingEtAl2022">R. Dyro, E. Schmerling, N. Arechiga, and M. Pavone, <a class="entry-title" href="">“Second-Order Sensitivity Analysis for Bilevel Optimization,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_DyroSchmerlingEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this work we derive a second-order approach to bilevel optimization, a type of mathematical programming in which the solution to a parameterized optimization problem (the “lower” problem) is itself to be optimized (in the “upper” problem) as a function of the parameters. Many existing approaches to bilevel optimization employ first-order sensitivity analysis, based on the implicit function theorem (IFT), for the lower problem to derive a gradient of the lower problem solution with respect to its parameters; this IFT gradient is then used in a first-order optimization method for the upper problem. This paper extends this sensitivity analysis to provide second-order derivative information of the lower problem (which we call the IFT Hessian), enabling the usage of faster-converging second-order optimization methods at the upper level.  Our analysis shows that (i) much of the computation already used to produce the IFT gradient can be reused for the IFT Hessian, (ii) errors bounds derived for the IFT gradient readily apply to the IFT Hessian, (iii) computing IFT Hessians can significantly reduce overall computation by extracting more information from each lower level solve. We corroborate our findings and demonstrate the broad range of applications of our method by applying it to problem instances of least squares hyperparameter auto-tuning, multi-class SVM auto-tuning, and inverse optimal control.</p>
+</span>
+<span id="bib_DyroSchmerlingEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{DyroSchmerlingEtAl2022,
+  author = {Dyro, R. and Schmerling, E. and Arechiga, N. and Pavone, M.},
+  title = {Second-Order Sensitivity Analysis for Bilevel Optimization},
+  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
+  year = {2022},
+  keywords = {press},
+  owner = {rdyro},
+  timestamp = {2022-02-05}
+}
+</pre>
+</span>
+<!-- <span id="key_DyroSchmerlingEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LeungPavone2022">K. Leung and M. Pavone, <a class="entry-title" href="">“Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LeungPavone2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungPavone2022','abstract')">Abstract</a>]</p>
+<span id="abs_LeungPavone2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> There are spatio-temporal rules that dictate how robots should operate in complex environments, e.g., road rules govern how (self-driving) vehicles should behave on the road. However, seamlessly incorporating such rules into a robot control policy remains challenging especially for real-time applications. In this work, given a desired spatio-temporal specification expressed in the Signal Temporal Logic (STL) language, we propose a semi-supervised controller synthesis technique that is attuned to human-like behaviors while satisfying desired STL specifications. Offline, we synthesize a trajectory-feedback neural network controller via an adversarial training scheme that summarizes past spatio-temporal behaviors when computing controls, and then online, we perform gradient steps to improve specification satisfaction. Central to the offline phase is an imitation-based regularization component that fosters better policy exploration and helps induce naturalistic human behaviors. Our experiments demonstrate that having imitation-based regularization leads to higher qualitative and quantitative performance compared to optimizing an STL objective only as done in prior work. We demonstrate the efficacy of our approach with an illustrative case study and show that our proposed controller outperforms a state-of-the-art shooting method in both performance and computation time.</p>
+</span>
+<span id="bib_LeungPavone2022" class="bibtex noshow">
+	<pre>@inproceedings{LeungPavone2022,
+  author = {Leung, K. and Pavone, M.},
+  title = {Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications},
+  booktitle = {{American Control Conference}},
+  year = {2022},
+  note = {In Press},
+  keywords = {press},
+  owner = {karenl7},
+  timestamp = {2021-10-14}
+}
+</pre>
+</span>
+<!-- <span id="key_LeungPavone2022" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1169,6 +1145,33 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_ChoudhurySoloveyEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ZhaoLakshmananEtAl2022">P. Zhao, A. Lakshmanan, K. Ackerman, A. Gahlawat, M. Pavone, and N. Hovakimyan, <a class="entry-title" href="https://arxiv.org/abs/2109.04453">“Tube-Certified Trajectory Tracking for Nonlinear Systems With Robust Control Contraction Metrics,”</a> <i>IEEE Robotics and Automation Letters</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ZhaoLakshmananEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ZhaoLakshmananEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_ZhaoLakshmananEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> This paper presents an approach to guaranteed trajectory tracking for nonlinear control-affine systems subject to external disturbances based on robust control contraction metrics (CCM) that aim to minimize the L-infinity gain from the disturbances to the deviation of actual variables of interests from their nominal counterparts. The guarantee is in the form of invariant tubes, computed offline, around any nominal trajectories in which the actual states and inputs of the system are guaranteed to stay despite disturbances. Under mild assumptions, we prove that the proposed robust CCM (RCCM) approach yields tighter tubes than an existing approach based on CCM and input-to-state stability analysis. We show how the RCCM-based tracking controller together with tubes can be incorporated into a feedback motion planning framework to plan safe-guaranteed trajectories for robotic systems. Simulation results for a planar quadrotor illustrate the effectiveness of the proposed method and also empirically demonstrate significantly reduced conservatism compared to the CCM-based approach.</p>
+</span>
+<span id="bib_ZhaoLakshmananEtAl2022" class="bibtex noshow">
+	<pre>@article{ZhaoLakshmananEtAl2022,
+  author = {Zhao, P. and Lakshmanan, A. and Ackerman, K. and Gahlawat, A. and Pavone, M. and Hovakimyan, N.},
+  title = {Tube-Certified Trajectory Tracking for Nonlinear Systems With Robust Control Contraction Metrics},
+  journal = {{IEEE Robotics and Automation Letters}},
+  year = {2022},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/2109.04453},
+  keywords = {press},
+  owner = {rdyro},
+  timestamp = {2022-02-05}
+}
+</pre>
+</span>
+<!-- <span id="key_ZhaoLakshmananEtAl2022" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1737,6 +1740,32 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 <!-- <span id="key_BylardBonalliEtAl2021" >
 	<b>Keywords</b>:
 	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="DyroHarrisonEtAl2021">R. Dyro, J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.02213">“Particle MPC for Uncertain and Learning-Based Control,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, 2021. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_DyroHarrisonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> As robotic systems move from highly structured environments to open worlds, incorporating uncertainty from dynamics learning or state estimation into the control pipeline is essential for robust performance.  In this paper we present a nonlinear particle model predictive control (PMPC) approach to control under uncertainty, which directly incorporates any particle-based uncertainty representation, such as those common in robotics. Our approach builds on scenario methods for MPC, but in contrast to existing approaches, which either constrain all or only the first timestep to share actions across scenarios, we investigate the impact of a partial consensus horizon. Implementing this optimization for nonlinear dynamics by leveraging sequential convex optimization, our approach yields an efficient framework that can be tuned to the particular information gain dynamics of a system to mitigate both over-conservatism and over-optimism. We investigate our approach for two robotic systems across three problem settings: time-varying, partially observed dynamics; sensing uncertainty; and model-based reinforcement learning, and show that our approach improves performance over baselines in all settings.</p>
+</span>
+<span id="bib_DyroHarrisonEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{DyroHarrisonEtAl2021,
+  author = {Dyro, R. and Harrison, J. and Sharma, A. and Pavone, M.},
+  title = {Particle MPC for Uncertain and Learning-Based Control},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
+  year = {2021},
+  keywords = {press},
+  owner = {rdyro},
+  timestamp = {2022-02-05},
+  url = {https://arxiv.org/abs/2104.02213}
+}
+</pre>
+</span>
+<!-- <span id="key_DyroHarrisonEtAl2021" >
+	<b>Keywords</b>:
+	press
 </span> --></li>
 <li>
  
@@ -2625,7 +2654,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf">“On Infusing Reachability-Based Safety Assurance within Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, vol. 39, no. 10–11, pp. 1326–1345, 2020.</span> 
+<span class="entry" id="LeungSchmerlingEtAl2019">K. Leung, E. Schmerling, M. Zhang, M. Chen, J. Talbot, J. C. Gerdes, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2012.03390">“On Infusing Reachability-Based Safety Assurance within Planning Frameworks for Human-Robot Vehicle Interactions,”</a> <i>Int. Journal of Robotics Research</i>, vol. 39, no. 10–11, pp. 1326–1345, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungSchmerlingEtAl2019','abstract')">Abstract</a>]</p>
 <span id="abs_LeungSchmerlingEtAl2019" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Action anticipation, intent prediction, and proactive behavior are all desirable characteristics for autonomous driving policies in interactive scenarios. Paramount, however, is ensuring safety on the road—a key challenge in doing so is accounting for uncertainty in human driver actions without unduly impacting planner performance. This paper introduces a minimally-interventional safety controller operating within an autonomous vehicle control stack with the role of ensuring collision-free interaction with an externally controlled (e.g., human-driven) counterpart while respecting static obstacles such as a road boundary wall. We leverage reachability analysis to construct a real-time (100Hz) controller that serves the dual role of (1) tracking an input trajectory from a higher-level planning algorithm using model predictive control, and (2) assuring safety through maintaining the availability of a collision-free escape maneuver as a persistent constraint regardless of whatever future actions the other car takes. A full-scale steer-by-wire platform is used to conduct traffic weaving experiments wherein two cars, initially side-by-side, must swap lanes in a limited amount of time and distance, emulating cars merging onto/off of a highway. We demonstrate that, with our control stack, the autonomous vehicle is able to avoid collision even when the other car defies the planner’s expectations and takes dangerous actions, either carelessly or with the intent to collide, and otherwise deviates minimally from the planned trajectory to the extent required to maintain safety.</p>
@@ -2639,7 +2668,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   volume = {39},
   issue = {10--11},
   pages = {1326--1345},
-  url = {/wp-content/papercite-data/pdf/Leung.Schmerling.ea.IJRR19.pdf},
+  url = {https://arxiv.org/abs/2012.03390},
   timestamp = {2020-10-13}
 }
 </pre>
@@ -2755,7 +2784,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="LeungArechigaEtAl2020">K. Leung, N. Aréchiga, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.00097.pdf">“Back-propagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Oulu, Finland, 2020.</span> 
+<span class="entry" id="LeungArechigaEtAl2020">K. Leung, N. Aréchiga, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2008.00097v2">“Back-propagation through signal temporal logic specifications: Infusing logical structure into gradient-based methods,”</a> in <i>Workshop on Algorithmic Foundations of Robotics</i>, Oulu, Finland, 2020.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LeungArechigaEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungArechigaEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_LeungArechigaEtAl2020" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> This paper presents a technique, named stlcg, to compute the quantitative semantics of Signal Temporal Logic (STL) formulas using computation graphs. This provides a platform which enables the incorporation of logic-based specifications into robotics problems that benefit from gradient-based solutions. Specifically, STL is a powerful and expressive formal language that can specify spatial and temporal properties of signals generated by both continuous and hybrid systems. The quantitative semantics of STL provide a robustness metric, i.e., how much a signal satisfies or violates an STL specification. In this work we devise a systematic methodology for translating STL robustness formulas into computation graphs. With this representation, and by leveraging off-the-shelf auto-differentiation tools, we are able to back-propagate through STL robustness formulas and hence enable a natural and easy-to-use integration with many gradient-based approaches used in robotics. We demonstrate, through examples stemming from various robotics applications, that the technique is versatile, computationally efficient, and capable of injecting human-domain knowledge into the problem formulation.</p>
@@ -2767,7 +2796,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   booktitle = {{Workshop on Algorithmic Foundations of Robotics}},
   year = {2020},
   address = {Oulu, Finland},
-  url = {https://arxiv.org/pdf/2008.00097.pdf},
+  url = {https://arxiv.org/abs/2008.00097v2},
   owner = {karenl7},
   timestamp = {2020-04-09}
 }
