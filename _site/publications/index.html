@@ -224,7 +224,34 @@
  
 
 
-<span class="entry" id="IvanovicLeeEtAl2021">B. Ivanovic, K.-H. Lee, P. Tokmakov, B. Wulfe, R. McAllister, A. Gaidon, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.12446">“Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
+<span class="entry" id="RichardsAzizanEtAl2023">S. M. Richards, N. Azizan, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2103.04490.pdf">“Control-Oriented Meta-Learning,”</a> <i>Int. Journal of Robotics Research</i>, 2023. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('RichardsAzizanEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RichardsAzizanEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_RichardsAzizanEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With both fully-actuated and underactuated nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.</p>
+</span>
+<span id="bib_RichardsAzizanEtAl2023" class="bibtex noshow">
+	<pre>@article{RichardsAzizanEtAl2023,
+  author = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
+  title = {Control-Oriented Meta-Learning},
+  journal = {{Int. Journal of Robotics Research}},
+  year = {2023},
+  note = {Submitted},
+  keywords = {sub},
+  url = {https://arxiv.org/pdf/2103.04490.pdf},
+  owner = {spenrich},
+  timestamp = {2022-03-01}
+}
+</pre>
+</span>
+<!-- <span id="key_RichardsAzizanEtAl2023" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="IvanovicLeeEtAl2021">B. Ivanovic, K.-H. Lee, P. Tokmakov, B. Wulfe, R. McAllister, A. Gaidon, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.12446">“Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty,”</a> 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLeeEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLeeEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_IvanovicLeeEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Reasoning about the future behavior of other agents is critical to safe robot navigation. The multiplicity of plausible futures is further amplified by the uncertainty inherent to agent state estimation from data, including positions, velocities, and semantic class. Forecasting methods, however, typically neglect class uncertainty, conditioning instead only on the agent’s most likely class, even though perception models often return full class distributions. To exploit this information, we present HAICU, a method for heterogeneous-agent trajectory forecasting that explicitly incorporates agents’ class probabilities. We additionally present PUP, a new challenging real-world autonomous driving dataset, to investigate the impact of Perceptual Uncertainty in Prediction. It contains challenging crowded scenes with unfiltered agent class probabilities that reflect the long-tail of current state-of-the-art perception systems. We demonstrate that incorporating class probabilities in trajectory forecasting significantly improves performance in the face of uncertainty, and enables new forecasting capabilities such as counterfactual predictions.</p>
@@ -234,7 +261,6 @@
   author = {Ivanovic, B. and Lee, K-H. and Tokmakov, P. and Wulfe, B. and McAllister, R. and Gaidon, A. and Pavone, M.},
   title = {Heterogeneous-Agent Trajectory Forecasting Incorporating Class Uncertainty},
   month = may,
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2022},
   note = {Submitted},
   keywords = {sub},
@@ -252,7 +278,7 @@
  
 
 
-<span class="entry" id="LuoZhaoEtAl2022">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.14082">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
+<span class="entry" id="LuoZhaoEtAl2022">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.14082">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoZhaoEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoZhaoEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_LuoZhaoEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.</p>
@@ -261,7 +287,6 @@
 	<pre>@inproceedings{LuoZhaoEtAl2022,
   author = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
   title = {Sample-Efficient Safety Assurances using Conformal Prediction},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
   year = {2022},
   month = may,
   note = {Submitted},
@@ -280,27 +305,26 @@
  
 
 
-<span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> <i>IEEE Transactions on Robotics</i>, Jan. 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_LewEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.</p>
+<span class="entry" id="SalzmannPavoneEtAl2022_2">T. Salzmann, K. E., M. Pavone, S. D., and M. Ryll, <a class="entry-title" href="">“Neural-MPC: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms,”</a> in <i>IEEE Robotics and Automation Letters</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022_2','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022_2','abstract')">Abstract</a>]</p>
+<span id="abs_SalzmannPavoneEtAl2022_2" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast, neural networks can model complex effects purely from data. In contrast to such simple models, machine learning approaches such as neural networks have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Neural-MPC, a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world on a highly agile quadrotor platform, demonstrate up to 83% reduction in positional tracking error when compared to state-of-the-art MPC approaches without neural network dynamics. </p>
 </span>
-<span id="bib_LewEtAl2021" class="bibtex noshow">
-	<pre>@article{LewEtAl2021,
-  author = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
-  title = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
-  journal = {{IEEE Transactions on Robotics}},
+<span id="bib_SalzmannPavoneEtAl2022_2" class="bibtex noshow">
+	<pre>@inproceedings{SalzmannPavoneEtAl2022_2,
+  author = {Salzmann, T. and E., Kaufmann and Pavone, M. and D., Scaramuzza and Ryll, M.},
+  title = {Neural-MPC: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms},
+  booktitle = {{IEEE Robotics and Automation Letters}},
+  month = mar,
   year = {2022},
-  note = {In Press},
-  month = jan,
-  url = {https://arxiv.org/pdf/2008.11700.pdf},
+  note = {Submitted},
   keywords = {sub},
-  owner = {lew},
-  timestamp = {2022-01-27}
+  owner = {salzmann},
+  timestamp = {2022-03-02}
 }
 </pre>
 </span>
-<!-- <span id="key_LewEtAl2021" >
+<!-- <span id="key_SalzmannPavoneEtAl2022_2" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -308,26 +332,54 @@
  
 
 
-<span class="entry" id="ChenMillerEtAl2022">T. G. Chen, B. Miller, C. Winston, S. Schneider, A. Bylard, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf">“ReachBot: A Small Robot with Exceptional Reach for Rough Terrain,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ChenMillerEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenMillerEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_ChenMillerEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> ReachBot is a new concept for planetary exploration, consisting of a small body and long, lightweight extending arms loaded primarily in tension. The arms are equipped with spined grippers for anchoring on rock surfaces. The design and testing of a planar prototype is presented here. Experiments with rock grasping and coordinated locomotion illustrate the advantages of low inertia passive grippers, triggered by impact and using stored mechanical energy for the internal force. Gripper design involves a trade-off among the range of possible grasp angles, maximum grasp force, required triggering force, and required reset force. The current prototype can pull with up to 8 N when gripping volcanic rock, limited only by the strength of the 3D printed components. Calculations predict a maximum pull of 26 N for the same spines and stronger materials.</p>
+<span class="entry" id="GammelliYangEtAl2022">D. Gammelli, Y. K., J. Harrison, R. F., P. F., and M. Pavone, <a class="entry-title" href="">“Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand,”</a> in <i>ACM Int. Conf. on Knowledge Discovery and Data Mining</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliYangEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Autonomous Mobility-on-Demand (AMoD) systems represent an attractive alternative to existing transportation paradigms, currently challenged by urbanization and increasing travel needs. By centrally controlling a fleet of self-driving vehicles, these systems provide mobility service to customers and are currently starting to be deployed in a number of cities around the world. Current learning-based approaches for controlling AMoD systems are limited to the <i>single-city</i> scenario, whereby the service operator is allowed to take an unlimited amount of operational decisions within the same transportation system. However, real-world system operators can hardly afford to fully re-train AMoD controllers for every city they operate in, as this could result in a high number of poor-quality decisions during training, making the single-city strategy a potentially impractical solution. To address these limitations, we propose to formalize the multi-city AMoD problem through the lens of meta-reinforcement learning (meta-RL) and devise an actor-critic algorithm based on recurrent graph neural networks. In our approach, AMoD controllers are explicitly trained such that a small amount of experience within a new city will produce good system performance. Empirically, we show how control policies learned through meta-RL are able to achieve near-optimal performance on unseen cities by learning rapidly adaptable policies, thus making them more robust not only to novel environments, but also to distribution shifts common in real-world operations, such as special events, unexpected congestion, and dynamic pricing schemes. </p>
 </span>
-<span id="bib_ChenMillerEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{ChenMillerEtAl2022,
-  author = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
-  title = {{ReachBot:} {A} Small Robot with Exceptional Reach for Rough Terrain},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+<span id="bib_GammelliYangEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{GammelliYangEtAl2022,
+  author = {Gammelli, D. and K., Yang and Harrison, J. and F., Rodrigues and F., Pereira and Pavone, M.},
+  title = {Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand},
+  booktitle = {{ACM Int. Conf. on Knowledge Discovery and Data Mining}},
+  month = mar,
   year = {2022},
   note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf},
   keywords = {sub},
-  owner = {bylard},
-  timestamp = {2021-12-09}
+  owner = {ykd07},
+  timestamp = {2022-03-02}
 }
 </pre>
 </span>
-<!-- <span id="key_ChenMillerEtAl2022" >
+<!-- <span id="key_GammelliYangEtAl2022" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="JalotaPaccagnanEtAl2021">D. Jalota, D. Paccagnan, M. Schiffer, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.08706">“On Online Traffic Routing: Deterministic Limits and Data-driven Enhancements,”</a> <i>Informs Journal on Computing</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('JalotaPaccagnanEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaPaccagnanEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_JalotaPaccagnanEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Over the past decade, GPS enabled traffic applications, such as Google Maps andWaze, have become ubiquitous and have had a significant influence on billions of daily commuters? travel patterns. A consequence of the online route suggestions of such applications, e.g., via greedy routing, has often been an increase in traffic congestion since the induced travel patterns may be far from the system optimum routing pattern. Spurred by the widespread impact of navigational applications on travel patterns, this work studies online traffic routing in the context of capacity-constrained parallel road networks and analyzes this problem from two perspectives. First, we perform a worst-case analysis to identify the limits of deterministic online routing and show that the ratio between the online solution of any deterministic algorithm and the optimal offline solution is unbounded, even in simplistic settings. This result motivates us to move beyond worst-case analysis. Here, we consider algorithms that exploit knowledge of past problem instances and show how to design a data-driven algorithm whose performance can be quantified and formally generalized to unseen future instances. Finally, we present numerical experiments based on two application cases for the San Francisco Bay Area and evaluate the performance of our approach. Our results show that the data-driven algorithm often outperforms commonly used greedy online routing algorithms, in particular, in scenarios where the user types are heterogeneous and the network is congested.</p>
+</span>
+<span id="bib_JalotaPaccagnanEtAl2021" class="bibtex noshow">
+	<pre>@article{JalotaPaccagnanEtAl2021,
+  author = {Jalota, D. and Paccagnan, D. and Schiffer, M. and Pavone, M.},
+  title = {On Online Traffic Routing: Deterministic Limits and Data-driven Enhancements},
+  journal = {{Informs Journal on Computing}},
+  year = {2022},
+  note = {Submitted},
+  booktitle = {{Informs Journal on Computing}},
+  keywords = {sub},
+  owner = {devanshjalota},
+  timestamp = {2022-03-01},
+  url = {https://arxiv.org/abs/2109.08706}
+}
+</pre>
+</span>
+<!-- <span id="key_JalotaPaccagnanEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -408,85 +460,6 @@
 </pre>
 </span>
 <!-- <span id="key_DayanSoloveyEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ThorpeLewEtAl2021">A. J. Thorpe, T. Lew, M. M. K. Oishi, and M. Pavone, <a class="entry-title" href="">“Data-Driven Chance Constrained Control using Kernel Distribution Embeddings,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('ThorpeLewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ThorpeLewEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_ThorpeLewEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We present a data-driven algorithm for efficiently computing stochastic control policies for general joint chance constrained optimal control problems. Our approach leverages the theory of kernel distribution embeddings, which allows representing expectation operators as inner products in a reproducing kernel Hilbert space. This framework enables approximately reformulating the original problem using a dataset of observed trajectories from the system without imposing prior assumptions on the parameterization of the system dynamics or the structure of the uncertainty. By optimizing over a finite subset of stochastic open-loop control trajectories, we relax the original problem to a linear program over the control parameters that can be efficiently solved using standard convex optimization techniques. We demonstrate our proposed approach in simulation on a system with nonlinear non-Markovian dynamics navigating in a cluttered environment.</p>
-</span>
-<span id="bib_ThorpeLewEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{ThorpeLewEtAl2021,
-  author = {Thorpe, A.~J. and Lew, T. and Oishi, M.~M.~K. and Pavone, M.},
-  title = {Data-Driven Chance Constrained Control using Kernel Distribution Embeddings},
-  year = {2021},
-  note = {Submitted},
-  month = dec,
-  keywords = {sub},
-  owner = {lew},
-  timestamp = {2021-12-13}
-}
-</pre>
-</span>
-<!-- <span id="key_ThorpeLewEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="LewJansonEtAl2021">T. Lew, L. Janson, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2112.05745">“A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewJansonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewJansonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_LewJansonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their ε-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an ε-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.</p>
-</span>
-<span id="bib_LewJansonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{LewJansonEtAl2021,
-  author = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
-  title = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
-  year = {2021},
-  note = {Submitted},
-  month = dec,
-  url = {https://arxiv.org/abs/2112.05745},
-  keywords = {sub},
-  owner = {lew},
-  timestamp = {2021-12-13}
-}
-</pre>
-</span>
-<!-- <span id="key_LewJansonEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SalzmannPavoneEtAl2021">T. Salzmann, M. Pavone, and M. Ryll, <a class="entry-title" href="">“Motron: Multimodal Probabilistic Human Motion Forecasting,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SalzmannPavoneEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannPavoneEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_SalzmannPavoneEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Autonomous systems and humans are increasingly sharing the same space. Robots work side by side or even hand in hand with humans to balance each other’s limitations. Such cooperative interactions are ever more sophisticated. Thus, the ability to reason not just about a human’s center of gravity position, but also its granular motion is an important prerequisite for human-robot interaction. Though, many algorithms ignore the multimodal nature of humans or neglect uncertainty in their motion forecasts. We present Motron, a multimodal, probabilistic, graph-structured model, that captures human’s multimodality using probabilistic methods while being able to output deterministic motions and corresponding confidence values for each mode. Our model aims to be tightly integrated with the robotic planning-control-interaction loop; outputting physically feasible human motions and being computationally efficient. We demonstrate the performance of our model on several challenging real-world motion forecasting datasets, outperforming a wide array of generative methods while providing state-of-the-art deterministic capabilities.</p>
-</span>
-<span id="bib_SalzmannPavoneEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{SalzmannPavoneEtAl2021,
-  author = {Salzmann, T. and Pavone, M. and Ryll, M.},
-  title = {Motron: Multimodal Probabilistic Human Motion Forecasting},
-  month = oct,
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {salzmann},
-  timestamp = {2021-03-18}
-}
-</pre>
-</span>
-<!-- <span id="key_SalzmannPavoneEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -660,32 +633,6 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="JalotaPaccagnanEtAl2021">D. Jalota, D. Paccagnan, M. Schiffer, and M. Pavone, <a class="entry-title" href="">“On Online Traffic Routing: Deterministic Limits and Data-driven Enhancements,”</a> in <i>ACM Conf. on Economics and Computation</i>, 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('JalotaPaccagnanEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaPaccagnanEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_JalotaPaccagnanEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Over the past decade, GPS enabled traffic applications, such as Google Maps andWaze, have become ubiquitous and have had a significant influence on billions of daily commuters? travel patterns. A consequence of the online route suggestions of such applications, e.g., via greedy routing, has often been an increase in traffic congestion since the induced travel patterns may be far from the system optimum routing pattern. Spurred by the widespread impact of navigational applications on travel patterns, this work studies online traffic routing in the context of capacity-constrained parallel road networks and analyzes this problem from two perspectives. First, we perform a worst-case analysis to identify the limits of deterministic online routing and show that the ratio between the online solution of any deterministic algorithm and the optimal offline solution is unbounded, even in simplistic settings. This result motivates us to move beyond worst-case analysis. Here, we consider algorithms that exploit knowledge of past problem instances and show how to design a data-driven algorithm whose performance can be quantified and formally generalized to unseen future instances. Finally, we present numerical experiments based on two application cases for the San Francisco Bay Area and evaluate the performance of our approach. Our results show that the data-driven algorithm often outperforms commonly used greedy online routing algorithms, in particular, in scenarios where the user types are heterogeneous and the network is congested.</p>
-</span>
-<span id="bib_JalotaPaccagnanEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{JalotaPaccagnanEtAl2021,
-  author = {Jalota, D. and Paccagnan, D. and Schiffer, M. and Pavone, M.},
-  title = {On Online Traffic Routing: Deterministic Limits and Data-driven Enhancements},
-  booktitle = {{ACM Conf. on Economics and Computation}},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {devanshjalota},
-  timestamp = {2021-03-23}
-}
-</pre>
-</span>
-<!-- <span id="key_JalotaPaccagnanEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="ChapmanBonalliEtAlTAC2021">M. P. Chapman, R. Bonalli, K. M. Smith, I. Yang, M. Pavone, and C. J. Tomlin, <a class="entry-title" href="https://arxiv.org/abs/2101.12086">“Risk-sensitive safety analysis using Conditional Value-at-Risk,”</a> <i>IEEE Transactions on Automatic Control</i>, 2021. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChapmanBonalliEtAlTAC2021','abstract')">Abstract</a>]</p>
 <span id="abs_ChapmanBonalliEtAlTAC2021" class="abstract noshow">
@@ -706,32 +653,6 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_ChapmanBonalliEtAlTAC2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinhaHarrisonEtAl2021">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2104.08261.pdf">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_SinhaHarrisonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that can handle large uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear dynamics component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. Motivated by an inability of existing learning-based predictive control algorithms to achieve safety guarantees in the presence of uncertainties of large magnitude in this setting, we achieve significant performance improvements by optimizing over a novel class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control. In contrast with previous work in robust adaptive MPC, this allows us to take advantage of the structure in the a priori unknown dynamics that are learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when an additive uncertain function cannot directly be canceled from the dynamics. Moreover, our approach allows us to apply contemporary statistical estimation techniques to certify the safety of the system through persistent constraint satisfaction with high probability. We show that our method allows us to consider larger unknown terms in the dynamics than existing methods through simulated examples.</p>
-</span>
-<span id="bib_SinhaHarrisonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{SinhaHarrisonEtAl2021,
-  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
-  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  url = {https://arxiv.org/pdf/2104.08261.pdf},
-  owner = {rhnsinha},
-  timestamp = {2021-06-04}
-}
-</pre>
-</span>
-<!-- <span id="key_SinhaHarrisonEtAl2021" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -938,6 +859,33 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
+<span class="entry" id="SalzmannPavoneEtAl2022">T. Salzmann, M. Pavone, and M. Ryll, <a class="entry-title" href="">“Motron: Multimodal Probabilistic Human Motion Forecasting,”</a> in <i>IEEE Conf. on Computer Vision and Pattern Recognition</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_SalzmannPavoneEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Autonomous systems and humans are increasingly sharing the same space. Robots work side by side or even hand in hand with humans to balance each other’s limitations. Such cooperative interactions are ever more sophisticated. Thus, the ability to reason not just about a human’s center of gravity position, but also its granular motion is an important prerequisite for human-robot interaction. Though, many algorithms ignore the multimodal nature of humans or neglect uncertainty in their motion forecasts. We present Motron, a multimodal, probabilistic, graph-structured model, that captures human’s multimodality using probabilistic methods while being able to output deterministic motions and corresponding confidence values for each mode. Our model aims to be tightly integrated with the robotic planning-control-interaction loop; outputting physically feasible human motions and being computationally efficient. We demonstrate the performance of our model on several challenging real-world motion forecasting datasets, outperforming a wide array of generative methods while providing state-of-the-art deterministic motions if required. Both using significantly less computational power than state-of-the art algorithms.</p>
+</span>
+<span id="bib_SalzmannPavoneEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{SalzmannPavoneEtAl2022,
+  author = {Salzmann, T. and Pavone, M. and Ryll, M.},
+  title = {Motron: Multimodal Probabilistic Human Motion Forecasting},
+  booktitle = {{IEEE Conf. on Computer Vision and Pattern Recognition}},
+  month = jun,
+  year = {2022},
+  note = {Accepted},
+  keywords = {press},
+  owner = {salzmann},
+  timestamp = {2022-03-02}
+}
+</pre>
+</span>
+<!-- <span id="key_SalzmannPavoneEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="IvanovicLinEtAl2022">B. Ivanovic, Y. Lin, S. Shrivastava, P. Chakravarty, and M. Pavone, <a class="entry-title" href="">“Propagating State Uncertainty Through Trajectory Forecasting,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IvanovicLinEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IvanovicLinEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_IvanovicLinEtAl2022" class="abstract noshow">
@@ -987,6 +935,90 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_SchneiderBylardEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ThorpeLewEtAl2022">A. J. Thorpe, T. Lew, M. M. K. Oishi, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2202.04193">“Data-Driven Chance Constrained Control using Kernel Distribution Embeddings,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ThorpeLewEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ThorpeLewEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_ThorpeLewEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We present a data-driven algorithm for efficiently computing stochastic control policies for general joint chance constrained optimal control problems. Our approach leverages the theory of kernel distribution embeddings, which allows representing expectation operators as inner products in a reproducing kernel Hilbert space. This framework enables approximately reformulating the original problem using a dataset of observed trajectories from the system without imposing prior assumptions on the parameterization of the system dynamics or the structure of the uncertainty. By optimizing over a finite subset of stochastic open-loop control trajectories, we relax the original problem to a linear program over the control parameters that can be efficiently solved using standard convex optimization techniques. We demonstrate our proposed approach in simulation on a system with nonlinear non-Markovian dynamics navigating in a cluttered environment.</p>
+</span>
+<span id="bib_ThorpeLewEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{ThorpeLewEtAl2022,
+  author = {Thorpe, A.~J. and Lew, T. and Oishi, M.~M.~K. and Pavone, M.},
+  title = {Data-Driven Chance Constrained Control using Kernel Distribution Embeddings},
+  year = {2022},
+  booktitle = {{Learning for Dynamics \& Control Conference}},
+  note = {In Press},
+  month = mar,
+  url = {https://arxiv.org/abs/2202.04193},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2022-03-01}
+}
+</pre>
+</span>
+<!-- <span id="key_ThorpeLewEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewJansonEtAl2022">T. Lew, L. Janson, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2112.05745">“A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewJansonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewJansonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_LewJansonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their ε-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an ε-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.</p>
+</span>
+<span id="bib_LewJansonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{LewJansonEtAl2022,
+  author = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
+  title = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
+  year = {2022},
+  booktitle = {{Learning for Dynamics \& Control Conference}},
+  note = {In Press},
+  month = mar,
+  url = {https://arxiv.org/abs/2112.05745},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2022-03-01}
+}
+</pre>
+</span>
+<!-- <span id="key_LewJansonEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LewEtAl2021">T. Lew, A. Sharma, J. Harrison, A. Bylard, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2008.11700.pdf">“Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework,”</a> <i>IEEE Transactions on Robotics</i>, Jan. 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_LewEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.</p>
+</span>
+<span id="bib_LewEtAl2021" class="bibtex noshow">
+	<pre>@article{LewEtAl2021,
+  author = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
+  title = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
+  journal = {{IEEE Transactions on Robotics}},
+  year = {2022},
+  note = {In Press},
+  month = jan,
+  url = {https://arxiv.org/pdf/2008.11700.pdf},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2022-01-27}
+}
+</pre>
+</span>
+<!-- <span id="key_LewEtAl2021" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1047,6 +1079,32 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
+<span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/2104.08261.pdf">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. We optimize over a class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control to achieve significant performance improvements in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive MPC, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety through persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
+</span>
+<span id="bib_SinhaHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{SinhaHarrisonEtAl2022,
+  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
+  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
+  year = {2022},
+  keywords = {press},
+  booktitle = {{American Control Conference}},
+  url = {https://arxiv.org/pdf/2104.08261.pdf},
+  owner = {rhnsinha},
+  timestamp = {2022-01-31}
+}
+</pre>
+</span>
+<!-- <span id="key_SinhaHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LeungPavone2022">K. Leung and M. Pavone, <a class="entry-title" href="">“Semi-Supervised Trajectory-Feedback Controller Synthesis with Signal Temporal Logic Specifications,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LeungPavone2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LeungPavone2022','abstract')">Abstract</a>]</p>
 <span id="abs_LeungPavone2022" class="abstract noshow">
@@ -1073,21 +1131,21 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="JalotaSoloveyEtAl2022">D. Jalota, K. Solovey, S. Zoepf, and M. Pavone, <a class="entry-title" href="">“Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment,”</a> in <i>Proc. Int. Conf. on Autonomous Agents and Multiagent Systems</i>, 2022. (In Press)</span> 
+<span class="entry" id="JalotaSoloveyEtAl2022">D. Jalota, K. Solovey, M. Tsao, S. Zoepf, and M. Pavone, <a class="entry-title" href="">“Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment,”</a> in <i>Proc. Int. Conf. on Autonomous Agents and Multiagent Systems</i>, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('JalotaSoloveyEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('JalotaSoloveyEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_JalotaSoloveyEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail for transportation authorities. However, SO routing may discriminate against users who incur much larger travel times than others to achieve high system efficiency, i.e., low total travel times. To address the inherent unfairness of SO routing, we study the β-fair SO problem whose goal is to minimize the total travel time while guaranteeing a β≥1 level of unfairness, which specifies the maximal ratio between the travel times of different users with shared origins and destinations. To obtain feasible solutions to the β-fair SO problem while achieving high system efficiency, we develop a new convex program, the Interpolated Traffic Assignment Problem (I-TAP), which interpolates between a fair and an efficient traffic-assignment objective. We then leverage the structure of I-TAP to develop two pricing mechanisms to collectively enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively, that independently choose routes to minimize their own travel costs. We mention that this is the first study of pricing in the context of fair routing. Finally, we use origin-destination demand data for a range of transportation networks to numerically evaluate the performance of I-TAP as compared to a state-of-the-art algorithm. The numerical results indicate that our approach is faster by several orders of magnitude, while achieving higher system efficiency for most levels of unfairness.</p>
 </span>
 <span id="bib_JalotaSoloveyEtAl2022" class="bibtex noshow">
 	<pre>@inproceedings{JalotaSoloveyEtAl2022,
-  author = {Jalota, D. and Solovey, K. and Zoepf, S. and Pavone, M.},
+  author = {Jalota, D. and Solovey, K. and Tsao, M. and Zoepf, S. and Pavone, M.},
   title = {Balancing Fairness and Efficiency in Traffic Routing via Interpolated Traffic Assignment},
   booktitle = {{Proc. Int. Conf. on Autonomous Agents and Multiagent Systems}},
   year = {2022},
   note = {In Press},
   keywords = {press},
   owner = {devanshjalota},
-  timestamp = {2021-10-17}
+  timestamp = {2022-03-01}
 }
 </pre>
 </span>
@@ -1145,6 +1203,58 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_ZhaoLakshmananEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="ChenMillerEtAl2022">T. G. Chen, B. Miller, C. Winston, S. Schneider, A. Bylard, M. Pavone, and M. R. Cutkosky, <a class="entry-title" href="/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf">“ReachBot: A Small Robot with Exceptional Reach for Rough Terrain,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('ChenMillerEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ChenMillerEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_ChenMillerEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> ReachBot is a new concept for planetary exploration, consisting of a small body and long, lightweight extending arms loaded primarily in tension. The arms are equipped with spined grippers for anchoring on rock surfaces. The design and testing of a planar prototype is presented here. Experiments with rock grasping and coordinated locomotion illustrate the advantages of low inertia passive grippers, triggered by impact and using stored mechanical energy for the internal force. Gripper design involves a trade-off among the range of possible grasp angles, maximum grasp force, required triggering force, and required reset force. The current prototype can pull with up to 8 N when gripping volcanic rock, limited only by the strength of the 3D printed components. Calculations predict a maximum pull of 26 N for the same spines and stronger materials.</p>
+</span>
+<span id="bib_ChenMillerEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{ChenMillerEtAl2022,
+  author = {Chen, T. G. and Miller, B. and Winston, C. and Schneider, S. and Bylard, A. and Pavone, M. and Cutkosky, M. R.},
+  title = {{ReachBot:} {A} Small Robot with Exceptional Reach for Rough Terrain},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  year = {2022},
+  note = {press},
+  url = {/wp-content/papercite-data/pdf/Chen.Miller.ea.RAL22.pdf},
+  keywords = {press},
+  owner = {bylard},
+  timestamp = {2021-12-09}
+}
+</pre>
+</span>
+<!-- <span id="key_ChenMillerEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BrownSchmerlingEtAl2022">R. Brown, E. Schmerling, N. Azizan, and M. Pavone, <a class="entry-title" href="">“A Unified View of SDP-based Neural Network Verification through Completely Positive Programming,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_BrownSchmerlingEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Verifying that input-output relationships of a neural network conform to prescribed operational specifications is a key enabler towards deploying these networks in safety-critical applications. Semidefinite programming (SDP)-based approaches to Rectified Linear Unit (ReLU) network verification transcribe this problem into an optimization problem, where the accuracy of any such formulation reflects the level of fidelity in how the neural network computation is represented, as well as the relaxations of intractable constraints. While the literature contains much progress on improving the tightness of SDP formulations while maintaining tractability, comparatively little work has been devoted to the other extreme, i.e., how to most accurately capture the original verification problem before SDP relaxation. In this work, we develop an exact, convex formulation of verification as a completely positive program (CPP), and provide analysis showing that our formulation is minimal—the removal of any constraint fundamentally misrepresents the neural network computation. We leverage our formulation to provide a unifying view of existing approaches, and give insight into the source of large relaxation gaps observed in some cases.</p>
+</span>
+<span id="bib_BrownSchmerlingEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{BrownSchmerlingEtAl2022,
+  author = {Brown, R. and Schmerling, E. and Azizan, N. and Pavone, M.},
+  title = {A Unified View of SDP-based Neural Network Verification through Completely Positive Programming},
+  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
+  year = {2022},
+  keywords = {press},
+  owner = {rabrown1},
+  timestamp = {2022-02-17}
+}
+</pre>
+</span>
+<!-- <span id="key_BrownSchmerlingEtAl2022" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1782,7 +1892,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   journal = {{Int. Journal of Robotics Research}},
   year = {2021},
   note = {In Press},
-  keywords = {in press},
+  keywords = {press},
   owner = {karenl7},
   timestamp = {2021-12-19}
 }
@@ -1790,7 +1900,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </span>
 <!-- <span id="key_LeungArechigaEtAl2021" >
 	<b>Keywords</b>:
-	in press
+	press
 </span> --></li>
 <li>
  
