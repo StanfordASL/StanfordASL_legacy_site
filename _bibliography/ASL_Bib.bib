@@ -3554,7 +3554,7 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   timestamp    = {2021-03-15},
 }
 
-@Article{LewEtAl2021,
+@Article{LewEtAl2022,
     author       = {Lew, T. and Sharma, A. and Harrison, J. and Bylard, A. and Pavone, M.},
     title        = {Safe Active Dynamics Learning and Control: A Sequential Exploration-Exploitation Framework},
 	journal      = jrn_IEEE_TR,
@@ -4042,9 +4042,13 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   author       = {Cauligi, A. and Culbertson, P. and Schmerling, E. and Schwager, M. and Stellato, B. and Pavone, M.},
   title        = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
   journal      = jrn_IEEE_RAL,
+  volume    = {7},
+  number    = {2},
+  pages     = {1447--1454},
   year         = {2021},
   abstract = {Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.},
   url      = {http://arxiv.org/abs/2107.08143},
+  keywords     = {press},
   owner        = {acauligi},
   timestamp    = {2021-07-20},
 }
@@ -4456,6 +4460,20 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   owner = {ykd07},
   timestamp = {2022-03-02}
 }
+
+@article{SelimAlanwarEtAl2022,
+  author = {Selim, M. and Alanwar, A. and Kousik, S. and Gao, G. and Pavone, M. and Johansson, K.},
+  title = {Safe Reinforcement Learning Using Black-Box Reachability Analysis},
+  journal = jrn_IEEE_RAL,
+  year = {2022},
+  note = {Submitted},
+  abstract = {Reinforcement learning (RL) is capable of sophisticated motion planning and control for robots in uncertain environments. However, state-of-the-art deep RL approaches typically lack safety guarantees, especially when the robot and environment models are unknown. To justify widespread deployment, robots must respect safety constraints without sacrificing performance.  Thus, we propose a Black-box Reachability-based Safety Layer (BRSL) with three main components: (1)~data-driven reachability analysis for a black-box robot model, (2)~a ``dreaming'' trajectory planner that hallucinates future actions and observations using an ensemble of neural networks trained online, and (3)~a differentiable polytope collision check between the reachable set and obstacles that enables correcting unsafe actions. In simulation, BRSL outperforms other state-of-the-art safe RL methods on a Turtlebot 3, a quadrotor, and a trajectory-tracking point mass with an unsafe set adjacent to the area of highest reward.},
+  url = {},
+  keywords = {sub},
+  owner = {skousik},
+  timestamp = {2022-03-03}
+}
+
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
