@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AA 203: Optimal and Learning-based Control</title>
+
+    <meta name="description" content="Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Model-based reinforcement learning, and connections between modern reinforcement learning in continuous spaces and fundamental optimal control ideas.">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/aa203_sp2021/"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
+
+    <!-- AA 203 CSS -->
+    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa203.css"> 
+
+    <!-- Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124680200-1');
+    </script>
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3" style="z-index: 1;">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="https://stanfordasl.github.io/img/ASL_Logo_White.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <!-- 
+                            <li class="page-scroll">
+                                <a href="/">Home</a>
+                            </li>
+                             -->
+                            
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll active">
+                                        <a href="/aa203_sp2021/">Home</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203_sp2021/assignments.html">Homework</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203_sp2021/project.html">Project</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>   </h4>
+          <h1>AA 203: Optimal and Learning-Based Control</h1>
+          <h4>Spring 2021</h4>
+        </div>
+      </div>
+      <!-- <div class="row text-center">
+        <img id="aa203-banner-image" src="/img/aa203/banner-small.png">
+      </div> -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Course Description</h3>
+          <p>Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Adaptive control, model-based and model-free reinforcement learning, and connections between modern reinforcement learning and fundamental optimal control ideas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <h3>Instructors</h3>
+          <table class="aa203_people">
+            <tr>
+              <th>
+                <a href="/people/edward-schmerling/"><img class="aa203_headshot" src="/img/people/EdwardSchmerling.png"></a>
+                <a href="/people/edward-schmerling/">Ed Schmerling</a>
+              </th>
+              <th>
+                <a href="https://stanford.edu/~jh2/"><img class="aa203_headshot" src="/img/aa203_sp2021/people/JamesHarrison.jpg"></a>
+                <a href="https://stanford.edu/~jh2/">James Harrison</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <h3>Course Assistants</h3>
+          <table class="aa203_people">
+            <tr>
+              <th>
+                <a href="/people/matt-tsao/"><img class="aa203_headshot" src="/img/people/MattTsao.jpg"></a>
+                <a href="/people/matt-tsao/">Matt Tsao</a>
+              </th>
+              <th>
+                <a href="/people/spencer-richards/"><img class="aa203_headshot" src="/img/people/SpencerRichards.jpg"></a>
+                <a href="/people/spencer-richards/">Spencer M. Richards</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Meeting Times</h3>
+          <p>Lectures will be online; details of lecture recordings and office hours are available in the syllabus.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Syllabus</h3>
+          <p>The class syllabus can be found <a href="/aa203_sp2021/pdfs/AA203_Syllabus_2021.pdf">here</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Schedule</h3>
+          <p>Subject to change. Lecture notes are available <a href="https://github.com/StanfordASL/AA203-Notes">here</a>. We will try to have the lecture notes updated before the class.</p>
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+          .tg .tg-vnl4{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-2g2i{font-family:"Trebuchet MS", Helvetica, sans-serif !important;;border-color:inherit;text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+            <tr>
+              <th class="tg-2g2i">Week</th>
+              <th class="tg-vnl4">Topic</th>
+              <th class="tg-vnl4">Lecture Slides</th>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">1</td>
+              <td class="tg-vnl4">
+              Introduction; Control, stability, and metrics
+              <br>Introduction to learning; System identification and adaptive control
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203_sp2021/pdfs/lecture/lecture_1.pdf">Lecture 1</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-1">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_2.pdf">Lecture 2</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">2</td>
+              <td class="tg-vnl4">
+              Unconstrained optimization
+              <br> Constrained optimization
+              <br> Recitation: Convex optimization and optimization tools
+              <br> Homework: Assignment 1 released
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203_sp2021/pdfs/lecture/lectures_3_and_4.pdf">Lecture 3</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-3">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lectures_3_and_4.pdf">Lecture 4</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-4">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/recitation_1.pdf">Recitation 1</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">3</td>
+              <td class="tg-vnl4">
+              Dynamic programming, discrete LQR
+              <br> Stochastic DP, value iteration, policy iteration
+              <br> Recitation: Automatic differentiation and Jax
+              <br> Project: Proposal due
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203_sp2021/pdfs/lecture/lecture_5.pdf">Lecture 5</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_6.pdf">Lecture 6</a>;
+              <a href="https://docs.google.com/spreadsheets/d/1iH8bVbxrTb6tqpZVz26vhWp2rRB7f9h_WdHU4ceEnWI/edit?usp=sharing">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/recitation_2.pdf">Recitation 2</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Recitation-2">Code</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">4</td>
+              <td class="tg-vnl4">
+              LQG, dual control, introduction to reinforcement learning
+              <br>Nonlinearity; Tracking LQR, iterative LQR, DDP
+              <br> Recitation: Regression models
+              <br> Homework: Assignment 1 due
+              <br> Homework: Assignment 2 released
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203_sp2021/pdfs/lecture/lecture_7.pdf">Lecture 7</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_8.pdf">Lecture 8</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/recitation_3.pdf"> Recitation 3 </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">5</td>
+              <td class="tg-vnl4">
+              Direct methods for optimal control; sequential convex programming
+              <br>HJB, HJI, reachability analysis
+              <br> Recitation: Training neural networks and PyTorch
+              </td>
+              <td class="tg-vnl4">
+              <a href="/aa203_sp2021/pdfs/lecture/lecture_9.pdf">Lecture 9</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-9">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_10.pdf">Lecture 10</a>;
+              <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-10">Code</a>
+              <br> <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Recitation-4">Recitation 4</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">6</td>
+              <td class="tg-vnl4">
+              Intro to model predictive control
+              <br>Feasibility and stability of MPC
+              <br> Homework: Assignment 2 due
+              <br> Project: Midterm report due
+              </td>
+              <td class="tg-vnl4">
+                <a href="/aa203_sp2021/pdfs/lecture/lecture_11.pdf">Lecture 11</a>
+                <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_12.pdf">Lecture 12</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">7</td>
+              <td class="tg-vnl4">
+              Adaptive and learning MPC
+              <br> Model-based RL
+              <br> Homework: Assignment 3 released
+              </td>
+              <td class="tg-vnl4">
+                <a href="/aa203_sp2021/pdfs/lecture/lecture_13.pdf">Lecture 13</a>
+                <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_14.pdf">Lecture 14</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">8</td>
+              <td class="tg-vnl4">
+              Model-free RL: policy gradient and actor critic
+              <br> Model-based policy learning
+              <td class="tg-vnl4">
+                <a href="/aa203_sp2021/pdfs/lecture/lecture_15.pdf">Lecture 15</a>
+                <br> <a href="/aa203_sp2021/pdfs/lecture/lectures_16_and_17.pdf">Lecture 16</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">9</td>
+              <td class="tg-vnl4">
+              Model-based policy learning (cont.)
+              <br> Calculus of variations
+              <br> Homework: Assignment 3 due
+              <br> Homework: Assignment 4 released
+              <br> <span style="font-style:italic"></span>
+              </td>
+              <td class="tg-vnl4">
+                <a href="/aa203_sp2021/pdfs/lecture/lectures_16_and_17.pdf">Lecture 17</a>
+                <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_18.pdf">Lecture 18</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-2g2i">10</td>
+              <td class="tg-vnl4">
+              Indirect methods for optimal control
+              <br> Pontryagin's maximum principle, wrap up, recent work, and future directions
+              <br> Homework: Assignment 4 due
+              <br> Project: Video presentation and final report due
+              </td>
+              <td class="tg-vnl4">
+                <a href="/aa203_sp2021/pdfs/lecture/lecture_19.pdf">Lecture 19</a>;
+                <a href="https://github.com/StanfordASL/AA203-Examples/tree/2021/Lecture-19">Code</a>
+              <br> <a href="/aa203_sp2021/pdfs/lecture/lecture_20.pdf">Lecture 20</a>
+              </td>
+            </tr>
+
+          </table>
+
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+  <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="https://stanfordasl.github.io/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://stanfordasl.github.io/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="https://stanfordasl.github.io/js/JabRef_QuickSearch.js"></script>
+
+  <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="https://stanfordasl.github.io/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2021. All rights reserved.
+</div>
+</footer>
+</body>
+</html>
