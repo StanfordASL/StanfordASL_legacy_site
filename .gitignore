@@ -1,5 +1,11 @@
+### Bundle ####
+.bundle/
+vendor/
+
+
 ### Editors ###
 .vscode
+
 
 ### Jekyll ###
 .sass-cache
