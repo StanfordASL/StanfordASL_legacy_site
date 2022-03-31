@@ -9,19 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Principles of Robot Autonomy I</title>
+    <title>Alvin Sun</title>
 
-    <meta name="description" content="This course will cover basic principles for endowing mobile autonomous robots with perception, planning, and decision-making capabilities. Algorithmic approaches for robot perception, localization, and simultaneous localization and mapping; control of non-linear systems, learning-based control, and robot motion planning; introduction to methodologies for reasoning under uncertainty, e.g., (partially observable) Markov decision processes. Extensive use of the Robot Operating System (ROS) for demonstrations and hands-on activities. Prerequisites: CS 106A or equivalent, CME 100 or equivalent (for linear algebra), and CME 106 or equivalent (for probability theory).">
+    <meta name="description" content="Uncertainty calibration for deep models">
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
 	<!-- JabRef CSS -->
 	<link rel="stylesheet" href="https://stanfordasl.github.io/css/JabRef.css">
 	 
-    <link rel="canonical" href="http://asl.stanford.edu/aa274_aut1920/announcements.html"> 
+    <link rel="canonical" href="http://asl.stanford.edu/people/alvin-sun/"> 
     <!-- Not required -->
     <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
     <!-- Custom Fonts -->
@@ -30,9 +31,6 @@
     
     <!-- My CSS -->
     <link rel="stylesheet" href="https://stanfordasl.github.io/css/my.css"> 
-
-    <!-- AA 274 CSS -->
-    <link rel="stylesheet" href="https://stanfordasl.github.io/css/aa274.css"> 
 
     <!-- Analytics -->
     
@@ -58,8 +56,12 @@
 
 </head>
 
-<body id="page-top" class="index">
-  <!-- Navigation -->
+
+
+
+
+  <body id="page-top" class="index">
+    <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
     <div class="container navbar-items">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -115,14 +117,6 @@
                                 
                             
                                 
-                                    
-                                    <li class="page-scroll">
-                                        <a href="/aa274_aut1920/">Home</a>
-                                    </li>
-                                    
-                                
-                            
-                                
                             
                                 
                             
@@ -141,7 +135,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/aa274_aut1920/assignments.html">Homework</a>
+                                        <a href="/projects/">Projects</a>
                                     </li>
                                     
                                 
@@ -165,7 +159,7 @@
                                 
                                     
                                     <li class="page-scroll">
-                                        <a href="/aa274_aut1920/project.html">Project</a>
+                                        <a href="/publications/">Publications</a>
                                     </li>
                                     
                                 
@@ -188,8 +182,8 @@
                             
                                 
                                     
-                                    <li class="page-scroll active">
-                                        <a href="/aa274_aut1920/announcements.html">Announcements</a>
+                                    <li class="page-scroll">
+                                        <a href="/people/">People</a>
                                     </li>
                                     
                                 
@@ -202,6 +196,14 @@
                             
                                 
                             
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/faq/">FAQ</a>
+                                    </li>
+                                    
                                 
                             
                         </ul>
@@ -214,60 +216,45 @@
     <!-- /.container-fluid -->
 </nav>
 
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Announcements</h1>
-          <p>Announcements related to the course, homeworks, projects, logistics, etc will be posted here. Please check this page regularly for the latest announcements.</p>
-        </div>
-      </div>
-      
-      
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h5>10/22/2019</h5>
-          <p><p>Final project group signups can be found <a href="https://docs.google.com/spreadsheets/d/1uMGH0eu_QDAdPKcGRPm6IsInX5gMZAIycfdSB_T7YuE/edit?usp=sharing">here</a>. Please sign up as soon as you have a group, since a problem in HW3 will require you to submit as a group with your final project groupmates!</p>
-</p>
-        </div>
-      </div>
-      
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h5>09/26/2019</h5>
-          <p><p>Section signups can be found <a href="https://docs.google.com/spreadsheets/d/1Bd5BUSyGH-CZgRHpnkMG6rVTNQZOsuOLGVzyNKo_TII/edit?usp=sharing">here</a>. They start next week, so please sign up before the end of the weekend!</p>
-</p>
-        </div>
-      </div>
-      
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <h5>09/20/2019</h5>
-          <p><p>Welcome to Principles of Robot Autonomy I!</p>
+    <header>
+      <div class="container">
+        <div class="row" style="margin-top: 40px;">
+  	      <div class="col-md-5" style="margin-bottom: 20px;">
+  	          <img src="../../img/people/AlvinSun.jpg" alt="Alvin Sun" class="img-responsive">
+            
+            
+  		    </div>
+    		  <div class="col-md-7">
+            <h2 style="margin-top: 0px;">Alvin Sun</h2>
+    		    <hr>
+            <p>Alvin is a graduate student in the Mechanical Engineering department. He is currently focusing on uncertainty calibration for machine learning models and exploring how those uncertainties can be utilized in a robot autonomy stack. In general, Alvin has a broad interest that spans robotics, deep learning, computer vision, optimization, and embedded systems.</p>
 
-<p>A few things to note before we head into the first week:</p>
+<p>Prior to joining Stanford, Alvin graduated with highest honors from UIUC with a B.S. in Computer Engineering. At UIUC, Alvin worked in the Intelligent Motion Lab where he built real-time 3D semantic reconstruction algorithms for autonomous UV disinfection robots. Alvin has also held internships with Megvii and Skydio where he developed skills in deep visual tracking.</p>
+
+<p>Outside of research, Alvin enjoys playing the piano, volleyball, skiing, and rollerblading.</p>
+
+<h3 id="awards">Awards:</h3>
 <ul>
-  <li>Sections and Office Hours will start the week of September 30th.</li>
-  <li>Section time sign-ups will go out next week, time to be determined (and announced, so you don’t have to constantly refresh the page).</li>
-  <li>If you cannot enroll in the Friday discussion section on Axess, don’t worry about it. It is not essential that you enroll in the Friday section on Axess. However, it is essential that you know that Friday lectures will happen, and if you are enrolled in a 200+ course code variant of Principles of Robot Autonomy I, the homework will involve material from the Friday lectures. This will be stated again on Tuesday by Prof. Pavone.</li>
+  <li>Stanford Graduate Fellowship (2021)</li>
+  <li>UIUC Bachelor of Science in Computer Engineering with Highest Honors (2021)</li>
+  <li>UIUC Bronze Tablet Award (2021)</li>
 </ul>
 
-<p>If you are having difficulty accessing the course’s gradescope page via the link in the Syllabus, try the following:</p>
-<ol>
-  <li>Open up <a href="https://www.gradescope.com/">gradescope</a>.</li>
-  <li>Click on the “Enroll in Course” button on the bottom right.</li>
-  <li>Enter the course code: 9YB864</li>
-</ol>
-
-<p>See you next week!</p>
-</p>
+            <br>
+            
+    		  </div>
+  		</div>
+      <div class="row">
+        <div class="col-md-12">
+        
+          <h2 style="margin-top: 0px;">ASL Publications</h2>
+          
+          
+          <ol class="bibliography"></ol>
+        
         </div>
       </div>
-      
-    </div>
+	  </div>
     </header>
     <!--
 The website should work without any of the JS below. -F
@@ -336,6 +323,5 @@ $( window ).resize(function() {
   © Autonomous Systems Lab 2021. All rights reserved.
 </div>
 </footer>
-</body>
+  </body>
 </html>
- 
