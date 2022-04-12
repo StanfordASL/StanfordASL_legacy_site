@@ -3921,7 +3921,8 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   abstract = {Autonomous systems and humans are increasingly sharing the same space. Robots work side by side or even hand in hand with humans to balance each other's limitations. Such cooperative interactions are ever more sophisticated. Thus, the ability to reason not just about a human's center of gravity position, but also its granular motion is an important prerequisite for human-robot interaction. Though, many algorithms ignore the multimodal nature of humans or neglect uncertainty in their motion forecasts. We present Motron, a multimodal, probabilistic, graph-structured model, that captures human's multimodality using probabilistic methods while being able to output deterministic motions and corresponding confidence values for each mode. Our model aims to be tightly integrated with the robotic planning-control-interaction loop; outputting physically feasible human motions and being computationally efficient. We demonstrate the performance of our model on several challenging real-world motion forecasting datasets, outperforming a wide array of generative methods while providing state-of-the-art deterministic motions if required. Both using significantly less computational power than state-of-the art algorithms.},
   keywords = {press},
   owner = {salzmann},
-  timestamp = {2022-03-02}
+  timestamp = {2022-03-02},
+  url       = {https://arxiv.org/pdf/2203.04132.pdf},
 }
 
 @Inproceedings{LeungPavone2022,
@@ -4038,19 +4039,19 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp    = {2021-12-19},
 }
 
-@Article{CauligiCulbertsonEtAl2021,
+@Article{CauligiCulbertsonEtAl2022,
   author       = {Cauligi, A. and Culbertson, P. and Schmerling, E. and Schwager, M. and Stellato, B. and Pavone, M.},
   title        = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
   journal      = jrn_IEEE_RAL,
-  volume    = {7},
-  number    = {2},
-  pages     = {1447--1454},
-  year         = {2021},
+  volume       = {7},
+  number       = {2},
+  pages        = {1447--1454},
+  year         = {2022},
   abstract = {Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.},
   url      = {http://arxiv.org/abs/2107.08143},
   keywords     = {press},
   owner        = {acauligi},
-  timestamp    = {2021-07-20},
+  timestamp    = {2022-03-10},
 }
 
 @Inproceedings{RoelofsLandryEtAl,
@@ -4445,7 +4446,8 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   abstract = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast, neural networks can model complex effects purely from data. In contrast to such simple models, machine learning approaches such as neural networks have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Neural-MPC, a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world on a highly agile quadrotor platform, demonstrate up to 83% reduction in positional tracking error when compared to state-of-the-art MPC approaches without neural network dynamics. },
   keywords = {sub},
   owner = {salzmann},
-  timestamp = {2022-03-02}
+  timestamp = {2022-03-02},
+  url       = {https://arxiv.org/pdf/2203.07747.pdf},
 }
 
 @inproceedings{GammelliYangEtAl2022,
@@ -4474,6 +4476,15 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   timestamp = {2022-03-03}
 }
 
+@Unpublished{BrownBernalEtAl2022,
+  author    = {Brown, R. and Bernal, D. and Sahasrabudhe, A. and Lott, A. and Venturelli, D. and Pavone, M.},
+  title     = {Copositive optimization via Ising solvers},
+  note      = {Int. Conf. on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research. Extended Abstract.},
+  year      = {2022},
+  owner     = {rabrown1},
+  url   = {/wp-content/papercite-data/pdf/Brown.Bernal.ea.pdf},
+  timestamp = {2022-04-07},
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}
 

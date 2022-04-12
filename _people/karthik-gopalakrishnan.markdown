@@ -5,7 +5,7 @@ last:   "Gopalakrishnan"
 date:   2021-03-01 00:00:00 -0700
 position: postdoc
 excerpt: "Optimization and control of mobility systems"
-img: KarthikGopalakrishnan.png
+img: KarthikGopalakrishnan.jpg
 email: kgopalakrishnan@stanford.edu
 ---
 

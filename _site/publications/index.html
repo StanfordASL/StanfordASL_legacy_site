@@ -311,7 +311,7 @@
  
 
 
-<span class="entry" id="SalzmannPavoneEtAl2022_2">T. Salzmann, K. E., M. Pavone, S. D., and M. Ryll, <a class="entry-title" href="">“Neural-MPC: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms,”</a> in <i>IEEE Robotics and Automation Letters</i>, 2022. (Submitted)</span> 
+<span class="entry" id="SalzmannPavoneEtAl2022_2">T. Salzmann, K. E., M. Pavone, S. D., and M. Ryll, <a class="entry-title" href="https://arxiv.org/pdf/2203.07747.pdf">“Neural-MPC: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms,”</a> in <i>IEEE Robotics and Automation Letters</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022_2','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022_2','abstract')">Abstract</a>]</p>
 <span id="abs_SalzmannPavoneEtAl2022_2" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast, neural networks can model complex effects purely from data. In contrast to such simple models, machine learning approaches such as neural networks have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Neural-MPC, a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world on a highly agile quadrotor platform, demonstrate up to 83% reduction in positional tracking error when compared to state-of-the-art MPC approaches without neural network dynamics. </p>
@@ -326,7 +326,8 @@
   note = {Submitted},
   keywords = {sub},
   owner = {salzmann},
-  timestamp = {2022-03-02}
+  timestamp = {2022-03-02},
+  url = {https://arxiv.org/pdf/2203.07747.pdf}
 }
 </pre>
 </span>
@@ -786,7 +787,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
  
 
 
-<span class="entry" id="SalzmannPavoneEtAl2022">T. Salzmann, M. Pavone, and M. Ryll, <a class="entry-title" href="">“Motron: Multimodal Probabilistic Human Motion Forecasting,”</a> in <i>IEEE Conf. on Computer Vision and Pattern Recognition</i>, 2022. (In Press)</span> 
+<span class="entry" id="SalzmannPavoneEtAl2022">T. Salzmann, M. Pavone, and M. Ryll, <a class="entry-title" href="https://arxiv.org/pdf/2203.04132.pdf">“Motron: Multimodal Probabilistic Human Motion Forecasting,”</a> in <i>IEEE Conf. on Computer Vision and Pattern Recognition</i>, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SalzmannPavoneEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_SalzmannPavoneEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Autonomous systems and humans are increasingly sharing the same space. Robots work side by side or even hand in hand with humans to balance each other’s limitations. Such cooperative interactions are ever more sophisticated. Thus, the ability to reason not just about a human’s center of gravity position, but also its granular motion is an important prerequisite for human-robot interaction. Though, many algorithms ignore the multimodal nature of humans or neglect uncertainty in their motion forecasts. We present Motron, a multimodal, probabilistic, graph-structured model, that captures human’s multimodality using probabilistic methods while being able to output deterministic motions and corresponding confidence values for each mode. Our model aims to be tightly integrated with the robotic planning-control-interaction loop; outputting physically feasible human motions and being computationally efficient. We demonstrate the performance of our model on several challenging real-world motion forecasting datasets, outperforming a wide array of generative methods while providing state-of-the-art deterministic motions if required. Both using significantly less computational power than state-of-the art algorithms.</p>
@@ -801,7 +802,8 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   note = {Accepted},
   keywords = {press},
   owner = {salzmann},
-  timestamp = {2022-03-02}
+  timestamp = {2022-03-02},
+  url = {https://arxiv.org/pdf/2203.04132.pdf}
 }
 </pre>
 </span>
@@ -1103,6 +1105,35 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_ChoudhurySoloveyEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="CauligiCulbertsonEtAl2022">A. Cauligi, P. Culbertson, E. Schmerling, M. Schwager, B. Stellato, and M. Pavone, <a class="entry-title" href="http://arxiv.org/abs/2107.08143">“CoCo: Online Mixed-Integer Control via Supervised Learning,”</a> <i>IEEE Robotics and Automation Letters</i>, vol. 7, no. 2, pp. 1447–1454, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_CauligiCulbertsonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.</p>
+</span>
+<span id="bib_CauligiCulbertsonEtAl2022" class="bibtex noshow">
+	<pre>@article{CauligiCulbertsonEtAl2022,
+  author = {Cauligi, A. and Culbertson, P. and Schmerling, E. and Schwager, M. and Stellato, B. and Pavone, M.},
+  title = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
+  journal = {{IEEE Robotics and Automation Letters}},
+  volume = {7},
+  number = {2},
+  pages = {1447--1454},
+  year = {2022},
+  url = {http://arxiv.org/abs/2107.08143},
+  keywords = {press},
+  owner = {acauligi},
+  timestamp = {2022-03-10}
+}
+</pre>
+</span>
+<!-- <span id="key_CauligiCulbertsonEtAl2022" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -1905,35 +1936,6 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 </pre>
 </span>
 <!-- <span id="key_LeungArechigaEtAl2021" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="CauligiCulbertsonEtAl2021">A. Cauligi, P. Culbertson, E. Schmerling, M. Schwager, B. Stellato, and M. Pavone, <a class="entry-title" href="http://arxiv.org/abs/2107.08143">“CoCo: Online Mixed-Integer Control via Supervised Learning,”</a> <i>IEEE Robotics and Automation Letters</i>, vol. 7, no. 2, pp. 1447–1454, 2021. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('CauligiCulbertsonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_CauligiCulbertsonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Many robotics problems, from robot motion planning to object manipulation, can be modeled as mixed-integer convex programs (MICPs). However, state-of-the-art algorithms are still unable to solve MICPs for control problems quickly enough for online use and existing heuristics can typically only find suboptimal solutions that might degrade robot performance. In this work, we turn to data-driven methods and present the Combinatorial Offline, Convex Online (CoCo) algorithm for quickly finding high quality solutions for MICPs. CoCo consists of a two-stage approach. In the offline phase, we train a neural network classifier that maps the problem parameters to a (logical strategy), which we define as the discrete arguments and relaxed big-M constraints associated with the optimal solution for that problem. Online, the classifier is applied to select a candidate logical strategy given new problem parameters; applying this logical strategy allows us to solve the original MICP as a convex optimization problem. We show through numerical experiments how CoCo finds near optimal solutions to MICPs arising in robot planning and control with 1 to 2 orders of magnitude solution speedup compared to other data-driven approaches and solvers.</p>
-</span>
-<span id="bib_CauligiCulbertsonEtAl2021" class="bibtex noshow">
-	<pre>@article{CauligiCulbertsonEtAl2021,
-  author = {Cauligi, A. and Culbertson, P. and Schmerling, E. and Schwager, M. and Stellato, B. and Pavone, M.},
-  title = {{CoCo}: Online Mixed-Integer Control via Supervised Learning},
-  journal = {{IEEE Robotics and Automation Letters}},
-  volume = {7},
-  number = {2},
-  pages = {1447--1454},
-  year = {2021},
-  url = {http://arxiv.org/abs/2107.08143},
-  keywords = {press},
-  owner = {acauligi},
-  timestamp = {2021-07-20}
-}
-</pre>
-</span>
-<!-- <span id="key_CauligiCulbertsonEtAl2021" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
