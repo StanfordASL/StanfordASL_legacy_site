@@ -1,0 +1,2 @@
+I"}<p>This homework focuses on reinforcement learning, both model-based and model-free. First, you will implement a variety of reinforcement learning algorithms by hand (without automatic differentiation frameworks) on a familiar problem: the linear quadratic regulator. Following this, you will use a modern deep learning framework (PyTorch) to implement an actor critic scheme.</p>
+:ET

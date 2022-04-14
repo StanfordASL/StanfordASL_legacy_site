@@ -1,0 +1,11 @@
+I"Å<p>Brian Ichter is a PhD candidate in Aeronautics and Astronautics at Stanford University (expected graduation early 2018). He received a BS in Aerospace Engineering and BA in Physics from the University of Virginia in 2012 and an MS in Aeronautics and Astronautics from Stanford University in 2015.</p>
+
+<p>Brianâ€™s research focuses on sampling-based algorithms for robotic motion planning. In particular, he works on developing massively parallel algorithms (that leverage GPUs) towards real-time kinodynamic, uncertainty-aware, and perception-aware motion planning. He further works on sampling strategies for planning algorithms by showing theoretical and practical benefits of low-dispersion, deterministic sampling as well as developing methods for learning optimal sample distributions.</p>
+
+<h3 id="awards">Awards:</h3>
+<ul>
+  <li>NDSEG Fellowship</li>
+  <li>NSF Graduate Research Fellowship</li>
+  <li>NASA Space Technology Research Fellowship</li>
+</ul>
+:ET

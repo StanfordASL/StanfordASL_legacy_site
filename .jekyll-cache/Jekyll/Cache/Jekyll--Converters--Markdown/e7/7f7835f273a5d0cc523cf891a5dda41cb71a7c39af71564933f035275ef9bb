@@ -1,0 +1,59 @@
+I"�<div class="project_bib">
+<ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="LewBonalliECC2020">T. Lew, R. Bonalli, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf">“Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization,”</a> in <i>European Control Conference</i>, St. Petersburg, Russia, 2020. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewBonalliECC2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewBonalliECC2020','abstract')">Abstract</a>]</p>
+<span id="abs_LewBonalliECC2020" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Planning safe trajectories for nonlinear dynamical systems subject to model uncertainty and disturbances is challenging. In this work, we present a novel approach to tackle chance-constrained trajectory planning problems with nonconvex constraints, whereby obstacle avoidance chance constraints are reformulated using the signed distance function. We propose a novel sequential convex programming algorithm and prove that under a discrete time problem formulation, it is guaranteed to converge to a solution satisfying first-order optimality conditions. We demonstrate the approach on an uncertain 6 degrees of freedom spacecraft system and show that the solutions satisfy a given set of chance constraints.</p>
+</span>
+<span id="bib_LewBonalliECC2020" class="bibtex noshow">
+	<pre>@inproceedings{LewBonalliECC2020,
+  author = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title = {Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization},
+  booktitle = {{European Control Conference}},
+  year = {2020},
+  note = {In Press},
+  address = {St. Petersburg, Russia},
+  month = may,
+  url = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
+  keywords = {press},
+  owner = {lew},
+  timestamp = {2020-03-16}
+}
+</pre>
+</span>
+<!-- <span id="key_LewBonalliECC2020" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BonalliBylardEtAl2019">R. Bonalli, A. Bylard, A. Cauligi, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/pdf/1905.07654.pdf">“Trajectory Optimization on Manifolds: A Theoretically-Guaranteed Embedded Sequential Convex Programming Approach,”</a> in <i>Robotics: Science and Systems</i>, Freiburg im Breisgau, Germany, 2019.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliBylardEtAl2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliBylardEtAl2019','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliBylardEtAl2019" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently gain popularity as a tool for trajectory optimization, due to its sound theoretical properties and practical performance. Yet, most SCP-based methods for trajectory optimization are restricted to Euclidean settings, which precludes their application to problem instances where one needs to reason about manifold-type constraints (that is, constraints, such as loop closure, which restrict the motion of a system to a subset of the ambient space). The aim of this paper is to fill this gap by extending SCP-based trajectory optimization methods to a manifold setting. The key insight is to leverage geometric embeddings to lift a manifold-constrained trajectory optimization problem into an equivalent problem defined over a space enjoying Euclidean structure. This insight allows one to extend existing SCP methods to a manifold setting in a fairly natural way. In particular, we present an SCP algorithm for manifold problems with theoretical guarantees that resemble those derived for the Euclidean setting, and demonstrate its practical performance via numerical experiments.</p>
+</span>
+<span id="bib_BonalliBylardEtAl2019" class="bibtex noshow">
+	<pre>@inproceedings{BonalliBylardEtAl2019,
+  author = {Bonalli, R. and Bylard, A. and Cauligi, A. and Lew, T. and Pavone, M.},
+  title = {Trajectory Optimization on Manifolds: {A} Theoretically-Guaranteed Embedded Sequential Convex Programming Approach},
+  booktitle = {{Robotics: Science and Systems}},
+  year = {2019},
+  address = {Freiburg im Breisgau, Germany},
+  month = jun,
+  url = {https://arxiv.org/pdf/1905.07654.pdf},
+  owner = {bylard},
+  timestamp = {2019-05-01}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliBylardEtAl2019" >
+	<b>Keywords</b>:
+	
+</span> --></li></ol>
+</div>
+:ET
