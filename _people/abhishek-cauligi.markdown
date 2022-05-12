@@ -7,6 +7,7 @@ position: alumni
 excerpt: "Trajectory optimization and optimal control for robotic systems"
 img: AbhishekCauligi.png
 email: acauligi@stanford.edu
+current: "NASA Jet Propulsion Laboratory"
 ---
 
 Abhishek is a PhD. candidate in Aeronautics and Astronautics. He received a BS in Aerospace Engineering from the University of Michigan in 2016 and an M.S. in Aeronautics & Astronautics from Stanford in 2018. Prior to Stanford, Abhishek interned with the GNC group at SpaceX and the ADCS group at Planetary Resources.
