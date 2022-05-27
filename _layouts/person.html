@@ -29,6 +29,10 @@
           {% assign first_initial = page.title | slice: 0 %}
           {% assign person_name = page.last | append: ". " | append: first_initial %}
           {% bibliography -q @*[author ~= {{ person_name }}] %}
+          {% if page.altlast.size > 0 %}
+            {% assign person_name_alt = page.altlast | append: ". " | append: first_initial %}
+            {% bibliography -q @*[author ~= {{ person_name_alt }}] %}
+          {% endif %}
         {% endif %}
         </div>
       </div>
