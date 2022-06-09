@@ -3,8 +3,9 @@ layout: person
 title:  "Kaidi Yang"
 last:   "Yang"
 date:   2019-04-25 00:00:00 -0700
-position: postdoc
+position: alumni
 excerpt: "Emerging technologies and shared mobility"
+current: "National University of Singapore"
 img: Kaidi_ASL.JPG
 ---
 

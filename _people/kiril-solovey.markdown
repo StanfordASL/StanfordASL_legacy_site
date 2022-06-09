@@ -3,11 +3,12 @@ layout: person
 title:  "Kiril Solovey"
 last:   "Solovey"
 date:   2018-09-19 00:00:00 -0700
-position: postdoc
+position: alumni
 excerpt: "Algorithms for motion planning, multi-robot systems, and autonomous mobility on demand"
 img: KirilSolovey.jpg
 email: kirilsol@stanford.edu
 website: kirilsol.github.io
+current: "Technion"
 ---
 
 Kiril Solovey is a roboticist specializing in multi-robot systems and their applications to smart mobility. He is currently a Postdoctoral Scholar at the Department of Aeronautics and Astronautics, Stanford University, working with Marco Pavone, where he is supported by the Center for Automotive Research (CARS). He obtained a PhD in Computer Science from Tel Aviv University, where he was advised by Dan Halperin.
