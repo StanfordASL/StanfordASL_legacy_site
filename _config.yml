@@ -37,7 +37,9 @@ exclude:
 
 # This instructs Jekyll to also build what's inside the
 # AA 274 course website folder.
-include: ['aa274a', 'aa274a_aut2021', 'aa274_aut1920', 'aa274_win1819', 'aa203', 'aa203_sp1819', 'aa203_sp1920', 'aa203_sp2021', 'ITSC2019']
+include: ['aa274a', 'aa274a_aut2122', 'aa274a_aut2021', 'aa274_aut1920', 'aa274_win1819',
+          'aa203', 'aa203_sp1819', 'aa203_sp1920', 'aa203_sp2021',
+          'ITSC2019']
 
 
 collections:
@@ -60,6 +62,9 @@ collections:
   #   permalink: /:collection/:title/
   # AA 274 file locations.
   aa274a:
+    output: false
+    permalink: /:collection/:title/
+  aa274a_aut2122:
     output: false
     permalink: /:collection/:title/
   aa274a_aut2021:
@@ -110,7 +115,7 @@ defaults:
   #     type: press
   #   values:
   #     imgurl: /img/press/
-  
+
 
 scholar:
   style: ieee-asl
