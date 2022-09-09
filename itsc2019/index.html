@@ -63,7 +63,7 @@ order: 1
               <th class="tg-vnl4">Title</th>
               <th class="tg-vnl4">Abstract</th>
             </tr>
-            {% assign talks = (site.itsc2019 | where:'md_group', "itsc19_talks" | sort: 'start_date') %}
+            {% assign talks = site.itsc2019 | where:'md_group', "itsc19_talks" | sort: 'start_date' %}
               {% for talk in talks %}
               <tr>
                 <td class="tg-vnl4">
@@ -92,7 +92,7 @@ order: 1
         <div class="col-md-12">
           <h3>Speakers</h3>
           <table class="aa274_people table table-borderless">
-            {% assign speakers = (site.itsc2019 | where:'md_group', "itsc19_speakers")%}
+            {% assign speakers = site.itsc2019 | where:'md_group', "itsc19_speakers"%}
             {% for speaker in speakers %}
             <tr>
                 <th class="col-md-3">

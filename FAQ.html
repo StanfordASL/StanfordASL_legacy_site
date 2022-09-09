@@ -36,7 +36,7 @@ order: 7
       </div>
     </div>
     <div class="container">
-      {% assign sorted = (site.faqs | sort: 'order') %}
+      {% assign sorted = site.faqs | sort: 'order' %}
       {% for faq in sorted %}{% if faq.type == "admitted" %}
       <div class="row">
         <div class="col-sm-12">
@@ -56,7 +56,7 @@ order: 7
       </div>
     </div>
     <div class="container">
-      {% assign sorted = (site.faqs | sort: 'order') %}
+      {% assign sorted = site.faqs | sort: 'order' %}
       {% for faq in sorted %}{% if faq.type == "prospective" %}
       <div class="row">
         <div class="col-sm-12">
