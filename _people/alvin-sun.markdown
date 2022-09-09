@@ -1,6 +1,6 @@
 ---
 layout: person
-title:  "Alvin Sun"
+title:  "Yixiao (Alvin) Sun"
 last:   "Sun"
 date:   2022-03-31 00:00:00 -0700
 position: phd
