@@ -520,6 +520,7 @@
 @String{proc_CoRL                      = {{Conf. on Robot Learning}}}
 @String { proc_DARS                 = {{Int. Symp. on Distributed Autonomous Robotic Systems}} }
 @String { proc_ECCV                 = {{European Conf. on Computer Vision}} }
+@String { proc_ECCV-AI4S            = {{European Conf. on Computer Vision - AI4Space Workshop}} }
 @String { proc_ESA_ASTRA            = {{Adv. Space Technologies in Robotics and Automation}} }
 @String { proc_ESA_ECSD             = {{European Conf. on Space Debris}} }
 @String { proc_ETAPS_TACAS          = {{Int. Conf. on Tools and Algorithms for the Construction and Analysis of Systems }} }
@@ -3766,12 +3767,12 @@ Second, we capture reactive exogenous traffic consisting of private vehicles sel
   timestamp    = {2021-03-15},
 }
 
-@Article{BonalliLewTAC2021,
+@Article{BonalliLewTAC2022,
   author    = {Bonalli, R. and Lew, T. and Pavone, M.},
   title     = {Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control},
   journal   = jrn_IEEE_TAC,
-  year      = {2021},
-  note      = {Submitted},
+  year      = {2022},
+  note      = {In Press},
   keywords  = {sub},
   owner     = {lew},
   timestamp = {2020-12-07},
@@ -4574,7 +4575,7 @@ Collectively, this paper provides an application-focused atlas of algorithms for
 @Inproceedings{SinhaSharmaEtAl2022,
   author       = {Rohan Sinha and Apoorva Sharma and Somrita Banerjee and Thomas Lew and Rachel Luo and Spencer M. Richards and Yixiao Sun and Edward Schmerling and Marco Pavone},
   title        = {A System-Level View on Out-of-Distribution Data in Robotics},
-  booktitle    = {proc_ISRR},
+  booktitle    = proc_ISRR,
   year         = {2022},
   note         = {Submitted},
   abstract = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of “black-box�? learned components in the modern robotic autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards reliable learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
@@ -4582,6 +4583,17 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   keywords     = {sub},
   owner        = {rhnsinha},
   timestamp    = {2022-06-29},
+}
+
+@Inproceedings{BanerjeeSharmaEtAl2022,
+  author       = {Banerjee, S. and Sharma, A. and Schmerling, E. and Spolaor, M. and Nemerouf, M. and Pavone, M.},
+  title        = {Data Lifecycle Management for Learning-based Aerospace Applications},
+  booktitle    = proc_ECCV-AI4S,
+  year         = {2022},
+  abstract = {As input distributions evolve over a mission lifetime, maintaining performance of learning-based models becomes challenging. This paper presents a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We provide an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel scenarios (e.g., different backgrounds or misbehaving pixels), where algorithms are evaluated on their ability to maintain high performance by retraining on a subset of inputs. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.},
+  url      = {https://arxiv.org/abs/2209.06855},
+  owner        = {somrita},
+  timestamp    = {2022-09-14},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
