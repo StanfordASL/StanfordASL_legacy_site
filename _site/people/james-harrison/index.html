@@ -261,15 +261,15 @@
 <span class="entry" id="GammelliYangEtAl2022">D. Gammelli, Y. K., J. Harrison, R. F., P. F., and M. Pavone, <a class="entry-title" href="">“Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand,”</a> in <i>ACM Int. Conf. on Knowledge Discovery and Data Mining</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_GammelliYangEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Autonomous Mobility-on-Demand (AMoD) systems represent an attractive alternative to existing transportation paradigms, currently challenged by urbanization and increasing travel needs. By centrally controlling a fleet of self-driving vehicles, these systems provide mobility service to customers and are currently starting to be deployed in a number of cities around the world. Current learning-based approaches for controlling AMoD systems are limited to the <i>single-city</i> scenario, whereby the service operator is allowed to take an unlimited amount of operational decisions within the same transportation system. However, real-world system operators can hardly afford to fully re-train AMoD controllers for every city they operate in, as this could result in a high number of poor-quality decisions during training, making the single-city strategy a potentially impractical solution. To address these limitations, we propose to formalize the multi-city AMoD problem through the lens of meta-reinforcement learning (meta-RL) and devise an actor-critic algorithm based on recurrent graph neural networks. In our approach, AMoD controllers are explicitly trained such that a small amount of experience within a new city will produce good system performance. Empirically, we show how control policies learned through meta-RL are able to achieve near-optimal performance on unseen cities by learning rapidly adaptable policies, thus making them more robust not only to novel environments, but also to distribution shifts common in real-world operations, such as special events, unexpected congestion, and dynamic pricing schemes. </p>
+	<p class="abstract"><b>Abstract:</b> Autonomous Mobility-on-Demand (AMoD) systems represent an attractive alternative to existing transportation paradigms, currently challenged by urbanization and increasing travel needs. By centrally controlling a fleet of self-driving vehicles, these systems provide mobility service to customers and are currently starting to be deployed in a number of cities around the world. Current learning-based approaches for controlling AMoD systems are limited to the <i>single-city</i> scenario, whereby the service operator is allowed to take an unlimited amount of operational decisions within the same transportation system. However, real-world system operators can hardly afford to fully re-train AMoD controllers for every city they operate in, as this could result in a high number of poor-quality decisions during training, making the single-city strategy a potentially impractical solution. To address these limitations, we propose to formalize the multi-city AMoD problem through the lens of meta-reinforcement learning (meta-RL) and devise an actor-critic algorithm based on recurrent graph neural networks. In our approach, AMoD controllers are explicitly trained such that a small amount of experience within a new city will produce good system performance. Empirically, we show how control policies learned through meta-RL are able to achieve near-optimal performance on unseen cities by learning rapidly adaptable policies, thus making them more robust not only to novel environments, but also to distribution shifts common in real-world operations, such as special events, unexpected congestion, and dynamic pricing schemes.</p>
 </span>
 <span id="bib_GammelliYangEtAl2022" class="bibtex noshow">
 	<pre>@inproceedings{GammelliYangEtAl2022,
   author = {Gammelli, D. and K., Yang and Harrison, J. and F., Rodrigues and F., Pereira and Pavone, M.},
-  title = {Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand},
   booktitle = {{ACM Int. Conf. on Knowledge Discovery and Data Mining}},
-  month = mar,
+  title = {Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand},
   year = {2022},
+  month = mar,
   note = {Submitted},
   keywords = {sub},
   owner = {ykd07},
@@ -313,6 +313,31 @@
  
 
 
+<span class="entry" id="GammelliHarrisonEtAl2022">D. Gammelli, J. Harrison, K. Yang, M. Pavone, F. Rodrigues, and P. C. Francisco, <a class="entry-title" href="">“Graph Reinforcement Learning for Network Control via Bi-Level Optimization,”</a> in <i>Learning on Graphs Conference</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.</p>
+</span>
+<span id="bib_GammelliHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{GammelliHarrisonEtAl2022,
+  author = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Francisco, Pereira C.},
+  booktitle = {{Learning on Graphs Conference}},
+  title = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
+  year = {2022},
+  keywords = {sub},
+  owner = {rdyro},
+  timestamp = {2022-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_GammelliHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.08261">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
@@ -334,6 +359,32 @@
 <!-- <span id="key_SinhaHarrisonEtAl2022" >
 	<b>Keywords</b>:
 	press
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="WillesHarrisonEtAl2022">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="https://arxiv.org/abs/2107.13682">“Bayesian Embeddings for Few-Shot Open World Recognition,”</a> <i>IEEE Transactions on Pattern Analysis &amp; Machine Intelligence</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_WillesHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> As autonomous decision-making agents move from narrow operating environments to unstructured worlds, learning systems must move from a closed-world formulation to an open-world and few-shot setting in which agents continuously learn new classes from small amounts of information. This stands in stark contrast to modern machine learning systems that are typically designed with a known set of classes and a large number of examples for each class. In this work we extend embedding-based few-shot learning algorithms to the open-world recognition setting. We combine Bayesian non-parametric class priors with an embedding-based pre-training scheme to yield a highly flexible framework which we refer to as few-shot learning for open world recognition (FLOWR). We benchmark our framework on open-world extensions of the common MiniImageNet and TieredImageNet few-shot learning datasets. Our results show, compared to prior methods, strong classification accuracy performance and up to a 12% improvement in H-measure (a measure of novel class detection) from our non-parametric open-world few-shot learning scheme.</p>
+</span>
+<span id="bib_WillesHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@article{WillesHarrisonEtAl2022,
+  author = {Willes, John and Harrison, James and Harakeh, Ali and Finn, Chelsea and Pavone, Marco and Waslander, Steven},
+  journal = {{IEEE Transactions on Pattern Analysis \& Machine Intelligence}},
+  title = {Bayesian Embeddings for Few-Shot Open World Recognition},
+  year = {2022},
+  keywords = {pub},
+  owner = {rdyro},
+  timestamp = {2022-09-21},
+  url = {https://arxiv.org/abs/2107.13682}
+}
+</pre>
+</span>
+<!-- <span id="key_WillesHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	pub
 </span> --></li>
 <li>
  
@@ -392,31 +443,6 @@
  
 
 
-<span class="entry" id="WillesHarrisonEtAl2021">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="">“Open-Set Incremental Learning via Bayesian Prototypical Embeddings,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_WillesHarrisonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_WillesHarrisonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{WillesHarrisonEtAl2021,
-  author = {Willes, J. and Harrison, J. and Harakeh, A. and Finn, C. and Pavone, M. and Waslander, S.},
-  title = {Open-Set Incremental Learning via Bayesian Prototypical Embeddings},
-  year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {jh2},
-  timestamp = {2021-03-23}
-}
-</pre>
-</span>
-<!-- <span id="key_WillesHarrisonEtAl2021" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="GammelliYangEtAl2021">D. Gammelli, K. Yang, J. Harrison, F. Rodrigues, F. C. Pereira, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.11434">“Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_GammelliYangEtAl2021" class="abstract noshow">
@@ -437,6 +463,31 @@
 <!-- <span id="key_GammelliYangEtAl2021" >
 	<b>Keywords</b>:
 	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="WillesHarrisonEtAl2021">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="">“Open-Set Incremental Learning via Bayesian Prototypical Embeddings,”</a> 2021. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_WillesHarrisonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_WillesHarrisonEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{WillesHarrisonEtAl2021,
+  author = {Willes, J. and Harrison, J. and Harakeh, A. and Finn, C. and Pavone, M. and Waslander, S.},
+  title = {Open-Set Incremental Learning via Bayesian Prototypical Embeddings},
+  year = {2021},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {jh2},
+  timestamp = {2021-03-23}
+}
+</pre>
+</span>
+<!-- <span id="key_WillesHarrisonEtAl2021" >
+	<b>Keywords</b>:
+	sub
 </span> --></li>
 <li>
  

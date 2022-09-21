@@ -261,6 +261,81 @@
  
 
 
+<span class="entry" id="AloraCenedeseEtAl2023">J. I. Alora, M. Cenedese, E. Schmerling, G. Haller, and M. Pavone, <a class="entry-title" href="">“Data-Driven Spectral Submanifold Reduction for Nonlinear Optimal Control of High-Dimensional Robots,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2023. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('AloraCenedeseEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('AloraCenedeseEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_AloraCenedeseEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Modeling and control of high-dimensional, nonlinear robotic systems remains a challenging task. While various model- and learning-based approaches have been proposed to address these challenges, they broadly lack generalizability to different control tasks and rarely preserve the structure of the dynamics. In this work, we propose a new, data-driven approach for extracting low-dimensional models from data using Spectral Submanifold Reduction (SSMR). In contrast to other data-driven methods which fit dynamical models to training trajectories, we identify the dynamics on generic, low-dimensional attractors embedded in the full phase space of the robotic system. This allows us to obtain computationally-tractable models for control which preserve the system’s dominant dynamics and better track trajectories radically different from the training data. We demonstrate the superior performance and generalizability of SSMR in dynamic trajectory tracking tasks vis-a-vis the state of the art.</p>
+</span>
+<span id="bib_AloraCenedeseEtAl2023" class="bibtex noshow">
+	<pre>@inproceedings{AloraCenedeseEtAl2023,
+  author = {Alora, John Irvin and Cenedese, Mattia and Schmerling, Edward and Haller, George and Pavone, Marco},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  title = {Data-Driven Spectral Submanifold Reduction for Nonlinear Optimal Control of High-Dimensional Robots},
+  year = {2023},
+  keywords = {sub},
+  owner = {rdyro},
+  timestamp = {2022-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_AloraCenedeseEtAl2023" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LuoSinhaEtAl2023">R. Luo, R. Sinha, A. Hindy, S. Zhao, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="">“Online Distribution Shift Detection via Recency Prediction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2023. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LuoSinhaEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoSinhaEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_LuoSinhaEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate — i.e., when there is no distribution shift, our system is very unlikely (with probability < ε) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).</p>
+</span>
+<span id="bib_LuoSinhaEtAl2023" class="bibtex noshow">
+	<pre>@inproceedings{LuoSinhaEtAl2023,
+  author = {Luo, Rachel and Sinha, Rohan and Hindy, Ali and Zhao, Shengjia and Savarese, Silvio and Schmerling, Edward and Pavone, Marco},
+  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  title = {Online Distribution Shift Detection via Recency Prediction},
+  year = {2023},
+  keywords = {sub},
+  owner = {rdyro},
+  timestamp = {2022-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_LuoSinhaEtAl2023" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SchneiderOngoleEtAl2023">S. Schneider, N. Ongole, T. G. Chen, E. Schmerling, M. Cutkosky, and M. Pavone, <a class="entry-title" href="">“Motion Planning for a Climbing Robot with Stochastic Grasps,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2023. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SchneiderOngoleEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchneiderOngoleEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_SchneiderOngoleEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Motion planning for a multi-limbed climbing robot must consider the robot’s posture, joint torques, and how it uses contact forces to interact with its environment. This paper focuses on motion planning for a robot that uses nontraditional locomotion to explore unpredictable environments such as a martian cave. Our robotic concept, ReachBot, uses extendable and retractable booms as limbs to achieve a large reachable workspace while climbing. Each extendable boom is capped by a microspine gripper optimized for grasping in martian caves. ReachBot leverages its large workspace to navigate around obstacles, over crevasses, and through challenging terrain. Our planning approach must be versatile to accommodate variable terrain features and be robust to mitigate risks from the stochastic nature of spiny grippers. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping.  This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 95% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we verify our motion planning algorithm through experimentation on a 2D planar prototype.</p>
+</span>
+<span id="bib_SchneiderOngoleEtAl2023" class="bibtex noshow">
+	<pre>@inproceedings{SchneiderOngoleEtAl2023,
+  author = {Schneider, Stephanie and Ongole, Nitin and Chen, Tony G. and Schmerling, Edward and Cutkosky, Mark and Pavone, Marco},
+  title = {Motion Planning for a Climbing Robot with Stochastic Grasps},
+  year = {2023},
+  journal = {{Proc. IEEE Conf. on Robotics and Automation}},
+  keywords = {sub},
+  owner = {rdyro},
+  timestamp = {2022-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_SchneiderOngoleEtAl2023" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LuoZhaoEtAl2022">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.14082">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoZhaoEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoZhaoEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_LuoZhaoEtAl2022" class="abstract noshow">
@@ -296,11 +371,10 @@
 <span id="bib_WuLewEtAl2022" class="bibtex noshow">
 	<pre>@inproceedings{WuLewEtAl2022,
   author = {Wu, A. and Lew, T. and Solovey, K. and Schmerling, E. and Pavone, M.},
-  title = {{Robust-RRT}: Probabilistically-Complete Motion Planning for Uncertain Nonlinear Systems},
   booktitle = {{Int. Symp. on Robotics Research}},
-  month = may,
+  title = {{Robust-RRT}: Probabilistically-Complete Motion Planning for Uncertain Nonlinear Systems},
   year = {2022},
-  note = {Submitted},
+  month = may,
   keywords = {sub},
   owner = {lew},
   timestamp = {2022-05-22},
@@ -316,25 +390,49 @@
  
 
 
-<span class="entry" id="DyroSchmerlingEtAl2022">R. Dyro, E. Schmerling, N. Arechiga, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2205.02329">“Second-Order Sensitivity Analysis for Bilevel Optimization,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_DyroSchmerlingEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this work we derive a second-order approach to bilevel optimization, a type of mathematical programming in which the solution to a parameterized optimization problem (the “lower” problem) is itself to be optimized (in the “upper” problem) as a function of the parameters. Many existing approaches to bilevel optimization employ first-order sensitivity analysis, based on the implicit function theorem (IFT), for the lower problem to derive a gradient of the lower problem solution with respect to its parameters; this IFT gradient is then used in a first-order optimization method for the upper problem. This paper extends this sensitivity analysis to provide second-order derivative information of the lower problem (which we call the IFT Hessian), enabling the usage of faster-converging second-order optimization methods at the upper level.  Our analysis shows that (i) much of the computation already used to produce the IFT gradient can be reused for the IFT Hessian, (ii) errors bounds derived for the IFT gradient readily apply to the IFT Hessian, (iii) computing IFT Hessians can significantly reduce overall computation by extracting more information from each lower level solve. We corroborate our findings and demonstrate the broad range of applications of our method by applying it to problem instances of least squares hyperparameter auto-tuning, multi-class SVM auto-tuning, and inverse optimal control.</p>
+<span class="entry" id="BanerjeeSharmaEtAl2022">S. Banerjee, A. Sharma, E. Schmerling, M. Spolaor, M. Nemerouf, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2209.06855">“Data Lifecycle Management for Learning-based Aerospace Applications,”</a> in <i>European Conf. on Computer Vision - AI4Space Workshop</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BanerjeeSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BanerjeeSharmaEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_BanerjeeSharmaEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> As input distributions evolve over a mission lifetime, maintaining performance of learning-based models becomes challenging. This paper presents a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We provide an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel scenarios (e.g., different backgrounds or misbehaving pixels), where algorithms are evaluated on their ability to maintain high performance by retraining on a subset of inputs. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.</p>
 </span>
-<span id="bib_DyroSchmerlingEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{DyroSchmerlingEtAl2022,
-  author = {Dyro, R. and Schmerling, E. and Arechiga, N. and Pavone, M.},
-  title = {Second-Order Sensitivity Analysis for Bilevel Optimization},
-  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
+<span id="bib_BanerjeeSharmaEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{BanerjeeSharmaEtAl2022,
+  author = {Banerjee, S. and Sharma, A. and Schmerling, E. and Spolaor, M. and Nemerouf, M. and Pavone, M.},
+  title = {Data Lifecycle Management for Learning-based Aerospace Applications},
+  booktitle = {{European Conf. on Computer Vision - AI4Space Workshop}},
   year = {2022},
-  keywords = {press},
-  owner = {rdyro},
-  url = {https://arxiv.org/abs/2205.02329},
-  timestamp = {2022-02-05}
+  url = {https://arxiv.org/abs/2209.06855},
+  owner = {somrita},
+  timestamp = {2022-09-14}
 }
 </pre>
 </span>
-<!-- <span id="key_DyroSchmerlingEtAl2022" >
+<!-- <span id="key_BanerjeeSharmaEtAl2022" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="BrownSchmerlingEtAl2022">R. Brown, E. Schmerling, N. Azizan, and M. Pavone, <a class="entry-title" href="">“A Unified View of SDP-based Neural Network Verification through Completely Positive Programming,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_BrownSchmerlingEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Verifying that input-output relationships of a neural network conform to prescribed operational specifications is a key enabler towards deploying these networks in safety-critical applications. Semidefinite programming (SDP)-based approaches to Rectified Linear Unit (ReLU) network verification transcribe this problem into an optimization problem, where the accuracy of any such formulation reflects the level of fidelity in how the neural network computation is represented, as well as the relaxations of intractable constraints. While the literature contains much progress on improving the tightness of SDP formulations while maintaining tractability, comparatively little work has been devoted to the other extreme, i.e., how to most accurately capture the original verification problem before SDP relaxation. In this work, we develop an exact, convex formulation of verification as a completely positive program (CPP), and provide analysis showing that our formulation is minimal—the removal of any constraint fundamentally misrepresents the neural network computation. We leverage our formulation to provide a unifying view of existing approaches, and give insight into the source of large relaxation gaps observed in some cases.</p>
+</span>
+<span id="bib_BrownSchmerlingEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{BrownSchmerlingEtAl2022,
+  author = {Brown, R. and Schmerling, E. and Azizan, N. and Pavone, M.},
+  title = {A Unified View of SDP-based Neural Network Verification through Completely Positive Programming},
+  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
+  year = {2022},
+  keywords = {press},
+  owner = {rabrown1},
+  timestamp = {2022-02-17}
+}
+</pre>
+</span>
+<!-- <span id="key_BrownSchmerlingEtAl2022" >
 	<b>Keywords</b>:
 	press
 </span> --></li>
@@ -371,6 +469,32 @@
  
 
 
+<span class="entry" id="DyroSchmerlingEtAl2022">R. Dyro, E. Schmerling, N. Arechiga, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2205.02329">“Second-Order Sensitivity Analysis for Bilevel Optimization,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_DyroSchmerlingEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this work we derive a second-order approach to bilevel optimization, a type of mathematical programming in which the solution to a parameterized optimization problem (the “lower” problem) is itself to be optimized (in the “upper” problem) as a function of the parameters. Many existing approaches to bilevel optimization employ first-order sensitivity analysis, based on the implicit function theorem (IFT), for the lower problem to derive a gradient of the lower problem solution with respect to its parameters; this IFT gradient is then used in a first-order optimization method for the upper problem. This paper extends this sensitivity analysis to provide second-order derivative information of the lower problem (which we call the IFT Hessian), enabling the usage of faster-converging second-order optimization methods at the upper level.  Our analysis shows that (i) much of the computation already used to produce the IFT gradient can be reused for the IFT Hessian, (ii) errors bounds derived for the IFT gradient readily apply to the IFT Hessian, (iii) computing IFT Hessians can significantly reduce overall computation by extracting more information from each lower level solve. We corroborate our findings and demonstrate the broad range of applications of our method by applying it to problem instances of least squares hyperparameter auto-tuning, multi-class SVM auto-tuning, and inverse optimal control.</p>
+</span>
+<span id="bib_DyroSchmerlingEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{DyroSchmerlingEtAl2022,
+  author = {Dyro, R. and Schmerling, E. and Arechiga, N. and Pavone, M.},
+  title = {Second-Order Sensitivity Analysis for Bilevel Optimization},
+  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
+  year = {2022},
+  keywords = {press},
+  owner = {rdyro},
+  url = {https://arxiv.org/abs/2205.02329},
+  timestamp = {2022-02-05}
+}
+</pre>
+</span>
+<!-- <span id="key_DyroSchmerlingEtAl2022" >
+	<b>Keywords</b>:
+	press
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="LuoEtAl2022">R. Luo, A. Bhatnagar, H. Wang, C. Xiong, S. Savarese, Y. Bai, S. Zhao, S. Ermon, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2102.10809">“Local Calibration: Metrics and Recalibration,”</a> 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_LuoEtAl2022" class="abstract noshow">
@@ -397,35 +521,10 @@
  
 
 
-<span class="entry" id="BrownSchmerlingEtAl2022">R. Brown, E. Schmerling, N. Azizan, and M. Pavone, <a class="entry-title" href="">“A Unified View of SDP-based Neural Network Verification through Completely Positive Programming,”</a> in <i>Int. Conf. on Artificial Intelligence and Statistics</i>, 2022. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BrownSchmerlingEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_BrownSchmerlingEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Verifying that input-output relationships of a neural network conform to prescribed operational specifications is a key enabler towards deploying these networks in safety-critical applications. Semidefinite programming (SDP)-based approaches to Rectified Linear Unit (ReLU) network verification transcribe this problem into an optimization problem, where the accuracy of any such formulation reflects the level of fidelity in how the neural network computation is represented, as well as the relaxations of intractable constraints. While the literature contains much progress on improving the tightness of SDP formulations while maintaining tractability, comparatively little work has been devoted to the other extreme, i.e., how to most accurately capture the original verification problem before SDP relaxation. In this work, we develop an exact, convex formulation of verification as a completely positive program (CPP), and provide analysis showing that our formulation is minimal—the removal of any constraint fundamentally misrepresents the neural network computation. We leverage our formulation to provide a unifying view of existing approaches, and give insight into the source of large relaxation gaps observed in some cases.</p>
-</span>
-<span id="bib_BrownSchmerlingEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{BrownSchmerlingEtAl2022,
-  author = {Brown, R. and Schmerling, E. and Azizan, N. and Pavone, M.},
-  title = {A Unified View of SDP-based Neural Network Verification through Completely Positive Programming},
-  booktitle = {{Int. Conf. on Artificial Intelligence and Statistics}},
-  year = {2022},
-  keywords = {press},
-  owner = {rabrown1},
-  timestamp = {2022-02-17}
-}
-</pre>
-</span>
-<!-- <span id="key_BrownSchmerlingEtAl2022" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="SinhaSharmaEtAl2022">R. Sinha, A. Sharma, S. Banerjee, T. Lew, R. Luo, S. M. Richards, Y. Sun, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sinha.Sharma.ea.ISRR22.pdf">“A System-Level View on Out-of-Distribution Data in Robotics,”</a> in <i>Int. Symp. on Robotics Research</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_SinhaSharmaEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of “black-box�? learned components in the modern robotic autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards reliable learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.</p>
+	<p class="abstract"><b>Abstract:</b> When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of â€œblack-boxï¿½? learned components in the modern robotic autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards reliable learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.</p>
 </span>
 <span id="bib_SinhaSharmaEtAl2022" class="bibtex noshow">
 	<pre>@inproceedings{SinhaSharmaEtAl2022,
@@ -444,31 +543,6 @@
 <!-- <span id="key_SinhaSharmaEtAl2022" >
 	<b>Keywords</b>:
 	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BanerjeeSharmaEtAl2022">S. Banerjee, A. Sharma, E. Schmerling, M. Spolaor, M. Nemerouf, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2209.06855">“Data Lifecycle Management for Learning-based Aerospace Applications,”</a> in <i>European Conf. on Computer Vision - AI4Space Workshop</i>, 2022.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BanerjeeSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BanerjeeSharmaEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_BanerjeeSharmaEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> As input distributions evolve over a mission lifetime, maintaining performance of learning-based models becomes challenging. This paper presents a framework to incrementally retrain a model by selecting a subset of test inputs to label, which allows the model to adapt to changing input distributions. Algorithms within this framework are evaluated based on (1) model performance throughout mission lifetime and (2) cumulative costs associated with labeling and model retraining. We provide an open-source benchmark of a satellite pose estimation model trained on images of a satellite in space and deployed in novel scenarios (e.g., different backgrounds or misbehaving pixels), where algorithms are evaluated on their ability to maintain high performance by retraining on a subset of inputs. We also propose a novel algorithm to select a diverse subset of inputs for labeling, by characterizing the information gain from an input using Bayesian uncertainty quantification and choosing a subset that maximizes collective information gain using concepts from batch active learning. We show that our algorithm outperforms others on the benchmark, e.g., achieves comparable performance to an algorithm that labels 100% of inputs, while only labeling 50% of inputs, resulting in low costs and high performance over the mission lifetime.</p>
-</span>
-<span id="bib_BanerjeeSharmaEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{BanerjeeSharmaEtAl2022,
-  author = {Banerjee, S. and Sharma, A. and Schmerling, E. and Spolaor, M. and Nemerouf, M. and Pavone, M.},
-  title = {Data Lifecycle Management for Learning-based Aerospace Applications},
-  booktitle = {{European Conf. on Computer Vision - AI4Space Workshop}},
-  year = {2022},
-  url = {https://arxiv.org/abs/2209.06855},
-  owner = {somrita},
-  timestamp = {2022-09-14}
-}
-</pre>
-</span>
-<!-- <span id="key_BanerjeeSharmaEtAl2022" >
-	<b>Keywords</b>:
-	
 </span> --></li>
 <li>
  
