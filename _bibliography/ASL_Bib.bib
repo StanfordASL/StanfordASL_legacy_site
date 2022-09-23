@@ -2923,6 +2923,18 @@
   abstract = {Today, even the most compute-and-power constrained robots can measure complex, high data-rate video and LIDAR sensory streams. Often, such robots, ranging from low-power drones to space and subterranean rovers, need to transmit high-bitrate sensory data to a remote compute server if they are uncertain or cannot scalably run complex perception or mapping tasks locally. However, todayâ€™s representations for sensory data are mostly designed for human, not robotic, perception and thus often waste precious compute or wireless network resources to transmit unimportant parts of a scene that are unnecessary for a high-level robotic task. This paper presents an algorithm to learn task-relevant representations of sensory data that are co-designed with a pre-trained robotic perception modelâ€™s ultimate objective. Our algorithm aggressively compresses robotic sensory data by up to 11 Ã— more than competing methods. Further, it achieves high accuracy and robust generalization on diverse tasks including Mars terrain classification with low-power deep learning accelerators, neural motion planning, and environmental timeseries classification.},
 }
 
+@InProceedings{NewdickOngoleEtAl2023,
+  author    = {Stephanie Newdick and Nitin Ongole and Tony G. Chen and Edward Schmerling and Mark Cutkosky and Marco Pavone},
+  title     = {Motion Planning for a Climbing Robot with Stochastic Grasps},
+  year      = {2023},
+  abstract  = {Motion planning for a multi-limbed climbing robot must consider the robot’s posture, joint torques, and how it uses contact forces to interact with its environment. This paper focuses on motion planning for a robot that uses nontraditional locomotion to explore unpredictable environments such as a martian cave. Our robotic concept, ReachBot, uses extendable and retractable booms as limbs to achieve a large reachable workspace while climbing. Each extendable boom is capped by a microspine gripper optimized for grasping in martian caves. ReachBot leverages its large workspace to navigate around obstacles, over crevasses, and through challenging terrain. Our planning approach must be versatile to accommodate variable terrain features and be robust to mitigate risks from the stochastic nature of spiny grippers. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping.  This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 95\% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we verify our motion planning algorithm through experimentation on a 2D planar prototype.},
+  journal   = proc_IEEE_ICRA,
+  keywords  = {sub},
+  owner     = {rdyro},
+  timestamp = {2022-09-21},
+  url   = {https://arxiv.org/abs/2209.10687},
+}
+
 @Inproceedings{NishimuraIvanovicEtAl2020,
   author       = {Nishimura, H. and Ivanovic, B. and Gaidon, A. and Pavone, M. and Schwager, M.},
   title        = {Risk-Sensitive Sequential Action Control with Multi-Modal Human Trajectory Forecasting for Safe Crowd-Robot Interaction},
@@ -3709,17 +3721,6 @@ Collectively, this paper provides an application-focused atlas of algorithms for
   keywords     = {press},
   owner        = {schneids},
   timestamp    = {2021-11-04},
-}
-
-@InProceedings{SchneiderOngoleEtAl2023,
-  author    = {Stephanie Schneider and Nitin Ongole and Tony G. Chen and Edward Schmerling and Mark Cutkosky and Marco Pavone},
-  title     = {Motion Planning for a Climbing Robot with Stochastic Grasps},
-  year      = {2023},
-  abstract  = {Motion planning for a multi-limbed climbing robot must consider the robot’s posture, joint torques, and how it uses contact forces to interact with its environment. This paper focuses on motion planning for a robot that uses nontraditional locomotion to explore unpredictable environments such as a martian cave. Our robotic concept, ReachBot, uses extendable and retractable booms as limbs to achieve a large reachable workspace while climbing. Each extendable boom is capped by a microspine gripper optimized for grasping in martian caves. ReachBot leverages its large workspace to navigate around obstacles, over crevasses, and through challenging terrain. Our planning approach must be versatile to accommodate variable terrain features and be robust to mitigate risks from the stochastic nature of spiny grippers. In this paper, we introduce a graph traversal algorithm to select a discrete sequence of grasps based on available terrain features suitable for grasping.  This discrete plan is complemented by a decoupled motion planner that considers the alternating phases of body movement and end-effector movement, using a combination of sampling-based planning and sequential convex programming to optimize individual phases. We use our motion planner to plan a trajectory across a simulated 2D cave environment with at least 95% probability of success and demonstrate improved robustness over a baseline trajectory. Finally, we verify our motion planning algorithm through experimentation on a 2D planar prototype.},
-  journal   = proc_IEEE_ICRA,
-  keywords  = {sub},
-  owner     = {rdyro},
-  timestamp = {2022-09-21},
 }
 
 @inproceedings{SelimAlanwarEtAl2022,
