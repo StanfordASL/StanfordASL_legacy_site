@@ -12,34 +12,58 @@
             <h3>Contacts:</h3>
 
             {% if page.email %}
-            <p><strong>Email:</strong> {{page.email | replace: "@", " <i>at</i> " | replace: ".", " <i>dot</i> "}}</p>
+            <div>
+              <strong>Email:</strong> {{page.email | replace: "@", " <i>at</i> " | replace: ".", " <i>dot</i> "}}
+            </div>
             {% endif %}
 
-            <p>
-              {% if page.website or page.github or page.linkedin or page.gscholar %}
-              <strong>Social Media:</strong>
-              {% endif %}
+            {% if page.phone %}
+            <div>
+              <strong>Phone:</strong> {{page.phone}}
+            </div>
+            {% endif %}
 
+            <div style="margin-top:10px;">
               {% if page.website %}
-              <a href="{{page.website}}" target="_blank" title="Personal Webpage"><i class="fa fa-user-circle fa-lg" style="color:black;"></i></a>
+              <span style="margin-right:10px;">
+                <a href="{{page.website}}" target="_blank" title="Personal Webpage">
+                  <i class="fa fa-home fa-2x" style="color:black;"></i>
+                </a>
+              </span>
               {% endif %}
 
               {% if page.github %}
-              <a href="https://github.com/{{page.github}}" target="_blank" title="Github"><i class="fa fa-github fa-lg" style="color:black;"></i></a>
+              <span style="margin-right:10px;">
+                <a href="https://github.com/{{page.github}}" target="_blank" title="Github">
+                  <i class="fa fa-github fa-2x" style="color:black;"></i>
+                </a>
+              </span>
               {% endif %}
 
               {% if page.linkedin %}
-              <a href="https://www.linkedin.com/in/{{page.linkedin}}" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square fa-lg" style="color:black;"></i></a>
+              <span style="margin-right:10px;">
+                <a href="https://www.linkedin.com/in/{{page.linkedin}}" target="_blank" title="LinkedIn">
+                  <i class="fa fa-linkedin-square fa-2x" style="color:black;"></i>
+                </a>
+              </span>
               {% endif %}
 
               {% if page.gscholar %}
-              <a href="https://scholar.google.com/citations?user={{page.gscholar}}" target="_blank" title="Google Scholar"><i class="fa fa-graduation-cap fa-lg" style="color:black;"></i></a>
+              <span style="margin-right:10px;">
+                <a href="https://scholar.google.com/citations?user={{page.gscholar}}" target="_blank" title="Google Scholar">
+                  <i class="fa fa-graduation-cap fa-2x" style="color:black;"></i>
+                </a>
+              </span>
               {% endif %}
 
               {% if page.twitter %}
-              <a href="https://twitter.com/{{page.twitter}}" target="_blank" title="Twitter"><i class="fa fa-twitter fa-lg" style="color:black;"></i></a>
+              <span style="margin-right:10px;">
+                <a href="https://twitter.com/{{page.twitter}}" target="_blank" title="Twitter">
+                  <i class="fa fa-twitter fa-2x" style="color:black;"></i>
+                </a>
+              </span>
               {% endif %}
-            </p>
+            </div>
   		    </div>
     		  <div class="col-md-7">
             <h2 style="margin-top: 0px;">{{ page.title }}</h2>
