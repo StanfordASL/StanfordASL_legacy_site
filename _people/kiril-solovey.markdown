@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Algorithms for motion planning, multi-robot systems, and autonomous mobility on demand"
 img: KirilSolovey.jpg
 email: kirilsol@stanford.edu
-website: kirilsol.github.io
+website: https://kirilsol.github.io/
 current: "Technion"
 ---
 

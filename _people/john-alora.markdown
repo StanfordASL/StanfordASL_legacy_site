@@ -7,7 +7,7 @@ position: phd
 excerpt: "Control of infinite-dimensional systems"
 img: JohnAlora.jpg
 email: jjalora@stanford.edu
-website: www.linkedin.com/in/johnalora
+linkedin: johnalora
 ---
 
 John is a graduate student at Stanford's Department of Aeronautics and Astronautics. He completed his B.S. degree in electrical engineering at the United States Air Force Academy (USAFA) in 2014 and subsequently, his M.S. degree in Aeronautics and Astronautics at MIT in 2016 under the supervision of Professor Sertac Karaman. He was also a Draper Fellow at Draper Labs working on implementing task and motion planning algorithms for UAVs operating in contested environments. He is currently supported by the Secretary of the AF STEM PhD Fellowship.

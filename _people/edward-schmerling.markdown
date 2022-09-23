@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Part-time rocket scientist"
 img: EdwardSchmerling.png
 email: schmrlng@stanford.edu
-website: stanford.edu/~schmrlng/
+website: https://stanford.edu/~schmrlng/
 current: "Waymo Research"
 ---
 

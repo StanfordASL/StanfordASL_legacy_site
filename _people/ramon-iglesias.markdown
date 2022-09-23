@@ -7,7 +7,7 @@ position: alumni
 excerpt: "The intersection of computer science and real-world infrastructure"
 img: RamonIglesias.jpg
 email: rdit@stanford.edu
-website: ramondario.com
+website: https://ramondario.com
 current: "Lyft"
 ---
 

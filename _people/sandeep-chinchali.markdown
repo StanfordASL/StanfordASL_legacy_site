@@ -7,7 +7,6 @@ position: alumni
 excerpt: "Cloud Robotics"
 img: SandeepChinchali.png
 email: csandeep@stanford.edu
-website:
 current: "University of Texas at Austin"
 ---
 

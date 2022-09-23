@@ -7,7 +7,7 @@ position: phd
 excerpt: "Structured modeling and optimal planning for robotics"
 img: RobertDyro.jpg
 email: rdyro@stanford.edu
-website: rdyro.github.io/website/
+website: https://rdyro.github.io/website/
 ---
 
 Robert is currently pursing a PhD in the Aeronautics and Astronautics

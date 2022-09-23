@@ -6,6 +6,7 @@ date:   2012-02-01 00:00:00 -0700
 position: faculty
 excerpt: ""
 img: Pavone.jpg
+website: https://web.stanford.edu/~pavone/
 ---
 
 Associate Professor, Department of Aeronautics and Astronautics

@@ -8,7 +8,6 @@ position: phd
 excerpt: "Motion planning for autonomous and unconventional space robotics"
 img: StephNewdick.jpg
 email: snewdick@stanford.edu
-website:
 ---
 
 Stephanie Newdick is a Ph.D. student in Aeronautics and Astronautics. She received her BS in Mechanical Engineering from Cornell University in 2014. Prior to coming to Stanford, she worked as a software engineer and flight test engineer for Kitty Hawk Corporation (formerly Zee Aero). She is currently supported by a Stanford Graduate Fellowship.

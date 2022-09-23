@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Theoretical and numerical control for aerospace systems"
 img: RiccardoBonalli.png
 email: rbonalli@stanford.edu
-website: rbonalli.github.io
+website: https://rbonalli.github.io
 current: "CNRS"
 ---
 
