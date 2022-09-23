@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Safe robotic learning"
 img: JamesHarrison.jpg
 email: jh2@stanford.edu
-website: web.stanford.edu/~jh2
+website: https://web.stanford.edu/~jh2
 current: "Google Brain"
 ---
 

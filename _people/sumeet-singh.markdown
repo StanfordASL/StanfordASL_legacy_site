@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Guaranteed safe planning"
 img: SumeetSingh.jpg
 email: ssingh19@stanford.edu
-website: web.stanford.edu/~ssingh19/
+website: https://web.stanford.edu/~ssingh19/
 current: "Google Brain"
 ---
 

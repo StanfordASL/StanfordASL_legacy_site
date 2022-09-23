@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Optimal control, optimization and UAVs"
 img: BenoitLandry.jpg
 email: ben.acc.landry@gmail.com
-website: www.blandry.xyz
+website: https://www.blandry.xyz
 current: "Apple"
 ---
 

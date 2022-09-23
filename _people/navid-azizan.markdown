@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Control meets learning"
 img: NavidAzizan.jpg
 email: azizan@stanford.edu
-website: azizan.mit.edu
+website: https://azizan.mit.edu
 current: "Massachusetts Institute of Technology"
 ---
 

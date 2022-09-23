@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Visual design for scientific communication"
 img: MatteoZallio.jpg
 email: matteo.zallio@stanford.edu
-website: www.matteozallio.com
+website: https://www.matteozallio.com
 current: "University of Cambridge"
 ---
 

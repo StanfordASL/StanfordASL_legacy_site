@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Deep learning and robotics"
 img: BorisIvanovic.jpg
 email: borisi@stanford.edu
-website: www.borisivanovic.com
+website: https://www.borisivanovic.com/
 current: "NVIDIA Research"
 ---
 

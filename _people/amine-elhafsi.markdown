@@ -7,7 +7,6 @@ position: phd
 excerpt: "Planning and control for safe robotic navigation"
 img: AmineElhafsi.jpg
 email: amine@stanford.edu
-website:
 ---
 
 Amine is a Ph.D. student in the Department of Aeronautics and Astronautics. He recently obtained his M.S. degree from Stanford in 2019. Prior to joining Stanford, Amine graduated summa cum laude with a B.S. in aerospace engineering from UCLA. Before turning to robotics, he has also held multiple internships with the electric propulsion group at JPL.

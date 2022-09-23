@@ -7,7 +7,7 @@ position: phd
 excerpt: "Safe learning-based control"
 img: rohan-sinha-picture.png
 email: rhnsinha@stanford.edu
-website: rohansinha.nl
+website: https://rohansinha.nl
 ---
 
 Rohan is a graduate student in the department of Aeronautics and Astronautics. Rohan's research interests lie at the intersection of control theory, machine learning, and applied robotics. Currently, his research focuses on developing learning-based control algorithms with safety guarantees.

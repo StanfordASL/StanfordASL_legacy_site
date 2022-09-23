@@ -6,8 +6,6 @@ date:   2019-04-14 00:00:00 -0700
 position: alumni
 excerpt: "Future mobility systems"
 img: SalazarCut2.jpg
-email:
-website:
 current: "Eindhoven University of Technology"
 ---
 

@@ -7,7 +7,7 @@ position: alumni
 excerpt: "Robotic safety"
 img: MoChen.png
 email: mochen72@stanford.edu
-website: www.sfu.ca/computing/people/faculty/mochen1111.html
+website: https://www.sfu.ca/computing/people/faculty/mochen.html
 current: "Simon Fraser University"
 ---
 
