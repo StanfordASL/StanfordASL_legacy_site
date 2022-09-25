@@ -3,7 +3,7 @@ layout: person
 title:  "Matt Tsao"
 last:   "Tsao"
 date:   2018-05-18 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Combinatorial optimization and transportation science"
 current: "Lyft"
 img: MattTsao.jpg
