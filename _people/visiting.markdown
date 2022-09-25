@@ -7,9 +7,11 @@ position: visiting
 <li><h6 class="visiting-name">Nicoletta Bof.</h6> <p class="visiting-excerpt">University of Padova.</p></li>
 <li><h6 class="visiting-name">Felix Böwing.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Jan Carius.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Claudia Conte.</h6> <p class="visiting-excerpt">University of Naples Federico II.</p></li>
 <li><h6 class="visiting-name">Roman Engeler.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
-<li><h6 class="visiting-name">Alvaro Estandia Hentschel.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Javier V. Gómez.</h6> <p class="visiting-excerpt">Universidad Carlos III de Madrid.</p></li>
+<li><h6 class="visiting-name">Alvaro Estandia Hentschel.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
+<li><h6 class="visiting-name">Dominik Helmreich.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>
 <li><h6 class="visiting-name">Keita Kobashi.</h6> <p class="visiting-excerpt">Tohoku University.</p></li>
 <li><h6 class="visiting-name">Sarah Laamimach.</h6> <p class="visiting-excerpt">Technical University of Munich.</p></li>
 <li><h6 class="visiting-name">Nicolas Lanzetti.</h6> <p class="visiting-excerpt">ETH Zürich.</p></li>

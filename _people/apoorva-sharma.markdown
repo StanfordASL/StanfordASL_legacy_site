@@ -3,8 +3,9 @@ layout: person
 title:  "Apoorva Sharma"
 last:   "Sharma"
 date:   2018-05-19 00:00:00 -0700
-position: phd
+position: alumni
 excerpt: "Uncertainty-aware robotic learning and control"
+current: "NVIDIA Research"
 img: ApoorvaSharma.jpg
 email: apoorva@stanford.edu
 ---
