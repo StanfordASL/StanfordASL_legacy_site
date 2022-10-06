@@ -1,6 +1,0 @@
-<!--
-{% if page.altlast != "" %}
-{% assign person_name_alt = page.altlast | append: ". " | append: first_initial %}
-{% bibliography -q @*[author ~= {{ person_name_alt }}] %}
-{% endif %}
--->
