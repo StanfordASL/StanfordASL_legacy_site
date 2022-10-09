@@ -26,3 +26,6 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-scholar"
 end
+
+# Needed with Ruby3. See https://github.com/jekyll/jekyll/issues/8523
+gem "webrick", "~> 1.7"
