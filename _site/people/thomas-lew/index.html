@@ -299,7 +299,7 @@
  
 
 
-<span class="entry" id="WuLewEtAl2022">A. Wu, T. Lew, K. Solovey, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2205.07728">“Robust-RRT: Probabilistically-Complete Motion Planning for Uncertain Nonlinear Systems,”</a> in <i>Int. Symp. on Robotics Research</i>, 2022. (Submitted)</span> 
+<span class="entry" id="WuLewEtAl2022">A. Wu, T. Lew, K. Solovey, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2205.07728">“Robust-RRT: Probabilistically-Complete Motion Planning for Uncertain Nonlinear Systems,”</a> in <i>Int. Symp. on Robotics Research</i>, 2022.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('WuLewEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WuLewEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_WuLewEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Robust motion planning entails computing a global motion plan that is safe under all possible uncertainty realizations, be it in the system dynamics, the robot’s initial position, or with respect to external disturbances. Current approaches for robust motion planning either lack theoretical guarantees, or make restrictive assumptions on the system dynamics and uncertainty distributions. In this paper, we address these limitations by proposing the robust rapidly-exploring random-tree (Robust-RRT) algorithm, which integrates forward reachability analysis directly into sampling-based control trajectory synthesis. We prove that Robust-RRT is probabilistically complete (PC) for nonlinear Lipschitz continuous dynamical systems with bounded uncertainty. In other words, Robust-RRT eventually finds a robust motion plan that is feasible under all possible uncertainty realizations assuming such a plan exists. Our analysis applies even to unstable systems that admit only short-horizon feasible plans; this is because we explicitly consider the time evolution of reachable sets along control trajectories. Thanks to the explicit consideration of time dependency in our analysis, PC applies to unstabilizable systems. To the best of our knowledge, this is the most general PC proof for robust sampling-based motion planning, in terms of the types of uncertainties and dynamical systems it can handle. Considering that an exact computation of reachable sets can be computationally expensive for some dynamical systems, we incorporate sampling-based reachability analysis into Robust-RRT and demonstrate our robust planner on nonlinear, underactuated, and hybrid systems.</p>
@@ -311,7 +311,7 @@
   title = {{Robust-RRT}: Probabilistically-Complete Motion Planning for Uncertain Nonlinear Systems},
   year = {2022},
   month = may,
-  keywords = {sub},
+  keywords = {pub},
   owner = {lew},
   timestamp = {2022-05-22},
   url = {https://arxiv.org/abs/2205.07728}
@@ -320,41 +320,13 @@
 </span>
 <!-- <span id="key_WuLewEtAl2022" >
 	<b>Keywords</b>:
-	sub
+	pub
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="LewJansonEtAl2022">T. Lew, L. Janson, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2112.05745">“A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('LewJansonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewJansonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_LewJansonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their ε-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an ε-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.</p>
-</span>
-<span id="bib_LewJansonEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{LewJansonEtAl2022,
-  author = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
-  title = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
-  year = {2022},
-  booktitle = {{Learning for Dynamics \& Control Conference}},
-  note = {In Press},
-  month = mar,
-  url = {https://arxiv.org/abs/2112.05745},
-  keywords = {press},
-  owner = {lew},
-  timestamp = {2022-03-01}
-}
-</pre>
-</span>
-<!-- <span id="key_LewJansonEtAl2022" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="ThorpeLewEtAl2022">A. J. Thorpe, T. Lew, M. M. K. Oishi, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2202.04193">“Data-Driven Chance Constrained Control using Kernel Distribution Embeddings,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022. (In Press)</span> 
+<span class="entry" id="ThorpeLewEtAl2022">A. J. Thorpe, T. Lew, M. M. K. Oishi, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2202.04193">“Data-Driven Chance Constrained Control using Kernel Distribution Embeddings,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('ThorpeLewEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('ThorpeLewEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_ThorpeLewEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> We present a data-driven algorithm for efficiently computing stochastic control policies for general joint chance constrained optimal control problems. Our approach leverages the theory of kernel distribution embeddings, which allows representing expectation operators as inner products in a reproducing kernel Hilbert space. This framework enables approximately reformulating the original problem using a dataset of observed trajectories from the system without imposing prior assumptions on the parameterization of the system dynamics or the structure of the uncertainty. By optimizing over a finite subset of stochastic open-loop control trajectories, we relax the original problem to a linear program over the control parameters that can be efficiently solved using standard convex optimization techniques. We demonstrate our proposed approach in simulation on a system with nonlinear non-Markovian dynamics navigating in a cluttered environment.</p>
@@ -365,10 +337,9 @@
   title = {Data-Driven Chance Constrained Control using Kernel Distribution Embeddings},
   year = {2022},
   booktitle = {{Learning for Dynamics \& Control Conference}},
-  note = {In Press},
   month = mar,
   url = {https://arxiv.org/abs/2202.04193},
-  keywords = {press},
+  keywords = {pub},
   owner = {lew},
   timestamp = {2022-03-01}
 }
@@ -376,13 +347,40 @@
 </span>
 <!-- <span id="key_ThorpeLewEtAl2022" >
 	<b>Keywords</b>:
-	press
+	pub
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="MalyutaEtAl2022">D. Malyuta, T. P. Reynolds, M. Szmuk, T. Lew, R. Bonalli, M. Pavone, and B. Acikmese, <a class="entry-title" href="https://arxiv.org/abs/2106.09125">“Convex Optimization for Trajectory Generation,”</a> <i>IEEE Control Systems Magazine</i>, Jan. 2022. (In Press)</span> 
+<span class="entry" id="LewJansonEtAl2022">T. Lew, L. Janson, R. Bonalli, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2112.05745">“A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis,”</a> in <i>Learning for Dynamics &amp; Control Conference</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LewJansonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LewJansonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_LewJansonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> In this work, we analyze an efficient sampling-based algorithm for general-purpose reachability analysis, which remains a notoriously challenging problem with applications ranging from neural network verification to safety analysis of dynamical systems. By sampling inputs, evaluating their images in the true reachable set, and taking their ε-padded convex hull as a set estimator, this algorithm applies to general problem settings and is simple to implement. Our main contribution is the derivation of asymptotic and finite-sample accuracy guarantees using random set theory. This analysis informs algorithmic design to obtain an ε-close reachable set approximation with high probability, provides insights into which reachability problems are most challenging, and motivates safety-critical applications of the technique. On a neural network verification task, we show that this approach is more accurate and significantly faster than prior work. Informed by our analysis, we also design a robust model predictive controller that we demonstrate in hardware experiments.</p>
+</span>
+<span id="bib_LewJansonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{LewJansonEtAl2022,
+  author = {Lew, T. and Janson, L. and Bonalli, R. and Pavone, M.},
+  title = {A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis},
+  year = {2022},
+  booktitle = {{Learning for Dynamics \& Control Conference}},
+  month = mar,
+  url = {https://arxiv.org/abs/2112.05745},
+  keywords = {pub},
+  owner = {lew},
+  timestamp = {2022-03-01}
+}
+</pre>
+</span>
+<!-- <span id="key_LewJansonEtAl2022" >
+	<b>Keywords</b>:
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="MalyutaEtAl2022">D. Malyuta, T. P. Reynolds, M. Szmuk, T. Lew, R. Bonalli, M. Pavone, and B. Acikmese, <a class="entry-title" href="https://arxiv.org/abs/2106.09125">“Convex Optimization for Trajectory Generation,”</a> <i>IEEE Control Systems Magazine</i>, vol. 42, no. 5, pp. 40–113, Jan. 2022.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('MalyutaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('MalyutaEtAl2022','abstract')">Abstract</a>]</p>
 <span id="abs_MalyutaEtAl2022" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Reliable and efficient trajectory generation methods are a fundamental need for autonomous dynamical systems of tomorrow. The goal of this article is to provide a comprehensive tutorial of three major convex optimization-based trajectory generation methods:  lossless convexification (LCvx), and two sequential convex programming algorithms known as SCvx and GuSTO. In this article, trajectory generation is the computation of a dynamically feasible state and control signal that satisfies a set of constraints while optimizing key mission objectives.  The trajectory generation problem is almost always nonconvex, which typically means that it is not readily amenable to efficient and reliable solution onboard an autonomous vehicle.  The three algorithms that we discuss use problem reformulation and a systematic algorithmic strategy to nonetheless solve nonconvex trajectory generation tasks through the use of a convex optimizer. The theoretical guarantees and computational speed offered by convex optimization have made the algorithms popular in both research and industry circles.  To date, the list of applications include rocket landing, spacecraft hypersonic reentry, spacecraft rendezvous and docking, aerial motion planning for fixed-wing and quadrotor vehicles, robot motion planning, and more.  Among these applications are high-profile rocket flights conducted by organizations like NASA, Masten Space Systems, SpaceX, and Blue Origin. This article aims to give the reader the tools and understanding necessary to work with each algorithm, and to know what each method can and cannot do. A publicly available source code repository supports the numerical examples provided at the end of this article. By the end of the article, the reader should be ready to use each method, to extend them, and to contribute to their many exciting modern applications.</p>
@@ -393,10 +391,12 @@
   title = {Convex Optimization for Trajectory Generation},
   year = {2022},
   journal = {{IEEE Control Systems Magazine}},
-  note = {In Press},
+  volume = {42},
+  number = {5},
+  pages = {40--113},
   month = jan,
   url = {https://arxiv.org/abs/2106.09125},
-  keywords = {press},
+  keywords = {pub},
   owner = {lew},
   timestamp = {2022-01-30}
 }
@@ -404,84 +404,32 @@
 </span>
 <!-- <span id="key_MalyutaEtAl2022" >
 	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BonalliLewESAIM2022">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05182">“Sequential Convex Programming For Non-Linear Stochastic Optimal Control,”</a> <i>ESAIM: Control, Optimisation &amp; Calculus of Variations</i>, vol. 28, no. 64, 2022.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewESAIM2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewESAIM2022','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliLewESAIM2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
-</span>
-<span id="bib_BonalliLewESAIM2022" class="bibtex noshow">
-	<pre>@article{BonalliLewESAIM2022,
-  author = {Bonalli, R. and Lew, T. and Pavone, M.},
-  title = {Sequential Convex Programming For Non-Linear Stochastic Optimal Control},
-  journal = {{ESAIM: Control, Optimisation \& Calculus of Variations}},
-  volume = {28},
-  number = {64},
-  year = {2022},
-  owner = {lew},
-  timestamp = {2022-01-29},
-  url = {https://arxiv.org/abs/2009.05182}
-}
-</pre>
-</span>
-<!-- <span id="key_BonalliLewESAIM2022" >
-	<b>Keywords</b>:
-	
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="BonalliLewEtAl2022">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="">“Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control,”</a> <i>IEEE Transactions on Automatic Control</i>, 2022.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliLewEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently gained significant popularity as an effective method for solving optimal control problems and has been successfully applied in several different domains. However, the theoretical analysis of SCP has received comparatively limited attention, and it is often restricted to discrete-time formulations. In this paper, we present a unifying theoretical analysis of a fairly general class of SCP procedures for continuous-time optimal control problems. In addition to the derivation of convergence guarantees in a continuous-time setting, our analysis reveals two new numerical and practical insights. First, we show how one can more easily account for manifold-type constraints, which are a defining feature of optimal control of mechanical systems. Second, we show how our theoretical analysis can be leveraged to accelerate SCP-based optimal control methods by infusing techniques from indirect optimal control.</p>
-</span>
-<span id="bib_BonalliLewEtAl2022" class="bibtex noshow">
-	<pre>@article{BonalliLewEtAl2022,
-  author = {Bonalli, Riccardo and Lew, Thomas and Pavone, Marco},
-  journal = {{IEEE Transactions on Automatic Control}},
-  title = {Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control},
-  year = {2022},
-  keywords = {pub},
-  owner = {rdyro},
-  timestamp = {2022-09-21}
-}
-</pre>
-</span>
-<!-- <span id="key_BonalliLewEtAl2022" >
-	<b>Keywords</b>:
 	pub
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="BonalliLewTAC2022">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05038">“Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control,”</a> <i>IEEE Transactions on Automatic Control</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewTAC2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewTAC2022','abstract')">Abstract</a>]</p>
-<span id="abs_BonalliLewTAC2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
+<span class="entry" id="SinhaSharmaEtAl2022">R. Sinha, A. Sharma, S. Banerjee, T. Lew, R. Luo, S. M. Richards, Y. Sun, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf">“A System-Level View on Out-of-Distribution Data in Robotics,”</a> in <i>Proc. AAAI Conf. on Artificial Intelligence</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_SinhaSharmaEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall <i>system-level</i> competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.</p>
 </span>
-<span id="bib_BonalliLewTAC2022" class="bibtex noshow">
-	<pre>@article{BonalliLewTAC2022,
-  author = {Bonalli, R. and Lew, T. and Pavone, M.},
-  title = {Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control},
-  journal = {{IEEE Transactions on Automatic Control}},
+<span id="bib_SinhaSharmaEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{SinhaSharmaEtAl2022,
+  author = {Sinha, Rohan and Sharma, Apoorva and Banerjee, Somrita and Lew, Thomas and Luo, Rachel and Richards, Spencer M. and Sun, Yixiao and Schmerling, Edward and Pavone, Marco},
+  title = {A System-Level View on Out-of-Distribution Data in Robotics},
+  booktitle = {{Proc. AAAI Conf. on Artificial Intelligence}},
   year = {2022},
-  note = {In Press},
+  note = {Submitted},
+  url = {/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf},
   keywords = {sub},
-  owner = {lew},
-  timestamp = {2020-12-07},
-  url = {https://arxiv.org/abs/2009.05038}
+  owner = {rhnsinha},
+  timestamp = {2022-10-24}
 }
 </pre>
 </span>
-<!-- <span id="key_BonalliLewTAC2022" >
+<!-- <span id="key_SinhaSharmaEtAl2022" >
 	<b>Keywords</b>:
 	sub
 </span> --></li>
@@ -518,34 +466,60 @@
  
 
 
-<span class="entry" id="SinhaSharmaEtAl2022">R. Sinha, A. Sharma, S. Banerjee, T. Lew, R. Luo, S. M. Richards, Y. Sun, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf">“A System-Level View on Out-of-Distribution Data in Robotics,”</a> in <i>Proc. AAAI Conf. on Artificial Intelligence</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_SinhaSharmaEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall <i>system-level</i> competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.</p>
+<span class="entry" id="BonalliLewESAIM2022">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05182">“Sequential Convex Programming For Non-Linear Stochastic Optimal Control,”</a> <i>ESAIM: Control, Optimisation &amp; Calculus of Variations</i>, vol. 28, no. 64, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewESAIM2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewESAIM2022','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliLewESAIM2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
 </span>
-<span id="bib_SinhaSharmaEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{SinhaSharmaEtAl2022,
-  author = {Sinha, Rohan and Sharma, Apoorva and Banerjee, Somrita and Lew, Thomas and Luo, Rachel and Richards, Spencer M. and Sun, Yixiao and Schmerling, Edward and Pavone, Marco},
-  title = {A System-Level View on Out-of-Distribution Data in Robotics},
-  booktitle = {{Proc. AAAI Conf. on Artificial Intelligence}},
+<span id="bib_BonalliLewESAIM2022" class="bibtex noshow">
+	<pre>@article{BonalliLewESAIM2022,
+  author = {Bonalli, R. and Lew, T. and Pavone, M.},
+  title = {Sequential Convex Programming For Non-Linear Stochastic Optimal Control},
+  journal = {{ESAIM: Control, Optimisation \& Calculus of Variations}},
+  volume = {28},
+  number = {64},
   year = {2022},
-  note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf},
-  keywords = {sub},
-  owner = {rhnsinha},
-  timestamp = {2022-10-24}
+  owner = {lew},
+  timestamp = {2022-01-29},
+  url = {https://arxiv.org/abs/2009.05182}
 }
 </pre>
 </span>
-<!-- <span id="key_SinhaSharmaEtAl2022" >
+<!-- <span id="key_BonalliLewESAIM2022" >
 	<b>Keywords</b>:
-	sub
+	
 </span> --></li>
 <li>
  
 
 
-<span class="entry" id="SchilligerEtAl2021">J. Schilliger, T. Lew, S. M. Richards, S. Hanggi, M. Pavone, and C. Onder, <a class="entry-title" href="https://arxiv.org/abs/2104.14250">“Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC,”</a> <i>IEEE Robotics and Automation Letters</i>, Aug. 2021.</span> 
+<span class="entry" id="BonalliLewEtAl2022">R. Bonalli, T. Lew, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2009.05038">“Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control,”</a> <i>IEEE Transactions on Automatic Control</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('BonalliLewEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('BonalliLewEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_BonalliLewEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Sequential Convex Programming (SCP) has recently gained significant popularity as an effective method for solving optimal control problems and has been successfully applied in several different domains. However, the theoretical analysis of SCP has received comparatively limited attention, and it is often restricted to discrete-time formulations. In this paper, we present a unifying theoretical analysis of a fairly general class of SCP procedures for continuous-time optimal control problems. In addition to the derivation of convergence guarantees in a continuous-time setting, our analysis reveals two new numerical and practical insights. First, we show how one can more easily account for manifold-type constraints, which are a defining feature of optimal control of mechanical systems. Second, we show how our theoretical analysis can be leveraged to accelerate SCP-based optimal control methods by infusing techniques from indirect optimal control.</p>
+</span>
+<span id="bib_BonalliLewEtAl2022" class="bibtex noshow">
+	<pre>@article{BonalliLewEtAl2022,
+  author = {Bonalli, R. and Lew, T. and Pavone, M.},
+  title = {Analysis of Theoretical and Numerical Properties of Sequential Convex Programming for Continuous-Time Optimal Control},
+  journal = {{IEEE Transactions on Automatic Control}},
+  year = {2022},
+  keywords = {pub},
+  owner = {lew},
+  timestamp = {2020-12-07},
+  url = {https://arxiv.org/abs/2009.05038}
+}
+</pre>
+</span>
+<!-- <span id="key_BonalliLewEtAl2022" >
+	<b>Keywords</b>:
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SchilligerEtAl2021">J. Schilliger, T. Lew, S. M. Richards, S. Hanggi, M. Pavone, and C. Onder, <a class="entry-title" href="https://arxiv.org/abs/2104.14250">“Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC,”</a> <i>IEEE Robotics and Automation Letters</i>, vol. 6, no. 4, pp. 8623–8630, Aug. 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SchilligerEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SchilligerEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_SchilligerEtAl2021" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Tractable safety-ensuring algorithms for cyber-physical systems are important in critical applications. Approaches based on Control Barrier Functions assume continuous enforcement, which is not possible in an online fashion. This paper presents two tractable algorithms to ensure forward invariance of discrete-time controlled cyber-physical systems. Both approaches are based on Control Barrier Functions to provide strict mathematical safety guarantees. The first algorithm exploits Lipschitz continuity and formulates the safety condition as a robust program which is subsequently relaxed to a set of affine conditions. The second algorithm is inspired by tube-NMPC and uses an affine Control Barrier Function formulation in conjunction with an auxiliary controller to guarantee safety of the system. We combine an approximate NMPC controller with the second algorithm to guarantee strict safety despite approximated constraints and show its effectiveness experimentally on a mini-Segway.</p>
@@ -555,6 +529,9 @@
   author = {Schilliger, J. and Lew, T. and Richards, S.~M. and Hanggi, S. and Pavone, M. and Onder, C.},
   title = {Control Barrier Functions for Cyber-Physical Systems and Applications to NMPC},
   journal = {{IEEE Robotics and Automation Letters}},
+  volume = {6},
+  number = {4},
+  pages = {8623--8630},
   year = {2021},
   month = aug,
   url = {https://arxiv.org/abs/2104.14250},
