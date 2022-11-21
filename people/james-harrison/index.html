@@ -308,26 +308,53 @@
  
 
 
-<span class="entry" id="GammelliHarrisonEtAl2022">D. Gammelli, J. Harrison, K. Yang, M. Pavone, F. Rodrigues, and P. C. Francisco, <a class="entry-title" href="">“Graph Reinforcement Learning for Network Control via Bi-Level Optimization,”</a> in <i>Learning on Graphs Conference</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_GammelliHarrisonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.</p>
+<span class="entry" id="WillesHarrisonEtAl2022">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="https://arxiv.org/abs/2107.13682">“Bayesian Embeddings for Few-Shot Open World Recognition,”</a> <i>IEEE Transactions on Pattern Analysis &amp; Machine Intelligence</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_WillesHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> As autonomous decision-making agents move from narrow operating environments to unstructured worlds, learning systems must move from a closed-world formulation to an open-world and few-shot setting in which agents continuously learn new classes from small amounts of information. This stands in stark contrast to modern machine learning systems that are typically designed with a known set of classes and a large number of examples for each class. In this work we extend embedding-based few-shot learning algorithms to the open-world recognition setting. We combine Bayesian non-parametric class priors with an embedding-based pre-training scheme to yield a highly flexible framework which we refer to as few-shot learning for open world recognition (FLOWR). We benchmark our framework on open-world extensions of the common MiniImageNet and TieredImageNet few-shot learning datasets. Our results show, compared to prior methods, strong classification accuracy performance and up to a 12% improvement in H-measure (a measure of novel class detection) from our non-parametric open-world few-shot learning scheme.</p>
 </span>
-<span id="bib_GammelliHarrisonEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{GammelliHarrisonEtAl2022,
-  author = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Francisco, Pereira C.},
-  booktitle = {{Learning on Graphs Conference}},
-  title = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
+<span id="bib_WillesHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@article{WillesHarrisonEtAl2022,
+  author = {Willes, John and Harrison, James and Harakeh, Ali and Finn, Chelsea and Pavone, Marco and Waslander, Steven},
+  journal = {{IEEE Transactions on Pattern Analysis \& Machine Intelligence}},
+  title = {Bayesian Embeddings for Few-Shot Open World Recognition},
   year = {2022},
-  keywords = {sub},
+  keywords = {pub},
   owner = {rdyro},
-  timestamp = {2022-09-21}
+  timestamp = {2022-09-21},
+  url = {https://arxiv.org/abs/2107.13682}
 }
 </pre>
 </span>
-<!-- <span id="key_GammelliHarrisonEtAl2022" >
+<!-- <span id="key_WillesHarrisonEtAl2022" >
 	<b>Keywords</b>:
-	sub
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.08261">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. We optimize over a class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control to achieve significant performance improvements in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive MPC, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety through persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
+</span>
+<span id="bib_SinhaHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{SinhaHarrisonEtAl2022,
+  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
+  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
+  year = {2022},
+  keywords = {press},
+  booktitle = {{American Control Conference}},
+  url = {https://arxiv.org/abs/2104.08261},
+  owner = {rhnsinha},
+  timestamp = {2022-01-31}
+}
+</pre>
+</span>
+<!-- <span id="key_SinhaHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	press
 </span> --></li>
 <li>
  
@@ -362,53 +389,26 @@
  
 
 
-<span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.08261">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. We optimize over a class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control to achieve significant performance improvements in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive MPC, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety through persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
+<span class="entry" id="GammelliHarrisonEtAl2022">D. Gammelli, J. Harrison, K. Yang, M. Pavone, F. Rodrigues, and P. C. Francisco, <a class="entry-title" href="">“Graph Reinforcement Learning for Network Control via Bi-Level Optimization,”</a> in <i>Learning on Graphs Conference</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.</p>
 </span>
-<span id="bib_SinhaHarrisonEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{SinhaHarrisonEtAl2022,
-  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
-  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
+<span id="bib_GammelliHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{GammelliHarrisonEtAl2022,
+  author = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Francisco, Pereira C.},
+  booktitle = {{Learning on Graphs Conference}},
+  title = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
   year = {2022},
-  keywords = {press},
-  booktitle = {{American Control Conference}},
-  url = {https://arxiv.org/abs/2104.08261},
-  owner = {rhnsinha},
-  timestamp = {2022-01-31}
-}
-</pre>
-</span>
-<!-- <span id="key_SinhaHarrisonEtAl2022" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="WillesHarrisonEtAl2022">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="https://arxiv.org/abs/2107.13682">“Bayesian Embeddings for Few-Shot Open World Recognition,”</a> <i>IEEE Transactions on Pattern Analysis &amp; Machine Intelligence</i>, 2022.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_WillesHarrisonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> As autonomous decision-making agents move from narrow operating environments to unstructured worlds, learning systems must move from a closed-world formulation to an open-world and few-shot setting in which agents continuously learn new classes from small amounts of information. This stands in stark contrast to modern machine learning systems that are typically designed with a known set of classes and a large number of examples for each class. In this work we extend embedding-based few-shot learning algorithms to the open-world recognition setting. We combine Bayesian non-parametric class priors with an embedding-based pre-training scheme to yield a highly flexible framework which we refer to as few-shot learning for open world recognition (FLOWR). We benchmark our framework on open-world extensions of the common MiniImageNet and TieredImageNet few-shot learning datasets. Our results show, compared to prior methods, strong classification accuracy performance and up to a 12% improvement in H-measure (a measure of novel class detection) from our non-parametric open-world few-shot learning scheme.</p>
-</span>
-<span id="bib_WillesHarrisonEtAl2022" class="bibtex noshow">
-	<pre>@article{WillesHarrisonEtAl2022,
-  author = {Willes, John and Harrison, James and Harakeh, Ali and Finn, Chelsea and Pavone, Marco and Waslander, Steven},
-  journal = {{IEEE Transactions on Pattern Analysis \& Machine Intelligence}},
-  title = {Bayesian Embeddings for Few-Shot Open World Recognition},
-  year = {2022},
-  keywords = {pub},
+  keywords = {sub},
   owner = {rdyro},
-  timestamp = {2022-09-21},
-  url = {https://arxiv.org/abs/2107.13682}
+  timestamp = {2022-09-21}
 }
 </pre>
 </span>
-<!-- <span id="key_WillesHarrisonEtAl2022" >
+<!-- <span id="key_GammelliHarrisonEtAl2022" >
 	<b>Keywords</b>:
-	pub
+	sub
 </span> --></li>
 <li>
  
@@ -441,32 +441,6 @@
  
 
 
-<span class="entry" id="DyroHarrisonEtAl2021">R. Dyro, J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.02213">“Particle MPC for Uncertain and Learning-Based Control,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, 2021. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_DyroHarrisonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> As robotic systems move from highly structured environments to open worlds, incorporating uncertainty from dynamics learning or state estimation into the control pipeline is essential for robust performance.  In this paper we present a nonlinear particle model predictive control (PMPC) approach to control under uncertainty, which directly incorporates any particle-based uncertainty representation, such as those common in robotics. Our approach builds on scenario methods for MPC, but in contrast to existing approaches, which either constrain all or only the first timestep to share actions across scenarios, we investigate the impact of a partial consensus horizon. Implementing this optimization for nonlinear dynamics by leveraging sequential convex optimization, our approach yields an efficient framework that can be tuned to the particular information gain dynamics of a system to mitigate both over-conservatism and over-optimism. We investigate our approach for two robotic systems across three problem settings: time-varying, partially observed dynamics; sensing uncertainty; and model-based reinforcement learning, and show that our approach improves performance over baselines in all settings.</p>
-</span>
-<span id="bib_DyroHarrisonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{DyroHarrisonEtAl2021,
-  author = {Dyro, R. and Harrison, J. and Sharma, A. and Pavone, M.},
-  title = {Particle MPC for Uncertain and Learning-Based Control},
-  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
-  year = {2021},
-  keywords = {press},
-  owner = {rdyro},
-  timestamp = {2022-02-05},
-  url = {https://arxiv.org/abs/2104.02213}
-}
-</pre>
-</span>
-<!-- <span id="key_DyroHarrisonEtAl2021" >
-	<b>Keywords</b>:
-	press
-</span> --></li>
-<li>
- 
-
-
 <span class="entry" id="GammelliYangEtAl2021">D. Gammelli, K. Yang, J. Harrison, F. Rodrigues, F. C. Pereira, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.11434">“Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2021','abstract')">Abstract</a>]</p>
 <span id="abs_GammelliYangEtAl2021" class="abstract noshow">
@@ -492,26 +466,27 @@
  
 
 
-<span class="entry" id="WillesHarrisonEtAl2021">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="">“Open-Set Incremental Learning via Bayesian Prototypical Embeddings,”</a> 2021. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_WillesHarrisonEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> </p>
+<span class="entry" id="DyroHarrisonEtAl2021">R. Dyro, J. Harrison, A. Sharma, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.02213">“Particle MPC for Uncertain and Learning-Based Control,”</a> in <i>IEEE/RSJ Int. Conf. on Intelligent Robots &amp; Systems</i>, 2021. (In Press)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('DyroHarrisonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_DyroHarrisonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> As robotic systems move from highly structured environments to open worlds, incorporating uncertainty from dynamics learning or state estimation into the control pipeline is essential for robust performance.  In this paper we present a nonlinear particle model predictive control (PMPC) approach to control under uncertainty, which directly incorporates any particle-based uncertainty representation, such as those common in robotics. Our approach builds on scenario methods for MPC, but in contrast to existing approaches, which either constrain all or only the first timestep to share actions across scenarios, we investigate the impact of a partial consensus horizon. Implementing this optimization for nonlinear dynamics by leveraging sequential convex optimization, our approach yields an efficient framework that can be tuned to the particular information gain dynamics of a system to mitigate both over-conservatism and over-optimism. We investigate our approach for two robotic systems across three problem settings: time-varying, partially observed dynamics; sensing uncertainty; and model-based reinforcement learning, and show that our approach improves performance over baselines in all settings.</p>
 </span>
-<span id="bib_WillesHarrisonEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{WillesHarrisonEtAl2021,
-  author = {Willes, J. and Harrison, J. and Harakeh, A. and Finn, C. and Pavone, M. and Waslander, S.},
-  title = {Open-Set Incremental Learning via Bayesian Prototypical Embeddings},
+<span id="bib_DyroHarrisonEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{DyroHarrisonEtAl2021,
+  author = {Dyro, R. and Harrison, J. and Sharma, A. and Pavone, M.},
+  title = {Particle MPC for Uncertain and Learning-Based Control},
+  booktitle = {{IEEE/RSJ Int. Conf. on Intelligent Robots \& Systems}},
   year = {2021},
-  note = {Submitted},
-  keywords = {sub},
-  owner = {jh2},
-  timestamp = {2021-03-23}
+  keywords = {press},
+  owner = {rdyro},
+  timestamp = {2022-02-05},
+  url = {https://arxiv.org/abs/2104.02213}
 }
 </pre>
 </span>
-<!-- <span id="key_WillesHarrisonEtAl2021" >
+<!-- <span id="key_DyroHarrisonEtAl2021" >
 	<b>Keywords</b>:
-	sub
+	press
 </span> --></li>
 <li>
  
@@ -566,6 +541,31 @@
 <!-- <span id="key_BanerjeeHarrisonEtAl2020" >
 	<b>Keywords</b>:
 	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="WillesHarrisonEtAl2021">J. Willes, J. Harrison, A. Harakeh, C. Finn, M. Pavone, and S. Waslander, <a class="entry-title" href="">“Open-Set Incremental Learning via Bayesian Prototypical Embeddings,”</a> in <i>Conf. on Neural Information Processing Systems - Workshop on Meta-Learning</i>, 2020.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('WillesHarrisonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_WillesHarrisonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> </p>
+</span>
+<span id="bib_WillesHarrisonEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{WillesHarrisonEtAl2021,
+  author = {Willes, J. and Harrison, J. and Harakeh, A. and Finn, C. and Pavone, M. and Waslander, S.},
+  title = {Open-Set Incremental Learning via Bayesian Prototypical Embeddings},
+  year = {2020},
+  booktitle = {Conf. on Neural Information Processing Systems - Workshop on Meta-Learning},
+  keywords = {pub},
+  owner = {jh2},
+  timestamp = {2021-03-23}
+}
+</pre>
+</span>
+<!-- <span id="key_WillesHarrisonEtAl2021" >
+	<b>Keywords</b>:
+	pub
 </span> --></li>
 <li>
  
