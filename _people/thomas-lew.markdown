@@ -6,6 +6,7 @@ date:   2020-03-19 00:00:00 -0700
 position: phd
 excerpt: "Safe learning, planning and control for uncertain systems"
 img: ThomasLew.jpg
+website: https://thomasjlew.github.io/
 gscholar: qdnDZkYAAAAJ
 ---
 
