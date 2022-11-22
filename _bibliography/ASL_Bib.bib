@@ -1077,6 +1077,19 @@
   url          = {https://arxiv.org/abs/2104.07768}
 }
 
+@Inproceedings{TsaoYangEtAl2022,
+  author       = {Tsao, M. and Yang, K. and Gopalakrishnan, K. and Pavone, M.},
+  title        = {Private Location Sharing for Decentralized Routing Services},
+  booktitle    = proc_IEEE_ITSC,
+  year         = {2022},
+  abstract = {Data-driven methodologies offer many exciting upsides, but they also introduce new challenges, particularly in the realm of user privacy. Specifically, the way data is collected can pose privacy risks to end users. In many routing services, a single entity (e.g., the routing service provider) collects and manages user trajectory data. When it comes to user privacy, these systems have a central point of failure since users have to trust that this entity will not sell or use their data to infer sensitive private information. With this as motivation, we study the problem of using location data for routing services in a privacy-preserving way. Rather than having users report their location to a central operator, we present a protocol in which users participate in a decentralized and privacy-preserving computation to estimate travel times for the roads in the network in a way that no individuals' location is ever observed by any other party. The protocol uses the Laplace mechanism in conjunction with secure multi-party computation to ensure that it is cryptogrpahically secure and that its output is differentially private. The protocol is computationally efficient and does not require specialized hardware; all it needs is GPS, which is included in most mobile devices. A natural question is if privacy necessitates degradation in accuracy or system performance. We show that if a road has sufficiently high capacity, then the travel time estimated by our protocol is provably close to the ground truth travel time. We validate the protocol through numerical experiments which show that using the protocol as a routing service provides privacy guarantees with minimal overhead to user travel time.},
+  doi      = {10.1109/ITSC55140.2022.9922387},
+  month    = oct,
+  url      = {https://arxiv.org/abs/2202.13305},
+  owner        = {gkarthik},
+  timestamp    = {2022-11-21},
+}
+
 @inproceedings{TsaoSoloveyETAL2020,
   author       = {Tsao, M. and Solovey, K. and Pavone, M.},
   title        = {Sample Complexity of Probabilistic Roadmaps via Epsilon-nets},
@@ -1124,6 +1137,18 @@
   url      = {https://arxiv.org/pdf/1804.11074.pdf},
   owner        = {rdit},
   timestamp    = {2018-07-12}
+}
+
+@Inproceedings{TsaoGopalakrishnanEtAl2023,
+  author       = {Tsao, M. and Gopalakrishnan, K. and Yang, K. and Pavone, M.},
+  title        = {Differentially Private Stochastic Convex Optimization for Network Routing Applications},
+  booktitle    = proc_AAMAS,
+  year         = {2023},
+  note         = {Submitted},
+  abstract = {Network routing problems are common across many engineering applications. Computing optimal routing policies requires knowledge about network demand, i.e., the origin and destination (OD) of all requests in the network. However, privacy considerations make it challenging to share individual OD data that would be required for computing optimal policies. Privacy can be particularly challenging in standard network routing problems because sources and sinks can be easily identified from flow conservation constraints, making feasibility and privacy mutually exclusive. In this paper, we present a differentially private algorithm for network routing problems. The main ingredient is a reformulation of network routing which moves all user data-dependent parameters out of the constraint set and into the objective function. We then present an algorithm for solving this formulation based on a differentially private variant of stochastic gradient descent. In this algorithm, differential privacy is achieved by injecting noise, and one may wonder if this noise injection compromises solution quality. We prove that our algorithm is both differentially private and asymptotically optimal as the size of the training set goes to infinity. We corroborate the theoretical results with numerical experiments on a road traffic network which show that our algorithm provides differentially private and near-optimal solutions in practice.},
+  keywords     = {sub},
+  owner        = {gkarthik},
+  timestamp    = {2022-11-22},
 }
 
 @inproceedings{TreleavenPavoneEtAl2012b,
@@ -2616,7 +2641,7 @@
   title     = {Online Distribution Shift Detection via Recency Prediction},
   year      = {2023},
   abstract  = {When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate --- i.e., when there is no distribution shift, our system is very unlikely (with probability $< \epsilon$) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).},
-  url   = {/wp-content/papercite-data/pdf/Luo.Sinha.ICRA23.pdf},
+  url   = {https://arxiv.org/abs/2211.09916},
   keywords  = {sub},
   owner     = {rdyro},
   timestamp = {2022-09-21}
@@ -2625,10 +2650,9 @@
 @article{LuoEtAl2022,
   author       = {Luo, R. and Bhatnagar, A. and Wang, H. and Xiong, C. and Savarese, S. and Bai, Y. and Zhao, S. and Ermon, S. and Schmerling, E. and Pavone, M.},
   title        = {Local Calibration: Metrics and Recalibration},
+  booktitle    = proc_UAI,
   year         = {2022},
-  note         = {Submitted},
   abstract = {Probabilistic classifiers output confidence scores along with their predictions, and these confidence scores should be calibrated, i.e., they should reflect the reliability of the prediction. Confidence scores that minimize standard metrics such as the expected calibration error (ECE) accurately measure the reliability on average across the entire population. However, it is in general impossible to measure the reliability of an individual prediction. In this work, we propose the local calibration error (LCE) to span the gap between average and individual reliability. For each individual prediction, the LCE measures the average reliability of a set of similar predictions, where similarity is quantified by a kernel function on a pretrained feature space and by a binning scheme over predicted model confidences. We show theoretically that the LCE can be estimated sample-efficiently from data, and empirically find that it reveals miscalibration modes that are more fine-grained than the ECE can detect. Our key result is a novel local recalibration method LoRe, to improve confidence scores for individual predictions and decrease the LCE. Experimentally, we show that our recalibration method produces more accurate confidence scores, which improves downstream fairness and decision making on classification tasks with both image and tabular data.},
-  keywords     = {sub},
   owner        = {rdyro},
   timestamp    = {2022-01-26},
   url      = {https://arxiv.org/abs/2102.10809}
@@ -2747,6 +2771,7 @@
   volume       = {38},
   number       = {5},
   pages        = {2888--2907},
+  booktitle    = proc_UAI,
   year         = {2022},
   abstract = {To safely deploy learning-based systems in highly uncertain environments, one must ensure that they always satisfy constraints. In this work, we propose a practical and theoretically justified approach to maintaining safety in the presence of dynamics uncertainty. Our approach leverages Bayesian meta-learning with last-layer adaptation: the expressiveness of neural-network features trained offline, paired with efficient last-layer online adaptation, enables the derivation of tight confidence sets which contract around the true dynamics as the model adapts online. We exploit these confidence sets to plan trajectories that guarantee the safety of the system. Our approach handles problems with high dynamics uncertainty where reaching the goal safely is initially infeasible by first exploring to gather data and reduce uncertainty, before autonomously exploiting the acquired information to safely perform the task. Under reasonable assumptions, we prove that our framework provides safety guarantees in the form of a single joint chance constraint. Furthermore, we use this theoretical analysis to motivate regularization of the model to improve performance. We extensively demonstrate our approach in simulation and on hardware.},
   doi      = {10.1109/TRO.2022.3154715},
@@ -3755,14 +3780,14 @@
 }
 
 @inproceedings{MahlknechtAloraEtAl2022,
-  author    = {Florian Mahlknecht, John Irvin Alora, Shobhit Jain, Edward Schmerling, Riccardo Bonalli, George Haller, and Marco Pavone},
+  author    = {Mahlknecht, F. and Alora, J.I. and Jain, S. and Schmerling, E. and  Bonalli, R. and Haller, G. and Pavone, M.},
   booktitle = proc_IEEE_CDC,
   title     = {Using Spectral Submanifolds for Nonlinear Periodic Control},
-  year      = {2023},
+  year      = {2022},
   abstract  = {Very high dimensional nonlinear systems arise in many engineering problems due to semi-discretization of the governing partial differential equations, e.g. through finite element methods. The complexity of these systems present computational challenges for direct application to automatic control. While model reduction has seen ubiquitous applications in control, the use of nonlinear model reduction methods in this setting remains difficult. The problem lies in preserving the structure of the nonlinear dynamics in the reduced order model for high-fidelity control. In this work, we leverage recent advances in Spectral Submanifold (SSM) theory to enable model reduction under well-defined assumptions for the purpose of efficiently synthesizing feedback controllers.},
   keywords  = {sub},
   owner     = {jjalora},
-  timestamp = {2022-11-15},
+  timestamp = {2022-11-22},
   url       = {https://arxiv.org/abs/2209.06573}
 }
 
@@ -4420,13 +4445,13 @@
   timestamp    = {2021-08-31}
 }
 
-@article{BrownBernalNeiraEtAl2022,
+@Article{BrownBernalNeiraEtAl2022,
   author    = {Brown, R. A. and Bernal Neira, D. E. and Venturelli, D. and Pavone, M.},
   title     = {Copositive programming for mixed-binary quadratic optimization via Ising solvers},
   journal   = jrn_SIAM_JO,
   year      = {2022},
-  keywords  = {Under review.},
-  timestamp = {2022-10-04}
+  keywords  = {sub},
+  timestamp = {2022-10-04},
 }
 
 @article{BourdillonEtAl2022,
@@ -4582,7 +4607,7 @@
 }
 
 @inproceedings{AloraCenedeseEtAl2023b,
-  author    = {John Irvin Alora and Mattia Cenedese and Edward Schmerling and George Haller and Marco Pavone},
+  author    = {Alora, J.I. and Cenedese, M. and Schmerling, E. and Haller, G. and Pavone, M.},
   booktitle = proc_IFAC_WC,
   title     = {Practical Deployment of Spectral Submanifold Reduction for Optimal Control of High-Dimensional Systems},
   year      = {2023},
@@ -4594,14 +4619,15 @@
 }
 
 @inproceedings{AloraCenedeseEtAl2023,
-  author    = {John Irvin Alora and Mattia Cenedese and Edward Schmerling and George Haller and Marco Pavone},
+  author    = {Alora, J.I. and Cenedese, M. and Schmerling, E. and Haller, G. and Pavone, M.},
   booktitle = proc_IEEE_ICRA,
   title     = {Data-Driven Spectral Submanifold Reduction for Nonlinear Optimal Control of High-Dimensional Robots},
   year      = {2023},
   abstract  = {Modeling and control of high-dimensional, nonlinear robotic systems remains a challenging task. While various model- and learning-based approaches have been proposed to address these challenges, they broadly lack generalizability to different control tasks and rarely preserve the structure of the dynamics. In this work, we propose a new, data-driven approach for extracting low-dimensional models from data using Spectral Submanifold Reduction (SSMR). In contrast to other data-driven methods which fit dynamical models to training trajectories, we identify the dynamics on generic, low-dimensional attractors embedded in the full phase space of the robotic system. This allows us to obtain computationally-tractable models for control which preserve the system's dominant dynamics and better track trajectories radically different from the training data. We demonstrate the superior performance and generalizability of SSMR in dynamic trajectory tracking tasks vis-a-vis the state of the art.},
   keywords  = {sub},
   owner     = {rdyro},
-  timestamp = {2022-09-21}
+  timestamp = {2022-09-21},
+  url       = {https://arxiv.org/abs/2209.05712}
 }
 
 @article{AllenPavoneEtAl2016,

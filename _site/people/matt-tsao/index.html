@@ -159,6 +159,16 @@
                                 
                             
                                 
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
                                     
                                     <li class="page-scroll">
                                         <a href="/publications/">Publications</a>
@@ -190,16 +200,6 @@
                                         <a href="/people/">People</a>
                                     </li>
                                     
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
                                 
                             
                                 
@@ -275,6 +275,59 @@
             
             
             <ol class="bibliography"><li>
+ 
+
+
+<span class="entry" id="TsaoGopalakrishnanEtAl2023">M. Tsao, K. Gopalakrishnan, K. Yang, and M. Pavone, <a class="entry-title" href="">“Differentially Private Stochastic Convex Optimization for Network Routing Applications,”</a> in <i>Proc. Int. Conf. on Autonomous Agents and Multiagent Systems</i>, 2023. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TsaoGopalakrishnanEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoGopalakrishnanEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_TsaoGopalakrishnanEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Network routing problems are common across many engineering applications. Computing optimal routing policies requires knowledge about network demand, i.e., the origin and destination (OD) of all requests in the network. However, privacy considerations make it challenging to share individual OD data that would be required for computing optimal policies. Privacy can be particularly challenging in standard network routing problems because sources and sinks can be easily identified from flow conservation constraints, making feasibility and privacy mutually exclusive. In this paper, we present a differentially private algorithm for network routing problems. The main ingredient is a reformulation of network routing which moves all user data-dependent parameters out of the constraint set and into the objective function. We then present an algorithm for solving this formulation based on a differentially private variant of stochastic gradient descent. In this algorithm, differential privacy is achieved by injecting noise, and one may wonder if this noise injection compromises solution quality. We prove that our algorithm is both differentially private and asymptotically optimal as the size of the training set goes to infinity. We corroborate the theoretical results with numerical experiments on a road traffic network which show that our algorithm provides differentially private and near-optimal solutions in practice.</p>
+</span>
+<span id="bib_TsaoGopalakrishnanEtAl2023" class="bibtex noshow">
+	<pre>@inproceedings{TsaoGopalakrishnanEtAl2023,
+  author = {Tsao, M. and Gopalakrishnan, K. and Yang, K. and Pavone, M.},
+  title = {Differentially Private Stochastic Convex Optimization for Network Routing Applications},
+  booktitle = {{Proc. Int. Conf. on Autonomous Agents and Multiagent Systems}},
+  year = {2023},
+  note = {Submitted},
+  keywords = {sub},
+  owner = {gkarthik},
+  timestamp = {2022-11-22}
+}
+</pre>
+</span>
+<!-- <span id="key_TsaoGopalakrishnanEtAl2023" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="TsaoYangEtAl2022">M. Tsao, K. Yang, K. Gopalakrishnan, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2202.13305">“Private Location Sharing for Decentralized Routing Services,”</a> in <i>Proc. IEEE Int. Conf. on Intelligent Transportation Systems</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('TsaoYangEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('TsaoYangEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_TsaoYangEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Data-driven methodologies offer many exciting upsides, but they also introduce new challenges, particularly in the realm of user privacy. Specifically, the way data is collected can pose privacy risks to end users. In many routing services, a single entity (e.g., the routing service provider) collects and manages user trajectory data. When it comes to user privacy, these systems have a central point of failure since users have to trust that this entity will not sell or use their data to infer sensitive private information. With this as motivation, we study the problem of using location data for routing services in a privacy-preserving way. Rather than having users report their location to a central operator, we present a protocol in which users participate in a decentralized and privacy-preserving computation to estimate travel times for the roads in the network in a way that no individuals’ location is ever observed by any other party. The protocol uses the Laplace mechanism in conjunction with secure multi-party computation to ensure that it is cryptogrpahically secure and that its output is differentially private. The protocol is computationally efficient and does not require specialized hardware; all it needs is GPS, which is included in most mobile devices. A natural question is if privacy necessitates degradation in accuracy or system performance. We show that if a road has sufficiently high capacity, then the travel time estimated by our protocol is provably close to the ground truth travel time. We validate the protocol through numerical experiments which show that using the protocol as a routing service provides privacy guarantees with minimal overhead to user travel time.</p>
+</span>
+<span id="bib_TsaoYangEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{TsaoYangEtAl2022,
+  author = {Tsao, M. and Yang, K. and Gopalakrishnan, K. and Pavone, M.},
+  title = {Private Location Sharing for Decentralized Routing Services},
+  booktitle = {{Proc. IEEE Int. Conf. on Intelligent Transportation Systems}},
+  year = {2022},
+  doi = {10.1109/ITSC55140.2022.9922387},
+  month = oct,
+  url = {https://arxiv.org/abs/2202.13305},
+  owner = {gkarthik},
+  timestamp = {2022-11-21}
+}
+</pre>
+</span>
+<!-- <span id="key_TsaoYangEtAl2022" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
  
 
 
