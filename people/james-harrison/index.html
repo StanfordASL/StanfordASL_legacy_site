@@ -159,16 +159,6 @@
                                 
                             
                                 
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
                                     
                                     <li class="page-scroll">
                                         <a href="/publications/">Publications</a>
@@ -200,6 +190,16 @@
                                         <a href="/people/">People</a>
                                     </li>
                                     
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
                                 
                             
                                 
@@ -278,58 +278,6 @@
             
             
             <ol class="bibliography"><li>
- 
-
-
-<span class="entry" id="GammelliYangEtAl2022">D. Gammelli, Y. K., J. Harrison, R. F., P. F., and M. Pavone, <a class="entry-title" href="">“Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand,”</a> in <i>ACM Int. Conf. on Knowledge Discovery and Data Mining</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_GammelliYangEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Autonomous Mobility-on-Demand (AMoD) systems represent an attractive alternative to existing transportation paradigms, currently challenged by urbanization and increasing travel needs. By centrally controlling a fleet of self-driving vehicles, these systems provide mobility service to customers and are currently starting to be deployed in a number of cities around the world. Current learning-based approaches for controlling AMoD systems are limited to the <i>single-city</i> scenario, whereby the service operator is allowed to take an unlimited amount of operational decisions within the same transportation system. However, real-world system operators can hardly afford to fully re-train AMoD controllers for every city they operate in, as this could result in a high number of poor-quality decisions during training, making the single-city strategy a potentially impractical solution. To address these limitations, we propose to formalize the multi-city AMoD problem through the lens of meta-reinforcement learning (meta-RL) and devise an actor-critic algorithm based on recurrent graph neural networks. In our approach, AMoD controllers are explicitly trained such that a small amount of experience within a new city will produce good system performance. Empirically, we show how control policies learned through meta-RL are able to achieve near-optimal performance on unseen cities by learning rapidly adaptable policies, thus making them more robust not only to novel environments, but also to distribution shifts common in real-world operations, such as special events, unexpected congestion, and dynamic pricing schemes.</p>
-</span>
-<span id="bib_GammelliYangEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{GammelliYangEtAl2022,
-  author = {Gammelli, D. and K., Yang and Harrison, J. and F., Rodrigues and F., Pereira and Pavone, M.},
-  booktitle = {{ACM Int. Conf. on Knowledge Discovery and Data Mining}},
-  title = {Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand},
-  year = {2022},
-  month = mar,
-  note = {Submitted},
-  keywords = {sub},
-  owner = {ykd07},
-  timestamp = {2022-03-02}
-}
-</pre>
-</span>
-<!-- <span id="key_GammelliYangEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="GammelliHarrisonEtAl2022">D. Gammelli, J. Harrison, K. Yang, M. Pavone, F. Rodrigues, and P. C. Francisco, <a class="entry-title" href="">“Graph Reinforcement Learning for Network Control via Bi-Level Optimization,”</a> in <i>Learning on Graphs Conference</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_GammelliHarrisonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.</p>
-</span>
-<span id="bib_GammelliHarrisonEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{GammelliHarrisonEtAl2022,
-  author = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Francisco, Pereira C.},
-  booktitle = {{Learning on Graphs Conference}},
-  title = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
-  year = {2022},
-  keywords = {sub},
-  owner = {rdyro},
-  timestamp = {2022-09-21}
-}
-</pre>
-</span>
-<!-- <span id="key_GammelliHarrisonEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
  
 
 
@@ -415,6 +363,57 @@
  
 
 
+<span class="entry" id="GammelliYangEtAl2022">D. Gammelli, Y. K., J. Harrison, R. F., P. F., and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2202.07147">“Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand,”</a> in <i>ACM Int. Conf. on Knowledge Discovery and Data Mining</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliYangEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Autonomous Mobility-on-Demand (AMoD) systems represent an attractive alternative to existing transportation paradigms, currently challenged by urbanization and increasing travel needs. By centrally controlling a fleet of self-driving vehicles, these systems provide mobility service to customers and are currently starting to be deployed in a number of cities around the world. Current learning-based approaches for controlling AMoD systems are limited to the <i>single-city</i> scenario, whereby the service operator is allowed to take an unlimited amount of operational decisions within the same transportation system. However, real-world system operators can hardly afford to fully re-train AMoD controllers for every city they operate in, as this could result in a high number of poor-quality decisions during training, making the single-city strategy a potentially impractical solution. To address these limitations, we propose to formalize the multi-city AMoD problem through the lens of meta-reinforcement learning (meta-RL) and devise an actor-critic algorithm based on recurrent graph neural networks. In our approach, AMoD controllers are explicitly trained such that a small amount of experience within a new city will produce good system performance. Empirically, we show how control policies learned through meta-RL are able to achieve near-optimal performance on unseen cities by learning rapidly adaptable policies, thus making them more robust not only to novel environments, but also to distribution shifts common in real-world operations, such as special events, unexpected congestion, and dynamic pricing schemes.</p>
+</span>
+<span id="bib_GammelliYangEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{GammelliYangEtAl2022,
+  author = {Gammelli, D. and K., Yang and Harrison, J. and F., Rodrigues and F., Pereira and Pavone, M.},
+  booktitle = {{ACM Int. Conf. on Knowledge Discovery and Data Mining}},
+  title = {Graph Meta-Reinforcement Learning for Transferable Autonomous Mobility-on-Demand},
+  year = {2022},
+  keywords = {pub},
+  owner = {gammelli},
+  url = {https://arxiv.org/abs/2202.07147},
+  timestamp = {2022-03-02}
+}
+</pre>
+</span>
+<!-- <span id="key_GammelliYangEtAl2022" >
+	<b>Keywords</b>:
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="GammelliHarrisonEtAl2022">D. Gammelli, J. Harrison, K. Yang, M. Pavone, F. Rodrigues, and P. C. Francisco, <a class="entry-title" href="">“Graph Reinforcement Learning for Network Control via Bi-Level Optimization,”</a> in <i>Learning on Graphs Conference</i>, 2022. (Submitted)</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Dynamic network flow models have been extensively studied and widely used in the past decades to formulate many problems with great real-world impact, such as transportation, supply chain management, power grid control, and more. Within this context, time-expansion techniques currently represent a generic approach for solving control problems over dynamic networks. However, the complexity of these methods does not allow traditional approaches to scale to large networks, especially when these need to be solved recursively over a receding horizon (e.g., to yield a sequence of actions in model predictive control). Moreover, tractable optimization-based approaches are often limited to simple linear deterministic settings and are not able to handle environments with stochastic, non-linear, or unknown dynamics. In this work, we present dynamic network flow problems through the lens of reinforcement learning and propose a graph network-based framework that can handle a wide variety of problems and learn efficient algorithms without significantly compromising optimality. Instead of a naive and poorly-scalable formulation, in which agent actions (and thus network outputs) consist of actions on edges, we present a two-phase decomposition. The first phase consists of an RL agent specifying desired outcomes to the actions. The second phase exploits the problem structure to solve a convex optimization problem and achieve (as best as possible) these desired outcomes. This formulation leads to dramatically improved scalability and performance. We further highlight a collection of features that are potentially desirable to system designers, investigate design decisions, and present experiments showing the utility, scalability, and flexibility of our framework.</p>
+</span>
+<span id="bib_GammelliHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{GammelliHarrisonEtAl2022,
+  author = {Gammelli, D. and Harrison, J. and Yang, K. and Pavone, M. and Rodrigues, F. and Francisco, Pereira C.},
+  booktitle = {{Learning on Graphs Conference}},
+  title = {Graph Reinforcement Learning for Network Control via Bi-Level Optimization},
+  year = {2022},
+  keywords = {sub},
+  owner = {rdyro},
+  timestamp = {2022-09-21}
+}
+</pre>
+</span>
+<!-- <span id="key_GammelliHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	sub
+</span> --></li>
+<li>
+ 
+
+
 <span class="entry" id="Harrison2021">J. Harrison, <a class="entry-title" href="https://stacks.stanford.edu/file/druid:hh754jn1534/James_Harrison_Thesis-augmented.pdf">“Uncertainty and Efficiency in Adaptive Robot Learning and Control,”</a> PhD thesis, Stanford University, Dept. of Mechanical Engineering, Stanford, California, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('Harrison2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('Harrison2021','abstract')">Abstract</a>]</p>
 <span id="abs_Harrison2021" class="abstract noshow">
@@ -435,6 +434,57 @@
 </pre>
 </span>
 <!-- <span id="key_Harrison2021" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="SinhaHarrisonEtAl2021">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sinha.Harrison.ea.TAC21.pdf">“Adaptive Robust Model Predictive Control via Uncertainty Cancellation,”</a> <i>IEEE Transactions on Automatic Control</i>, 2021.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_SinhaHarrisonEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems are commonly used to model the nonlinear effects of an unknown environment on a nominal linear system. Inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control, we optimize over a class of nonlinear feedback policies to significantly improve performance in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive model predictive control, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety in the form of persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
+</span>
+<span id="bib_SinhaHarrisonEtAl2021" class="bibtex noshow">
+	<pre>@article{SinhaHarrisonEtAl2021,
+  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
+  title = {Adaptive Robust Model Predictive Control via Uncertainty Cancellation},
+  journal = {{IEEE Transactions on Automatic Control}},
+  year = {2021},
+  keywords = {pub},
+  url = {/wp-content/papercite-data/pdf/Sinha.Harrison.ea.TAC21.pdf},
+  owner = {rhnsinha},
+  timestamp = {2022-11-22}
+}
+</pre>
+</span>
+<!-- <span id="key_SinhaHarrisonEtAl2021" >
+	<b>Keywords</b>:
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="GammelliYangEtAl2021">D. Gammelli, K. Yang, J. Harrison, F. Rodrigues, F. C. Pereira, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.11434">“Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, 2021.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2021','abstract')">Abstract</a>]</p>
+<span id="abs_GammelliYangEtAl2021" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> Autonomous mobility-on-demand (AMoD) systems represent a rapidly developing mode of transportation wherein travel requests are dynamically handled by a coordinated fleet of robotic, self-driving vehicles. Given a graph representation of the transportation network - one where, for example, nodes represent areas of the city, and edges the connectivity between them - we argue that the AMoD control problem is naturally cast as a node-wise decision-making problem. In this paper, we propose a deep reinforcement learning framework to control the rebalancing of AMoD systems through graph neural networks. Crucially, we demonstrate that graph neural networks enable reinforcement learning agents to recover behavior policies that are significantly more transferable, generalizable, and scalable than policies learned through other approaches. Empirically, we show how the learned policies exhibit promising zero-shot transfer capabilities when faced with critical portability tasks such as inter-city generalization, service area expansion, and adaptation to potentially complex urban topologies.</p>
+</span>
+<span id="bib_GammelliYangEtAl2021" class="bibtex noshow">
+	<pre>@inproceedings{GammelliYangEtAl2021,
+  author = {Gammelli, D. and Yang, K. and Harrison, J. and Rodrigues, F. and Pereira, F. C. and Pavone, M.},
+  title = {Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems},
+  year = {2021},
+  url = {https://arxiv.org/abs/2104.11434},
+  owner = {jh2},
+  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
+  timestamp = {2021-03-23}
+}
+</pre>
+</span>
+<!-- <span id="key_GammelliYangEtAl2021" >
 	<b>Keywords</b>:
 	
 </span> --></li>
@@ -463,31 +513,6 @@
 <!-- <span id="key_DyroHarrisonEtAl2021" >
 	<b>Keywords</b>:
 	press
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="GammelliYangEtAl2021">D. Gammelli, K. Yang, J. Harrison, F. Rodrigues, F. C. Pereira, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.11434">“Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems,”</a> in <i>Proc. IEEE Conf. on Decision and Control</i>, 2021.</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('GammelliYangEtAl2021','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('GammelliYangEtAl2021','abstract')">Abstract</a>]</p>
-<span id="abs_GammelliYangEtAl2021" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> Autonomous mobility-on-demand (AMoD) systems represent a rapidly developing mode of transportation wherein travel requests are dynamically handled by a coordinated fleet of robotic, self-driving vehicles. Given a graph representation of the transportation network - one where, for example, nodes represent areas of the city, and edges the connectivity between them - we argue that the AMoD control problem is naturally cast as a node-wise decision-making problem. In this paper, we propose a deep reinforcement learning framework to control the rebalancing of AMoD systems through graph neural networks. Crucially, we demonstrate that graph neural networks enable reinforcement learning agents to recover behavior policies that are significantly more transferable, generalizable, and scalable than policies learned through other approaches. Empirically, we show how the learned policies exhibit promising zero-shot transfer capabilities when faced with critical portability tasks such as inter-city generalization, service area expansion, and adaptation to potentially complex urban topologies.</p>
-</span>
-<span id="bib_GammelliYangEtAl2021" class="bibtex noshow">
-	<pre>@inproceedings{GammelliYangEtAl2021,
-  author = {Gammelli, D. and Yang, K. and Harrison, J. and Rodrigues, F. and Pereira, F. C. and Pavone, M.},
-  title = {Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems},
-  year = {2021},
-  url = {https://arxiv.org/abs/2104.11434},
-  owner = {jh2},
-  booktitle = {{Proc. IEEE Conf. on Decision and Control}},
-  timestamp = {2021-03-23}
-}
-</pre>
-</span>
-<!-- <span id="key_GammelliYangEtAl2021" >
-	<b>Keywords</b>:
-	
 </span> --></li>
 <li>
  
