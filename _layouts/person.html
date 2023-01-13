@@ -9,6 +9,8 @@
         <div class="row" style="margin-top: 40px;">
   	      <div class="col-md-5" style="margin-bottom: 20px;">
   	        {% if page.img %}  <img src="{{ relBase }}img/people/{{ page.img }}" alt="{{ page.title }}" class="img-responsive">{% endif %}
+
+            {% if page.position != "externalresearchaffiliate" %}
             <h3>Contacts:</h3>
 
             {% if page.email %}
@@ -21,6 +23,8 @@
             <div>
               <strong>Phone:</strong> {{page.phone}}
             </div>
+            {% endif %}
+
             {% endif %}
 
             <div style="margin-top:10px;">
@@ -77,7 +81,7 @@
   		</div>
       <div class="row">
         <div class="col-md-12">
-        {% if page.position != "faculty" %}
+        {% if page.position != "faculty" and page.position != "externalresearchaffiliate" %}
           <h2 style="margin-top: 0px;">ASL Publications</h2>
           {% if page.altlast.size > 0 %}
             {% assign first_initial = page.title | slice: 0 %}
