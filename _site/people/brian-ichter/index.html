@@ -282,7 +282,7 @@
  
 
 
-<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> <i>IEEE Robotics and Automation Letters</i>, Jan. 2019.</span> 
+<span class="entry" id="IchterPavone2019">B. Ichter and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/1807.10366">“Robot Motion Planning in Learned Latent Spaces,”</a> <i>IEEE Robotics and Automation Letters</i>, vol. 4, no. 3, pp. 2407–2414, Jan. 2019.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('IchterPavone2019','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('IchterPavone2019','abstract')">Abstract</a>]</p>
 <span id="abs_IchterPavone2019" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> This paper presents Latent Sampling-based Motion Planning (L-SBMP), a methodology towards computing motion plans for complex robotic systems by learning a plannable latent representation. Recent works in control of robotic systems have effectively leveraged local, low-dimensional embeddings of high-dimensional dynamics. In this paper we combine these recent advances with techniques from sampling-based motion planning (SBMP) in order to design a methodology capable of planning for high-dimensional robotic systems beyond the reach of traditional approaches (e.g., humanoids, or even systems where planning occurs in the visual space). Specifically, the learned latent space is constructed through an autoencoding network, a dynamics network, and a collision checking network, which mirror the three main algorithmic primitives of SBMP, namely state sampling, local steering, and collision checking. Notably, these networks can be trained through only raw data of the system’s states and actions along with a supervising collision checker. Building upon these networks, an RRT-based algorithm is used to plan motions directly in the latent space - we refer to this exploration algorithm as Learned Latent RRT (L2RRT). This algorithm globally explores the latent space and is capable of generalizing to new environments. The overall methodology is demonstrated on two planning problems, namely a visual planning problem, whereby planning happens in the visual (pixel) space, and a humanoid robot planning problem.</p>
@@ -292,6 +292,9 @@
   author = {Ichter, B. and Pavone, M.},
   title = {Robot Motion Planning in Learned Latent Spaces},
   journal = {{IEEE Robotics and Automation Letters}},
+  volume = {4},
+  number = {3},
+  pages = {2407--2414},
   year = {2019},
   month = jan,
   url = {https://arxiv.org/abs/1807.10366},
