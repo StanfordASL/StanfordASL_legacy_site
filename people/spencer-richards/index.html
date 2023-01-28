@@ -279,7 +279,33 @@
  
 
 
-<span class="entry" id="RichardsAzizanEtAl2023">S. M. Richards, N. Azizan, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2204.06716">“Control-Oriented Meta-Learning,”</a> <i>Int. Journal of Robotics Research</i>, 2023. (Submitted)</span> 
+<span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.08261">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
+<span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. We optimize over a class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control to achieve significant performance improvements in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive MPC, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety through persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
+</span>
+<span id="bib_SinhaHarrisonEtAl2022" class="bibtex noshow">
+	<pre>@inproceedings{SinhaHarrisonEtAl2022,
+  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
+  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
+  year = {2022},
+  keywords = {pub},
+  booktitle = {{American Control Conference}},
+  url = {https://arxiv.org/abs/2104.08261},
+  owner = {rhnsinha},
+  timestamp = {2022-01-31}
+}
+</pre>
+</span>
+<!-- <span id="key_SinhaHarrisonEtAl2022" >
+	<b>Keywords</b>:
+	pub
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="RichardsAzizanEtAl2023">S. M. Richards, N. Azizan, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2204.06716">“Control-Oriented Meta-Learning,”</a> <i>Int. Journal of Robotics Research</i>, 2022. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('RichardsAzizanEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('RichardsAzizanEtAl2023','abstract')">Abstract</a>]</p>
 <span id="abs_RichardsAzizanEtAl2023" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> Real-time adaptation is imperative to the control of robots operating in complex, dynamic environments. Adaptive control laws can endow even nonlinear systems with good trajectory tracking performance, provided that any uncertain dynamics terms are linearly parameterizable with known nonlinear features. However, it is often difficult to specify such features a priori, such as for aerodynamic disturbances on rotorcraft or interaction forces between a manipulator arm and various objects. In this paper, we turn to data-driven modeling with neural networks to learn, offline from past data, an adaptive controller with an internal parametric model of these nonlinear features. Our key insight is that we can better prepare the controller for deployment with control-oriented meta-learning of features in closed-loop simulation, rather than regression-oriented meta-learning of features to fit input-output data. Specifically, we meta-learn the adaptive controller with closed-loop tracking simulation as the base-learner and the average tracking error as the meta-objective. With both fully-actuated and underactuated nonlinear planar rotorcraft subject to wind, we demonstrate that our adaptive controller outperforms other controllers trained with regression-oriented meta-learning when deployed in closed-loop for trajectory tracking control.</p>
@@ -289,7 +315,7 @@
   author = {Richards, S. M. and Azizan, N. and Slotine, J.-J. E. and Pavone, M.},
   title = {Control-Oriented Meta-Learning},
   journal = {{Int. Journal of Robotics Research}},
-  year = {2023},
+  year = {2022},
   note = {Submitted},
   keywords = {sub},
   url = {https://arxiv.org/abs/2204.06716},
@@ -301,59 +327,6 @@
 <!-- <span id="key_RichardsAzizanEtAl2023" >
 	<b>Keywords</b>:
 	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinhaSharmaEtAl2022">R. Sinha, A. Sharma, S. Banerjee, T. Lew, R. Luo, S. M. Richards, Y. Sun, E. Schmerling, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf">“A System-Level View on Out-of-Distribution Data in Robotics,”</a> in <i>Proc. AAAI Conf. on Artificial Intelligence</i>, 2022. (Submitted)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaSharmaEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_SinhaSharmaEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall <i>system-level</i> competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.</p>
-</span>
-<span id="bib_SinhaSharmaEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{SinhaSharmaEtAl2022,
-  author = {Sinha, Rohan and Sharma, Apoorva and Banerjee, Somrita and Lew, Thomas and Luo, Rachel and Richards, Spencer M. and Sun, Yixiao and Schmerling, Edward and Pavone, Marco},
-  title = {A System-Level View on Out-of-Distribution Data in Robotics},
-  booktitle = {{Proc. AAAI Conf. on Artificial Intelligence}},
-  year = {2022},
-  note = {Submitted},
-  url = {/wp-content/papercite-data/pdf/Sinha.Sharma.ea.AAAI23.pdf},
-  keywords = {sub},
-  owner = {rhnsinha},
-  timestamp = {2022-10-24}
-}
-</pre>
-</span>
-<!-- <span id="key_SinhaSharmaEtAl2022" >
-	<b>Keywords</b>:
-	sub
-</span> --></li>
-<li>
- 
-
-
-<span class="entry" id="SinhaHarrisonEtAl2022">R. Sinha, J. Harrison, S. M. Richards, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2104.08261">“Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty,”</a> in <i>American Control Conference</i>, 2022. (In Press)</span> 
-<p class="infolinks">[<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinhaHarrisonEtAl2022','abstract')">Abstract</a>]</p>
-<span id="abs_SinhaHarrisonEtAl2022" class="abstract noshow">
-	<p class="abstract"><b>Abstract:</b> We propose a learning-based robust predictive control algorithm that compensates for significant uncertainty in the dynamics for a class of discrete-time systems that are nominally linear with an additive nonlinear component. Such systems commonly model the nonlinear effects of an unknown environment on a nominal system. We optimize over a class of nonlinear feedback policies inspired by certainty equivalent “estimate-and-cancel” control laws pioneered in classical adaptive control to achieve significant performance improvements in the presence of uncertainties of large magnitude, a setting in which existing learning-based predictive control algorithms often struggle to guarantee safety. In contrast to previous work in robust adaptive MPC, our approach allows us to take advantage of structure (i.e., the numerical predictions) in the a priori unknown dynamics learned online through function approximation. Our approach also extends typical nonlinear adaptive control methods to systems with state and input constraints even when we cannot directly cancel the additive uncertain function from the dynamics. Moreover, we apply contemporary statistical estimation techniques to certify the system’s safety through persistent constraint satisfaction with high probability. Finally, we show in simulation that our method can accommodate more significant unknown dynamics terms than existing methods.</p>
-</span>
-<span id="bib_SinhaHarrisonEtAl2022" class="bibtex noshow">
-	<pre>@inproceedings{SinhaHarrisonEtAl2022,
-  author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
-  title = {Adaptive Robust Model Predictive Control with Matched and Unmatched Uncertainty},
-  year = {2022},
-  keywords = {press},
-  booktitle = {{American Control Conference}},
-  url = {https://arxiv.org/abs/2104.08261},
-  owner = {rhnsinha},
-  timestamp = {2022-01-31}
-}
-</pre>
-</span>
-<!-- <span id="key_SinhaHarrisonEtAl2022" >
-	<b>Keywords</b>:
-	press
 </span> --></li>
 <li>
  
@@ -425,6 +398,7 @@
   author = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
   title = {Adaptive Robust Model Predictive Control via Uncertainty Cancellation},
   journal = {{IEEE Transactions on Automatic Control}},
+  note = {Submitted},
   year = {2021},
   keywords = {sub},
   url = {/wp-content/papercite-data/pdf/Sinha.Harrison.ea.TAC21.pdf},
@@ -441,7 +415,7 @@
  
 
 
-<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, 2020.</span> 
+<span class="entry" id="SinghRichardsEtAl2020">S. Singh, S. M. Richards, V. Sindhwani, J.-J. E. Slotine, and M. Pavone, <a class="entry-title" href="/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf">“Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization,”</a> <i>Int. Journal of Robotics Research</i>, vol. 40, no. 10–11, pp. 1123–1150, 2021.</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('SinghRichardsEtAl2020','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('SinghRichardsEtAl2020','abstract')">Abstract</a>]</p>
 <span id="abs_SinghRichardsEtAl2020" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> We propose a novel framework for learning stabilizable nonlinear dynamical systems for continuous control tasks in robotics. The key contribution is a control-theoretic regularizer for dynamics fitting rooted in the notion of stabilizability, a constraint which guarantees the existence of robust tracking controllers for arbitrary open-loop trajectories generated with the learned system. Leveraging tools from contraction theory and statistical learning in reproducing kernel Hilbert spaces, we formulate stabilizable dynamics learning as a functional optimization with a convex objective and bi-convex functional constraints. Under a mild structural assumption and relaxation of the functional constraints to sampling-based constraints, we derive the optimal solution with a modified representer theorem. Finally, we utilize random matrix feature approximations to reduce the dimensionality of the search parameters and formulate an iterative convex optimization algorithm that jointly fits the dynamics functions and searches for a certificate of stabilizability. We validate the proposed algorithm in simulation for a planar quadrotor, and on a quadrotor hardware testbed emulating planar dynamics. We verify, both in simulation and on hardware, significantly improved trajectory generation and tracking performance with the control-theoretic regularized model over models learned using traditional regression techniques, especially when learning from small supervised datasets. The results support the conjecture that the use of stabilizability constraints as a form of regularization can help prune the hypothesis space in a manner that is tailored to the downstream task of trajectory generation and feedback control. This produces models that are not only dramatically better conditioned, but also data efficient.</p>
@@ -451,7 +425,10 @@
   author = {Singh, S. and Richards, S. M. and Sindhwani, V. and Slotine, J-J. E. and Pavone, M.},
   title = {Learning Stabilizable Nonlinear Dynamics with Contraction-Based Regularization},
   journal = {{Int. Journal of Robotics Research}},
-  year = {2020},
+  volume = {40},
+  number = {10--11},
+  pages = {1123-1150},
+  year = {2021},
   url = {/wp-content/papercite-data/pdf/Singh.Richards.ea.IJRR20.pdf},
   owner = {ssingh19},
   timestamp = {2020-03-25}
