@@ -279,7 +279,32 @@
  
 
 
-<span class="entry" id="LuoSinhaEtAl2023">R. Luo, R. Sinha, A. Hindy, S. Zhao, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2211.09916">“Online Distribution Shift Detection via Recency Prediction,”</a> in <i>Proc. IEEE Conf. on Robotics and Automation</i>, 2023. (Submitted)</span> 
+<span class="entry" id="LuoZhaoEtAl2023">R. Luo, S. Zhao, J. Kuck, B. Ivanovic, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2109.14082">“Sample-Efficient Safety Assurances using Conformal Prediction,”</a> in <i>Int. Journal of Robotics Research</i>, 2023.</span> 
+<p class="infolinks">[<a href="javascript:toggleInfo('LuoZhaoEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoZhaoEtAl2023','abstract')">Abstract</a>]</p>
+<span id="abs_LuoZhaoEtAl2023" class="abstract noshow">
+	<p class="abstract"><b>Abstract:</b> When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.</p>
+</span>
+<span id="bib_LuoZhaoEtAl2023" class="bibtex noshow">
+	<pre>@inproceedings{LuoZhaoEtAl2023,
+  author = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
+  title = {Sample-Efficient Safety Assurances using Conformal Prediction},
+  booktitle = {{Int. Journal of Robotics Research}},
+  year = {2023},
+  owner = {rsluo},
+  timestamp = {2023-02-10},
+  url = {https://arxiv.org/abs/2109.14082}
+}
+</pre>
+</span>
+<!-- <span id="key_LuoZhaoEtAl2023" >
+	<b>Keywords</b>:
+	
+</span> --></li>
+<li>
+ 
+
+
+<span class="entry" id="LuoSinhaEtAl2023">R. Luo, R. Sinha, A. Hindy, S. Zhao, S. Savarese, E. Schmerling, and M. Pavone, <a class="entry-title" href="https://arxiv.org/abs/2211.09916">“Online Distribution Shift Detection via Recency Prediction,”</a> in <i>Robotics: Science and Systems</i>, 2023. (Submitted)</span> 
 <p class="infolinks">[<a href="javascript:toggleInfo('LuoSinhaEtAl2023','bibtex')">BibTeX</a>] [<a href="javascript:toggleInfo('LuoSinhaEtAl2023','abstract')">Abstract</a>]</p>
 <span id="abs_LuoSinhaEtAl2023" class="abstract noshow">
 	<p class="abstract"><b>Abstract:</b> When deploying modern machine learning-enabled robotic systems in high-stakes applications, detecting distributional shift is critical. However, most existing methods for detecting distribution shift are not well-suited to robotics settings, where data often arrives in a streaming fashion and may be very high-dimensional. In this work, we present an online method for detecting distributional shift with guarantees on the false positive rate — i.e., when there is no distribution shift, our system is very unlikely (with probability < ε) to falsely issue an alert; any alerts that are issued should therefore be heeded. Our method is specifically designed for efficient detection even with high dimensional data, and it empirically achieves up to 6x faster detection on realistic robotics settings compared to prior work while maintaining a low false negative rate in practice (whenever there is a distribution shift in our experiments, our method indeed emits an alert).</p>
@@ -287,7 +312,7 @@
 <span id="bib_LuoSinhaEtAl2023" class="bibtex noshow">
 	<pre>@inproceedings{LuoSinhaEtAl2023,
   author = {Luo, R. and Sinha, R. and Hindy, A. and Zhao, S. and Savarese, S. and Schmerling, E. and Pavone, M.},
-  booktitle = {{Proc. IEEE Conf. on Robotics and Automation}},
+  booktitle = {{Robotics: Science and Systems}},
   title = {Online Distribution Shift Detection via Recency Prediction},
   year = {2023},
   note = {Submitted},
