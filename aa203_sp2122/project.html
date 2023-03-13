@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AA 203: Optimal and Learning-based Control</title>
+
+    <meta name="description" content="Optimal control solution techniques for systems with known and unknown dynamics. Dynamic programming, Hamilton-Jacobi reachability, and direct and indirect methods for trajectory optimization. Introduction to model predictive control. Model-based reinforcement learning, and connections between modern reinforcement learning in continuous spaces and fundamental optimal control ideas.">
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+	<!-- JabRef CSS -->
+	<link rel="stylesheet" href="/css/JabRef.css">
+	 
+    <link rel="canonical" href="http://asl.stanford.edu/aa203_sp2122/project.html"> 
+    <!-- Not required -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="Autonomous Systems Laboratory" href="https://stanfordasl.github.io /feed.xml "> -->
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/my.css"> 
+
+    <!-- AA 203 CSS -->
+    <link rel="stylesheet" href="/css/aa203.css"> 
+
+    <!-- Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124680200-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124680200-1');
+    </script>
+    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2864b7">
+    <meta name="msapplication-TileColor" content="#2864b7">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom"> <!-- navbar-fixed-top -->
+    <div class="container navbar-items">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-3" style="z-index: 1;">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/img/ASL_Logo_White.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <!-- 
+                            <li class="page-scroll">
+                                <a href="/">Home</a>
+                            </li>
+                             -->
+                            
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203_sp2122/">Home</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    
+                                    <li class="page-scroll">
+                                        <a href="/aa203_sp2122/assignments.html">Homework</a>
+                                    </li>
+                                    
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Course Project Guidelines</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p><strong>Project Description</strong>: Your project should be related to the range of topics covered in this class. In your project, you should apply tools from optimal and learning-based control to a problem that interests you, try to benchmark/improve an existing algorithm, or even develop a new one! Of course, if you are already working on a research project that optimal and learning-based control might be applicable to, then working out how to apply the tools covered in this class to it will likely make a very good project topic.</p>
+          <p>The project entails writing a project proposal (max 1 page), midterm project report (max 6 pages, minimum 2 pages), final project report (max 8 pages) and preparing a video presentation. You can work in a group of up to three people.</p>
+          <p><strong>Template</strong>: This <a href="https://www.overleaf.com/read/tvtzjctvktfv">LaTeX template</a> should be used for all project submissions.</p>
+          <p><strong>Timeline</strong>: We encourage all of you to discuss the selection of the topic of your project with the instructor and the CAs. Specifically, this is the timeline for the final project:</p>
+          <ul>
+          <li><strong>Project discussion phase</strong>: discuss your project ideas with the instructors and the CAs during office hours, until Friday, April 15.</li>
+          <li><strong>Project proposal</strong>: by Friday, April 15 (Week 3), submit a one page (max) project proposal on Gradescope. The following information must be included: title, names of the team members, clear description of the problem (or problems) that you are interested in studying, and relation of your project to your current research (if any). Note that you do not have to have chosen a single final project idea and can submit multiple ideas with a discussion of each.</li>
+          <li><strong>Project approval</strong>: before Friday, April 22 (Week 4) we will inform you if your project idea is approved or if (and how) you should modify it. </li>
+          <li><strong>Midterm report</strong>: on Monday, May 9 (Week 7) submit a six page (max) midterm report on your project. This report should include <ul>
+          <li>Motivation for the project under consideration.</li>
+          <li>A statement of the technical contributions of your project. </li>
+          <li>An introductory review of related work. </li>
+          <li>A precise statement of the project setting you are considering in your project. </li>
+          <li>Any preliminary results. </li>
+          </ul>
+          </li>
+          <li><strong>Midterm feedback</strong>: before Monday, May 16 (Week 8) we will provide feedback on your midterm report. </li>
+          <li><strong>Video presentation</strong>: instead of a poster presentation, we will have video presentations this year. You should prepare a three minute video about your project for Wednesday, June 1 (End of Quarter). These videos will be made available to all students in the class. </li>
+          <li><strong>Project report</strong>: you should submit your final project report (8 pages maximum) by Wednesday, June 1 (End of Quarter) on Gradescope.</li>
+          </ul>
+          <p><strong>Project evaluation</strong>: Your project (totaling 40% of your course grade) will be evaluated along four main dimensions:</p>
+          <ul>
+          <li>Technical quality and clarity of your proposal (5%).</li>
+          <li>Technical quality and clarity of your midterm report (10%).</li>
+          <li>Technical quality of your final project submission (15%).</li>
+          <li>Clarity of your video presentation and final report (10%).</li>
+          </ul>
+          <p><strong>Publishing your work</strong>: Some of the research-oriented projects might contain publishable work. The instructor and the CAs will be happy to help you with turning your work into a scientific publication. </p>          
+        </div>
+      </div>      
+    </div>
+  </header>
+  <!--
+The website should work without any of the JS below. -F
+-->
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<!-- Contact Form JavaScript -->
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
+<!-- <script src="js/contact_me.js"></script> -->
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/freelancer.min.js"></script> -->
+<!-- JabRef (Toggling info on Publications Page) -->
+<script src="/js/JabRef_QuickSearch.js"></script>
+
+  <!-- Footer -->
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<!-- <div class="scroll-top page-scroll hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div> -->
+
+<!-- Made with (L) by Federico in October 2017
+CSS: Bootstrap (without the JS)
+http://getbootstrap.com/
+Bloated, but so convenient.
+Plus, it's probably already in your browser cache (hence the CDN).
+If you want the Jekyll project for your own website,
+feel free to drop me a line!
+-F
+-->
+
+<!-- <hr class="footer-line"/> -->
+<script type="text/javascript">
+function footerAlign() {
+  $('footer').css('display', 'block');
+  $('footer').css('height', 'auto');
+  var footerHeight = $('footer').outerHeight();
+  $('body').css('padding-bottom', footerHeight);
+  $('footer').css('height', footerHeight);
+}
+
+
+$(document).ready(function(){
+  footerAlign();
+});
+
+$( window ).resize(function() {
+  footerAlign();
+});
+</script>
+
+<footer class="footer">
+<div id="social-icons">
+  <a href="https://twitter.com/stanfordasl" target="_blank"><img src="/img/ASL_twitter.png" alt=""></a>
+  <a href="https://www.instagram.com/stanfordasl" target="_blank"><img src="/img/ASL_instagram.png" alt=""></a>
+  <a href="https://github.com/StanfordASL" target="_blank"><img src="/img/ASL_github.png" alt=""></a>
+</div>
+<div class="copyright-text">
+  © Autonomous Systems Lab 2021. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>
+
+
+<!-- **Project Description**: Your project should be related to the range of topics covered in this class. In your project, you should apply tools from optimal and learning-based control to a problem that interests you, try to benchmark/improve an existing algorithm, or even develop a new one! Of course, if you are already working on a research project that optimal and learning-based control might be applicable to, then working out how to apply the tools covered in this class to it will likely make a very good project topic.
+
+The project entails writing a project proposal (max 1 page), midterm project report (max 6 pages, minimum 2 pages), final project report (max 8 pages) and preparing a video presentation. You can work in a group of up to three people.
+
+**Template**: This [LaTeX template](https://www.overleaf.com/read/tvtzjctvktfv) should be used for all project submissions.
+
+**Timeline**: We encourage all of you to discuss the selection of the topic of your project with the instructor and the CAs. Specifically, this is the timeline for the final project:
+
+- **Project discussion phase**: discuss your project ideas with the instructors and the CAs during office hours, until Friday, April 15.
+- **Project proposal**: by Friday, April 15 (Week 3), submit a one page (max) project proposal on Gradescope. The following information must be included: title, names of the team members, clear description of the problem (or problems) that you are interested in studying, and relation of your project to your current research (if any). Note that you do not have to have chosen a single final project idea and can submit multiple ideas with a discussion of each.
+- **Project approval**: before Friday, April 22 (Week 4) we will inform you if your project idea is approved or if (and how) you should modify it. 
+- **Midterm report**: on Monday, May 9 (Week 7) submit a six page (max) midterm report on your project. This report should include 
+  - Motivation for the project under consideration.
+  - A statement of the technical contributions of your project. 
+  - An introductory review of related work. 
+  - A precise statement of the project setting you are considering in your project. 
+  - Any preliminary results. 
+- **Midterm feedback**: before Monday, May 16 (Week 8) we will provide feedback on your midterm report. 
+- **Video presentation**: instead of a poster presentation, we will have video presentations this year. You should prepare a three minute video about your project for Wednesday, June 1 (End of Quarter). These videos will be made available to all students in the class. 
+- **Project report**: you should submit your final project report (8 pages maximum) by Wednesday, June 1 (End of Quarter) on Gradescope.
+
+**Project evaluation**: Your project (totaling 40% of your course grade) will be evaluated along four main dimensions:
+
+- Technical quality and clarity of your proposal (5%).
+- Technical quality and clarity of your midterm report (10%).
+- Technical quality of your final project submission (15%).
+- Clarity of your video presentation and final report (10%).
+
+**Publishing your work**: Some of the research-oriented projects might contain publishable work. The instructor and the CAs will be happy to help you with turning your work into a scientific publication.  -->
