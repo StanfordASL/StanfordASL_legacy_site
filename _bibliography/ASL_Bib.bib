@@ -17,8 +17,8 @@
 @String{ios_IAAF                       = {{International Association of Athletics Federations}}}
 @String{ios_ILOG                       = {IBM ILOG}}
 @String{ios_IMBJ                       = {{IBM Japan}}}
-@String{ios_JPL                        = {{JPL}}}
 @String{ios_JAXA                       = {{JAXA}}}
+@String{ios_JPL                        = {{JPL}}}
 @String{ios_KMS                        = {{Kharkov Mathematics Society}}}
 @String{ios_LEI                        = {{London Economics International}}}
 @String{ios_Mathworks                  = {{The Mathworks, Inc.}}}
@@ -434,10 +434,10 @@
 @String{jrn_Spr_NM                     = {{Numerische Mathematik}}}
 @String{jrn_Spr_NMPC                   = {{Nonlinear Model Predictive Control}}}
 @String{jrn_Spr_OL                     = {{Optimization Letters}}}
+@String{jrn_Spr_SC                     = {{Statistics and Computing}}}
 @String{jrn_Spr_SHR                    = {{Springer Handbook of Robotics}}}
 @String{jrn_Spr_SMFTA                  = {{Systems, Models and Feedback: Theory and Applications}}}
 @String{jrn_Spr_SP                     = {{SpringerPlus}}}
-@String{jrn_Spr_SC                     = {{Statistics and Computing}}}
 @String{jrn_Spr_SSR                    = {{Space Science Reviews}}}
 @String{jrn_Spr_TOCS                   = {{Theory of Computing Systems}}}
 @String{jrn_Spr_ZWG                    = {{Zeitschrift f\"ur Wahrscheinlichkeitstheorie und verwandte Gebiete}}}
@@ -1846,14 +1846,12 @@ pages = {7497-7517},
   author       = {Salzmann, T. and Kaufmann, E. and Arrizabalaga, J. and Pavone, M. and Scaramuzza, D. and Ryll, M.},
   journal    = jrn_IEEE_RAL,
   title        = {Real-time Neural-{MPC}: Deep Learning Model Predictive Control for Quadrotors and Agile Robotic Platforms},
-  year         = {2022},
-  month        = aug,
-  note         = {Submitted},
+  year         = {2023},
   abstract = {Model Predictive Control (MPC) has become a popular framework in embedded control for high-performance autonomous systems. However, to achieve good control performance using MPC, an accurate dynamics model is key. To maintain real-time operation, the dynamics models used on embedded systems have been limited to simple first-principle models, which substantially limits their representative power. In contrast to such simple models, machine learning approaches, specifically neural networks, have been shown to accurately model even complex dynamic effects, but their large computational complexity hindered combination with fast real-time iteration loops. With this work, we present Real-time Neural MPC, a framework to efficiently integrate large, complex neural network architectures as dynamics models within a model-predictive control pipeline. Our experiments, performed in simulation and the real world onboard a highly agile quadrotor platform, demonstrate the capabilities of the described system to run learned models with, previously infeasible, large modeling capacity using gradient-based online optimization MPC. Compared to prior implementations of neural networks in online optimization MPC we can leverage models of over 4000 times larger parametric capacity in a 50Hz real-time window on an embedded platform. Further, we show the feasibility of our framework on real-world problems by reducing the positional tracking error by up to 82% when compared to state-of-the-art MPC approaches without neural network dynamics.},
   url      = {https://arxiv.org/pdf/2203.07747.pdf},
-  keywords     = {sub},
+  keywords     = {pub},
   owner        = {salzmann},
-  timestamp    = {2022-08-02}
+  timestamp    = {2023-03-01}
 }
 
 @inproceedings{SalzmannIvanovicEtAl2020,
@@ -2692,18 +2690,6 @@ pages 	= {2194-2212},
   timestamp    = {2018-01-16}
 }
 
-
-@inproceedings{LuoZhaoEtAl2023,
-  author       = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
-  title        = {Sample-Efficient Safety Assurances using Conformal Prediction},
-  booktitle    = jrn_SAGE_IJRR,
-  year         = {2023},
-  abstract = {When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.},
-  owner        = {rsluo},
-  timestamp    = {2023-02-10},
-  url      = {https://arxiv.org/abs/2109.14082}
-}
-
 @inproceedings{LuoZhaoEtAl2022,
   author       = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
   title        = {Sample-Efficient Safety Assurances using Conformal Prediction},
@@ -2713,6 +2699,18 @@ pages 	= {2194-2212},
   abstract = {When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.},
   owner        = {rsluo},
   timestamp    = {2021-09-20},
+  url      = {https://arxiv.org/abs/2109.14082}
+}
+
+
+@inproceedings{LuoZhaoEtAl2023,
+  author       = {Luo, R. and Zhao, S. and Kuck, J. and Ivanovic, B. and Savarese, S. and Schmerling, E. and Pavone, M.},
+  title        = {Sample-Efficient Safety Assurances using Conformal Prediction},
+  booktitle    = jrn_SAGE_IJRR,
+  year         = {2023},
+  abstract = {When deploying machine learning models in high-stakes robotics applications, the ability to detect unsafe situations is crucial. Early warning systems can provide alerts when an unsafe situation is imminent (in the absence of corrective action). To reliably improve safety, these warning systems should have a provable false negative rate; i.e., of the situations than are unsafe, fewer than epsilon will occur without an alert. In this work, we present a framework that combines a statistical inference technique known as conformal prediction with a simulator of robot/environment dynamics, in order to tune warning systems to provably achieve an epsilon false negative rate using as few as 1/epsilon data points. We apply our framework to a driver warning system and a robotic grasping application, and empirically demonstrate guaranteed false negative rate and low false detection (positive) rate using very little data.},
+  owner        = {rsluo},
+  timestamp    = {2023-02-10},
   url      = {https://arxiv.org/abs/2109.14082}
 }
 
@@ -2912,6 +2910,18 @@ pages 	= {2194-2212},
   url      = {/wp-content/papercite-data/pdf/Lew.Bonalli.Pavone.ECC20.pdf},
   owner        = {lew},
   timestamp    = {2020-03-16}
+}
+
+@unpublished{LewBonalliJansonEtAl2023,
+  author       = {Lew, T. and Bonalli, R. and Janson, L. and Pavone, M.},
+  title        = {Estimating the convex hull of the image of a set with smooth boundary: error bounds and applications},
+  year         = {2023},
+  note         = {Submitted},
+  abstract = {We study the problem of estimating the convex hull of the image $f(X)\subset\mathbb{R}^n$ of a compact set $X\subset\mathbb{R}^m$ with smooth boundary through a smooth function $f:\mathbb{R}^m\to\mathbb{R}^n$. Assuming that $f$ is a diffeomorphism or a submersion, we derive new bounds on the Hausdorff distance between the convex hull of $f(X)$ and the convex hull of the images $f(x_i)$ of $M$ samples $x_i$ on the boundary of $X$. When applied to the problem of geometric inference from random samples, our results give tighter and more general error bounds than the state of the art. We present applications to the problems of robust optimization, of reachability analysis of dynamical systems, and of robust trajectory optimization under bounded uncertainty.},
+  url      = {https://arxiv.org/abs/2302.13970},
+  keywords     = {sub},
+  owner        = {lew},
+  timestamp    = {2023-02-27},
 }
 
 @article{LeungSchmerlingEtAl2019,
@@ -3386,13 +3396,13 @@ pages 	= {2194-2212},
 @Inproceedings{JalotaEtAl2023,
   author       = {Jalota, D. and Lazarus, J. and Bayen, A. and Pavone, M.},
   title        = {Credit-Based Congestion Pricing: Equilibrium Properties and Optimal Scheme Design},
-  booktitle    = proc_AAMAS,
+  booktitle    = proc_IEEE_CDC,
   year         = {2023},
   note         = {Submitted},
   abstract = {Credit-based congestion pricing (CBCP) has emerged as a mechanism to alleviate the social inequity concerns of road congestion pricing - a promising strategy for traffic congestion mitigation - by providing low-income users with travel credits to offset some of their toll payments. While CBCP offers immense potential for addressing inequity issues that hamper the practical viability of congestion pricing, the deployment of CBCP in practice is nascent, and the potential efficacy and optimal design of CBCP schemes have yet to be formalized. In this work, we study the design of CBCP schemes to achieve particular societal objectives and investigate their influence on traffic patterns when routing heterogeneous users with different values of time (VoTs) in a multi-lane highway with an express lane. We introduce a new non-atomic congestion game model of a mixed-economy, wherein eligible users receive travel credits while the remaining ineligible users pay out-of-pocket to use the express lane. In this setting, we investigate the effect of CBCP schemes on traffic patterns by characterizing the properties (i.e., existence, comparative statics) of the corresponding Nash equilibria and, in the setting when eligible users have time-invariant VoTs, develop a convex program to compute these equilibria. We further present a bi-level optimization framework to design optimal CBCP schemes to achieve a central planner's societal objectives. Finally, we conduct numerical experiments based on a case study of the San Mateo 101 Express Lanes Project, one of the first North American CBCP pilots. Our results demonstrate the potential of CBCP to enable low-income travelers to avail of the travel time savings provided by congestion pricing on express lanes while having comparatively low impacts on the travel costs of other road users.},
   keywords     = {sub},
   owner        = {devanshjalota},
-  timestamp    = {2022-11-21},
+  timestamp    = {2023-04-01},
 }
 
 @Inproceedings{JalotaEtAl2022,
@@ -3895,17 +3905,6 @@ pages 	= {2194-2212},
   timestamp    = {2018-04-08}
 }
 
-@inproceedings{EndersEtAl2023,
-  author = {Enders, Tobias and Harrison, James and Pavone, M. and Schiffer, Maximilian},
-  abstract = {We consider the sequential decision-making problem of making proactive request assignment and rejection decisions for a profit-maximizing operator of an autonomous mobility on demand system. We formalize this problem as a Markov decision process and propose a novel combination of multi-agent Soft Actor-Critic and weighted bipartite matching to obtain an anticipative control policy. Thereby, we factorize the operator's otherwise intractable action space, but still obtain a globally coordinated decision. Experiments based on real-world taxi data show that our method outperforms state of the art benchmarks with respect to performance, stability, and computational tractability.},
-  title = {Hybrid Multi-agent Deep Reinforcement Learning for Autonomous Mobility on Demand Systems},
-  journal = proc_L4DC,
-  year = {2023},
-  timestamp = {2023-03-20},
-  owner = {rdyro},
-  url = {/wp-content/papercite-data/pdf/Enders.Harrison.Pavone.Schiffer.L4DC23.pdf}
-}
-
 @inproceedings{EstradaJiangEtAl2017,
   author       = {Estrada, M. A. and Jiang, H. and Noll, B. and Hawkes, E. W. and Pavone, M. and Cutkosky, M. R.},
   title        = {Force and Moment Constraints of a Curved Surface Gripper and Wrist for Assistive Free Flyers},
@@ -3960,6 +3959,17 @@ pages 	= {2194-2212},
   url      = {/wp-content/papercite-data/pdf/Enright.Frazzoli.ea.Springer13.pdf},
   owner        = {bylard},
   timestamp    = {2017-02-20}
+}
+
+@inproceedings{EndersEtAl2023,
+  author = {Enders, Tobias and Harrison, James and Pavone, M. and Schiffer, Maximilian},
+  abstract = {We consider the sequential decision-making problem of making proactive request assignment and rejection decisions for a profit-maximizing operator of an autonomous mobility on demand system. We formalize this problem as a Markov decision process and propose a novel combination of multi-agent Soft Actor-Critic and weighted bipartite matching to obtain an anticipative control policy. Thereby, we factorize the operator's otherwise intractable action space, but still obtain a globally coordinated decision. Experiments based on real-world taxi data show that our method outperforms state of the art benchmarks with respect to performance, stability, and computational tractability.},
+  title = {Hybrid Multi-agent Deep Reinforcement Learning for Autonomous Mobility on Demand Systems},
+  journal = proc_L4DC,
+  year = {2023},
+  timestamp = {2023-03-20},
+  owner = {rdyro},
+  url = {/wp-content/papercite-data/pdf/Enders.Harrison.Pavone.Schiffer.L4DC23.pdf}
 }
 
 @inproceedings{ElhafsiIvanovicEtAl2020,
@@ -4849,16 +4859,17 @@ pages 	= {2194-2212},
   timestamp    = {2020-04-13}
 }
 
-@unpublished{LewBonalliJansonEtAl2023,
-  author       = {Lew, T. and Bonalli, R. and Janson, L. and Pavone, M.},
-  title        = {Estimating the convex hull of the image of a set with smooth boundary: error bounds and applications},
+@article{LewBonalliEtAl2023,
+  author       = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title        = {Exact Characterization of the Convex Hulls of Reachable Sets},
+  journal      = proc_IEEE_CDC,
   year         = {2023},
   note         = {Submitted},
-  abstract = {We study the problem of estimating the convex hull of the image $f(X)\subset\mathbb{R}^n$ of a compact set $X\subset\mathbb{R}^m$ with smooth boundary through a smooth function $f:\mathbb{R}^m\to\mathbb{R}^n$. Assuming that $f$ is a diffeomorphism or a submersion, we derive new bounds on the Hausdorff distance between the convex hull of $f(X)$ and the convex hull of the images $f(x_i)$ of $M$ samples $x_i$ on the boundary of $X$. When applied to the problem of geometric inference from random samples, our results give tighter and more general error bounds than the state of the art. We present applications to the problems of robust optimization, of reachability analysis of dynamical systems, and of robust trajectory optimization under bounded uncertainty.},
-  url      = {https://arxiv.org/abs/2302.13970},
+  abstract = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
   keywords     = {sub},
   owner        = {lew},
-  timestamp    = {2023-02-27},
+  timestamp    = {2023-04-03},
+  url      = {https://arxiv.org/abs/2303.17674}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
