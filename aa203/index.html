@@ -119,6 +119,10 @@
                                 
                             
                                 
+                            
+                                
+                            
+                                
                                     
                                     <li class="page-scroll active">
                                         <a href="/aa203/">Home</a>
@@ -204,10 +208,6 @@
                             
                                 
                             
-                                
-                            
-                                
-                            
                         </ul>
                     </div>
                 </div>
@@ -264,6 +264,10 @@
                 <a href="/people/thomas-lew/"><img class="aa203_headshot" src="/img/people/ThomasLew.jpg"></a>
                 <a href="/people/thomas-lew/">Thomas Lew</a>
               </th>
+              <th>
+                <a href="/people/devansh-jalota/"><img class="aa203_headshot" src="/img/people/DevanshJalota.jpg"></a>
+                <a href="/people/devansh-jalota/">Devansh Jalota</a>
+              </th>
             </tr>
           </table>
         </div>
@@ -275,17 +279,17 @@
         <div class="col-md-12">
           <h3>Meeting Times</h3>
           <p>Lectures are held on Mondays and Wednesdays from 1:30pm to 2:50pm in <a href="https://campus-map.stanford.edu/?srch=Thornton+102">Thornton 102</a>.</p>
-          <p>Lecture recordings will be available on <a href="https://canvas.stanford.edu/courses/151934">Canvas</a>.</p>
+          <p>Lecture recordings will be available on <a href="https://canvas.stanford.edu/courses/171491">Canvas</a>.</p>
           <p>Office hours will be scheduled during the first week of classes and then listed here.</p>
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-12">
           <h3>Syllabus</h3>
           <p>The class syllabus can be found <a href="pdfs/AA203_Syllabus_2023.pdf">here</a>.</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
         <div class="col-md-12">
@@ -310,11 +314,11 @@
                 1
               </td>
               <td class="tg-vnl4">
-                Introduction; control, stability, and metrics
+                Introduction; feedback, stability, optimal control problems
                 <br>
-                Introduction to learning; system identification and adaptive control
+                Nonlinear optimization theory
                 <br>
-                Recitation: Automatic differentiation (autodiff) with JAX
+                Recitation: Automatic differentiation (AD) with JAX
                 <br>
                 <span style="font-style:italic">Monday: HW0 (ungraded) out</span>
               </td>
@@ -334,13 +338,13 @@
                 2
               </td>
               <td class="tg-vnl4">
-                Nonlinear optimization theory
+                Pontryagin's maximum principle (PMP), indirect methods
                 <br>
-                Calculus of variations
+                Direct methods: Collocation and SCP
                 <br>
                 Recitation: Convex optimization with CVXPY
                 <br>
-                <span style="font-style:italic">Monday: HW1 out</span>
+                <span style="font-style:italic">Monday: HW1 released</span>
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_3.pdf">Lecture 3</a> -->
@@ -356,12 +360,12 @@
                 3
               </td>
               <td class="tg-vnl4">
-                Indirect methods for optimal control
+                Dynamic programming (DP), discrete-time LQR
                 <br>
-                Pontryagin's maximum principle; introduction to dynamic programming
+                Stochastic DP, value iteration, policy iteration
                 <br>
                 Recitation: Regression models
-                <br><span style="font-style:italic">Friday: project proposal due</span>
+                <br><span style="font-style:italic">Friday: Project proposal due</span>
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_5.pdf">Lecture 5</a> -->
@@ -377,13 +381,13 @@
                 4
               </td>
               <td class="tg-vnl4">
-                Discrete LQR, stochastic DP, value iteration, policy iteration
+                Nonlinear LQR for tracking, iLQR, DDP
                 <br>
-                Introduction to reinforcement learning, dual control, LQG
+                HJB, HJI, reachability analysis
                 <br>
                 Recitation: Training neural networks with JAX
                 <br>
-                <span style="font-style:italic">Monday: HW1 due, HW2 out</span>
+                <span style="font-style:italic">Monday: HW1 due, HW2 released</span>
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_7.pdf">Lecture 7</a> -->
@@ -399,9 +403,9 @@
                 5
               </td>
               <td class="tg-vnl4">
-                Nonlinearity; tracking LQR
+                System identification, adaptive control
                 <br>
-                Iterative LQR, differential dynamic programming (DDP)
+                Introduction to RL, learning settings, MDPs
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lectures_9_and_10.pdf">Lecture 9</a> -->
@@ -416,11 +420,11 @@
                 6
               </td>
               <td class="tg-vnl4">
-                Direct methods for optimal control; sequential convex programming
+                MPC I: Introduction
                 <br>
-                HJB, HJI, reachability analysis
+                MPC II: Feasibility and stability
                 <br>
-                <span style="font-style:italic">Monday: HW2 due</span>
+                <span style="font-style:italic">Monday: HW2 due, HW3 released</span>
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_11.pdf">Lecture 11</a> -->
@@ -435,11 +439,11 @@
                 7
               </td>
               <td class="tg-vnl4">
-                Introduction to model predictive control (MPC)
+                MPC III: Robustness
                 <br>
-                Feasibility and stability of MPC
+                MPC IV: Adaptation
                 <br>
-                <span style="font-style:italic">Monday: project midterm report due; Tuesday: HW3 out</span>
+                <span style="font-style:italic">Monday: Project midterm report due</span>
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_13.pdf">Lecture 13</a> -->
@@ -452,9 +456,11 @@
                 8
               </td>
               <td class="tg-vnl4">
-                MPC implementation considerations, robust MPC
+                RL I: Model-based methods
                 <br>
-                Adaptive and learning-based MPC
+                RL II: Model-free methods
+                <br>
+                <span style="font-style:italic">Monday: HW3 due, HW4 released</span>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lectures_14_and_15.pdf">Lecture 15</a> -->
                 <!-- ; <a href="https://github.com/StanfordASL/AA203-Examples/tree/master/Lecture-15">Code</a> -->
@@ -467,11 +473,9 @@
                 9
               </td>
               <td class="tg-vnl4">
-                Model-based RL
+                <span style="font-style:italic">No lecture (Memorial Day)</span>
                 <br>
-                Model-free RL: policy gradient and actor critic
-                <br>
-                <span style="font-style:italic">Tuesday: HW3 due; Wednesday: HW4 out</span>
+                RL III (TBD)
               </td>
               <td class="tg-vnl4">
                 <!-- <a href="pdfs/lecture/lecture_17.pdf">Lecture 17</a> -->
@@ -485,11 +489,13 @@
                 10
               </td>
               <td class="tg-vnl4">
-                <span style="font-style:italic">No lecture (Memorial Day)</span>
+                RL IV (TBD)
                 <br>
-                Model-based policy learning, wrap up, recent work, and future directions
+                Course summary, recent work, future directions
                 <br>
-                <span style="font-style:italic">Wednesday: HW4 due, project video presentation and final report due</span>
+                <span style="font-style:italic">Monday: HW4 due</span>
+                <br>
+                <span style="font-style:italic">Wednesday: Project video presentation and final report due</span>
               </td>
               <td class="tg-vnl4">
                 <br>
