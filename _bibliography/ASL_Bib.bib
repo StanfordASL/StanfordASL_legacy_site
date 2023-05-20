@@ -1483,6 +1483,30 @@
   url      = {/wp-content/papercite-data/pdf/Smith.Pavone.ea.CDC08.pdf}
 }
 
+@inproceedings{SinhaSharmaEtAl2022,
+  author       = {Sinha, R. and Sharma, S. and Banerjee, S. and Lew, T. and Luo, R. and Richards, S. M. and Sun, Y. and Schmerling, E. and Pavone, M.},
+  title        = {A System-Level View on Out-of-Distribution Data in Robotics},
+  year         = {2022},
+  keywords     = {sub},
+  abstract = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
+  url      = {https://arxiv.org/abs/2212.14020},
+  owner        = {rhnsinha},
+  timestamp    = {2022-12-30}
+}
+
+@inproceedings{SinhaSchmerlingEtAl2023,
+  author       = {Sinha, R. and Schmerling, E. and Pavone, M.},
+  title        = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
+  year         = {2023},
+  keywords     = {sub},
+  booktitle    = proc_IEEE_CDC,
+  abstract = {When we rely on deep-learned models for robotic perception, we must recognize that these models may behave unreliably on inputs dissimilar from the training data, compromising the closed-loop system's safety. This raises fundamental questions on how we can assess confidence in perception systems and to what extent we can take safety-preserving actions when external environmental changes degrade our perception model's performance. Therefore, we present a framework to certify the safety of a perception-enabled system deployed in novel contexts. To do so, we leverage robust model predictive control (MPC) to control the system using the perception estimates while maintaining the feasibility of a safety-preserving fallback plan that does not rely on the perception system. In addition, we calibrate a runtime monitor using recently proposed conformal prediction techniques to certifiably detect when the perception system degrades beyond the tolerance of the MPC controller, resulting in an end-to-end safety assurance. We show that this control framework and calibration technique allows us to certify the system's safety with orders of magnitudes fewer samples than required to retrain the perception network when we deploy in a novel context on a photo-realistic aircraft taxiing simulator. Furthermore, we illustrate the safety-preserving behavior of the MPC on simulated examples of a quadrotor.},
+  url      = {/wp-content/papercite-data/pdf/Sinha.Pavone.CDC23.pdf},
+  owner        = {rhnsinha},
+  note         = {Submitted},
+  timestamp    = {2023-04-12}
+}
+
 
 @inproceedings{SinhaHarrisonEtAl2022,
   author       = {Sinha, R. and Harrison, J. and Richards, S. M. and Pavone, M.},
@@ -1507,30 +1531,6 @@
   url      = {https://arxiv.org/abs/2212.01371},
   owner        = {rhnsinha},
   timestamp    = {2023-01-30}
-}
-
-@inproceedings{SinhaSharmaEtAl2022,
-  author       = {Sinha, R. and Sharma, S. and Banerjee, S. and Lew, T. and Luo, R. and Richards, S. M. and Sun, Y. and Schmerling, E. and Pavone, M.},
-  title        = {A System-Level View on Out-of-Distribution Data in Robotics},
-  year         = {2022},
-  keywords     = {sub},
-  abstract = {When testing conditions differ from those represented in training data, so-called out-of-distribution (OOD) inputs can mar the reliability of black-box learned components in the modern robot autonomy stack. Therefore, coping with OOD data is an important challenge on the path towards trustworthy learning-enabled open-world autonomy. In this paper, we aim to demystify the topic of OOD data and its associated challenges in the context of data-driven robotic systems, drawing connections to emerging paradigms in the ML community that study the effect of OOD data on learned models in isolation. We argue that as roboticists, we should reason about the overall system-level competence of a robot as it performs tasks in OOD conditions. We highlight key research questions around this system-level view of OOD problems to guide future research toward safe and reliable learning-enabled autonomy.},
-  url      = {https://arxiv.org/abs/2212.14020},
-  owner        = {rhnsinha},
-  timestamp    = {2022-12-30}
-}
-
-@inproceedings{SinhaSchmerlingEtAl2023,
-  author       = {Sinha, R. and Schmerling, E. and Pavone, M.},
-  title        = {Closing the Loop on Runtime Monitors with Fallback-Safe MPC},
-  year         = {2023},
-  keywords     = {sub},
-  booktitle    = proc_IEEE_CDC,
-  abstract = {When we rely on deep-learned models for robotic perception, we must recognize that these models may behave unreliably on inputs dissimilar from the training data, compromising the closed-loop system's safety. This raises fundamental questions on how we can assess confidence in perception systems and to what extent we can take safety-preserving actions when external environmental changes degrade our perception model's performance. Therefore, we present a framework to certify the safety of a perception-enabled system deployed in novel contexts. To do so, we leverage robust model predictive control (MPC) to control the system using the perception estimates while maintaining the feasibility of a safety-preserving fallback plan that does not rely on the perception system. In addition, we calibrate a runtime monitor using recently proposed conformal prediction techniques to certifiably detect when the perception system degrades beyond the tolerance of the MPC controller, resulting in an end-to-end safety assurance. We show that this control framework and calibration technique allows us to certify the system's safety with orders of magnitudes fewer samples than required to retrain the perception network when we deploy in a novel context on a photo-realistic aircraft taxiing simulator. Furthermore, we illustrate the safety-preserving behavior of the MPC on simulated examples of a quadrotor.},
-  url      = {/wp-content/papercite-data/pdf/Sinha.Pavone.CDC23.pdf},
-  owner        = {rhnsinha},
-  note         = {Submitted},
-  timestamp    = {2023-04-12}
 }
 
 @inproceedings{SinghSindhwaniEtAl2018,
@@ -2936,6 +2936,19 @@ pages 	= {2194-2212},
   url      = {https://arxiv.org/abs/2206.09963}
 }
 
+@inproceedings{LewBonalliEtAl2023,
+  author       = {Lew, T. and Bonalli, R. and Pavone, M.},
+  title        = {Exact Characterization of the Convex Hulls of Reachable Sets},
+  booktitle    = proc_IEEE_CDC,
+  year         = {2023},
+  note         = {Submitted},
+  abstract = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
+  keywords     = {sub},
+  owner        = {lew},
+  timestamp    = {2023-04-03},
+  url      = {https://arxiv.org/abs/2303.17674}
+}
+
 @inproceedings{LewBonalliEtAl2020,
   author       = {Lew, T. and Bonalli, R. and Pavone, M.},
   title        = {Chance-Constrained Sequential Convex Programming for Robust Trajectory Optimization},
@@ -4009,6 +4022,18 @@ pages 	= {2194-2212},
   url = {/wp-content/papercite-data/pdf/Enders.Harrison.Pavone.Schiffer.L4DC23.pdf}
 }
 
+@Article{ElhafsiSinhaEtAl2023,
+  author       = {Elhafsi, A. and Sinha, R. and Agia, C. and Schmerling, E. and Nesnas, I. A. D and Pavone, M.},
+  title        = {Semantic Anomaly Detection with Large Language Models},
+  journal      = jrn_Spr_AR,
+  year         = {2023},
+  note         = {Submitted},
+  abstract = {As robots acquire increasingly sophisticated skills and see increasingly complex and varied environments, the threat of an edge case or anomalous failure is ever present. For example, Tesla cars have seen interesting failure modes ranging from autopilot disengagements due to inactive traffic lights carried by trucks to phantom braking caused by images of stop signs on roadside billboards. These system-level failures are not due to failures of any individual component of the autonomy stack but rather system-level deficiencies in semantic reasoning. Such edge cases, which we call \textit{semantic anomalies}, are simple for a human to disentangle yet require insightful reasoning. To this end, we study the application of large language models (LLMs), endowed with broad contextual understanding and reasoning capabilities, to recognize these edge semantic cases. We introduce a monitoring framework for semantic anomaly detection in vision-based policies to do so. Our experiments evaluate this framework in monitoring a learned policy for object manipulation and a finite state machine policy for autonomous driving and demonstrate that an LLM-based monitor can serve as a proxy for human reasoning. Finally, we provide an extended discussion on the strengths and weaknesses of this approach and motivate a research outlook on how we can further use foundation models for semantic anomaly detection.},
+  url      = {https://drive.google.com/file/d/1u-7wI-EM2cWKAKZgV92whKbAib9gHedj/view?usp=share_link},
+  owner        = {amine},
+  timestamp    = {2023-05-19},
+}
+
 @inproceedings{ElhafsiIvanovicEtAl2020,
   author       = {Elhafsi, A. and Ivanovic, B. and Janson, L. and Pavone, M.},
   title        = {Map-Predictive Motion Planning in Unknown Environments},
@@ -4895,21 +4920,8 @@ pages 	= {2194-2212},
   timestamp    = {2020-04-13}
 }
 
-@inproceedings{LewBonalliEtAl2023,
-  author       = {Lew, T. and Bonalli, R. and Pavone, M.},
-  title        = {Exact Characterization of the Convex Hulls of Reachable Sets},
-  booktitle    = proc_IEEE_CDC,
-  year         = {2023},
-  note         = {Submitted},
-  abstract = {We study the convex hulls of reachable sets of nonlinear systems with bounded disturbances. Reachable sets play a critical role in control, but remain notoriously challenging to compute, and existing over-approximation tools tend to be conservative or computationally expensive. In this work, we exactly characterize the convex hulls of reachable sets as the convex hulls of solutions of an ordinary differential equation from all possible initial values of the disturbances. This finite-dimensional characterization unlocks a tight estimation algorithm to over-approximate reachable sets that is significantly faster and more accurate than existing methods. We present applications to neural feedback loop analysis and robust model predictive control.},
-  keywords     = {sub},
-  owner        = {lew},
-  timestamp    = {2023-04-03},
-  url      = {https://arxiv.org/abs/2303.17674}
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: saveOrderConfig:specified;citationkey;false;author;true;title;true;}
 
-@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;note;year] opt[]}
+@Comment{jabref-entrytype: Online: req[author/organization;title;howpublished;year;note] opt[]}
