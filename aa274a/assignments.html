@@ -33,7 +33,7 @@ order: 2
             </div>
           </div>
           <p>{{ hwk.content }}</p>
-          <p><a href="{{ hwk.pdf_link }}">[pdf]</a> <a href="{{ hwk.code_link }}">[code]</a></p>
+          <p><a href="{{ hwk.pdf_link | relative_url }}">[pdf]</a> <a href="{{ hwk.code_link }}">[code]</a></p>
         </div>
       </div>
       {% endfor %}
